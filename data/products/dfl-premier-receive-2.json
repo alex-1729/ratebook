@@ -1,0 +1,1357 @@
+{
+  "id": "dfl-premier-receive-2",
+  "insurer_id": "dfl",
+  "name_ja": "プレミアレシーブ２",
+  "name_en": "Premier Receive 2",
+  "policy_name_ja": "定期支払金付積立利率変動型終身保険（23）（通貨指定型）",
+  "category": "whole_life",
+  "product_type": "whole_life_periodic_payout",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-01-04",
+  "off_sale_date": null,
+  "site_product_code": "204",
+  "notes": [
+    "Listed under お取扱い中の商品 on the product page, and new-contract rates are still published each half-month. The insurer's rate hub shows a ＜販売停止＞ heading within this policy form's product list, which most likely refers to the discontinued sibling names (site codes 206, 207). プレミアレシーブ３ launched in November 2026 as the apparent successor; no end-of-sale announcement for プレミアレシーブ２ has been found.",
+    "The guarantee period is 10 years for every series (recorded as term_years).",
+    "指数プラン pays a lower 定期支払率 and links part of the return to a reference index; index data is not collected.",
+    "The same policy form is also sold as プレミアレシーブＭ２ (205), 安心一生涯２ (208) and two discontinued names (206, 207); these are not tracked separately.",
+    "MVA rates (市場価格調整用利率) are published per age band but are identical across age bands and across 基本プラン and 指数プラン. Their dates are surrender periods, not new-contract periods.",
+    "Launch date: 2024-01-04, the sales start stated in the insurer's news release of 2023-12-26 (id=1032, 『プレミアレシーブ２』, 定期支払金付積立利率変動型終身保険（23）（通貨指定型）). Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Listed as on sale, but its successor Premier Receive 3 launched in November 2026; no end-of-sale notice found.",
+    "Launch announced 26 December 2023; rate history starts 1 January 2024.",
+    "Guarantee period is 10 years throughout.",
+    "The index plan pays a lower periodic payment rate and links part of the return to an index; index data is not collected.",
+    "MVA rates are surrender-period rates, identical across age bands and plans."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "periodic_payment_rate": "定期支払率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_204",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=204"
+    },
+    {
+      "name": "rate_recurrining_payment_shushin_23",
+      "url": "https://www.d-frontier-life.co.jp/products/index_recurrining_payment_shushin_23.html"
+    },
+    {
+      "name": "mva_recurrining_payment_shushin_23_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_recurrining_payment_shushin_23_b.html?product=&agency="
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.d-frontier-life.co.jp/customer/rate/index.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "recurrining_payment_shushin_23_kihon_tsumitate",
+      "csv": "dfl-premier-receive-2__crediting_rate__kihon.csv",
+      "term_years": "10",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "periodic_payment_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "recurrining_payment_shushin_23_kihon_teiki_m",
+      "csv": "dfl-premier-receive-2__periodic_payment_rate__kihon.csv",
+      "sex": "M",
+      "term_years": "10",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "periodic_payment_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "recurrining_payment_shushin_23_kihon_teiki_f",
+      "csv": "dfl-premier-receive-2__periodic_payment_rate__kihon.csv",
+      "sex": "F",
+      "term_years": "10",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu",
+      "plan_ja": "指数プラン",
+      "param": "recurrining_payment_shushin_23_shisu_tsumitate",
+      "csv": "dfl-premier-receive-2__crediting_rate__shisu.csv",
+      "term_years": "10",
+      "plan_en": "Index-linked"
+    },
+    {
+      "metric": "periodic_payment_rate",
+      "plan": "shisu",
+      "plan_ja": "指数プラン",
+      "param": "recurrining_payment_shushin_23_shisu_teiki_m",
+      "csv": "dfl-premier-receive-2__periodic_payment_rate__shisu.csv",
+      "sex": "M",
+      "term_years": "10",
+      "plan_en": "Index-linked"
+    },
+    {
+      "metric": "periodic_payment_rate",
+      "plan": "shisu",
+      "plan_ja": "指数プラン",
+      "param": "recurrining_payment_shushin_23_shisu_teiki_f",
+      "csv": "dfl-premier-receive-2__periodic_payment_rate__shisu.csv",
+      "sex": "F",
+      "term_years": "10",
+      "plan_en": "Index-linked"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "recurrining_payment_shushin_23_b",
+      "csv": "dfl-premier-receive-2__mva_rate__kihon.csv",
+      "term_years": "10",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu",
+      "plan_ja": "指数プラン",
+      "param": "recurrining_payment_shushin_23_b_1",
+      "csv": "dfl-premier-receive-2__mva_rate__shisu.csv",
+      "term_years": "10",
+      "plan_en": "Index-linked"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_general",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/products/preceive2/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (general edition)"
+    },
+    {
+      "name": "brochure_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（しんきんらいふ終身ＤＦ）",
+      "variant": "shinkin",
+      "url": "https://www.d-frontier-life.co.jp/products/preceive2/shinkin/shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shinkin edition)"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/04082.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "大垣共立銀行"
+    },
+    {
+      "name_ja": "岡崎信用金庫"
+    },
+    {
+      "name_ja": "神奈川銀行"
+    },
+    {
+      "name_ja": "岐阜信用金庫"
+    },
+    {
+      "name_ja": "京葉銀行"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "スターツ証券"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "多摩信用金庫"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "東洋証券"
+    },
+    {
+      "name_ja": "東和銀行"
+    },
+    {
+      "name_ja": "東日本銀行"
+    },
+    {
+      "name_ja": "広島信用金庫"
+    },
+    {
+      "name_ja": "北陸銀行"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "横浜銀行"
+    },
+    {
+      "name_ja": "さがみ信用金庫"
+    },
+    {
+      "name_ja": "しののめ信用金庫"
+    },
+    {
+      "name_ja": "長野信用金庫"
+    },
+    {
+      "name_ja": "飯能信用金庫"
+    },
+    {
+      "name_ja": "アーク・ネット"
+    },
+    {
+      "name_ja": "アークライフ"
+    },
+    {
+      "name_ja": "R&C"
+    },
+    {
+      "name_ja": "アイ・ティ・コンサルティング"
+    },
+    {
+      "name_ja": "アイエス企画"
+    },
+    {
+      "name_ja": "アイ・エフ・クリエイト"
+    },
+    {
+      "name_ja": "Ｉ・Ｋｏｆｆｉｃｅ"
+    },
+    {
+      "name_ja": "ＩＣｏｎ"
+    },
+    {
+      "name_ja": "アイシード"
+    },
+    {
+      "name_ja": "アイドカ"
+    },
+    {
+      "name_ja": "アイピー・ブレイス"
+    },
+    {
+      "name_ja": "ＩＢＮファイナンシャルプランニング"
+    },
+    {
+      "name_ja": "アイリックコーポレーション"
+    },
+    {
+      "name_ja": "アウトライヤー"
+    },
+    {
+      "name_ja": "アクト"
+    },
+    {
+      "name_ja": "朝日ビズサポート"
+    },
+    {
+      "name_ja": "アスク"
+    },
+    {
+      "name_ja": "アスプランニング"
+    },
+    {
+      "name_ja": "アセットマネジメント保険コンサルティング"
+    },
+    {
+      "name_ja": "アドバンスエイジェント"
+    },
+    {
+      "name_ja": "アドバンスクリエイト"
+    },
+    {
+      "name_ja": "ＡＢＯＳ"
+    },
+    {
+      "name_ja": "ＡＬＩＯＤＤ"
+    },
+    {
+      "name_ja": "アルシアコンサルティング"
+    },
+    {
+      "name_ja": "アルピコ保険リース"
+    },
+    {
+      "name_ja": "アルファ"
+    },
+    {
+      "name_ja": "Ａｌｐｈａ"
+    },
+    {
+      "name_ja": "アルファコンサルティング"
+    },
+    {
+      "name_ja": "アルファ保険サービス"
+    },
+    {
+      "name_ja": "アロープロジェクト"
+    },
+    {
+      "name_ja": "アンシン企画"
+    },
+    {
+      "name_ja": "安心ライフコンサルタント"
+    },
+    {
+      "name_ja": "アンツ"
+    },
+    {
+      "name_ja": "ＥＩＣ"
+    },
+    {
+      "name_ja": "Ｅ保険プランニング"
+    },
+    {
+      "name_ja": "いずみライフデザイナーズ"
+    },
+    {
+      "name_ja": "出雲殿互助会"
+    },
+    {
+      "name_ja": "イデアルライフ"
+    },
+    {
+      "name_ja": "伊藤忠オリコ保険サービス"
+    },
+    {
+      "name_ja": "イノベイト"
+    },
+    {
+      "name_ja": "イフ・ジャパン"
+    },
+    {
+      "name_ja": "ＩＢＵＫＩＬｉｆｅＰａｒｔｎｅｒｓ"
+    },
+    {
+      "name_ja": "インシュアランスサービス"
+    },
+    {
+      "name_ja": "ＩｎｓＷｉｌｌ"
+    },
+    {
+      "name_ja": "インプレーム"
+    },
+    {
+      "name_ja": "Ｗｉｚｌｅａｐ"
+    },
+    {
+      "name_ja": "ＶＩＤＡＭＩＡ"
+    },
+    {
+      "name_ja": "ウィング二十一総合保険センター"
+    },
+    {
+      "name_ja": "ウインライフ"
+    },
+    {
+      "name_ja": "ウエインズトヨタ神奈川"
+    },
+    {
+      "name_ja": "ＷｅｌｌｓＩｎｓｕｒａｎｃｅ"
+    },
+    {
+      "name_ja": "ウェルスガーディアン"
+    },
+    {
+      "name_ja": "Ａ・Ｋフィナンシャル"
+    },
+    {
+      "name_ja": "Ａ＆Ａ Ｃｏｎｓｕｌｔｉｎｇ"
+    },
+    {
+      "name_ja": "ANAファシリティーズ"
+    },
+    {
+      "name_ja": "Ａ・Ｆ・Ｐ"
+    },
+    {
+      "name_ja": "エージェント・インシュアランス・グループ"
+    },
+    {
+      "name_ja": "エーダイ"
+    },
+    {
+      "name_ja": "ａｕフィナンシャルパートナー"
+    },
+    {
+      "name_ja": "ＨＧＰＫ"
+    },
+    {
+      "name_ja": "エイトワン"
+    },
+    {
+      "name_ja": "Ｅｘｅｉｎｓｕｒａｎｃｅ"
+    },
+    {
+      "name_ja": "エコスマート"
+    },
+    {
+      "name_ja": "Ｓ・Ｈ・Ｃ"
+    },
+    {
+      "name_ja": "SSPGroup"
+    },
+    {
+      "name_ja": "エスエヌケイほけん事務所"
+    },
+    {
+      "name_ja": "ＮＩＣリテールズ"
+    },
+    {
+      "name_ja": "Ｎ＆Ｂファイナンシャル・コンサルティング"
+    },
+    {
+      "name_ja": "ＮＳＩコンサルティング"
+    },
+    {
+      "name_ja": "エヌズライフコンサル"
+    },
+    {
+      "name_ja": "NBP"
+    },
+    {
+      "name_ja": "エバ"
+    },
+    {
+      "name_ja": "ＥｖｅｒＳｉｄｅ"
+    },
+    {
+      "name_ja": "FEA"
+    },
+    {
+      "name_ja": "エフケイ"
+    },
+    {
+      "name_ja": "エフピーエム"
+    },
+    {
+      "name_ja": "エフピーキューブ"
+    },
+    {
+      "name_ja": "エフピーサポート"
+    },
+    {
+      "name_ja": "ＦＰサンライズ"
+    },
+    {
+      "name_ja": "FPデザイン"
+    },
+    {
+      "name_ja": "FPパートナー"
+    },
+    {
+      "name_ja": "ＦＰブレーンソリューションズ"
+    },
+    {
+      "name_ja": "FPBrain"
+    },
+    {
+      "name_ja": "エフピーワン"
+    },
+    {
+      "name_ja": "エムアイカード"
+    },
+    {
+      "name_ja": "ＭＩセンター"
+    },
+    {
+      "name_ja": "エムエスティ保険サービス"
+    },
+    {
+      "name_ja": "ＭＦＩオフィス"
+    },
+    {
+      "name_ja": "ＭＦＡ"
+    },
+    {
+      "name_ja": "MFS"
+    },
+    {
+      "name_ja": "エムケイ石油"
+    },
+    {
+      "name_ja": "Ｍ．"
+    },
+    {
+      "name_ja": "えらべる"
+    },
+    {
+      "name_ja": "Ｌ＆Ｔクリエイト"
+    },
+    {
+      "name_ja": "ＬＳＣ"
+    },
+    {
+      "name_ja": "ＬＰＨライフコンサルタント"
+    },
+    {
+      "name_ja": "ＬＰＦ仙台"
+    },
+    {
+      "name_ja": "ｅＮＮＦａｍｉｌｙＯｆｆｉｃｅ"
+    },
+    {
+      "name_ja": "ＥＭＰＲＯＲｉｓｋＭａｎａｇｅｍｅｎｔ"
+    },
+    {
+      "name_ja": "オーエフシィ"
+    },
+    {
+      "name_ja": "オールドルーキー"
+    },
+    {
+      "name_ja": "オールワンエージェント"
+    },
+    {
+      "name_ja": "オフィス・アウル"
+    },
+    {
+      "name_ja": "オフィス赤城"
+    },
+    {
+      "name_ja": "オフィスＮＫ"
+    },
+    {
+      "name_ja": "オフィス広岡"
+    },
+    {
+      "name_ja": "オリックス"
+    },
+    {
+      "name_ja": "オリックス徳島"
+    },
+    {
+      "name_ja": "ＧＡＩＡ"
+    },
+    {
+      "name_ja": "加越能バス"
+    },
+    {
+      "name_ja": "かがやき総合保険企画"
+    },
+    {
+      "name_ja": "カスタマーリンクス"
+    },
+    {
+      "name_ja": "ＣＡＦ"
+    },
+    {
+      "name_ja": "KABU＆ほけんパートナーズ"
+    },
+    {
+      "name_ja": "鎌倉新書ライフパートナーズ"
+    },
+    {
+      "name_ja": "カムイ"
+    },
+    {
+      "name_ja": "かめがわ"
+    },
+    {
+      "name_ja": "カワタケ保険事務所"
+    },
+    {
+      "name_ja": "絆アセットマネジメント"
+    },
+    {
+      "name_ja": "北の新地サービス"
+    },
+    {
+      "name_ja": "GiftYourLife"
+    },
+    {
+      "name_ja": "共栄会保険代行"
+    },
+    {
+      "name_ja": "きらりトータルサポート"
+    },
+    {
+      "name_ja": "きわみインシュアランス・パーク"
+    },
+    {
+      "name_ja": "ＱｕｅｓｔＧｒｏｕｐ"
+    },
+    {
+      "name_ja": "楠本ライフプランニング"
+    },
+    {
+      "name_ja": "グッドウイン"
+    },
+    {
+      "name_ja": "グッドプラン"
+    },
+    {
+      "name_ja": "ＧｏｏｄＬｉｆｅ"
+    },
+    {
+      "name_ja": "クラブツーリズム"
+    },
+    {
+      "name_ja": "グランシードパートナーズ"
+    },
+    {
+      "name_ja": "ＧｒａｎｄｉｒＥｎｓｅｍｂｌｅ"
+    },
+    {
+      "name_ja": "グラント"
+    },
+    {
+      "name_ja": "グリーンイノベーションズホールディングス"
+    },
+    {
+      "name_ja": "クリイト株式会社"
+    },
+    {
+      "name_ja": "クリエイティブ・ライフ"
+    },
+    {
+      "name_ja": "クリエイティブクラス"
+    },
+    {
+      "name_ja": "クリック"
+    },
+    {
+      "name_ja": "クレディセゾン"
+    },
+    {
+      "name_ja": "Clover"
+    },
+    {
+      "name_ja": "グローバルアイディアル"
+    },
+    {
+      "name_ja": "KRC"
+    },
+    {
+      "name_ja": "ＫＤＩ"
+    },
+    {
+      "name_ja": "ゲイン"
+    },
+    {
+      "name_ja": "けやき総合保険事務所"
+    },
+    {
+      "name_ja": "コア・プランニング"
+    },
+    {
+      "name_ja": "コア・ライフプランニング"
+    },
+    {
+      "name_ja": "コアパートナー"
+    },
+    {
+      "name_ja": "ＣｏｒｅMａｎａｇｅｍｅｎｔ"
+    },
+    {
+      "name_ja": "コアラ保険パートナーズ"
+    },
+    {
+      "name_ja": "こころのカンパニー"
+    },
+    {
+      "name_ja": "小松"
+    },
+    {
+      "name_ja": "サクラ保険事務所"
+    },
+    {
+      "name_ja": "ＳａｓｕｋｅＦｉｎａｎｃｉａｌＬａｂ"
+    },
+    {
+      "name_ja": "サンオータス"
+    },
+    {
+      "name_ja": "サンドアーズ"
+    },
+    {
+      "name_ja": "三和イコール企画"
+    },
+    {
+      "name_ja": "Ｃ＆Ｆｃｏｍｐａｎｙ"
+    },
+    {
+      "name_ja": "ＧＦＣ"
+    },
+    {
+      "name_ja": "CGPパートナーズ"
+    },
+    {
+      "name_ja": "GPFA"
+    },
+    {
+      "name_ja": "ジェイアイシー"
+    },
+    {
+      "name_ja": "ＪＦＲカード"
+    },
+    {
+      "name_ja": "Ｊパートナー"
+    },
+    {
+      "name_ja": "JPリースプロダクツ&サービシイズ"
+    },
+    {
+      "name_ja": "Jリスクマネージメント"
+    },
+    {
+      "name_ja": "七十七ほけんサービス"
+    },
+    {
+      "name_ja": "七福計画"
+    },
+    {
+      "name_ja": "シフトライフ"
+    },
+    {
+      "name_ja": "島元経営"
+    },
+    {
+      "name_ja": "JUSTFORYOU"
+    },
+    {
+      "name_ja": "Ｊａｐａｎ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ"
+    },
+    {
+      "name_ja": "ＪＡＬＵＸ保険サービス"
+    },
+    {
+      "name_ja": "昭和リース"
+    },
+    {
+      "name_ja": "白金エージェンシー"
+    },
+    {
+      "name_ja": "シンク総合保険事務所"
+    },
+    {
+      "name_ja": "新光ＦＰサービス"
+    },
+    {
+      "name_ja": "ＺＵＵ Ｗｅａｌｔｈ Ｍａｎａｇｅｍｅｎｔ"
+    },
+    {
+      "name_ja": "ＳＫＹＦＯＲＥＳＴ"
+    },
+    {
+      "name_ja": "Ｓｔａｒ ｒｏａｄ Ｃｏｍｐａｎｙ"
+    },
+    {
+      "name_ja": "スマイルハートライフ"
+    },
+    {
+      "name_ja": "３＆Ｆ ＦＡＭＩＬＹ ＯＦＦＩＣＥ"
+    },
+    {
+      "name_ja": "ＳＥＮライフエスコート"
+    },
+    {
+      "name_ja": "ソニックジャパン"
+    },
+    {
+      "name_ja": "第一ビルディング"
+    },
+    {
+      "name_ja": "第一ライフ物産"
+    },
+    {
+      "name_ja": "タイガーエナジー"
+    },
+    {
+      "name_ja": "タイホウライフサービス"
+    },
+    {
+      "name_ja": "高島屋ファイナンシャル・パートナーズ"
+    },
+    {
+      "name_ja": "宝交通"
+    },
+    {
+      "name_ja": "たくす"
+    },
+    {
+      "name_ja": "ダッシュ"
+    },
+    {
+      "name_ja": "辰口自動車販売"
+    },
+    {
+      "name_ja": "ＣＨＡＮＧＥＴＨＥＬＩＦＥ"
+    },
+    {
+      "name_ja": "中央ライブ"
+    },
+    {
+      "name_ja": "ツーサン"
+    },
+    {
+      "name_ja": "辻・本郷ITコンサルティング"
+    },
+    {
+      "name_ja": "筒井総合コンサルティング"
+    },
+    {
+      "name_ja": "ティ・アイ・エス"
+    },
+    {
+      "name_ja": "ティー・エフ・オフィス"
+    },
+    {
+      "name_ja": "ＴＦＰグループ"
+    },
+    {
+      "name_ja": "ＴＭコーポレーション"
+    },
+    {
+      "name_ja": "テイーケーコーポレーション"
+    },
+    {
+      "name_ja": "ＴＴ・Ｃｏｍｐａｎｙ"
+    },
+    {
+      "name_ja": "ＤＳＰ"
+    },
+    {
+      "name_ja": "トータルアセットパートナーズ"
+    },
+    {
+      "name_ja": "トータル保険サービス"
+    },
+    {
+      "name_ja": "Total Life Design"
+    },
+    {
+      "name_ja": "トータルリスクサポート"
+    },
+    {
+      "name_ja": "Do itプランニング"
+    },
+    {
+      "name_ja": "東京保険プロジェクト"
+    },
+    {
+      "name_ja": "桃石"
+    },
+    {
+      "name_ja": "藤和コンサル"
+    },
+    {
+      "name_ja": "ともにあーる"
+    },
+    {
+      "name_ja": "トラストアップ"
+    },
+    {
+      "name_ja": "トラストライフ"
+    },
+    {
+      "name_ja": "ドリームクロス"
+    },
+    {
+      "name_ja": "トレードハウス"
+    },
+    {
+      "name_ja": "ＫｎｏｗｌｅｄｇｅＫｎａｃｋ"
+    },
+    {
+      "name_ja": "ニック"
+    },
+    {
+      "name_ja": "日本財託"
+    },
+    {
+      "name_ja": "日本総合保険"
+    },
+    {
+      "name_ja": "日本ファイナンシャルプランニング"
+    },
+    {
+      "name_ja": "日本リスクコンサルティング"
+    },
+    {
+      "name_ja": "ニュース証券"
+    },
+    {
+      "name_ja": "ニューリーフ"
+    },
+    {
+      "name_ja": "ＮＥＸＵＳ"
+    },
+    {
+      "name_ja": "ＮｅｘｔＳｏｌｕｔｉｏｎ"
+    },
+    {
+      "name_ja": "ノーダス"
+    },
+    {
+      "name_ja": "ハートリンクコンサルティング"
+    },
+    {
+      "name_ja": "ハイナン保険サービス"
+    },
+    {
+      "name_ja": "長谷工リンクス"
+    },
+    {
+      "name_ja": "はなまる"
+    },
+    {
+      "name_ja": "パブレ"
+    },
+    {
+      "name_ja": "浜松ファイナンシャルプランナーズ事務所"
+    },
+    {
+      "name_ja": "バリュー・エージェント"
+    },
+    {
+      "name_ja": "バリューアドバイザーズ"
+    },
+    {
+      "name_ja": "バリューマネジメント"
+    },
+    {
+      "name_ja": "パワーリンク"
+    },
+    {
+      "name_ja": "ＰＩＳほけんの樹"
+    },
+    {
+      "name_ja": "ＰＳＴコンサルティング"
+    },
+    {
+      "name_ja": "PGフレンドリー・パートナーズ"
+    },
+    {
+      "name_ja": "びーばー"
+    },
+    {
+      "name_ja": "ひさし"
+    },
+    {
+      "name_ja": "ビジコンネクスト"
+    },
+    {
+      "name_ja": "ヒューマン＆アソシエイツ"
+    },
+    {
+      "name_ja": "ヒューマンネットワーク"
+    },
+    {
+      "name_ja": "ヒューマンライツ"
+    },
+    {
+      "name_ja": "ビルド・バリュー"
+    },
+    {
+      "name_ja": "ファーストパートナーズ"
+    },
+    {
+      "name_ja": "ファーラウト"
+    },
+    {
+      "name_ja": "ファイナンシャル・ジャパン"
+    },
+    {
+      "name_ja": "ファイナンシャルアライアンス"
+    },
+    {
+      "name_ja": "ファイナンシャルスタンダード"
+    },
+    {
+      "name_ja": "ファイナンス・クレジット"
+    },
+    {
+      "name_ja": "ＦＩＮＥＳＴ"
+    },
+    {
+      "name_ja": "ファイブクルー"
+    },
+    {
+      "name_ja": "ＦｉｖｅＲｉｎｇｓ"
+    },
+    {
+      "name_ja": "ＶＳＧインシュアランス"
+    },
+    {
+      "name_ja": "ＦｉｎＣｕｂｅ"
+    },
+    {
+      "name_ja": "フィンテック"
+    },
+    {
+      "name_ja": "Ｆｉｎｌｉｆｅ"
+    },
+    {
+      "name_ja": "Ｆａｉｔｈ"
+    },
+    {
+      "name_ja": "フォーシア"
+    },
+    {
+      "name_ja": "４００Ｆ"
+    },
+    {
+      "name_ja": "フォーリンク"
+    },
+    {
+      "name_ja": "フォウルズ"
+    },
+    {
+      "name_ja": "福岡医師協同組合"
+    },
+    {
+      "name_ja": "福島ファイナンシャルプランナーズ"
+    },
+    {
+      "name_ja": "ＢｒｉｇｈｔＲｅａｃｈ"
+    },
+    {
+      "name_ja": "プランニングオフィス"
+    },
+    {
+      "name_ja": "Ｂｒｉｄｇｅ"
+    },
+    {
+      "name_ja": "ＰＲＥＶＥＮＴＳ"
+    },
+    {
+      "name_ja": "プルーデント・ジャパン・ファイナンシャル・サービス"
+    },
+    {
+      "name_ja": "ＢｌｕｅＦｌａｍｅ"
+    },
+    {
+      "name_ja": "ふれあい保険工房"
+    },
+    {
+      "name_ja": "ブロードマインド"
+    },
+    {
+      "name_ja": "ベストプランコム"
+    },
+    {
+      "name_ja": "ＢｅｓｔＯｎｅ"
+    },
+    {
+      "name_ja": "ベスパ"
+    },
+    {
+      "name_ja": "ペレグリン・ラディアント・アーク"
+    },
+    {
+      "name_ja": "ｂｅｎｃｈ．"
+    },
+    {
+      "name_ja": "保研オフィス"
+    },
+    {
+      "name_ja": "ほけんショップアイ"
+    },
+    {
+      "name_ja": "保険ステーション"
+    },
+    {
+      "name_ja": "ほけん選科"
+    },
+    {
+      "name_ja": "保険相談ＦＰセンター"
+    },
+    {
+      "name_ja": "保険デザイン"
+    },
+    {
+      "name_ja": "保険デザインパートナーズ"
+    },
+    {
+      "name_ja": "ほけんドットコム"
+    },
+    {
+      "name_ja": "保険のアルプス"
+    },
+    {
+      "name_ja": "ほけんのぜんぶ"
+    },
+    {
+      "name_ja": "ほけんのパートナーズ"
+    },
+    {
+      "name_ja": "ほけんの１１０番"
+    },
+    {
+      "name_ja": "ほけんの窓口グループ"
+    },
+    {
+      "name_ja": "保険パートナー"
+    },
+    {
+      "name_ja": "保険ビルド"
+    },
+    {
+      "name_ja": "ボス・ブラザーズ・マネージメント"
+    },
+    {
+      "name_ja": "Ｖｏｌａｎｔｅ"
+    },
+    {
+      "name_ja": "ホロスプランニング"
+    },
+    {
+      "name_ja": "ホンダカーズ中央神奈川"
+    },
+    {
+      "name_ja": "ホンダ開発株式会社"
+    },
+    {
+      "name_ja": "ＢｏｎｄＬｉｆｅ"
+    },
+    {
+      "name_ja": "ＭＹパートナーズ"
+    },
+    {
+      "name_ja": "町田ガス"
+    },
+    {
+      "name_ja": "松本ほけんセンター"
+    },
+    {
+      "name_ja": "マナ・コンサルティング"
+    },
+    {
+      "name_ja": "マネースマート"
+    },
+    {
+      "name_ja": "マネーテーラー"
+    },
+    {
+      "name_ja": "マネーフォワードホーム"
+    },
+    {
+      "name_ja": "Ｍａｒｉｎａ＆Ｌｕｃａ"
+    },
+    {
+      "name_ja": "マル・インシュランス"
+    },
+    {
+      "name_ja": "丸紅セーフネット"
+    },
+    {
+      "name_ja": "三井住友カード"
+    },
+    {
+      "name_ja": "みなさまの保険"
+    },
+    {
+      "name_ja": "みなさまの保険．ＣＯＭ"
+    },
+    {
+      "name_ja": "Ｍｉｒｕｌｅ"
+    },
+    {
+      "name_ja": "メイワライフリード"
+    },
+    {
+      "name_ja": "メテオドリーム"
+    },
+    {
+      "name_ja": "Ｍｅｒｋｕｒ"
+    },
+    {
+      "name_ja": "モニクルフィナンシャル"
+    },
+    {
+      "name_ja": "杜の都エージェント"
+    },
+    {
+      "name_ja": "ヤマダデンキ"
+    },
+    {
+      "name_ja": "ＹＯＵ"
+    },
+    {
+      "name_ja": "ＵＢＧコンサルティング"
+    },
+    {
+      "name_ja": "豊サービス"
+    },
+    {
+      "name_ja": "ユナイテッド・インシュアランス"
+    },
+    {
+      "name_ja": "ＵＮＩＴＥＤＰＬＡＮＮＩＮＧ"
+    },
+    {
+      "name_ja": "ユニバーサルライフ"
+    },
+    {
+      "name_ja": "ＲＩＳＥ"
+    },
+    {
+      "name_ja": "ライフアシスト"
+    },
+    {
+      "name_ja": "ライフアソシエーション"
+    },
+    {
+      "name_ja": "ライフキュア"
+    },
+    {
+      "name_ja": "ライフサポート"
+    },
+    {
+      "name_ja": "ライフサポート"
+    },
+    {
+      "name_ja": "ＬＩＦＥ‐Ｄ"
+    },
+    {
+      "name_ja": "ライフデザインパートナーズ"
+    },
+    {
+      "name_ja": "ライフバンク"
+    },
+    {
+      "name_ja": "LifeFactory"
+    },
+    {
+      "name_ja": "ライフプラザ中央"
+    },
+    {
+      "name_ja": "ライフプラザNEO"
+    },
+    {
+      "name_ja": "ライフプラザパートナーズ"
+    },
+    {
+      "name_ja": "ＬＩＦＥＢＯＸ"
+    },
+    {
+      "name_ja": "ライフマイスター"
+    },
+    {
+      "name_ja": "ライフマネジメントサポート"
+    },
+    {
+      "name_ja": "楽天インシュアランスプランニング"
+    },
+    {
+      "name_ja": "リードサクセス"
+    },
+    {
+      "name_ja": "リアライフ"
+    },
+    {
+      "name_ja": "ＲＥＡＬＬＩＦＥ"
+    },
+    {
+      "name_ja": "リクルート"
+    },
+    {
+      "name_ja": "リスクマネジメント･ラボラトリー"
+    },
+    {
+      "name_ja": "ＬＩＴＡＬＩＣＯライフ"
+    },
+    {
+      "name_ja": "リブラス"
+    },
+    {
+      "name_ja": "緑翠園"
+    },
+    {
+      "name_ja": "リライアブルエージェンシー"
+    },
+    {
+      "name_ja": "リロ・フィナンシャル・ソリューションズ"
+    },
+    {
+      "name_ja": "Ｌｉｎｋ"
+    },
+    {
+      "name_ja": "ルチア"
+    },
+    {
+      "name_ja": "レイシャス"
+    },
+    {
+      "name_ja": "ワールド・ワン・フィナンシャルグループ"
+    },
+    {
+      "name_ja": "ワールドハーツ"
+    },
+    {
+      "name_ja": "ワールドフィナンシャル"
+    },
+    {
+      "name_ja": "ＹＮＣ"
+    },
+    {
+      "name_ja": "ワイズトラスト"
+    },
+    {
+      "name_ja": "ワイズメンコーポレーション"
+    },
+    {
+      "name_ja": "ワオナス"
+    },
+    {
+      "name_ja": "ワシダ"
+    },
+    {
+      "name_ja": "ワンズライフ"
+    },
+    {
+      "name_ja": "ワンダフルライフ"
+    },
+    {
+      "name_ja": "ＯｎｅＬｉｆｅ"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-16",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  },
+  "on_sale_date_source": {
+    "url": "https://www.d-frontier-life.co.jp/corporate/release/detail.html?id=1032",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/dfl/pages/release_1032_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  }
+}

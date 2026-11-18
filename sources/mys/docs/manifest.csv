@@ -1,0 +1,3 @@
+product_id,name,title_ja,url,file,bytes,sha256,retrieved_date
+mys-fc-everybody-plus,brochure_mufg_bank,デジタルブック／PDF（三菱UFJ銀行用）,https://www.meijiyasuda.co.jp/window/files/pdf/dbook26_apr_fc-everybodyplus_btmu.pdf,sources/mys/docs/mys-fc-everybody-plus/brochure_mufg_bank_2026-11-17.pdf,6002783,d50b34a55c9b2a21e6acaa508e42be0924fcc112f2c3407fd0eba0dc90a5d361,2026-11-17
+mys-fc-everybody-plus,brochure_unyou_balance,デジタルブック／PDF（運用重視・バランス）,https://www.meijiyasuda.co.jp/window/files/pdf/dbook26_apr_fc-everybodyplus_un.pdf,sources/mys/docs/mys-fc-everybody-plus/brochure_unyou_balance_2026-11-17.pdf,4880091,e9cebab06ed707ccaabc46a564f6ae7b089daa82e634b18e7ae0a1f5d48a8e2c,2026-11-17

@@ -1,0 +1,30 @@
+[
+ {
+  "name": "mare-brochure",
+  "js": "IRV.app.go('product',{id:'msp-mare-3'}); document.querySelector('[data-tab=docs]').click(); new Promise(r=>{const t0=Date.now(); const iv=setInterval(()=>{const pv=document.querySelector('.pv'); const st=pv&&pv._pv?pv._pv():{}; if((st.pages>0&&st.rendered>0)||Date.now()-t0>40000){clearInterval(iv); setTimeout(()=>r({secs:(Date.now()-t0)/1000, state:pv._pv(), list:[...document.querySelectorAll('.docpick')].map(b=>b.innerText.replace(/\\s+/g,' ')), rail:[...document.querySelectorAll('.pv-railtabs .tg')].map(b=>b.textContent), railItems:document.querySelectorAll('.pv-ol,.pv-thumb').length}),1500)}},300)})"
+ },
+ {
+  "name": "mare-page-zoom",
+  "js": "var pv=document.querySelector('.pv'); var w=(ms)=>new Promise(r=>setTimeout(r,ms)); (async()=>{ const before=pv._pv(); document.querySelector('[data-pv=next]').click(); await w(500); document.querySelector('[data-pv=next]').click(); await w(500); document.dispatchEvent(new KeyboardEvent('keydown',{key:'PageDown',bubbles:true})); await w(500); const afterNav=pv._pv(); document.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true})); await w(500); const afterLeft=pv._pv().page; document.querySelector('[data-pv=in]').click(); await w(400); document.dispatchEvent(new KeyboardEvent('keydown',{key:'+',bubbles:true})); await w(800); const zoomed=pv._pv(); document.querySelector('[data-pv=fit]').click(); await w(1000); const fitPage=pv._pv(); document.querySelector('[data-pv=width]').click(); await w(1000); const pin=document.querySelector('.pv-page'); pin.value='20'; pin.dispatchEvent(new Event('change')); await w(1200); return {before, afterNav, afterLeft, zoomed, fitPage, fitWidthThenPage20:pv._pv(), zoomLabel:document.querySelector('.pv-zoom').textContent}; })()"
+ },
+ {
+  "name": "mare-search",
+  "js": "var pv=document.querySelector('.pv'); document.dispatchEvent(new KeyboardEvent('keydown',{key:'f',metaKey:true,bubbles:true})); var focused=document.activeElement===document.querySelector('.pv-find'); var f=document.querySelector('.pv-find'); f.value='積立利率'; f.dispatchEvent(new Event('input')); new Promise(r=>{const t0=Date.now(); const iv=setInterval(()=>{const c=pv._pv().find; if((c&&/\\d+ \\/ \\d+/.test(c)&&Date.now()-t0>4000)||c==='No match'&&Date.now()-t0>20000||Date.now()-t0>45000){clearInterval(iv); const first=pv._pv(); document.querySelector('[data-pv=fnext]').click(); setTimeout(()=>r({focusedByCmdF:focused, first, afterNext:pv._pv(), highlights:document.querySelectorAll('.pv-scroll .highlight').length}),1500)}},400)})"
+ },
+ {
+  "name": "mare-remember",
+  "js": "var pg=document.querySelector('.pv')._pv().page; document.querySelector('[data-doc=\"1\"]').click(); new Promise(r=>{const t0=Date.now(); const iv=setInterval(()=>{const pv=document.querySelector('.pv'); const st=pv&&pv._pv?pv._pv():{}; if((st.pages>0&&st.rendered>0)||Date.now()-t0>30000){clearInterval(iv); setTimeout(()=>{const pol=pv._pv(); document.querySelector('[data-doc=\"0\"]').click(); setTimeout(()=>r({brochurePageBefore:pg, policyConditions:pol, brochurePageAfterReturn:document.querySelector('.pv')._pv().page}),5000)},1000)}},300)})"
+ },
+ {
+  "name": "policy-conditions",
+  "js": "document.querySelector('[data-doc=\"1\"]').click(); new Promise(r=>setTimeout(()=>{const pv=document.querySelector('.pv'); r({state:pv._pv(), rail:[...document.querySelectorAll('.pv-railtabs .tg')].map(b=>b.textContent), outlineItems:document.querySelectorAll('.pv-ol').length})},5000))"
+ },
+ {
+  "name": "nwl-doc",
+  "js": "IRV.app.go('product',{id:'nwl-yuyu-jikan-advance-2'}); document.querySelector('[data-tab=docs]').click(); new Promise(r=>{const t0=Date.now(); const iv=setInterval(()=>{const pv=document.querySelector('.pv'); const st=pv&&pv._pv?pv._pv():{}; if((st.pages>0&&st.rendered>0)||Date.now()-t0>30000){clearInterval(iv); const f=document.querySelector('.pv-find'); f.value='年金'; f.dispatchEvent(new Event('input')); setTimeout(()=>r({state:pv._pv(), list:[...document.querySelectorAll('.docpick')].map(b=>b.innerText.replace(/\\s+/g,' '))}),6000)}},300)})"
+ },
+ {
+  "name": "ipc-guard",
+  "js": "Promise.all(['../outside.pdf','/etc/hosts','/path/to/japan-insurance-research/app/package.json','sources/dfl/rates/history_hendo_choice_19_05_2026-11-16.html','data/products/msp-mare-3.json','sources/msp/docs/msp-mare-3/../../../../app/package.json','sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf'].map(p=>window.api.readDocument(p).then(r=>p+' -> '+(r.ok?'OK '+r.data.length+' bytes':'refused: '+r.error)))).then(a=>Promise.all([window.api.pdfAsset('cMapUrl','../../../package.json'),window.api.pdfAsset('nope','x'),window.api.pdfAsset('cMapUrl','UniJIS-UTF16-H.bcmap')]).then(b=>a.concat(b.map(x=>x?('asset '+x.length+' bytes'):'asset refused'))))"
+ }
+]

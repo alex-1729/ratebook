@@ -1,0 +1,5 @@
+product_id,metric,plan,currency,term_years,age_band,sex,effective_date,value_pct,status,source_url,retrieved_date,snapshot,via_wayback
+nli-longdream-gold3,payment_rate,uketoru_yen_const,AUD,10,15-75,,2026-11-16,3.70,published,https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z,2026-11-17,sources/nli/rates/rate_current_2026-11-17.html,false
+nli-longdream-gold3,payment_rate,uketoru_yen_const,AUD,10,76-90,,2026-11-16,3.35,published,https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z,2026-11-17,sources/nli/rates/rate_current_2026-11-17.html,false
+nli-longdream-gold3,payment_rate,uketoru_yen_const,USD,10,15-75,,2026-11-16,3.49,published,https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z,2026-11-17,sources/nli/rates/rate_current_2026-11-17.html,false
+nli-longdream-gold3,payment_rate,uketoru_yen_const,USD,10,76-90,,2026-11-16,3.08,published,https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z,2026-11-17,sources/nli/rates/rate_current_2026-11-17.html,false

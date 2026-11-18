@@ -1,0 +1,18 @@
+[
+ {
+  "name": "brochure-open",
+  "js": "window.__ask = window.__ask || ((q, maxMs) => new Promise(res => { IRV.chat.type(q, true); const t0 = Date.now(); let last = '', stable = 0; const iv = setInterval(() => { const s = IRV.chat.screenText(); const busy = /esc to interrupt/i.test(s.slice(-600)); if (s === last && !busy) stable += 1; else stable = 0; last = s; const el = Date.now() - t0; if ((el > 15000 && stable >= 6) || el > maxMs) { clearInterval(iv); res({ secs: Math.round(el / 1000), text: s.replace(/\\n{3,}/g, '\\n\\n').slice(-2600) }); } }, 1500); })); IRV.app.go('product',{id:'msp-mare-3'}); document.querySelector('[data-tab=docs]').click(); IRV.chat.open(); new Promise(r=>setTimeout(()=>r(IRV.chatView().line),14000))"
+ },
+ {
+  "name": "q-brochure",
+  "js": "__ask('In this brochure, what is the minimum single premium for the USD accumulation course, and on which page does it say so? Quote the Japanese.', 420000)"
+ },
+ {
+  "name": "cite-jump",
+  "js": "var cs=IRV.chat.cites(); var b=document.querySelector('#chat-cards .cite'); var want=b?b.textContent:null; if(b) b.click(); new Promise(r=>setTimeout(()=>{const pv=document.querySelector('.pv'); r({cites:cs, clicked:want, viewer: pv&&pv._pv?pv._pv():null, view:IRV.chatView().line})},6000))"
+ },
+ {
+  "name": "q-wayback",
+  "js": "IRV.app.go('product',{id:'nwl-yuyu-jikan-advance-2'}); new Promise(r=>setTimeout(r,1500)).then(()=>__ask('For this product, what does the USD policy conditions document say the name of the policy form is? One line, with the page.', 240000))"
+ }
+]

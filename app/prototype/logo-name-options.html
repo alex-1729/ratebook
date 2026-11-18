@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PROTOTYPE: Ratebook logo options</title>
+<!--
+  THROWAWAY PROTOTYPE. Not part of the app. Double-click to open.
+  Name decided: Ratebook. Question now: which mark?
+  Switch options with the bottom bar, the arrow keys, or ?v=<id> in the URL.
+-->
+<style>
+  :root {
+    --paper: #fbf8f2; --ink: #1c1b19; --ink2: #45423c; --mute: #6d685e;
+    --rule: #d9d2c3; --wash: #f3eee3; --accent: #a0422a; --card: #fffdf8;
+    --serif: "Iowan Old Style", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
+    --sans: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+  }
+  :root[data-theme="dark"] {
+    --paper: #171512; --ink: #ece6da; --ink2: #cfc8ba; --mute: #a29b8d;
+    --rule: #3d3931; --wash: #211e1a; --accent: #d9765a; --card: #1e1b17;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 var(--sans); padding: 28px 16px 110px; }
+  main { max-width: 1040px; margin: 0 auto; }
+  .banner { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font: 600 28px/1.2 var(--serif); margin: 6px 0 4px; }
+  p.lead { color: var(--mute); margin: 0 0 24px; max-width: 62ch; }
+  h2 { font: 600 13px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--mute); margin: 34px 0 12px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .tile { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 12px 12px; text-align: center; cursor: pointer; color: inherit; font: inherit; }
+  .tile:hover { border-color: var(--mute); }
+  .tile[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .tile svg { width: 72px; height: 72px; display: block; margin: 0 auto 10px; }
+  .tile b { display: block; font: 600 16px var(--serif); }
+  .tile span { font-size: 12px; color: var(--mute); }
+
+  .detail { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 28px; align-items: start; }
+  @media (max-width: 760px) { .detail { grid-template-columns: 1fr; } }
+  .hero { background: var(--wash); border: 1px solid var(--rule); border-radius: 16px; padding: 32px 20px; text-align: center; }
+  .hero svg { width: 200px; height: 200px; filter: drop-shadow(0 8px 14px rgba(0,0,0,.22)); }
+  .wordmark { font: 600 40px/1.1 var(--serif); margin: 18px 0 2px; letter-spacing: -.01em; }
+  .wordmark small { font: 400 20px var(--serif); color: var(--mute); margin-left: 8px; }
+  .tag { color: var(--mute); }
+  dl { margin: 0; display: grid; grid-template-columns: 92px 1fr; gap: 8px 14px; }
+  dt { color: var(--mute); font-size: 13px; padding-top: 1px; }
+  dd { margin: 0; }
+
+  .sizes { display: flex; align-items: flex-end; gap: 22px; flex-wrap: wrap; }
+  .sizes figure { margin: 0; text-align: center; font-size: 11px; color: var(--mute); }
+  .sizes svg { display: block; margin: 0 auto 4px; }
+
+  .window { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
+  .titlebar { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-bottom: 1px solid var(--rule); background: var(--wash); font-size: 13px; }
+  .dots { display: flex; gap: 6px; margin-right: 6px; }
+  .dots i { width: 11px; height: 11px; border-radius: 50%; background: var(--rule); }
+  .titlebar svg { width: 18px; height: 18px; }
+  .titlebar b { font: 600 14px var(--serif); }
+  .titlebar nav { margin-left: auto; color: var(--mute); display: flex; gap: 14px; }
+  .window .body { padding: 18px 14px; color: var(--mute); font-size: 13px; }
+  .dock { display: inline-flex; gap: 10px; padding: 8px 12px; border-radius: 16px; background: var(--wash); border: 1px solid var(--rule); margin-top: 14px; }
+  .dock svg { width: 46px; height: 46px; }
+  .dock .ghost { width: 46px; height: 46px; border-radius: 11px; background: var(--rule); }
+
+  .bar { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); display: flex; align-items: center; gap: 6px; background: var(--ink); color: var(--paper); border-radius: 999px; padding: 6px 8px; box-shadow: 0 6px 20px rgba(0,0,0,.3); max-width: calc(100vw - 24px); }
+  .bar button { background: none; border: 0; color: inherit; font: 14px var(--sans); padding: 7px 12px; border-radius: 999px; cursor: pointer; }
+  .bar button:hover { background: rgba(128,128,128,.3); }
+  .bar output { min-width: 150px; text-align: center; font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<!-- Icon marks. Each draws in a 100x100 box using the theme-independent colours below. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="m-navy" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#20344f"/>
+      <path d="M18 70h16V54h16V62h14V36h16" fill="none" stroke="#fbf8f2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="80" cy="36" r="7" fill="#eb6834"/>
+    </symbol>
+    <symbol id="m-paper" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#fbf8f2"/>
+      <rect x=".75" y=".75" width="98.5" height="98.5" rx="21.5" fill="none" stroke="#d9d2c3" stroke-width="1.5"/>
+      <path d="M18 70h16V54h16V62h14V36h16" fill="none" stroke="#1c1b19" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="80" cy="36" r="7" fill="#a0422a"/>
+    </symbol>
+    <symbol id="m-seal" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#a0422a"/>
+      <rect x="11" y="11" width="78" height="78" rx="12" fill="none" stroke="#fbf8f2" stroke-width="3"/>
+      <path d="M24 68h13V55h13V61h12V40h12" fill="none" stroke="#fbf8f2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="74" cy="40" r="6" fill="#fbf8f2"/>
+    </symbol>
+    <symbol id="m-open" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#20344f"/>
+      <path d="M13 30q19-7 37 0v47q-18-7-37 0z M87 30q-19-7-37 0v47q18-7 37 0z" fill="#fbf8f2"/>
+      <path d="M50 30v47" stroke="#20344f" stroke-width="2"/>
+      <path d="M22 62h11V52h13V58h14V42h14" fill="none" stroke="#20344f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="74" cy="42" r="5.5" fill="#eb6834"/>
+    </symbol>
+    <symbol id="m-closed" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#f3eee3"/>
+      <path d="M59 80v15l5-5 5 5V80z" fill="#a0422a"/>
+      <rect x="24" y="14" width="52" height="68" rx="5" fill="#20344f"/>
+      <path d="M33 14v68" stroke="#fbf8f2" stroke-width="2" opacity=".35"/>
+      <path d="M40 60h8V50h9v6h7V38h5" fill="none" stroke="#fbf8f2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="69" cy="38" r="4.5" fill="#eb6834"/>
+    </symbol>
+    <symbol id="m-mono" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="#1c1b19"/>
+      <text x="45" y="74" text-anchor="middle" font-size="70" font-weight="700" fill="#fbf8f2" font-family="'Iowan Old Style',Georgia,serif">R</text>
+      <circle cx="78" cy="28" r="7" fill="#d9765a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <div class="banner">Throwaway prototype · not production</div>
+  <h1>Ratebook: logo options</h1>
+  <p class="lead">Name settled: Ratebook (was “Insurance Rates Viewer”). Six takes on the mark. Pick one to see it at icon sizes and in the window chrome. Nothing here is wired into the app.</p>
+
+  <div class="grid" id="grid"></div>
+
+  <h2>Selected</h2>
+  <div class="detail">
+    <div class="hero">
+      <svg id="heroIcon"><use/></svg>
+      <div class="wordmark" id="wordmark"></div>
+      <div class="tag" id="tag"></div>
+    </div>
+    <dl id="facts"></dl>
+  </div>
+
+  <h2>At icon sizes</h2>
+  <div class="sizes" id="sizes"></div>
+
+  <h2>In the app</h2>
+  <div class="window">
+    <div class="titlebar">
+      <span class="dots"><i></i><i></i><i></i></span>
+      <svg id="tbIcon"><use/></svg><b id="tbName"></b>
+      <nav><span>Products</span><span>Markets</span><span>News</span><span>Data</span></nav>
+    </div>
+    <div class="body">39 products · 12 insurers · rates as published</div>
+  </div>
+  <div class="dock"><span class="ghost"></span><span class="ghost"></span><svg id="dockIcon"><use/></svg><span class="ghost"></span></div>
+</main>
+
+<div class="bar">
+  <button id="prev" aria-label="Previous option">←</button>
+  <output id="label"></output>
+  <button id="next" aria-label="Next option">→</button>
+  <button id="theme">Dark</button>
+</div>
+
+<script>
+const OPTIONS = [
+  { id: "navy", name: "Navy step", mark: "White step line on navy, orange point for today's rate.",
+    pro: "Strongest contrast; reads at 16px; stands out in a dock.", con: "Navy and orange are not the app's own palette." },
+  { id: "paper", name: "Paper step", mark: "Same step line in ink on the app's paper colour, rust point.",
+    pro: "Exactly the app's palette; quiet and editorial.", con: "Pale tile fades on a light dock or taskbar." },
+  { id: "seal", name: "Rust seal", mark: "Step line inside a bordered rust seal.",
+    pro: "Uses the accent colour; feels like a stamp of record.", con: "Border eats space, so the line is thinner at small sizes." },
+  { id: "open", name: "Open book", mark: "Open book with the step line running across both pages.",
+    pro: "Shows both halves of the name: rate and book.", con: "Busiest mark; detail muddies below 32px." },
+  { id: "closed", name: "Bound book", mark: "Closed navy book with the step line on its cover and a rust bookmark.",
+    pro: "Object-like, friendly; bookmark adds the accent.", con: "Small line on the cover is lost at 16px; reads as a generic book." },
+  { id: "mono", name: "Monogram", mark: "Serif R on ink with a single rate point.",
+    pro: "Simplest; matches the serif headings in the app.", con: "Says nothing about rates; letter icons are forgettable." },
+];
+
+const $ = (id) => document.getElementById(id);
+const use = (id) => `<use href="#m-${id}"/>`;
+let current = Math.max(0, OPTIONS.findIndex(o => o.id === new URLSearchParams(location.search).get("v")));
+
+$("grid").innerHTML = OPTIONS.map((o, i) =>
+  `<button class="tile" data-i="${i}"><svg>${use(o.id)}</svg><b>${o.name}</b></button>`).join("");
+$("grid").onclick = (e) => { const t = e.target.closest(".tile"); if (t) show(+t.dataset.i); };
+
+function show(i) {
+  current = (i + OPTIONS.length) % OPTIONS.length;
+  const o = OPTIONS[current];
+  document.querySelectorAll(".tile").forEach((t, n) => t.setAttribute("aria-pressed", n === current));
+  for (const id of ["heroIcon", "tbIcon", "dockIcon"]) $(id).innerHTML = use(o.id);
+  $("wordmark").textContent = "Ratebook";
+  $("tag").textContent = "Japan savings-insurance rates over time";
+  $("tbName").textContent = "Ratebook";
+  $("facts").innerHTML = [["Variant", o.name], ["Mark", o.mark], ["For", o.pro], ["Against", o.con]]
+    .map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  $("sizes").innerHTML = [128, 64, 32, 16].map(s =>
+    `<figure><svg width="${s}" height="${s}">${use(o.id)}</svg>${s}px</figure>`).join("");
+  $("label").textContent = `${current + 1}/${OPTIONS.length} · ${o.name}`;
+  try { history.replaceState(null, "", "?v=" + o.id); } catch {}
+}
+
+$("prev").onclick = () => show(current - 1);
+$("next").onclick = () => show(current + 1);
+addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") show(current - 1); if (e.key === "ArrowRight") show(current + 1); });
+
+const root = document.documentElement;
+function setTheme(t) { root.dataset.theme = t; $("theme").textContent = t === "dark" ? "Light" : "Dark"; }
+setTheme(matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+$("theme").onclick = () => setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+
+show(current);
+</script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+{
+  "id": "nli-longdream-gold3",
+  "insurer_id": "nli",
+  "candidate": true,
+  "name_ja": "ロングドリームＧＯＬＤ３",
+  "name_en": "Long Dream GOLD 3",
+  "policy_name_ja": "ニッセイ指定通貨建積立利率変動型一時払終身保険（米ドル建・豪ドル建）",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "on_sale_not_later_than": "2022-04-01",
+  "on_sale_not_later_than_source": {
+    "url": "https://www.nissay.co.jp/kojin/shohin/madohan/shohindouga_hp.html",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/nli/pages/nissay_shohindouga_2026-11-17.html"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/nli/pages/live_rate_current_2026-11-17.html"
+  },
+  "guarantee_terms_years": [
+    10
+  ],
+  "rate_page": "rate_current",
+  "editions": [],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "payment_rate": "定期支払率（うけとるタイプのみ）",
+    "net_yield": "【ご参考】実質的な利回り（年複利）"
+  },
+  "notes": [
+    "Sold only through financial institutions (金融機関窓口販売). The customer picks ふやすタイプ (accumulate) or うけとるタイプ (receive regular payments) at application.",
+    "The rate page shows only the current half-month 契約日 range (1st-15th, 16th-end) and is overwritten; history accumulates only by re-running scripts/nli.py. effective_date is the first day of the 契約日 range.",
+    "積立利率 is guaranteed for 10 years (term_years = 10 in the CSVs) and is reset at each 10th policy anniversary using the contract-date age. Age bands 15-75 and 76-90 are ages at the contract date. Reset floor 0.01%.",
+    "ふやすタイプ has two plans: 円建死亡保険金特約 added (rider; available for 5 years from the contract date at ages 15-75, 2 years at 76-90, after which the no-rider rate applies) or not added. Rider reduces the 積立利率 for the 10-year guarantee period shown.",
+    "うけとるタイプ has two payout plans, 指定通貨で10年一定 and 円で10年一定; payment_rate is the 定期支払率 (for the specified-currency plan it equals the 積立利率; for the yen plan it is the 円建定期支払率). The yen plan's 実質的な利回り uses the 円入金レート (TTM+50銭) shown on the page, so it moves with the exchange rate.",
+    "実質的な利回り is truncated to 2 decimals by the insurer, is a foreign-currency yield, assumes surrender at the 10th anniversary and excludes dividends.",
+    "has_mva is true: surrender values reflect 市場金利調整 (market interest adjustment) and a 解約控除 (4.0% in year 1 falling by 0.4 points a year to 0.4% in year 10, none from year 10). The MVA formula and any published MVA rate are not collected.",
+    "Cells shown as － (not offered) are recorded as not_offered; cells shown as ＊ (not yet determined) are not recorded. All 40 cells of the 2026-11-16 period were published.",
+    "After the 10-year period the policy can move to のこすコース or つかうコース (a 5/10/15-year fixed annuity with a 0.290/0.230/0.151% annual cost); the rate applied at that move is 'determined from market interest levels' and is not published, so it is not collected.",
+    "Exact launch date not established (see the bound note). The product page footer 登録 26/4/1 is a material revision date, not a launch date. The Wayback index lists captures of the rate page from 2019-08 to 2023-03, but the archive refused all automated requests from this network (HTTP 429, then connection refused) on 2026-11-17, so none could be read; the 2019-08 capture is a maintenance notice that redirects to /kojin/shohin/madohan/riritsu.html. Run `python3 scripts/nli.py --wayback` from another network or later to ingest them. Whether those captures cover GOLD3 or a predecessor is unverified.",
+    "The distributor list (お取扱金融機関一覧) was as at 2026-11-16 and is grouped by type. Bank-specific product names were not seen.",
+    "Documents (2026-11-17): the brochure (契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット, 2025年10月版; it is also the contract summary and important-information document) and the ご契約のしおり―定款・約款 PDF (2025年10月版, search code 0499011006 as printed on the brochure cover) are downloaded. The しおり is hosted on inscloud.jp, the document service the insurer's しおり index page (https://www.nissay.co.jp/kojin/shohin/madohan/shiori/) links to; the 法人用 (corporate) edition and older editions listed there are not collected.",
+    "Plan names shortened 2026-11-17: the receive plans pay a regular payment (定期支払金) held level for 10 years in the specified currency or in yen.",
+    "On sale not later than 2022-04-01 (bound only): Nippon Life's product-video page lists 「ロングドリームＧＯＬＤ３（2022年4月1日～2025年3月31日）」 among products no longer offered, beside the current version (from 2025-04-01). That is a version period, not a stated launch; GOLD3 may have started earlier. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Only one rate set is held, for the period starting 16 November 2026; the insurer overwrites its page every half-month.",
+    "No earlier history is available, as archived copies could not be read; whether they cover this product or a predecessor is unknown.",
+    "The rate is guaranteed for 10 years and then reset; the rate applied at a later switch of course is not published.",
+    "The insurer's yield figure for the yen payout plan depends on the exchange rate, which is not collected.",
+    "The net yield equals the crediting rate only for the accumulate plan without the rider, as the insurer prints it; the other plans' yields differ.",
+    "Launch date not established; an earlier version was on sale from 1 April 2022. The market value adjustment formula is not collected."
+  ],
+  "pages": [
+    {
+      "name": "window_list",
+      "url": "https://www.nissay.co.jp/kojin/shohin/ichiran/madohan.html"
+    },
+    {
+      "name": "product",
+      "url": "https://www.nissay.co.jp/kojin/shohin/madohan/longdreamgold3/"
+    },
+    {
+      "name": "rate_current",
+      "url": "https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z"
+    },
+    {
+      "name": "exchange_rate",
+      "url": "https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S007Z"
+    },
+    {
+      "name": "distributors",
+      "url": "https://www.nissay.co.jp/kojin/shohin/madohan/longdreamgold3/shop.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "fuyasu_rider",
+      "plan_ja": "ふやすタイプ 円建死亡保険金特約を付加する",
+      "plan_en": "Accumulate, JPY death-benefit rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__crediting_rate__fuyasu_rider.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "fuyasu_no_rider",
+      "plan_ja": "ふやすタイプ 円建死亡保険金特約を付加しない",
+      "plan_en": "Accumulate, no rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__crediting_rate__fuyasu_no_rider.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "uketoru_fx_const",
+      "plan_ja": "うけとるタイプ 定期支払金を指定通貨で10年一定",
+      "plan_en": "Receive, level payments in currency",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__crediting_rate__uketoru_fx_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "uketoru_yen_const",
+      "plan_ja": "うけとるタイプ 定期支払金を円で10年一定",
+      "plan_en": "Receive, level payments in yen",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__crediting_rate__uketoru_yen_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    },
+    {
+      "metric": "payment_rate",
+      "plan": "uketoru_fx_const",
+      "plan_ja": "うけとるタイプ 定期支払金を指定通貨で10年一定",
+      "plan_en": "Receive, level payments in currency",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__payment_rate__uketoru_fx_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    },
+    {
+      "metric": "payment_rate",
+      "plan": "uketoru_yen_const",
+      "plan_ja": "うけとるタイプ 定期支払金を円で10年一定",
+      "plan_en": "Receive, level payments in yen",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__payment_rate__uketoru_yen_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fuyasu_rider",
+      "plan_ja": "ふやすタイプ 円建死亡保険金特約を付加する",
+      "plan_en": "Accumulate, JPY death-benefit rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__net_yield__fuyasu_rider.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fuyasu_no_rider",
+      "plan_ja": "ふやすタイプ 円建死亡保険金特約を付加しない",
+      "plan_en": "Accumulate, no rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__net_yield__fuyasu_no_rider.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "uketoru_fx_const",
+      "plan_ja": "うけとるタイプ 定期支払金を指定通貨で10年一定",
+      "plan_en": "Receive, level payments in currency",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__net_yield__uketoru_fx_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "uketoru_yen_const",
+      "plan_ja": "うけとるタイプ 定期支払金を円で10年一定",
+      "plan_en": "Receive, level payments in yen",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "nli-longdream-gold3__net_yield__uketoru_yen_const.csv",
+      "product_type": "whole_life_periodic_payout"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面 兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.nissay.co.jp/kojin/shohin/madohan/longdreamgold3/pdf/longdreamgold3.pdf",
+      "title_en": "Brochure and pre-contract disclosure",
+      "edition": "October 2025 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "2025年10月版 ロングドリームGOLD３「ご契約のしおり‐定款・約款」",
+      "variant": "general",
+      "url": "https://inscloud.jp/ak/04/pdf/0499011006.pdf",
+      "title_en": "Policy guide, articles and conditions",
+      "edition": "October 2025 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "今村証券",
+      "category_ja": "証券会社"
+    },
+    {
+      "name_ja": "岡三ビジネス＆テクノロジー証券",
+      "category_ja": "証券会社"
+    },
+    {
+      "name_ja": "三津井証券",
+      "category_ja": "証券会社"
+    },
+    {
+      "name_ja": "ウェルスマネジメント",
+      "category_ja": "証券会社"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "沖縄海邦銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "神奈川銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "西京銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "佐賀共栄銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "静岡中央銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "清水銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "常陽銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "但馬銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "筑波銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "東北銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "長崎銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "東日本銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "豊和銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "南日本銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "琉球銀行",
+      "category_ja": "地方銀行"
+    },
+    {
+      "name_ja": "青い森信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "旭川信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "大垣西濃信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "おかやま信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "帯広信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "金沢信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "きのくに信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "京都北都信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "呉信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "三条信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "しずおか焼津信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "瀬戸信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "高崎信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "多摩信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "知多信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "都留信用組合",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "東濃信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "豊田信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "はくさん信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "浜松いわた信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "播州信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "姫路信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "福岡ひびき信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "横浜信用金庫",
+      "category_ja": "信用金庫・信用組合"
+    },
+    {
+      "name_ja": "近畿労働金庫",
+      "category_ja": "労働金庫"
+    },
+    {
+      "name_ja": "イオン銀行",
+      "category_ja": "その他金融機関"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:nli-longdream-gold3; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

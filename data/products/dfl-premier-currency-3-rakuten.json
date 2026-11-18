@@ -1,0 +1,132 @@
+{
+  "id": "dfl-premier-currency-3-rakuten",
+  "insurer_id": "dfl",
+  "name_ja": "プレミアカレンシー３楽天銀行エディション",
+  "name_en": "Premier Currency 3 Rakuten Bank Edition",
+  "name_short_en": "Premier Currency 3 Rakuten",
+  "policy_name_ja": "積立利率変動型個人年金保険（19）（通貨指定型）",
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2026-06-15",
+  "on_sale_date_source": {
+    "url": "https://www.d-frontier-life.co.jp/corporate/release/detail.html?id=1078",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/dfl/pages/release_1078_2026-11-17.pdf"
+  },
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "site_product_code": "231",
+  "related_product_id": "dfl-premier-currency-3",
+  "notes": [
+    "Same policy form as プレミアカレンシー３ but with its own rate page and rates. Terms are 5 and 10 years only.",
+    "on_sale_date: the joint Rakuten Bank / Dai-ichi Frontier release (id=1078, dated 2026-06-15) says sales start on 2026-06-15 (2026年6月15日より…取扱いを開始).",
+    "No combined brochure is published for this edition, only the 契約締結前交付書面.",
+    "The insurer's history tables include a 2026-06-01 row, which predates the 2026-06-15 launch (its MVA values equal the parent product's), and a one-off 2026-06-15 row. Both are recorded as published; treat 2026-06-15 as the first period in which the product could be bought."
+  ],
+  "notes_en": [
+    "Same policy form as Premier Currency 3, with its own rates. Terms are 5 and 10 years only.",
+    "Launch date is the date of the insurer's announcement (15 June 2026).",
+    "The insurer's history table includes a 1 June 2026 row from before launch; treat 15 June as the first real period.",
+    "Maturity-focused plans (満期重視プラン, 生存保障重視型 in the policy terms) are filed as survival-weighted annuities: the death benefit and surrender value are capped at the premium times the death-benefit share, a charge for the death cover comes out of the account, and survivors get a larger maturity value. The Basic plan stays a fixed annuity."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "net_yield": "実質利回り",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_231",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=231"
+    },
+    {
+      "name": "rate_hendo_choice_19_03",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_19_03.html"
+    },
+    {
+      "name": "mva_hendo_choice_19_03_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_19_03_b.html?product=&agency="
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "hendo_choice_19_09",
+      "csv": "dfl-premier-currency-3-rakuten__crediting_rate__kihon.csv",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "hendo_choice_19_rimawari_09",
+      "csv": "dfl-premier-currency-3-rakuten__net_yield__kihon.csv",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "manki",
+      "product_type": "survival_weighted_annuity",
+      "plan_ja": "満期重視プラン",
+      "param": "hendo_choice_19_0a",
+      "csv": "dfl-premier-currency-3-rakuten__crediting_rate__manki.csv",
+      "plan_en": "Maturity-focused"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon",
+      "plan_ja": "基本プラン",
+      "param": "hendo_choice_19_09_b",
+      "csv": "dfl-premier-currency-3-rakuten__mva_rate__kihon.csv",
+      "plan_en": "Basic"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "manki",
+      "product_type": "survival_weighted_annuity",
+      "plan_ja": "満期重視プラン",
+      "param": "hendo_choice_19_0a_b",
+      "csv": "dfl-premier-currency-3-rakuten__mva_rate__manki.csv",
+      "plan_en": "Maturity-focused"
+    }
+  ],
+  "documents": [
+    {
+      "name": "pre_contract_disclosure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）",
+      "variant": "rakuten",
+      "url": "https://www.d-frontier-life.co.jp/products/pcurrency_3_rakuten/hanyo/hanyo_keiyaku.pdf",
+      "title_en": "Pre-contract disclosure"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "rakuten",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05640.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "楽天銀行"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-16",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

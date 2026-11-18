@@ -1,0 +1,18 @@
+{
+  "id": "taiju",
+  "name_ja": "大樹生命保険株式会社",
+  "name_en": "Taiju Life",
+  "site": "https://www.taiju-life.co.jp/",
+  "news_tier": "watch",
+  "group": "nippon",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.taiju-life.co.jp/corporate/news/",
+      "archive_url": "https://www.taiju-life.co.jp/corporate/news/{fy}.htm",
+      "parser": "taiju:parse"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "prudential",
+  "name_ja": "プルデンシャル生命保険株式会社",
+  "name_en": "Prudential Life (Japan)",
+  "news_tier": "full",
+  "group": "prudential",
+  "site": "https://www.prudential.co.jp/",
+  "news_sources": [
+    {
+      "key": "press",
+      "label": "Press releases",
+      "kind": "official",
+      "url": "https://www.prudential.co.jp/press/",
+      "archive_url": "https://www.prudential.co.jp/press/{year}",
+      "parser": "prudential:parse"
+    },
+    {
+      "key": "news",
+      "label": "News and notices",
+      "kind": "official",
+      "url": "https://www.prudential.co.jp/news/",
+      "archive_url": "https://www.prudential.co.jp/news/{year}",
+      "parser": "prudential:parse"
+    },
+    {
+      "key": "trust",
+      "label": "Trust-recovery page (apology, administrative action, compensation)",
+      "kind": "official",
+      "url": "https://www.prudential.co.jp/info_26/",
+      "parser": "prudential:parse_info"
+    }
+  ]
+}

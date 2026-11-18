@@ -1,0 +1,166 @@
+{
+  "id": "nwl-form-rate-linked-whole-life",
+  "insurer_id": "nwl",
+  "candidate": true,
+  "name_ja": "積立利率金利連動型終身保険",
+  "name_en": "Rate-linked whole life (discontinued)",
+  "name_short_en": "Rate-linked whole life",
+  "policy_name_ja": "積立利率金利連動型終身保険",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD"
+  ],
+  "has_mva": true,
+  "status": "discontinued",
+  "on_sale_date": "2010-08-13",
+  "off_sale_date": null,
+  "guarantee_terms_years": [
+    15
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "base_rate": "基準金利（積立利率の設定および市場価格調整率の計算に用いる）"
+  },
+  "rate_page": "gu_int_rate",
+  "pages": [
+    {
+      "name": "gu_int_rate",
+      "kind": "rate",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "live_file": "gu_int_rate"
+    },
+    {
+      "name": "gu_int_rate2_base",
+      "kind": "base",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate2_base.html",
+      "live_file": "gu_int_rate2_base",
+      "applies_to": "積立利率金利連動型終身保険（確定積立金区分型）; currency not printed, JPY inferred"
+    },
+    {
+      "name": "gu_int_rate3_base",
+      "kind": "base",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate3_base.html",
+      "live_file": "gu_int_rate3_base",
+      "applies_to": "積立利率金利連動型終身保険（米ドル建・確定積立金区分型）"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "base_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-form-rate-linked-whole-life__base_rate__all.csv",
+      "points": 20,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 6
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-form-rate-linked-whole-life__crediting_rate__all.csv",
+      "points": 28,
+      "first_effective": "2020-07-01",
+      "last_effective": "2024-04-01",
+      "effective_dates": 7
+    }
+  ],
+  "documents": [
+    {
+      "name": "shiori_web",
+      "title_ja": "WEB版ご契約のしおり・約款（積立利率金利連動型終身保険）",
+      "url": "https://www.nw-life.co.jp/shiori/g14/",
+      "title_en": "Policy guide and conditions, web edition (opens only from a connection in Japan)"
+    },
+    {
+      "name": "policy_conditions_1901",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型終身保険）2019年1月版",
+      "url": "https://www.nw-life.co.jp/shiori/g14/spwl_yen_1901.pdf",
+      "title_en": "Policy guide and conditions, PDF (Jan 2019 edition)",
+      "edition": "Jan 2019 edition"
+    },
+    {
+      "name": "policy_conditions_2004",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型終身保険）2020年4月版",
+      "url": "https://www.nw-life.co.jp/shiori/g14/spwl_yen_2004.pdf",
+      "title_en": "Policy guide and conditions, PDF (Apr 2020 edition)",
+      "edition": "Apr 2020 edition"
+    },
+    {
+      "name": "policy_conditions_2204",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型終身保険）2022年4月版",
+      "url": "https://www.nw-life.co.jp/shiori/g14/spwl_yen_2204.pdf",
+      "title_en": "Policy guide and conditions, PDF (Apr 2022 edition)",
+      "edition": "Apr 2022 edition"
+    }
+  ],
+  "distributors": [],
+  "editions": [],
+  "notes": [
+    "Keyed by POLICY FORM, not marketed name: the 積立利率 hub (gu_int_rate.html) publishes one rate section per policy form. Marketed names are mapped to forms from the insurer's own product pages where a current page names the form; none does for this withdrawn form (see the distributors note).",
+    "Rates come from the shared hub page and the form's 基準金利 page. Collected by scripts/nwl.py (Wayback captures via_wayback=true, hand-saved live copy of 2026-11-17 via_wayback=false). nw-life.co.jp returns HTTP 403 to automated requests, so the collector never contacts it. Each capture shows only the then-current half-month 適用期間; effective_date is its first day. Gaps between captures are not interpolated.",
+    "積立利率保証期間 is 15 years when the contract age (or renewal age) is 69 or under and lifetime from 70 (hub text); the rate is renewed at the end of the period. The hub marks the form 現在お取扱い中の商品はありません from the 2023-11-11 capture (see off_sale_between). The hub table prints no currency; JPY is assumed from the magnitude of the rates (0.05%-0.94%, 2020-2024), which is an inference. gu_int_rate3_base is stated as 米ドル建 (確定積立金区分型) and is stored as USD. Caveat (checker, 2026-11-17): the hub section for this form links no 基準金利 page (it refers MVA questions to the call centre); gu_int_rate2_base and gu_int_rate3_base are titled 積立利率金利連動型終身保険（確定積立金区分型） and （米ドル建・確定積立金区分型） and use age bands 51-75 / 76-85, unlike the hub table (50-69 ... 86-90). Their attribution to this form is by name only, and the USD currency of this product rests solely on gu_int_rate3_base.",
+    "Plan key encoding: term_years is 据置期間 where the table has one; age_band is 契約時の被保険者年齢 as printed (the live table, whatever its bands at the time); plan holds the other table dimensions (see plan_ja). Cells printed '-' are status not_offered.",
+    "has_mva is true because the form's 基準金利 page states that the 基準金利 is used for the 積立利率 and for the 市場価格調整率 on surrender; the MVA formula and loads are not collected.",
+    "Premium type: single premium is assumed from the task scope and from the しおり index, which groups only the 予定利率金利連動型外貨建個人年金保険 and 利率固定 外貨建個人年金保険 under 平準払; the product pages were not read to confirm the premium type of this form.",
+    "Withdrawn: the しおり index files this form under お取扱停止, and today's お取扱停止商品 page (sources/nwl/pages/live_end_product_list_2026-11-17.html) lists it under 「以下の商品は新規の販売を停止しております。」. Sales stopped between the Wayback captures of 2023-03-14 (rates for 2023-03-01 to 03-15, no stop line) and 2023-11-11 (「現在お取扱い中の商品はありません。」), recorded as off_sale_between; no dated notice exists, so off_sale_date stays null. The hub kept printing a crediting rate to the 2024-04-01 period, and the 基準金利 pages still publish one for existing contracts (2026-11-16).",
+    "Documents (2026-11-17): www.nw-life.co.jp answered HTTP 403 to one plain request (/shiori/g41/); not worked around. The Wayback capture of the index page of 2022-05-23 was read (sources/nwl/wayback/shiori_g14_20220523020614.html): it lists three PDFs, spwl_yen_2204.pdf (契約日：2022年4月1日~, newest), spwl_yen_2004.pdf (2020年4月1日~2022年3月31日) and spwl_yen_1901.pdf (2019年1月1日~2020年3月31日). The newest is recorded as a document; its edition comes from that 契約日 label and the file name, not from the PDF, which has no Wayback capture (CDX 2026-11-17). The two older PDFs were not checked because the archive then answered HTTP 429 to every request. The owner can save the PDFs from https://www.nw-life.co.jp/shiori/g14/ on a connection in Japan.",
+    "Launch date: 2010-08-13 (sales from 2010-08-16 per the text), from the news release (then MassMutual Life) on the new product 『積立利率金利連動型終身保険』. Withdrawal date: no release or page gives one; see off_sale_between (2023-03-14 to 2023-11-11). Retrieved 2026-11-17.",
+    "Distributors not listed: no current product page names this form (it is withdrawn). The only marketed name found in the insurer's releases is 『みらいの気持ち』 (Mizuho Bank, from 2015-07-01; 正式名称 積立利率金利連動型終身保険, release 2015-06-30), a historical entry not mapped from a current page.",
+    "Documents: PDFs downloaded 2026-11-17 from nw-life.co.jp (reachable from a Japan connection): all policy-conditions editions listed on the form's しおり page, and the brochures (契約締結前交付書面兼パンフレット) of the marketed products that the insurer's product pages tie to this form (not every marketed name for forms sold under many names). The shiori_web entry is the HTML index page, not a PDF."
+  ],
+  "notes_en": [
+    "The insurer publishes rates by policy form rather than by marketed name, and the names sold to customers are not yet matched to forms.",
+    "The product is discontinued: the insurer lists it as stopped, and archived copies show sales ended between March and November 2023; no dated notice exists.",
+    "Rate history starts on 16 December 2019, from archived copies only, with gaps between them.",
+    "The currency of the main rate table is not printed, and yen is inferred from the size of the rates.",
+    "No document could be downloaded: the insurer's site refuses connections from outside Japan and no archived copy of the policy conditions could be retrieved, so the policy-guide link opens only from a connection in Japan; the brochure and contract summary are not linked from the pages on file.",
+    "Launched in August 2010 (insurer's release); the withdrawal date is known only to within 2023. The premium type is assumed to be single premium."
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.nw-life.co.jp/news/release/pdf/n100813.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/nwl/pages/release_n100813_2026-11-17.pdf"
+  },
+  "off_sale_between": [
+    "2023-03-14",
+    "2023-11-11"
+  ],
+  "off_sale_between_sources": [
+    {
+      "url": "https://web.archive.org/web/20230314184200id_/https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "retrieved": "2023-03-14",
+      "snapshot": "sources/nwl/wayback/gu_int_rate_20230314184200.html",
+      "via_wayback": true,
+      "quote": "【適用期間】 2023年3月1日 ～ 3月15日",
+      "role": "still on sale: rates shown, no stop line"
+    },
+    {
+      "url": "https://web.archive.org/web/20231111171914id_/https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "retrieved": "2023-11-11",
+      "snapshot": "sources/nwl/wayback/gu_int_rate_20231111171914.html",
+      "via_wayback": true,
+      "quote": "現在お取扱い中の商品はありません。",
+      "role": "stop statement first seen"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:nwl-form-rate-linked-whole-life; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked. Where the page prints no currency, JPY is inferred from the size of the rates, as the product notes say; the snapshots cannot confirm it."
+  }
+}

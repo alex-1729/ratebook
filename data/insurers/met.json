@@ -1,0 +1,33 @@
+{
+  "id": "met",
+  "name_ja": "メットライフ生命保険株式会社",
+  "name_en": "MetLife Japan",
+  "name_short_en": "MetLife",
+  "news_tier": "full",
+  "group": "metlife",
+  "site": "https://www.metlife.co.jp/",
+  "rate_hub_url": "https://www.metlife.co.jp/lf1/ahplf1/cr_LIST.html",
+  "rate_update": "Semi-monthly (1st-15th and 16th-end of month) for the bank-window whole life products; some in-force-contract series are monthly. The pages are a React app that reads https://www.metlife.co.jp/annuityproduct/v1/applications/newpolicyinfo.",
+  "collector": "scripts/met.py",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates apply 1st-15th and 16th-end of month; some in-force series are monthly."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "Press releases",
+      "kind": "official",
+      "url": "https://www.metlife.co.jp/about/press/",
+      "parser": "met:parse",
+      "exclude": "/about/results/account/?$"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.metlife.co.jp/about/info/",
+      "parser": "met:parse"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pgf",
+  "name_ja": "プルデンシャル ジブラルタ ファイナンシャル生命保険株式会社",
+  "name_en": "Prudential Gibraltar Financial Life (PGF Life)",
+  "name_short_en": "PGF Life",
+  "news_tier": "full",
+  "group": "prudential",
+  "site": "https://www.pgf-life.co.jp/",
+  "rate_hub_url": "https://www.pgf-life.co.jp/st/products/shoriritsu.html",
+  "rate_update": "Neo: twice a month (1st and 16th), current period plus 48 periods of history. そだてる果実: monthly anniversary caps, 2026 only on the page",
+  "collector": "scripts/pgf.py",
+  "notes": [
+    "Different company from ジブラルタ生命 (Gibraltar Life).",
+    "Rate tables load from /hpcms fragments behind bot protection; collected from browser-pane snapshots (see product notes)."
+  ],
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates are set on the 1st and 16th; one indexed annuity uses monthly caps (see that product)."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.pgf-life.co.jp/company/news/",
+      "archive_url": "https://www.pgf-life.co.jp/company/news/index.html?YEAR={year}"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.pgf-life.co.jp/company/notice/"
+    }
+  ],
+  "access": "restricted",
+  "access_note": "The news pages sit behind an Incapsula bot challenge: scripted requests get a challenge page, not the list. Read in the built-in browser pane, the lists load: /company/news/ (one page per year, ?YEAR=2025 for earlier) and /company/notice/ (one page with every year, 2011 onward)."
+}

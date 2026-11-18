@@ -1,0 +1,5 @@
+product_id,name,title_ja,url,file,bytes,sha256,retrieved_date
+orx-moonshot,中国銀行,保険取扱商品一覧（ほけんの窓口＠中国銀行）,https://www.chugin.co.jp/up_load_files/atm/hoken_plaza/lineup.pdf,sources/orx/distributors/chugin__lineup_2026-11-17.pdf,206554,148f67d1791bba8bbc542fd997fbd44b53cecca71c5371fc9665adbb130861f6,2026-11-17
+orx-moonshot,北都銀行,,https://www.hokutobank.co.jp/cms_source/data/hokuto/info/files/info20261016-2.pdf,sources/orx/distributors/hokuto__info20261016-2_2026-11-17.pdf,137689,638eff7a2bfdf474db2ac0ce7a740442af4761ab790b1a9d8da2daaa1af4dfaa,2026-11-17
+orx-moonshot,伊予銀行,保険取扱商品一覧,https://www.iyobank.co.jp/sonaeru/pdf/insurance.pdf,sources/orx/distributors/iyo-bank__insurance-list_2026-11-17.pdf,416663,38deb9c654bfd79f7d834c8f2d40ad35df7dccb95110741928dc1a4eff2ded2c,2026-11-17
+orx-moonshot,利根郡信用金庫,保険募集指針,https://www.shinkin.co.jp/toneshin/insurance/pdf/insurance01.pdf,sources/orx/distributors/tonegun-shinkin__insurance01_2026-11-17.pdf,153214,04321e1b045efc0139b0f30c1990d25bea8c5346e671e1c97ed860bc977bd30b,2026-11-17

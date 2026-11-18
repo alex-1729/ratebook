@@ -1,0 +1,36 @@
+{
+  "id": "orx",
+  "name_ja": "オリックス生命保険株式会社",
+  "name_en": "ORIX Life Insurance",
+  "name_short_en": "ORIX Life",
+  "news_tier": "full",
+  "group": "orix",
+  "site": "https://www.orixlife.co.jp/",
+  "rate_hub_url": "https://www.orixlife.co.jp/fx/whole-life/accumulation-interest-rate",
+  "rate_update": "Recalculated on the 1st and 16th of each month; the rate page shows only the window for the current 契約日 period",
+  "collector": "scripts/orx.py",
+  "notes": [
+    "The news tracker's record gave name_en as \"ORIX Life\"."
+  ],
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates are recalculated on the 1st and 16th."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.orixlife.co.jp/about/news/",
+      "archive_url": "https://www.orixlife.co.jp/about/news/{fy}/"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.orixlife.co.jp/about/notice/"
+    }
+  ],
+  "access": "restricted",
+  "access_note": "Both lists are filled in by JavaScript (/assets/js/about/news/micro.js and /assets/js/about/notice/micro.js) from a headless-CMS API that needs an API key sent as a request header; the served HTML has no items (0 found). Using that key from a script was refused by the permission system, so it was not used. Item lists need a rendered-page read (browser) or an approved reader. Year pages are /about/news/<fiscal year>/ (current and four earlier fiscal years). Not collected."
+}

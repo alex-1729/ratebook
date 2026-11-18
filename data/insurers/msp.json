@@ -1,0 +1,35 @@
+{
+  "id": "msp",
+  "name_ja": "三井住友海上プライマリー生命保険株式会社",
+  "name_en": "Mitsui Sumitomo Primary Life",
+  "name_short_en": "MS Primary",
+  "site": "https://www.ms-primary.com/",
+  "rate_hub_url": "https://www.ms-primary.com/customer/rate/",
+  "rate_update": "Every two weeks: each 積立利率 applies to contracts dated in a Monday-to-Sunday two-week window (e.g. 2026-06-08 to 2026-06-21); the page is updated shortly before the window opens",
+  "collector": "scripts/msp.py",
+  "rate_period": {
+    "type": "days",
+    "length": 14,
+    "note": "Two-week contract-date windows starting on a Monday; a row's effective_date is the first day of its window."
+  },
+  "news_tier": "full",
+  "group": "ms-ad",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.ms-primary.com/news/ir/",
+      "archive_url": "https://www.ms-primary.com/news/ir/{fy}/",
+      "parser": "msp:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.ms-primary.com/news/info/",
+      "archive_url": "https://www.ms-primary.com/news/info/{fy}/",
+      "parser": "msp:parse"
+    }
+  ]
+}

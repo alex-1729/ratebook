@@ -1,0 +1,48 @@
+{
+  "source": "reports/Product groupings.html (as of 2026-11-16)",
+  "note": "A product has a product_type; a rate series (plan) may override it with its own product_type, e.g. a survival-weighted course inside a fixed annuity.",
+  "types": [
+    {
+      "key": "fixed_annuity",
+      "label": "Fixed annuity",
+      "group": "Fixed crediting rate",
+      "description": "Crediting rate fixed for the deferral period"
+    },
+    {
+      "key": "survival_weighted_annuity",
+      "label": "Survival-weighted annuity",
+      "group": "Fixed crediting rate",
+      "description": "Fixed rate, reduced death benefit (tontine-style)"
+    },
+    {
+      "key": "whole_life_rate_locked",
+      "label": "Whole life, rate locked or reset",
+      "group": "Fixed crediting rate",
+      "description": "Crediting rate fixed for a set period, then reset"
+    },
+    {
+      "key": "whole_life_periodic_payout",
+      "label": "Whole life, periodic payout",
+      "group": "Fixed crediting rate",
+      "description": "Pays out the interest each year"
+    },
+    {
+      "key": "indexed_annuity",
+      "label": "Indexed annuity",
+      "group": "Index-linked",
+      "description": "Return linked to an index, with a floor"
+    },
+    {
+      "key": "whole_life_unclassified",
+      "label": "Whole life, to classify",
+      "group": "Unsorted",
+      "description": "Sub-type not yet recorded"
+    },
+    {
+      "key": "borderline",
+      "label": "Borderline",
+      "group": "Edge of scope",
+      "description": "Endowment or care-linked"
+    }
+  ]
+}

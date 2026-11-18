@@ -1,0 +1,453 @@
+{
+  "id": "nwl-form-designated-currency-special-whole-life",
+  "insurer_id": "nwl",
+  "candidate": true,
+  "name_ja": "指定通貨建特別終身保険",
+  "name_en": "Designated-currency special whole life (no-underwriting course)",
+  "name_short_en": "Special whole life",
+  "policy_name_ja": "指定通貨建特別終身保険",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": null,
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "on_sale_not_later_than": "2020-04-01",
+  "on_sale_not_later_than_source": {
+    "url": "https://www.nw-life.co.jp/news/release/pdf/n200401_2.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/nwl/pages/release_n200401_2_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/nwl/pages/live_gu_int_rate_2026-11-17.html"
+  },
+  "guarantee_terms_years": null,
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "base_rate": "基準金利（積立利率の設定および市場価格調整率の計算に用いる）"
+  },
+  "rate_page": "gu_int_rate",
+  "pages": [
+    {
+      "name": "gu_int_rate",
+      "kind": "rate",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "live_file": "gu_int_rate"
+    },
+    {
+      "name": "gu_int_rate8_base",
+      "kind": "base",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate8_base.html",
+      "live_file": "gu_int_rate8_base"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "base_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-form-designated-currency-special-whole-life__base_rate__all.csv",
+      "points": 30,
+      "first_effective": "2025-01-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 10
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-form-designated-currency-special-whole-life__crediting_rate__all.csv",
+      "points": 89,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    }
+  ],
+  "documents": [
+    {
+      "name": "shiori_web",
+      "title_ja": "WEB版ご契約のしおり・約款（指定通貨建特別終身保険）",
+      "url": "https://www.nw-life.co.jp/shiori/g44/",
+      "title_en": "Policy guide and conditions, web edition (opens only from a connection in Japan)"
+    },
+    {
+      "name": "policy_conditions_2406",
+      "title_ja": "ご契約のしおり・約款（指定通貨建特別終身保険）2024年6月版",
+      "url": "https://www.nw-life.co.jp/shiori/g44/spwl-eb_2406.pdf",
+      "title_en": "Policy guide and conditions, PDF (Jun 2024 edition)",
+      "edition": "Jun 2024 edition"
+    },
+    {
+      "name": "policy_conditions_2512",
+      "title_ja": "ご契約のしおり・約款（指定通貨建特別終身保険）2025年12月版",
+      "url": "https://www.nw-life.co.jp/shiori/g44/spwl-eb_2512.pdf",
+      "title_en": "Policy guide and conditions, PDF (Dec 2025 edition)",
+      "edition": "Dec 2025 edition"
+    },
+    {
+      "name": "brochure_premium_n",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（終身保険プレミアム）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/premium-n.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as 終身保険プレミアム)",
+      "variant": "終身保険プレミアム"
+    },
+    {
+      "name": "brochure_yume_fukuramu",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（夢ふくらむ終身）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/yume_fukuramu.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as 夢ふくらむ終身)",
+      "variant": "夢ふくらむ終身"
+    },
+    {
+      "name": "brochure_msolution4_s",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（エムソリューションⅣ 終身保険型）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/msolution4_s.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as エムソリューションⅣ 終身保険型)",
+      "variant": "エムソリューションⅣ 終身保険型"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "SMBC日興証券",
+      "product_name_ja": "NK介護セレクト"
+    },
+    {
+      "name_ja": "大和証券",
+      "product_name_ja": "そなえて安心介護プラス"
+    },
+    {
+      "name_ja": "三菱UFJモルガン・スタンレー証券",
+      "product_name_ja": "エムソリューションⅣ 終身保険型"
+    },
+    {
+      "name_ja": "野村證券",
+      "product_name_ja": "ニッセイ・ウェルスえらべる介護終身保険＜円建／外貨建＞"
+    },
+    {
+      "name_ja": "三菱UFJ銀行",
+      "product_name_ja": "夢ささえる終身（介護保障）"
+    },
+    {
+      "name_ja": "あいち銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "きらぼし銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "中国銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "京都銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "伊予銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "北陸銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "南都銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "宮崎銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "富山第一銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "富山銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "山口銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "山形銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "山陰合同銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "常陽銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "広島銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "東邦銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "沖縄銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "清水銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "百十四銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "福井銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "福島銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "第四北越銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "筑波銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "紀陽銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "足利銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "阿波銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "青森みちのく銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "鳥取銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "鹿児島銀行",
+      "product_name_ja": "夢ふくらむ終身"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "みなと銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "りそな銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "七十七銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "北洋銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "北海道銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "北都銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "十八親和銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "十六銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "千葉銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "名古屋銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "埼玉りそな銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "大分銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "山梨中央銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "横浜銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "池田泉州銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "滋賀銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "熊本銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "百五銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "福岡中央銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "福岡銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "秋田銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "荘内銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "西日本シティ銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "静岡銀行",
+      "product_name_ja": "夢ふくらむ終身介護plus"
+    },
+    {
+      "name_ja": "三井住友信託銀行",
+      "product_name_ja": "晴々人生"
+    },
+    {
+      "name_ja": "SBI証券",
+      "product_name_ja": "終身保険プレミアム（円建／米ドル建／豪ドル建）"
+    },
+    {
+      "name_ja": "みずほ証券",
+      "product_name_ja": "終身保険プレミアム（円建／米ドル建／豪ドル建）"
+    },
+    {
+      "name_ja": "東洋証券",
+      "product_name_ja": "終身保険プレミアム（円建／米ドル建／豪ドル建）"
+    },
+    {
+      "name_ja": "東海東京証券",
+      "product_name_ja": "終身保険プレミアム（円建／米ドル建／豪ドル建）"
+    }
+  ],
+  "editions": [],
+  "notes": [
+    "Keyed by POLICY FORM, not marketed name: the 積立利率 hub (gu_int_rate.html) publishes one rate section per policy form. Marketed names are mapped to forms from the insurer's own product pages (see the distributors note).",
+    "Rates come from the shared hub page and the form's 基準金利 page. Collected by scripts/nwl.py (Wayback captures via_wayback=true, hand-saved live copy of 2026-11-17 via_wayback=false). nw-life.co.jp returns HTTP 403 to automated requests, so the collector never contacts it. Each capture shows only the then-current half-month 適用期間; effective_date is its first day. Gaps between captures are not interpolated.",
+    "無告知コース per the しおり index. 積立利率 is constant over the whole insurance period.",
+    "Plan key encoding: term_years is 据置期間 where the table has one; age_band is 契約時の被保険者年齢 as printed (the live table, whatever its bands at the time); plan holds the other table dimensions (see plan_ja). Cells printed '-' are status not_offered.",
+    "has_mva is true because the form's 基準金利 page states that the 基準金利 is used for the 積立利率 and for the 市場価格調整率 on surrender; the MVA formula and loads are not collected.",
+    "Premium type: single premium is assumed from the task scope and from the しおり index, which groups only the 予定利率金利連動型外貨建個人年金保険 and 利率固定 外貨建個人年金保険 under 平準払; the product pages were not read to confirm the premium type of this form.",
+    "Documents (2026-11-17): www.nw-life.co.jp answered HTTP 403 to one plain request (/shiori/g41/); not worked around. The Wayback Machine holds a capture of the しおり index page /shiori/g44/ (latest 2024-06-17, CDX 2026-11-17), but the archive answered HTTP 429 to every replay request from this network on 2026-11-17, so the PDF links it lists were not read; not worked around. The owner can save the PDFs from https://www.nw-life.co.jp/shiori/g44/ on a connection in Japan.",
+    "Distributors and marketed names: mapped from nw-life.co.jp/product/individual/ product pages saved 2026-11-17 (sources/nwl/pages/product_*_2026-11-17.html), each of which states the 正式名称 of the policy forms it is sold under and lists its 募集代理店. A marketed product is attached to this form when its page names the form; one entry per bank and marketed name (product_name_ja). Pages naming several forms do not say which form a given contract uses (that follows the plan chosen, e.g. 告知/無告知コース, 介護保障), so an entry shows where the marketed name is sold, not that every plan there is this form. Marketed names mapped: ニッセイ・ウェルスえらべる介護終身保険＜円建／外貨建＞、晴々人生、一時払介護終身保険、エムソリューションⅣ 終身保険型、NK介護セレクト、終身保険プレミアム（円建／米ドル建／豪ドル建）、そなえて安心介護プラス、夢ふくらむ終身、夢ふくらむ終身介護plus、夢ささえる終身（介護保障）. No distributor is listed for: 一時払介護終身保険 (page says 現在お取扱い中の金融機関はありません).",
+    "Documents: PDFs downloaded 2026-11-17 from nw-life.co.jp (reachable from a Japan connection): all policy-conditions editions listed on the form's しおり page, and the brochures (契約締結前交付書面兼パンフレット) of the marketed products that the insurer's product pages tie to this form (not every marketed name for forms sold under many names). The shiori_web entry is the HTML index page, not a PDF.",
+    "On sale not later than 2020-04-01 (bound only): the release of 2020-04-01 (revised 『えらべる介護終身保険』 for 野村證券, on sale that day) names 「無告知コース：指定通貨建特別終身保険」. In 2019-08-05 the 無告知コース still carried the older 予定利率金利連動型…（初期死亡保険金抑制型） names; another distributor may have used this form first. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "The insurer publishes rates by policy form rather than by marketed name, and the names sold to customers are not yet matched to forms.",
+    "The insurer's site blocks automated access, so rates come from archived copies and one saved copy of the current page; gaps between copies are not filled.",
+    "Rate history starts on 1 July 2020, with a small number of dates held; this is the no-underwriting course.",
+    "The premium type is assumed to be single premium; the product page was not read.",
+    "No document could be downloaded: the insurer's site refuses connections from outside Japan and no archived copy of the policy conditions could be retrieved, so the policy-guide link opens only from a connection in Japan; the brochure and contract summary are not linked from the pages on file.",
+    "Launch date not established; on sale by 1 April 2020 (insurer's release). The earliest archived copy is the earliest rate on file."
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:nwl-form-designated-currency-special-whole-life; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

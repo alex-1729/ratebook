@@ -1,0 +1,38 @@
+[
+ {
+  "name": "en-empty",
+  "js": "var PV=()=>document.querySelector('.pv')._pv(); var W=(ms)=>new Promise(r=>setTimeout(r,ms)); var Q=(k)=>document.querySelector('[data-pv=\"'+k+'\"]'); var MARK=()=>[...document.querySelectorAll('.docpick .en')].filter(x=>!x.hidden).map(x=>x.textContent); (async()=>{ IRV.app.go('product',{id:'dfl-premier-currency-3'}); document.querySelector('[data-tab=docs]').click(); for(let i=0;i<40&&!(document.querySelector('.pv')&&PV().tr);i++) await W(500); Q('mode-en').click(); await W(1500); Q('translate').click(); Q('choice-all').click(); await W(300); return {sel:(document.querySelector('.docitem.on .t')||{}).textContent, tr:PV().tr, marks:MARK()}; })()"
+ },
+ {
+  "name": "run-filling",
+  "js": "(async()=>{ Q('start').click(); const samples=[]; for(let i=0;i<14;i++){ await W(4000); const s=PV().tr; samples.push([s.translated, s.overlays, s.strip]); if(s.translated>=5) break; } return {samples, rail:PV().tr.rail.slice(0,12), page:PV().page}; })()"
+ },
+ {
+  "name": "cancelled",
+  "js": "(async()=>{ Q('cancel').click(); await W(6000); return {tr:PV().tr, marks:MARK()}; })()"
+ },
+ {
+  "name": "run-complete",
+  "js": "(async()=>{ Q('translate').click(); Q('choice-all').click(); await W(200); Q('start').click(); const t0=Date.now(); await W(5000); while(Date.now()-t0<420000 && /Translating/.test(PV().tr.strip)) await W(3000); await W(2500); const s=PV().tr; return {secs:Math.round((Date.now()-t0)/1000), translated:s.translated, strip:s.strip, badges:s.badges, rail:s.rail, marks:MARK(), acts:[...document.querySelectorAll('.docitem.on .acts button')].map(b=>b.textContent)}; })()"
+ },
+ {
+  "name": "review-popover",
+  "js": "(async()=>{ IRV.app.state; document.querySelector('.pv-scroll').scrollTop=0; await W(800); const b=document.querySelector('.tr-badge.review button'); if(!b) return 'no review badge visible: '+JSON.stringify(PV().tr.badges); b.click(); await W(1500); return PV().tr.pop.slice(0,900); })()"
+ },
+ {
+  "name": "en-search",
+  "js": "(async()=>{ document.body.click(); await W(300); const f=document.querySelector('.pv-find'); f.value='annuity'; f.dispatchEvent(new Event('input')); await W(6000); const a=PV(); Q('fnext').click(); await W(1500); return {first:a.find, pageAfterFirst:a.page, next:PV().find, page:PV().page, highlights:document.querySelectorAll('.en-ov .highlight').length}; })()"
+ },
+ {
+  "name": "side-by-side",
+  "js": "(async()=>{ const f=document.querySelector('.pv-find'); f.value=''; f.dispatchEvent(new Event('input')); const before=PV().page; Q('mode-sbs').click(); await W(3500); const p=document.querySelector('.pv-scroll .page'); const ov=p.querySelector('.en-ov'); return {pageBefore:before, pageAfter:PV().page, scale:PV().scale, pageW:p.clientWidth, ovLeft:ov?Math.round(ov.getBoundingClientRect().left-p.getBoundingClientRect().left):null, room:document.querySelector('.pv-scroll').clientWidth, tr:{mode:PV().tr.mode, overlays:PV().tr.overlays}}; })()"
+ },
+ {
+  "name": "deleted",
+  "js": "(async()=>{ Q('mode-en').click(); await W(1500); const d=document.querySelector('.docitem.on [data-del]'); d.click(); await W(300); const asked=d.textContent; d.click(); await W(3000); return {asked, tr:{translated:PV().tr.translated, overlays:PV().tr.overlays, badges:PV().tr.badges.slice(0,2)}, marks:MARK(), page:PV().page}; })()"
+ },
+ {
+  "name": "recreated-page",
+  "js": "(async()=>{ Q('translate').click(); Q('choice-page').click(); await W(300); const line=PV().tr.panel; Q('start').click(); const t0=Date.now(); await W(4000); while(Date.now()-t0<120000 && /Translating/.test(PV().tr.strip)) await W(2000); await W(2500); return {line, secs:Math.round((Date.now()-t0)/1000), tr:{translated:PV().tr.translated, strip:PV().tr.strip, badges:PV().tr.badges.slice(0,3), overlays:PV().tr.overlays}, marks:MARK(), page:PV().page}; })()"
+ }
+]

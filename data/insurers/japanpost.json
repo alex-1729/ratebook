@@ -1,0 +1,26 @@
+{
+  "id": "japanpost",
+  "name_ja": "株式会社かんぽ生命保険",
+  "name_en": "Japan Post Insurance",
+  "site": "https://www.jp-life.japanpost.jp/",
+  "news_tier": "watch",
+  "group": "japan-post",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "Press releases",
+      "kind": "official",
+      "url": "https://www.jp-life.japanpost.jp/information/press/index.html",
+      "archive_url": "https://www.jp-life.japanpost.jp/information/press/{fy}/",
+      "parser": "japanpost:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.jp-life.japanpost.jp/information/news/index.html",
+      "archive_url": "https://www.jp-life.japanpost.jp/information/news/{fy}/",
+      "parser": "japanpost:parse"
+    }
+  ]
+}

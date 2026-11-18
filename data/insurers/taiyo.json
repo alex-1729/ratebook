@@ -1,0 +1,17 @@
+{
+  "id": "taiyo",
+  "name_ja": "太陽生命保険株式会社",
+  "name_en": "Taiyo Life",
+  "site": "https://www.taiyo-seimei.co.jp/",
+  "news_tier": "watch",
+  "group": "t-and-d",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.taiyo-seimei.co.jp/wr2/json/release.json",
+      "parser": "taiyo:parse"
+    }
+  ]
+}

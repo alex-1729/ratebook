@@ -1,0 +1,660 @@
+{
+  "id": "sml-fullheart-jroad-global-3",
+  "insurer_id": "sml",
+  "candidate": true,
+  "name_ja": "ふるはーとJロードグローバルⅢ",
+  "name_en": "Fullheart J-Road Global III",
+  "policy_name_ja": "5年ごと利差配当付指定通貨建新終身保険（一時払い）（24）",
+  "policy_names_ja": [
+    "5年ごと利差配当付指定通貨建新終身保険（一時払い）（24）",
+    "5年ごと利差配当付指定通貨建終身保険（一時払い）（19）Ⅱ型"
+  ],
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "fixed_rate_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-04-01",
+  "off_sale_date": null,
+  "guarantee_terms_years": null,
+  "editions": [
+    {
+      "name_ja": "笑顔の約束Ⅲ",
+      "name_en": "Egao no Yakusoku III",
+      "distributor_group": "三井住友銀行, SMBC信託銀行, SMBC日興証券",
+      "site_codes": [
+        "smbc",
+        "pres",
+        "nkko"
+      ],
+      "page_urls": [
+        "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3.html",
+        "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3_s.html",
+        "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3_n.html"
+      ]
+    },
+    {
+      "name_ja": "しんきんらいふ終身S「ふるはーとJロードグローバルⅢ」",
+      "name_en": "Shinkin Life Whole Life S (Fullheart J-Road Global III)",
+      "distributor_group": "信用金庫",
+      "site_codes": [
+        "cmon"
+      ],
+      "page_urls": [
+        "https://www.sumitomolife.co.jp/lineup/other/fi/fullheartjglobal3_shinkin.html"
+      ]
+    },
+    {
+      "name_ja": "ふるはーとJロードグローバルⅢ（三井住友信託銀行）",
+      "name_en": "Fullheart J-Road Global III (Sumitomo Mitsui Trust Bank)",
+      "distributor_group": "三井住友信託銀行",
+      "site_codes": [
+        "cmon"
+      ],
+      "page_urls": [
+        "https://www.sumitomolife.co.jp/lineup/other/fi/fullheartjglobal3_smtb.html"
+      ]
+    }
+  ],
+  "notes": [
+    "Rate page A872/A8JA72P101 with a channel parameter chid: chid=cmon serves the ふるはーと editions (三井住友信託銀行, しんきんらいふ終身S and the general distributors); chid=smbc (三井住友銀行), chid=pres (SMBC信託銀行) and chid=nkko (SMBC日興証券) serve 笑顔の約束Ⅲ. chid=cgin, smtb and mzho return only a redirect page. Rates are collected from chid=cmon.",
+    "Channel comparison (checked 2026-11-17 with scripts/sml.py --channels, current page and full history of every plan and the MVA tab): chid=cmon, smbc and pres return identical values for every period since 2024-04-01 (1024 points compared, no difference). chid=nkko (SMBC日興証券) shows the same values for every period it lists but its history only starts at 2025-04-01 (640 points, all equal to the cmon values). So the rates do not differ by channel; only the history length does. Rates are therefore stored once, from chid=cmon.",
+    "Evidence for the channel comparison: only the current pages of chid=smbc, pres and nkko are saved (sources/sml/rates/fh_current_*_2026-11-17.html; all four channels show identical 2026-11-16 values). The history comparison was a read-only run of scripts/sml.py --channels and its pages were not snapshotted, so it can be repeated but not re-checked offline. Added by the independent checker on 2026-11-17.",
+    "Two plans: 健康告知なしプラン (no health declaration, 解約控除 for the first 10 years, 初期死亡時円換算支払額最低保証特約 can be added) and 3つの健康告知プラン (no 解約控除; up to 4.5% of the premium deducted at contract). The 市場価格調整 applies to the first 15 years' surrender values.",
+    "Metrics: 予定利率 (planned_rate, fixed at contract), 実質的な利回り (net_yield, shown only for a 60-year-old male and female, age_band 60, sex M/F; it depends on age, sex, plan and rider), 市場価格調整用利率 (mva_rate; the site shows one table for both plans, the values are identical for the two plans in the history read). Yields are in the policy currency. term_years is blank: the 予定利率 is fixed for life.",
+    "The 健康告知なし yield on the cmon page is quoted with the 初期死亡時円換算支払額最低保証特約 attached (footnote); the smbc/pres/nkko pages carry a different footnote without it.",
+    "effective_date is the first day of the contract period (half-month, set on the 1st and 16th). The site labels the column 契約日 but shows the period.",
+    "Rate history on the site starts with the contract period 2024-04-01 (the year selector offers 2024 to 2026; the fee page quotes FX rates as of April 2024). The stated on-sale date is in on_sale_date. Currencies USD and AUD only; a dash on the site means a currency was suspended in that period (stored as not_offered).",
+    "Distributors: the general list is as of 2026-10-01 from the fi-list page (the page's own sub-heading says 2026年6月1日現在), plus 三井住友信託銀行, しんきん (list of shinkin banks not collected) and the three 笑顔の約束Ⅲ distributors. The fi-list page also links an ntg edition (fullheartjglobal3-ntg), not collected.",
+    "Not collected: FX tables on the rate page (snapshotted only); age/sex combinations other than 60; premium bands or loads; brochures (URLs listed under documents).",
+    "Launch date: 2024-04-01, the sales start stated in the insurer's news release of 2024-03-21 (外貨建一時払終身保険「ふるはーとＪロードグローバルⅢ」, sold at 三井住友銀行 and SMBC信託銀行 as 「笑顔の約束Ⅲ」). It follows 「ふるはーとＪロードグローバルⅡ」 (「笑顔の約束Ⅱ」). Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 April 2024, with rates set for half-month periods, covering USD and AUD.",
+    "Rates are the same across the bank and securities channels, but one channel's history only starts in April 2025; rates are stored once.",
+    "Two plans exist, with no health declaration or with three health questions; the planned rate is fixed for life.",
+    "The net yield is shown only for a 60-year-old man and woman.",
+    "Launched 1 April 2024 (insurer news release). Exchange rates, charges and brochures are not collected."
+  ],
+  "metrics": {
+    "planned_rate": "予定利率",
+    "net_yield": "実質的な利回り",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "rate_site": {
+    "kind": "whole_life",
+    "snapshot_prefix": "fh",
+    "base": "https://neth.sumitomolife.co.jp",
+    "entry_path": "/neth/A872/A8JA72P101.xhtml",
+    "chid": "cmon",
+    "entry_url": "https://neth.sumitomolife.co.jp/neth/A872/A8JA72P101.xhtml?chid=cmon",
+    "history": {
+      "yield": {
+        "entry_path": "/neth/A872/A8BE72P010.xhtml?chid=cmon&buttonId=P60115",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A872/A8BE72P010.xhtml?chid=cmon&buttonId=P60115",
+        "year_field": "S62010y",
+        "plan_field": "S62011",
+        "submit": [
+          "P60120",
+          "表示"
+        ]
+      },
+      "mva_rate": {
+        "tab_button": "P60114",
+        "tab_label": "市場価格調整用利率",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A872/A8JA72P101.xhtml?chid=cmon",
+        "year_field": "S63009y",
+        "submit": [
+          "P60121",
+          "表示"
+        ]
+      }
+    }
+  },
+  "channels": [
+    {
+      "chid": "cmon",
+      "name": "fullheart"
+    },
+    {
+      "chid": "smbc",
+      "name": "egao SMBC"
+    },
+    {
+      "chid": "pres",
+      "name": "egao SMBC trust"
+    },
+    {
+      "chid": "nkko",
+      "name": "egao Nikko"
+    }
+  ],
+  "pages": [
+    {
+      "name": "fh3_distributors",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi-list/fullheartjglobal3.html"
+    },
+    {
+      "name": "fh3_smtb",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/fullheartjglobal3_smtb.html"
+    },
+    {
+      "name": "fh3_shinkin",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/fullheartjglobal3_shinkin.html"
+    },
+    {
+      "name": "egao3_smbc",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3.html"
+    },
+    {
+      "name": "egao3_smbc_trust",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3_s.html"
+    },
+    {
+      "name": "egao3_nikko",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/egaono-yakusoku3_n.html"
+    },
+    {
+      "name": "index_fi",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "planned_rate",
+      "plan": "no_declaration",
+      "plan_ja": "健康告知なしプラン",
+      "plan_value": "1",
+      "csv": "sml-fullheart-jroad-global-3__planned_rate__no_declaration.csv",
+      "plan_en": "No health declaration"
+    },
+    {
+      "metric": "planned_rate",
+      "plan": "declaration_3",
+      "plan_ja": "3つの健康告知プラン",
+      "plan_value": "2",
+      "csv": "sml-fullheart-jroad-global-3__planned_rate__declaration_3.csv",
+      "plan_en": "Three health questions"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "no_declaration",
+      "plan_ja": "健康告知なしプラン",
+      "plan_value": "1",
+      "csv": "sml-fullheart-jroad-global-3__net_yield__no_declaration.csv",
+      "plan_en": "No health declaration"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "declaration_3",
+      "plan_ja": "3つの健康告知プラン",
+      "plan_value": "2",
+      "csv": "sml-fullheart-jroad-global-3__net_yield__declaration_3.csv",
+      "plan_en": "Three health questions"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "no_declaration",
+      "plan_ja": "健康告知なしプラン",
+      "plan_value": "1",
+      "csv": "sml-fullheart-jroad-global-3__mva_rate__no_declaration.csv",
+      "plan_en": "No health declaration"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "declaration_3",
+      "plan_ja": "3つの健康告知プラン",
+      "plan_value": "2",
+      "csv": "sml-fullheart-jroad-global-3__mva_rate__declaration_3.csv",
+      "plan_en": "Three health questions"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_smtb",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（三井住友信託銀行）",
+      "variant": "smtb",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/fullheartjglobal3_smtb/jglobal3_smtb.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Sumitomo Mitsui Trust edition)",
+      "edition": "April 2024 edition"
+    },
+    {
+      "name": "brochure_shinkin",
+      "title_ja": "契約締結前交付書面兼 商品パンフレット（しんきんらいふ終身S）",
+      "variant": "shinkin",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/fullheartjglobal3_shinkin/jglobal3_shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shinkin edition)",
+      "edition": "April 2025 edition"
+    },
+    {
+      "name": "brochure_egao_smbc",
+      "title_ja": "契約締結前交付書面兼 商品パンフレット（笑顔の約束Ⅲ・三井住友銀行）",
+      "variant": "egao_smbc",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/egaono-yakusoku3/egaonoyakusoku3.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Egao no Yakusoku III, SMBC edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_egao_trust",
+      "title_ja": "契約締結前交付書面兼 商品パンフレット（笑顔の約束Ⅲ・SMBC信託銀行）",
+      "variant": "egao_s",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/egaono-yakusoku3_s/egaonoyakusoku3_s.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Egao no Yakusoku III, SMBC Trust edition)",
+      "edition": "April 2024 edition"
+    },
+    {
+      "name": "brochure_egao_nikko",
+      "title_ja": "契約締結前交付書面兼 商品パンフレット（笑顔の約束Ⅲ・SMBC日興証券）",
+      "variant": "egao_n",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/egaono-yakusoku3_n/egaonoyakusoku3_n.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Egao no Yakusoku III, SMBC Nikko edition)",
+      "edition": "April 2025 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "いちよし証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "岩井コスモ証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "ＳＢＩ新生銀行",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "共和証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "スターツ証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "大熊本証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "東海東京証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "東洋証券",
+      "section": "都市・信託銀行他",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "あいち銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "青森みちのく銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "秋田銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "阿波銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "伊予銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "大分銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "沖縄海邦銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "香川銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "神奈川銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "北日本銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "きらぼし銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "京都銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "熊本銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "高知銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "佐賀共栄銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "四国銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "静岡銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "静岡中央銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "七十七銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "島根銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "清水銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "十八親和銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "十六銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "常陽銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "大光銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "千葉興業銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "中国銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "筑波銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "東北銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "富山銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "長崎銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "名古屋銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "南都銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "西日本シティ銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "東日本銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "広島銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "百五銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "百十四銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "福岡銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "福岡中央銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "福島銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "豊和銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "北洋銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "北陸銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "北海道銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "南日本銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "宮崎銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "山口銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "山梨中央銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "横浜銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "琉球銀行",
+      "section": "地方銀行",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "岐阜信用金庫",
+      "section": "信用金庫等",
+      "edition": "ふるはーとJロードグローバルⅢ（全国の金融機関）"
+    },
+    {
+      "name_ja": "三井住友信託銀行",
+      "section": null,
+      "edition": "ふるはーとJロードグローバルⅢ（三井住友信託銀行）"
+    },
+    {
+      "name_ja": "しんきん（しんきんらいふ終身S）",
+      "section": null,
+      "edition": "しんきんらいふ終身S「ふるはーとJロードグローバルⅢ」"
+    },
+    {
+      "name_ja": "三井住友銀行",
+      "section": null,
+      "edition": "笑顔の約束Ⅲ"
+    },
+    {
+      "name_ja": "SMBC信託銀行",
+      "section": null,
+      "edition": "笑顔の約束Ⅲ"
+    },
+    {
+      "name_ja": "SMBC日興証券",
+      "section": null,
+      "edition": "笑顔の約束Ⅲ"
+    }
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.sumitomolife.co.jp/news/news_file/file/240321.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/sml/pages/release_240321_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/sml/pages/live_index_fi_2026-11-17.html"
+  },
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 104 rows with their saved snapshots and all matched: a seeded random sample of 104 of 1024 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

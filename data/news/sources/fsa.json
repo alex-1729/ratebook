@@ -1,0 +1,16 @@
+{
+  "id": "fsa",
+  "name_en": "Financial Services Agency of Japan",
+  "name_ja": "金融庁",
+  "site": "https://www.fsa.go.jp/",
+  "insurer_ids": [],
+  "news_sources": [
+    {
+      "key": "press",
+      "label": "Press releases (all sectors)",
+      "kind": "regulator",
+      "archive_url": "https://www.fsa.go.jp/news/r{reiwa}_news_menu.html?fy={fy}",
+      "parser": "fsa:parse"
+    }
+  ]
+}

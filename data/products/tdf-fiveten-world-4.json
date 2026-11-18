@@ -1,0 +1,269 @@
+{
+  "id": "tdf-fiveten-world-4",
+  "insurer_id": "tdf",
+  "name_ja": "ファイブテン・ワールド4",
+  "name_en": "Five-Ten World 4",
+  "policy_name_ja": "無配当生存保障重視型個人年金保険（Ⅰ型）／無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型）／無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型）",
+  "policy_names": [
+    {
+      "name_ja": "無配当生存保障重視型個人年金保険（Ⅰ型）",
+      "plan": "jpy_nenkin",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース"
+    },
+    {
+      "name_ja": "無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型）",
+      "plan": "jpy_kaigo",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース"
+    },
+    {
+      "name_ja": "無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型）",
+      "plan": "fx_no_rider / fx_rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ]
+    }
+  ],
+  "category": "fixed_annuity",
+  "product_type": "survival_weighted_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-10-01",
+  "off_sale_date": null,
+  "rate_page": "rate_current",
+  "notes": [
+    "has_mva is true: the product page says the surrender value reflects price changes of the underlying assets (市場価格調整; explainer video on the product page) and applies a 解約控除率. The MVA formula and any published MVA rate are not collected.",
+    "The rate page shows only the current half-month 積立利率設定期間 and is overwritten on the 1st and 16th; history accumulates only by re-running scripts/tdf.py (plus the few Wayback captures, see rate_series history).",
+    "effective_date is the first day of the 積立利率設定期間. 積立利率 (crediting_rate) and 実質的な利回り (net_yield) share the same grid.",
+    "The page's 契約年齢 column is the eligible contract-age range (JPY 40-90 for 5y, 40-85 for 10y; FX no rider 40-93/90/85 for 2/5/10y; with 保険金最低保証特約 40-83/80/75), not a rate dimension, so age_band is blank. Age ranges are not stored in the CSVs.",
+    "Net-yield tables are headed 男性・女性 (one figure for both sexes), so sex is blank. Net yield is truncated to 2 decimals by the insurer; FX net yield assumes an FX change rate of 100% over the deferral period.",
+    "Rate page text 積立利率は…基準金利に最大1.5％を増減させた範囲内で決定 (rate = reference rate +/- up to 1.5%). Reference rates: JGB yield (JPY), USD bond index yield (USD), plus AUD/USD swap and basis spreads (AUD).",
+    "Rates can show 取扱停止中 (plan temporarily not offered); the collector records these as status not_offered.",
+    "The ご契約のしおり・約款 flipbook (clause/index.html) serves per-page images only; the whole-document PDF is /weby/pdf/260191.pdf, linked from the product page.",
+    "Wayback holds 4 distinct captures of the rate page (2024-12-08, 2025-10-09, 2026-05-18, 2026-06-05) and 4 of its distributor copy r_tumitate_riritu.html (2025-08-09, 2026-01-17, 2026-05-18, 2026-06-05; the last two repeat periods already on file and match them value for value). Together: 6 Wayback periods (2024-12-01, 2025-08-01, 2025-10-01, 2026-01-16, 2026-05-16, 2026-06-01) plus live 2026-11-16. No data before 2024-12-01 and none for periods between captures (checked 2026-11-17, CDX prefix search of /fiveten_world4/).",
+    "Distributor list is the 金融機関等代理店 list on the product's 募集代理店 page; プランのお取扱は募集代理店により異なる場合があります。 Bank-specific product names (white labels) not collected.",
+    "Launch date: 2024-10-01, the sales start stated in the insurer's news release of 2024-09-30 (25 institutions; 『ファイブテン・ワールド４』, announced 2024-09-25, snapshot sources/tdf/pages/release_20240925_2026-11-17.pdf). It renews 『ファイブテン・ワールド３』 (from 2023-03), which renewed 『ファイブテン・ワールド２』 (from 2019-09), which renewed 『ファイブテン・ワールド』 (from 2017-11-28, the first); the date here is for edition 4, whose formal names differ. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "The insurer overwrites its rate page each half-month, so history before 16 November 2026 is four archive captures only.",
+    "One product name covers the yen plan (two courses) and the foreign-currency plan (with and without the guarantee rider).",
+    "The foreign-currency plan also has a 2-year term.",
+    "Launched 1 October 2024 (insurer news release); it renews earlier Five Ten World editions.",
+    "Exchange rates are not collected."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "net_yield": "実質的な利回り（年複利）"
+  },
+  "pages": [
+    {
+      "name": "product",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/"
+    },
+    {
+      "name": "rate_current",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/tumitate_riritu.html"
+    },
+    {
+      "name": "exchange_rate",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/rate/exchange_rate.html"
+    },
+    {
+      "name": "distributors",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/fiveten_world4_toriatukaiten.html"
+    },
+    {
+      "name": "clause_flipbook",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/clause/index.html"
+    },
+    {
+      "name": "rate_notice",
+      "url": "https://www.tdf-life.co.jp/info/riritu.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_nenkin",
+      "plan_ja": "円貨プラン 年金重視コース（無配当生存保障重視型個人年金保険（Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース",
+      "csv": "tdf-fiveten-world-4__crediting_rate__jpy_nenkin.csv",
+      "plan_en": "JPY annuity-focused"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_kaigo",
+      "plan_ja": "円貨プラン 介護認知症保障コース（無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース",
+      "csv": "tdf-fiveten-world-4__crediting_rate__jpy_kaigo.csv",
+      "plan_en": "JPY care cover"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "fx_no_rider",
+      "plan_ja": "外貨プラン 保険金最低保証特約なし（無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型））",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "rider": false,
+      "csv": "tdf-fiveten-world-4__crediting_rate__fx_no_rider.csv",
+      "plan_en": "FX, no guarantee rider"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "fx_rider",
+      "plan_ja": "外貨プラン 保険金最低保証特約付加（無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型））",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "rider": true,
+      "csv": "tdf-fiveten-world-4__crediting_rate__fx_rider.csv",
+      "plan_en": "FX, guarantee rider"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "jpy_nenkin",
+      "plan_ja": "円貨プラン 年金重視コース（無配当生存保障重視型個人年金保険（Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース",
+      "csv": "tdf-fiveten-world-4__net_yield__jpy_nenkin.csv",
+      "plan_en": "JPY annuity-focused"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "jpy_kaigo",
+      "plan_ja": "円貨プラン 介護認知症保障コース（無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース",
+      "csv": "tdf-fiveten-world-4__net_yield__jpy_kaigo.csv",
+      "plan_en": "JPY care cover"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_no_rider",
+      "plan_ja": "外貨プラン 保険金最低保証特約なし（無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型））",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "rider": false,
+      "csv": "tdf-fiveten-world-4__net_yield__fx_no_rider.csv",
+      "plan_en": "FX, no guarantee rider"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_rider",
+      "plan_ja": "外貨プラン 保険金最低保証特約付加（無配当外国為替連動型個人年金保険（通貨選択・Ⅱ型））",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "rider": true,
+      "csv": "tdf-fiveten-world-4__net_yield__fx_rider.csv",
+      "plan_en": "FX, guarantee rider"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/pamphlet/fiveten_world4.pdf",
+      "title_en": "Brochure and pre-contract disclosure"
+    },
+    {
+      "name": "gaiyo_yen",
+      "title_ja": "商品概要書（円貨プラン）",
+      "variant": "jpy",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/pamphlet/fiveten_world4_gaiyo_Y.pdf",
+      "title_en": "Product summary (yen plan)"
+    },
+    {
+      "name": "gaiyo_fx",
+      "title_ja": "商品概要書（外貨プラン）",
+      "variant": "fx",
+      "url": "https://www.tdf-life.co.jp/fiveten_world4/pamphlet/fiveten_world4_gaiyo_G.pdf",
+      "title_en": "Product summary (foreign-currency plan)"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/weby/pdf/260191.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "きらやか銀行"
+    },
+    {
+      "name_ja": "高知銀行"
+    },
+    {
+      "name_ja": "静岡中央銀行"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "仙台銀行"
+    },
+    {
+      "name_ja": "富山銀行"
+    },
+    {
+      "name_ja": "PGフレンドリー・パートナーズ"
+    },
+    {
+      "name_ja": "山形銀行"
+    },
+    {
+      "name_ja": "大同生命"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "Rows retrieved through 2026-11-16: every rate row was compared with its saved snapshot by an independent parser. The 64 rows retrieved on 2026-11-17: an independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 20 rows with their saved snapshots and all matched: a seeded random sample of 20 of 64 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  },
+  "on_sale_date_source": {
+    "url": "https://www.tdf-life.co.jp/newsrelease/pdf/202409302.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/tdf/pages/release_202409302_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/tdf/pages/live_kentou_stock_2026-11-17.html"
+  }
+}

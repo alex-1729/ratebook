@@ -1,0 +1,3 @@
+product_id,name,title_ja,url,file,bytes,sha256,retrieved_date
+pgf-hosho-sentaku-neo-usd,rate_pdf_old,諸利率（旧PDF・Wayback 2024-02-22の1件のみ）,https://www.pgf-life.co.jp/st/products/pdf/jswl.pdf,sources/pgf/docs/pgf-hosho-sentaku-neo-usd/rate_pdf_old_2026-11-17.pdf,90207,e3cbe20fdac6d06b3a9fcde57ed1543dd83598fc1e93be15cdd66b075c558a2a,2026-11-17
+pgf-sodateru-kajitsu,attention_contract_summary,契約概要／注意喚起情報,https://www.pgf-life.co.jp/st/products/sdia/general2/pdf/01.pdf,sources/pgf/docs/pgf-sodateru-kajitsu/attention_contract_summary_2026-11-17.pdf,5048944,da2e9bcd78bec19786fe3fde973f076dee15c38b344d01869b47f4bee93c5bce,2026-11-17

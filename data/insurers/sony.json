@@ -1,0 +1,25 @@
+{
+  "id": "sony",
+  "name_ja": "ソニー生命保険株式会社",
+  "name_en": "Sony Life",
+  "site": "https://www.sonylife.co.jp/",
+  "news_tier": "watch",
+  "group": "sony",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.sonylife.co.jp/company/news/2026/",
+      "archive_url": "https://www.sonylife.co.jp/company/news/{fy}/",
+      "parser": "sony:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.sonylife.co.jp/info/",
+      "parser": "sony:parse"
+    }
+  ]
+}

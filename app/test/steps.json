@@ -1,0 +1,74 @@
+[
+ {
+  "name": "explore",
+  "js": "IRV.app.go('explore'); var pk=(k)=>{const e=document.querySelector('[data-pick=\"'+k+'\"]'); if(e) e.click();}; pk('type:fixed_annuity'); pk('currency:USD'); pk('tenor:10'); new Promise(r=>setTimeout(()=>r({h1:document.querySelector('h1').innerText, sum:document.querySelector('.sum').innerText, rows:[...document.querySelectorAll('table.bd tbody tr')].map(t=>t.innerText.replace(/\\s+/g,' ')), left:(document.querySelector('.leftout')||{}).innerText, hist:(document.querySelector('h2 .more')||{}).innerText, na:(document.querySelector('.nanote')||{}).innerText, types:[...document.querySelectorAll('[data-pick^=\"type:\"]')].map(b=>b.innerText.replace(/\\s+/g,' ')+(b.disabled?' (off)':''))}),600))"
+ },
+ {
+  "name": "explore-usd5",
+  "js": "var pk=(k)=>{const e=document.querySelector('[data-pick=\"'+k+'\"]'); if(e) e.click();}; pk('tenor:5'); new Promise(r=>setTimeout(()=>r([...document.querySelectorAll('table.bd tbody tr')].map(t=>t.innerText.replace(/\\s+/g,' '))),400))"
+ },
+ {
+  "name": "source",
+  "js": "document.querySelector('table.bd .src').click(); new Promise(r=>setTimeout(()=>r('clicked'),2500))"
+ },
+ {
+  "name": "products",
+  "js": "IRV.app.go('products'); ({h1:document.querySelector('h1').innerText, rows:document.querySelectorAll('tr.prow').length, first:[...document.querySelectorAll('tr.prow')].slice(0,3).map(r=>r.innerText.replace(/\\s+/g,' '))})"
+ },
+ {
+  "name": "markets",
+  "js": "IRV.app.go('markets'); ({h1:document.querySelector('h1').innerText, rows:document.querySelectorAll('.two table tbody tr').length, first:(document.querySelector('.two table tbody tr')||{}).innerText})"
+ },
+ {
+  "name": "moves",
+  "js": "IRV.app.go('moves'); ({h2:[...document.querySelectorAll('h2')].map(x=>x.innerText.replace(/\\s+/g,' ')), foot:[...document.querySelectorAll('.foot')].map(x=>x.innerText)})"
+ },
+ {
+  "name": "chart",
+  "js": "IRV.app.go('chart'); new Promise(r=>setTimeout(()=>r({plotLegend:!!document.querySelector('.u-legend') && getComputedStyle(document.querySelector('.u-legend')).display!=='none', list:[...document.querySelectorAll('.slist > div:not(.rdhead)')].map(d=>d.innerText.replace(/\\s+/g,' ')).slice(0,4), selects:document.querySelectorAll('#page select').length}),700))"
+ },
+ {
+  "name": "product-grid",
+  "js": "IRV.app.go('product',{id:'dfl-premier-currency-3'}); ({tabs:[...document.querySelectorAll('.tabs button')].map(b=>b.innerText), grid:document.querySelector('table.grid').innerText.replace(/\\n+/g,' | ').slice(0,300), foot:document.querySelector('.foot').innerText, gridTop:Math.round(document.querySelector('table.grid').getBoundingClientRect().top)})"
+ },
+ {
+  "name": "product-nwl",
+  "js": "IRV.app.go('product',{id:'nwl-yuyu-jikan-advance-2'}); document.querySelector('[data-tab=rates]').click(); ({caps:[...document.querySelectorAll('h3.gcap')].map(x=>x.innerText), rows:document.querySelectorAll('table.grid tbody tr').length, sample:[...document.querySelectorAll('table.grid tbody tr')].slice(2,4).map(t=>t.innerText.replace(/\\s+/g,' ')), toggle:!!document.getElementById('ages-toggle'), idle:(document.getElementById('idle-toggle')||{}).innerText, gridH:Math.round([...document.querySelectorAll('.gridwrap')].reduce((a,g)=>a+g.offsetHeight,0)), winH:window.innerHeight, sticky:getComputedStyle(document.querySelector('table.grid thead th')).position})"
+ },
+ {
+  "name": "product-facts",
+  "js": "({facts:[...document.querySelectorAll('dl.facts.top > div')].map(d=>d.innerText.replace(/\\s+/g,' ')), notes:[...document.querySelectorAll('ul.notes.gaps li')].map(x=>x.innerText), tabs:[...document.querySelectorAll('.tabs button')].map(b=>b.innerText)})"
+ },
+ {
+  "name": "product-docs",
+  "js": "document.querySelector('[data-tab=docs]').click(); [...document.querySelectorAll('.docpick')].map(b=>b.innerText.replace(/\\s+/g,' ')).slice(0,5)"
+ },
+ {
+  "name": "product-history",
+  "js": "IRV.app.go('product',{id:'tdf-fiveten-world-4'}); document.querySelector('[data-tab=history]').click(); new Promise(r=>setTimeout(()=>r({legend:[...document.querySelectorAll('.slist > div:not(.rdhead)')].map(x=>x.innerText.replace(/\\s+/g,' ')), row:(document.querySelector('.ptswrap tbody tr')||{}).innerText}),600))"
+ },
+ {
+  "name": "data",
+  "js": "IRV.app.go('data'); new Promise(r=>setTimeout(()=>r(document.getElementById('main').innerText.replace(/\\s+/g,' ').slice(0,500)),2000))"
+ },
+ {
+  "name": "nwl-history-default",
+  "js": "IRV.app.go('product',{id:'nwl-yuyu-jikan-advance-2'}); document.querySelector('[data-tab=rates]').click(); var bt=[...document.querySelectorAll('table.grid .pn')].find(b=>b.textContent.includes('10-year payout')); bt.click(); new Promise(r=>setTimeout(()=>r({on:[...document.querySelectorAll('.pick .tg.on')].map(b=>b.innerText), legend:[...document.querySelectorAll('.slist > div:not(.rdhead)')].map(x=>x.innerText.replace(/\\s+/g,' ')), first:(document.querySelector('.ptswrap tbody tr')||{}).innerText}),700))"
+ },
+ {
+  "name": "thumbs",
+  "js": "IRV.app.go('product',{id:'msp-mare-3'}); document.querySelector('[data-tab=docs]').click(); new Promise(r=>setTimeout(()=>r({thumbCanvases:document.querySelectorAll('.pv-thumb canvas').length, selects:document.querySelectorAll('#page select').length}),3000))"
+ },
+ {
+  "name": "friendly-log",
+  "js": "IRV.app.upd.run={running:false, outcome:'partial', finishedAt:new Date().toISOString(), docs:false, conflicts:[], insurers:{dfl:{state:'ok',message:'',newPoints:0}, msp:{state:'blocked',message:'Not reachable from this network: the site answered HTTP 403. Connect through a Japan connection and run again.',newPoints:0}}, log:['','=== Dai-ichi Frontier Life (dfl) ===','dfl-premier-currency-3  プレミアカレンシー３','  page  sources/dfl/pages/product_164_2026-11-17.html','  dfl-premier-currency-3__crediting_rate__kihon.csv 1056 points read,    0 new, 2023-04-01 to 2026-11-16','=== Mitsui Sumitomo Primary Life (msp) ===']}; IRV.app.go('data'); new Promise(r=>setTimeout(()=>r({log:[...document.querySelectorAll('ul.runlog li')].map(x=>x.innerText), technical:(document.querySelector('pre.log')||{}).textContent, navBusy:document.getElementById('nav-data').className, blocked:[...document.querySelectorAll('table.upd tbody tr')].map(t=>t.innerText.replace(/\\s+/g,' ')).filter(t=>/MS Primary/.test(t)), foot:[...document.querySelectorAll('.foot')].map(x=>x.innerText)[0], layout:getComputedStyle(document.querySelector('table.upd')).tableLayout}),2500))"
+ },
+ {
+  "name": "receive2-grid",
+  "js": "IRV.app.go('product',{id:'dfl-premier-receive-2'}); document.querySelector('[data-tab=rates]').click(); [...document.querySelectorAll('table.grid tbody tr')].map(t=>t.innerText.replace(/\\s+/g,' ')).slice(0,2)"
+ },
+ {
+  "name": "e3-audit",
+  "js": "(async()=>{ const m=IRV.app.model; const keys=new Set(['crediting_rate','net_yield','mva_rate','base_rate','periodic_payment_rate','periodic_accumulation_rate','not_offered','published','via_wayback']); for(const s of m.series){ if(/[_]|\\d-\\d/.test(s.plan)||/^[a-z]+$/.test(s.plan)) keys.add(s.plan); } for(const p of m.products){ keys.add(p.id); } for(const t of m.types) if(/_/.test(t.key)) keys.add(t.key); const found={}; const scan=(where)=>{ const text=[document.getElementById('page').innerText, ...[...document.querySelectorAll('#page [title]')].map(e=>e.title), ...[...document.querySelectorAll('#page option')].map(o=>o.textContent)].join('\\n'); for(const k of keys){ const re=new RegExp('(^|[^A-Za-z0-9_-])'+k.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&')+'($|[^A-Za-z0-9_-])'); if(re.test(text)) (found[where]=found[where]||[]).push(k); } if(/\\.csv|\\.json/.test(text)) (found[where]=found[where]||[]).push('file name'); }; const W=(ms)=>new Promise(r=>setTimeout(r,ms)); for(const v of ['home','explore','markets','moves','chart','data']){ IRV.app.go(v); await W(700); scan(v); } for(const p of m.products){ for(const tab of ['rates','history','docs']){ IRV.app.go('product',{id:p.id}); const b=document.querySelector('[data-tab='+tab+']'); if(b) b.click(); await W(tab==='docs'?900:350); scan('product '+IRV.nameEn(p)+' / '+tab); } } return found; })()"
+ }
+]

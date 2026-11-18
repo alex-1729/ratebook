@@ -1,0 +1,20 @@
+{
+  "id": "group-td",
+  "name_en": "T&D Holdings",
+  "name_ja": "T&Dホールディングス株式会社",
+  "site": "https://www.td-holdings.co.jp/",
+  "insurer_ids": [
+    "tdf",
+    "taiyo",
+    "daido"
+  ],
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases (group and subsidiaries)",
+      "kind": "parent",
+      "url": "https://ssl4.eir-parts.net/V4Public/eir/TJ8795/ja/ir_material/ir_material_1.js",
+      "parser": "group_td:parse"
+    }
+  ]
+}

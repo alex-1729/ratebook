@@ -1,0 +1,3 @@
+product_id,name,title_ja,url,file,bytes,sha256,retrieved_date
+nli-longdream-gold3,brochure,契約締結前交付書面 兼 商品パンフレット,https://www.nissay.co.jp/kojin/shohin/madohan/longdreamgold3/pdf/longdreamgold3.pdf,sources/nli/docs/nli-longdream-gold3/brochure_2026-11-17.pdf,13802763,39b91685760bad6f777f35f5cf8a17111bf1922cec47014f5b8ce7be32965422,2026-11-17
+nli-longdream-gold3,policy_conditions,2025年10月版 ロングドリームGOLD３「ご契約のしおり‐定款・約款」,https://inscloud.jp/ak/04/pdf/0499011006.pdf,sources/nli/docs/nli-longdream-gold3/policy_conditions_2026-11-17.pdf,3011873,5004f5fdd0125af7fe70bd46cb5b2a1113db4f56b88fe0f7d0fc5bd15005fc70,2026-11-17

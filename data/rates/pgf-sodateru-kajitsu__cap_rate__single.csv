@@ -1,0 +1,12 @@
+product_id,metric,plan,currency,term_years,age_band,sex,effective_date,value_pct,status,source_url,retrieved_date,snapshot,via_wayback
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-01-01,6.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-02-01,6.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-03-01,6.50,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-04-01,6.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-05-01,6.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-06-01,7.25,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-07-01,7.00,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-08-01,7.50,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-09-01,7.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-10-01,8.75,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false
+pgf-sodateru-kajitsu,cap_rate,single,USD,,,,2026-11-01,8.50,published,https://www.pgf-life.co.jp/st/products/sdia/01-1.html,2026-11-17,sources/pgf/pages/sdia_limit_rate_2026-11-17.html,false

@@ -1,0 +1,226 @@
+{
+  "id": "dfl-premier-receive-3",
+  "insurer_id": "dfl",
+  "name_ja": "プレミアレシーブ３",
+  "name_en": "Premier Receive 3",
+  "policy_name_ja": "定期積立金付積立利率変動型終身保険（26）（通貨指定型）",
+  "category": "whole_life",
+  "product_type": "whole_life_periodic_payout",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2026-11-02",
+  "off_sale_date": null,
+  "site_product_code": "234",
+  "notes": [
+    "Guarantee periods (term_years) are 10 and 30 years for USD and JPY, 10 and 20 years for AUD; the longer periods are offered only to younger age bands.",
+    "The same policy form is also sold as プレミアレシーブＭ３ (site code 235) and under two other names (237, 238); these are not tracked separately.",
+    "Launch date: 2026-11-02, the sales start stated in the insurer's news release of 2026-10-29 (id=1083, 『プレミアレシーブ３』, 定期積立金付積立利率変動型終身保険（26）（通貨指定型）). Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Launch announced 29 October 2026; rate history starts 1 November 2026.",
+    "Guarantee periods are 10 and 30 years for USD and JPY, 10 and 20 years for AUD; the longer periods are only for younger ages.",
+    "Also sold under three other names on the same policy form; those are not tracked separately."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "periodic_accumulation_rate": "定期積立率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_234",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=234"
+    },
+    {
+      "name": "rate_teiki_choice_26",
+      "url": "https://www.d-frontier-life.co.jp/products/index_teiki_choice_26.html"
+    },
+    {
+      "name": "mva_teiki_choice_26_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_teiki_choice_26_b.html?product=&agency="
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "teiki_choice_26_tsumitate",
+      "csv": "dfl-premier-receive-3__crediting_rate__standard.csv",
+      "plan_en": "Standard"
+    },
+    {
+      "metric": "periodic_accumulation_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "teiki_choice_26_teiki_m",
+      "csv": "dfl-premier-receive-3__periodic_accumulation_rate__standard.csv",
+      "sex": "M",
+      "plan_en": "Standard"
+    },
+    {
+      "metric": "periodic_accumulation_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "teiki_choice_26_teiki_f",
+      "csv": "dfl-premier-receive-3__periodic_accumulation_rate__standard.csv",
+      "sex": "F",
+      "plan_en": "Standard"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "teiki_choice_26_b",
+      "csv": "dfl-premier-receive-3__mva_rate__standard.csv",
+      "plan_en": "Standard"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_general",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/products/preceive3/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (general edition)"
+    },
+    {
+      "name": "brochure_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（しんきんらいふ終身ＤＦ）",
+      "variant": "shinkin",
+      "url": "https://www.d-frontier-life.co.jp/products/preceive3/shinkin/shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shinkin edition)"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05730.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あおぞら銀行"
+    },
+    {
+      "name_ja": "秋田銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "尼崎信用金庫"
+    },
+    {
+      "name_ja": "伊予銀行"
+    },
+    {
+      "name_ja": "ＳＢＩ証券"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "岡三証券"
+    },
+    {
+      "name_ja": "おかやま信用金庫"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "近畿産業信用組合"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "城北信用金庫"
+    },
+    {
+      "name_ja": "瀬戸信用金庫"
+    },
+    {
+      "name_ja": "大熊本証券"
+    },
+    {
+      "name_ja": "大東銀行"
+    },
+    {
+      "name_ja": "筑邦銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "東海東京証券"
+    },
+    {
+      "name_ja": "鳥取銀行"
+    },
+    {
+      "name_ja": "富山銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "山形銀行"
+    },
+    {
+      "name_ja": "姫路信用金庫"
+    },
+    {
+      "name_ja": "兵庫信用金庫"
+    },
+    {
+      "name_ja": "碧海信用金庫"
+    },
+    {
+      "name_ja": "北海道信用金庫"
+    },
+    {
+      "name_ja": "SBIマネープラザ"
+    },
+    {
+      "name_ja": "MiRaIウェルス・パートナーズ"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-16",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  },
+  "on_sale_date_source": {
+    "url": "https://www.d-frontier-life.co.jp/corporate/release/detail.html?id=1083",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/dfl/pages/release_1083_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  }
+}

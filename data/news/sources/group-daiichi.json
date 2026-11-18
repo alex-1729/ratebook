@@ -1,0 +1,20 @@
+{
+  "id": "group-daiichi",
+  "name_en": "Dai-ichi Life Group (Dai-ichi Life Holdings)",
+  "name_ja": "株式会社第一ライフグループ",
+  "site": "https://www.daiichilife-group.com/",
+  "insurer_ids": [
+    "dfl",
+    "daiichi",
+    "daiichineo"
+  ],
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases (group and subsidiaries)",
+      "kind": "parent",
+      "url": "https://www.daiichilife-group.com/news/json/news.json",
+      "parser": "group_daiichi:parse"
+    }
+  ]
+}

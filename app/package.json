@@ -1,0 +1,68 @@
+{
+  "name": "ratebook",
+  "productName": "Ratebook",
+  "version": "0.1.0",
+  "description": "Personal offline viewer for the Japan savings-insurance research dataset",
+  "private": true,
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/smoke.js && node test/rank.js",
+    "pack:mac": "electron-builder --mac --publish never",
+    "pack:win": "electron-builder --win --publish never"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.326",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "node-pty": "^1.1.0",
+    "pdfjs-dist": "^6.5.438",
+    "uplot": "^1.6.32"
+  },
+  "devDependencies": {
+    "electron": "^45.3.3",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "local.personal.insurance-rates-viewer",
+    "productName": "Ratebook",
+    "files": [
+      "src/**/*",
+      "package.json",
+      "!**/*.pdf",
+      "!node_modules/@napi-rs/**",
+      "!node_modules/pdfjs-dist/legacy/**",
+      "!node_modules/pdfjs-dist/types/**",
+      "!node_modules/pdfjs-dist/**/*.map",
+      "!node_modules/pdfjs-dist/image_decoders/**",
+      "!node_modules/**/*.map",
+      "!node_modules/node-pty/build/**",
+      "!node_modules/node-pty/deps/**",
+      "!node_modules/node-pty/src/**"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "publish": null,
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.finance",
+      "identity": null
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "asarUnpack": [
+      "src/chat/bridge.js",
+      "node_modules/node-pty/**",
+      "node_modules/@anthropic-ai/claude-agent-sdk-*/**"
+    ],
+    "npmRebuild": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "mnl",
+  "name_ja": "マニュライフ生命保険株式会社",
+  "name_en": "Manulife Life Insurance (Manulife Japan)",
+  "name_short_en": "Manulife",
+  "news_tier": "full",
+  "group": "manulife",
+  "site": "https://www.manulife.co.jp/",
+  "rate_hub_url": "https://www.manulife.co.jp/ja/individual/rates.html",
+  "rate_update": "Twice a month: each 積立利率 applies to contracts dated 1st-15th or 16th-end of month; the page shows the current window and the previous twelve",
+  "collector": "scripts/mnl.py",
+  "notes": [
+    "The news tracker's record gave name_en as \"Manulife Japan\"."
+  ],
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates apply to contracts dated 1st-15th or 16th-end of month."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "Press releases",
+      "kind": "official",
+      "url": "https://www.manulife.co.jp/ja/individual/about/newsrelease/press.html"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.manulife.co.jp/ja/individual/about/newsrelease/news.html"
+    }
+  ],
+  "access": "restricted",
+  "access_note": "Rates: manulife.co.jp answers HTTP 403 to non-browser clients and the rate tables are script-loaded; rates are collected from browser-read snapshots in sources/mnl/rates/. News lists: Plain HTTP requests get 403 Forbidden (checked 2026-11-17). Structure was read in the built-in browser pane only: press.html and news.html each hold every year in one page (current year open, 2015-2025 in collapsed year blocks), items as date + category + title linking to a PDF under /content/dam/insurance/jp/documents/press/ or /news/ (or a news/<year>/n<yyyymmdd>.html page). A Wayback Machine copy exists but was not used. Not collected; needs a browser-based read."
+}

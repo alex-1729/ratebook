@@ -1,0 +1,17 @@
+{
+  "id": "liaj",
+  "name_en": "Life Insurance Association of Japan",
+  "name_ja": "一般社団法人生命保険協会",
+  "site": "https://www.seiho.or.jp/",
+  "insurer_ids": [],
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "association",
+      "url": "https://www.seiho.or.jp/info/news/",
+      "archive_url": "https://www.seiho.or.jp/info/{fy}/",
+      "exclude": "seiho\\.or\\.jp/news/$"
+    }
+  ]
+}

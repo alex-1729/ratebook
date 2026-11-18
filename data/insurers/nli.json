@@ -1,0 +1,32 @@
+{
+  "id": "nli",
+  "name_ja": "日本生命保険相互会社",
+  "name_en": "Nippon Life",
+  "name_short_en": "Nippon Life",
+  "news_tier": "full",
+  "group": "nippon",
+  "site": "https://www.nissay.co.jp/",
+  "rate_hub_url": "https://va-dmn2.nissay.co.jp/vkhengaku/servlet/JP.co.nissay.KE8.KE8S008Z",
+  "rate_update": "Semi-monthly, effective the 1st and 16th (current 契約日 range only on the rate page)",
+  "collector": "scripts/nli.py",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates are effective the 1st and 16th."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.nissay.co.jp/kaisha/news/json/index.json",
+      "parser": "nissay:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.nissay.co.jp/kaisha/topics/json/index.json",
+      "parser": "nissay:parse"
+    }
+  ]
+}

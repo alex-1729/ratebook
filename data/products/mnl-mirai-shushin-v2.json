@@ -1,0 +1,251 @@
+{
+  "id": "mnl-mirai-shushin-v2",
+  "insurer_id": "mnl",
+  "candidate": true,
+  "name_ja": "未来につなげる終身保険v2",
+  "name_en": "Mirai ni Tsunageru Whole Life v2 (Future-Connecting Whole Life v2)",
+  "name_short_en": "Mirai ni Tsunageru v2",
+  "policy_name_ja": "通貨選択型一時払終身保険",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_locked_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-11-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://prtimes.jp/main/html/rd/p/000000252.000014784.html",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/mnl/pages/release_mnl-mirai-shushin-v2_20241101_2026-11-17.html"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/mnl/rates/ln-baseint_2026-11-17.txt"
+  },
+  "guarantee_terms_years": null,
+  "first_insurance_period_years": [
+    2,
+    3,
+    5,
+    7,
+    10
+  ],
+  "editions": [],
+  "notes": [
+    "Rates are script-loaded from the site's JSON feed (POST /bin/rates/data) and manulife.co.jp answers HTTP 403 to non-browser clients, so the rate pages were read in the built-in browser on 2026-11-17 and saved as condensed text snapshots (format mnl-condensed-v1, see the header of each file under sources/mnl/rates/). scripts/mnl.py parses those snapshots; it cannot fetch live. New data needs a new browser snapshot.",
+    "The brief expected date-stamped rate PDFs under /documents/rates/riritsu/. Those PDFs (riritsu-N-YYYYMMDD.pdf, linked from 主な諸利率) are the insurer's generic rate list for other products, not this product's grid, so none were used or saved. The Wayback Machine was offline on 2026-11-17 (Internet Archive 'Temporarily Offline'), so no Wayback history was collected; this is a gap to retry.",
+    "has_mva is true: the product page says the surrender value is market-value adjusted (市場価格調整; a 市場価格調整用利率 page exists, not collected) and can fall below the single premium.",
+    "積立利率 is set twice a month (contract dates 1st-15th and 16th-end) and applies for the whole life of the contract from the contract date, so guarantee_terms_years is null. 告知なしタイプ also has a 第1保険期間 (2, 3, 5, 7, 10 years; the 受取コース offers 2, 5, 10) during which the death benefit grows; it is stored as term_years. 告知ありタイプ has no first-period dimension, so term_years is blank there.",
+    "age_band is the 契約年齢 band as printed: 0-34 (34歳以下), 35-39 ... 80-84, and open-ended 85+ (85歳以上) or 50+ (告知あり 50歳以上). Sex is not a rate dimension. Currency: the contract currency (円/米ドル/豪ドル).",
+    "effective_date is the first day of the half-month contract-date window; the window ends on the 15th or the month end. A '-' on the page is stored as status not_offered; the page says that for 告知なし a '-' means that currency, age and first period cannot be applied for.",
+    "History: the page's 過去の積立利率 lists only the twelve half-month windows from 2026-05-16, so the series starts there; nothing earlier is published on the page. The current window (2026-11-16 to 2026-11-30) comes from the 最新 page. Re-run with new snapshots to extend.",
+    "Rates are stated before tax (税引前). In the 告知なし tables the feed shows the same value across the offered first periods; the snapshot condenses that and the collector expands it.",
+    "Two rate pages exist: miraisyushinv2 (基本コースのみ, form MLJ(PPD)26100617) and miraisyushinv2-1 (基本コースなど: 基本/特定疾病保障/受取, form MLJ(PTD)24110855). Only miraisyushinv2-1 is collected; its 基本コース figures match the other page (checked for the latest 告知あり and 告知なし tables and for the past 告知あり 34歳以下 table). 特定疾病保障コース shares the 基本コース rates (page heading 基本コース／特定疾病保障コース).",
+    "Distributors: 17 financial institutions in four groups (the お取扱いのご案内 page); groups differ in which courses are offered (pages miraisyushin02c/02d/02e) but the page does not say which group has which set. マニュライフ生命 staff and insurance agencies also sell it (group 1 only lists them explicitly). Bank-specific product names not collected.",
+    "Plan names shortened 2026-11-17: 'Underwritten' = 告知ありタイプ, 'No health questions' = 告知なしタイプ (初期抑制型死亡のみ保障特則); the receipt course (受取コース) adds the 積立金区分特約. In the 告知なし plans term_years is the 第1保険期間 (2/3/5/7/10 years basic, 2/5/10 receipt).",
+    "Documents (2026-11-17): manulife.co.jp answered HTTP 403 to the one plain request for the brochure PDF (金融機関代理店 edition, miraisyushin02-maeshomen-fi.pdf); not worked around. The Wayback Machine holds two captures of that URL: 2024-11-07 (complete, %EOF present; cover 2024年11月版, form MLJ（PTD）24060507‐292605) and 2024-12-13 (cut off at 1 MiB, not kept). The 2024-11-07 copy is saved and flagged via_wayback / wayback_copy_may_be_out_of_date in sources/mnl/docs/manifest.csv; the rate pages cite form MLJ(PTD)24110855, so a later edition probably exists. The ご契約のしおり・約款 URL was not found: the product page that links it cannot be read from this network.",
+    "Launch date: 2024-11-01, from Manulife's release on PR TIMES (manulife.co.jp answers 403 to scripts): 新商品『未来につなげる終身保険v2』「2024年11月1日（金）から販売開始いたします」. The 2014-08 date belongs to the earlier series, not to v2. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history is short: twelve half-month windows from 16 May 2026 plus the current one, as the insurer publishes nothing earlier.",
+    "The insurer's site only answers from some networks, so rates come from saved copies and need a new copy for each period.",
+    "No archived history was collected, because the archive service was offline when it was tried; this is a gap to retry.",
+    "The surrender value is market-value adjusted and can fall below the single premium; the adjustment rates are not collected.",
+    "The brochure held is an archived copy of the November 2024 edition and may be out of date; the insurer's site refuses downloads from this network, and the policy conditions could not be located.",
+    "Launched 1 November 2024 (insurer's release). Which of the distributor groups offers which courses is not stated."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率"
+  },
+  "pages": [
+    {
+      "name": "product",
+      "url": "https://www.manulife.co.jp/ja/individual/products/goods/miraisyushin02.html"
+    },
+    {
+      "name": "distributors",
+      "url": "https://www.manulife.co.jp/ja/individual/products/goods/miraisyushin02a.html"
+    },
+    {
+      "name": "fi_list",
+      "url": "https://www.manulife.co.jp/ja/individual/products/fi/product.html"
+    },
+    {
+      "name": "rate_latest",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2-1/ln-baseint.html"
+    },
+    {
+      "name": "rate_past",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2-1/ln-baseint-past.html"
+    },
+    {
+      "name": "rate_latest_basic_only",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2/ln-baseint.html"
+    },
+    {
+      "name": "rate_past_basic_only",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2/ln-baseint-past.html"
+    },
+    {
+      "name": "exchange_rate",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2-1/ln-int.html"
+    },
+    {
+      "name": "mva_rate",
+      "url": "https://www.manulife.co.jp/ja/individual/rates/miraisyushinv2-1/bmint.html"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.manulife.co.jp/ja/individual/rates.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "ari_kihon",
+      "plan_ja": "告知ありタイプ 基本コース／特定疾病保障コース",
+      "plan_en": "Underwritten, basic or illness cover",
+      "currencies": [
+        "JPY",
+        "USD",
+        "AUD"
+      ],
+      "csv": "mnl-mirai-shushin-v2__crediting_rate__ari_kihon.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ari_uketori",
+      "plan_ja": "告知ありタイプ 受取コース",
+      "plan_en": "Underwritten, receipt course",
+      "currencies": [
+        "JPY",
+        "USD",
+        "AUD"
+      ],
+      "csv": "mnl-mirai-shushin-v2__crediting_rate__ari_uketori.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "nashi_kihon",
+      "plan_ja": "告知なしタイプ 基本コース",
+      "plan_en": "No health questions, basic course",
+      "currencies": [
+        "JPY",
+        "USD",
+        "AUD"
+      ],
+      "csv": "mnl-mirai-shushin-v2__crediting_rate__nashi_kihon.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "nashi_uketori",
+      "plan_ja": "告知なしタイプ 受取コース",
+      "plan_en": "No health questions, receipt course",
+      "currencies": [
+        "JPY",
+        "USD",
+        "AUD"
+      ],
+      "csv": "mnl-mirai-shushin-v2__crediting_rate__nashi_uketori.csv"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "2024年11月版 契約締結前交付書面 兼 商品パンフレット（契約概要／注意喚起情報）",
+      "variant": "fi",
+      "url": "https://www.manulife.co.jp/content/dam/insurance/jp/documents/products/miraisyushin02/miraisyushin02-maeshomen-fi.pdf",
+      "title_en": "Brochure, contract summary and important information (archived copy)",
+      "edition": "November 2024 edition"
+    },
+    {
+      "name": "corporate_notice",
+      "title_ja": "法人契約者向け 定期保険等留意事項",
+      "variant": "corporate",
+      "url": "https://www.manulife.co.jp/content/dam/insurance/jp/documents/business/goods/houjinmuketeikihokenryuijikou202201.pdf",
+      "title_en": "Notice for corporate policyholders",
+      "edition": "January 2022 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "三菱UFJ銀行",
+      "group": 1
+    },
+    {
+      "name_ja": "あおぞら銀行",
+      "group": 1
+    },
+    {
+      "name_ja": "静岡銀行",
+      "group": 1
+    },
+    {
+      "name_ja": "広島銀行",
+      "group": 1
+    },
+    {
+      "name_ja": "むさし証券",
+      "group": 1
+    },
+    {
+      "name_ja": "富山銀行",
+      "group": 2
+    },
+    {
+      "name_ja": "東邦銀行",
+      "group": 3
+    },
+    {
+      "name_ja": "いちよし証券",
+      "group": 3
+    },
+    {
+      "name_ja": "内藤証券",
+      "group": 4
+    },
+    {
+      "name_ja": "岡三証券",
+      "group": 4
+    },
+    {
+      "name_ja": "十六銀行",
+      "group": 4
+    },
+    {
+      "name_ja": "北洋銀行",
+      "group": 4
+    },
+    {
+      "name_ja": "福島銀行",
+      "group": 4
+    },
+    {
+      "name_ja": "大垣共立銀行",
+      "group": 4
+    },
+    {
+      "name_ja": "三十三銀行",
+      "group": 4
+    },
+    {
+      "name_ja": "三縁証券ウェルスマネジメント",
+      "group": 4
+    },
+    {
+      "name_ja": "三津井証券ウェルスマネジメント",
+      "group": 4
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:mnl-mirai-shushin-v2; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

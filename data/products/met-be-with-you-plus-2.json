@@ -1,0 +1,411 @@
+{
+  "id": "met-be-with-you-plus-2",
+  "insurer_id": "met",
+  "candidate": true,
+  "name_ja": "ビー ウィズ ユー プラスⅡ",
+  "name_en": "Be With You Plus II",
+  "policy_name_ja": "利率変動型一時払終身保険（米ドル建 16）/一時払終身保険（米ドル建 初期死亡保険金抑制型）/利率変動型一時払終身保険（Ⅰ型 24）/利率変動型一時払終身保険（Ⅱ型 24）",
+  "policy_names": [
+    {
+      "name_ja": "利率変動型一時払終身保険（米ドル建 16）",
+      "plan": "usd_declaration (contracts from 2025-10) / usd_declaration_to_2025_09",
+      "currencies": [
+        "USD"
+      ]
+    },
+    {
+      "name_ja": "一時払終身保険（米ドル建 初期死亡保険金抑制型）",
+      "plan": "usd_no_declaration",
+      "currencies": [
+        "USD"
+      ]
+    },
+    {
+      "name_ja": "利率変動型一時払終身保険（Ⅰ型 24）",
+      "plan": "jpy_type1",
+      "currencies": [
+        "JPY"
+      ]
+    },
+    {
+      "name_ja": "利率変動型一時払終身保険（Ⅱ型 24）",
+      "plan": "jpy_type2",
+      "currencies": [
+        "JPY"
+      ]
+    }
+  ],
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_variable_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "JPY"
+  ],
+  "has_mva": null,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/met/pages/cr_LIST_2026-11-17.html"
+  },
+  "guarantee_terms_years": {
+    "USD": [
+      20,
+      "lifetime"
+    ],
+    "JPY": [
+      30,
+      15
+    ]
+  },
+  "editions": [
+    {
+      "name_ja": "ビーエルスマイルⅢ",
+      "name_en": "BL Smile III",
+      "distributor_group": "三井住友銀行",
+      "site_code": "ahp750",
+      "shares_rate_page": true,
+      "basis": "Named on the insurer's rate list under the same entry as ビー ウィズ ユー プラスⅡ (cr_LIST). Distributor from the task brief."
+    },
+    {
+      "name_ja": "アリエスⅢ",
+      "name_en": "Aries III",
+      "distributor_group": "みずほ",
+      "site_code": "ahp750",
+      "shares_rate_page": true,
+      "basis": "Same list entry. Distributor from the task brief."
+    },
+    {
+      "name_ja": "ディア マイ ファミリーⅢ",
+      "name_en": "Dear My Family III",
+      "distributor_group": null,
+      "site_code": "ahp750",
+      "shares_rate_page": true,
+      "basis": "Same list entry; distributor not established."
+    },
+    {
+      "name_ja": "メットライフ終身保険〈円建・外貨建〉",
+      "name_en": "MetLife whole life (JPY and foreign currency)",
+      "distributor_group": "MetLife agents and consultants",
+      "site_code": "ahp750",
+      "shares_rate_page": true,
+      "basis": "Same list entry."
+    },
+    {
+      "name_ja": "明日へのバトン",
+      "name_en": "Ashita e no Baton",
+      "distributor_group": "ゆうちょ銀行",
+      "site_code": "ahp764",
+      "shares_rate_page": false,
+      "basis": "Own entry and page (ahp764) in the rate list, agency list ゆうちょ銀行 only. Its rate page returns the same numbers as ahp750 (current window and the 2025-26 history of the 米ドル建 初期死亡保険金抑制型 series were compared on 2026-11-17); scripts/met.py checks the current numbers on every run. No separate series is stored."
+    }
+  ],
+  "rate_page": "rate_current",
+  "notes": [
+    "The rate pages are a React app: the numbers come from POST https://www.metlife.co.jp/annuityproduct/v1/applications/newpolicyinfo (public, no login), found in the site's own JavaScript bundle and checked against the page opened in the built-in browser. scripts/met.py sends the same requests.",
+    "All series are 基準利率 (base_rate) of 利率変動型 forms: the rate applying to contracts concluded in the half-month window, with a lifetime-style crediting afterwards at a rate that follows the 基準利率 (minimum guarantee: USD 16 年2.00%, JPY Ⅰ型24 年0.25%, JPY Ⅱ型24 年0.01%, per the page). effective_date is the first day of the window.",
+    "Plans: usd_no_declaration = 一時払終身保険（米ドル建 初期死亡保険金抑制型）, 健康告知なし, age bands 50-59, 60-69, 70-80, 81-90, lifetime guarantee (term_years blank); usd_declaration = 利率変動型（米ドル建 16）, 健康告知あり, ages 0-85, 20-year guarantee, contracts from 2025-10-01 (history from 2025-10-01); usd_declaration_to_2025_09 = the same form for contracts concluded up to 2025-09, shown on the insurer's page as a past-rate list (過去の基準利率一覧, 2025年9月以前のご契約) with MONTHLY contract-date windows from 2016-08-15 to 2025-09; the list states a 基準利率保証期間 per window (30 years until the 2023-03 window, 20 years from 2023-04), stored as term_years; age band not stated on the list; jpy_type1 = Ⅰ型24 健康告知あり (0-75 for 30 years, 76-85 for 15 years); jpy_type2 = Ⅱ型24 健康告知なし (40-75 for 30 years, 76-85 for 15 years). term_years is the guarantee period.",
+    "For usd_declaration_to_2025_09 the API's answer to startYear=2000 also carries monthly windows for 2026-01 to 2026-10 that the page never shows (its year selector ends at 2025, checked in the browser on 2026-11-17) and that contradict the list's heading (contracts up to 2025-09). They were removed by the independent check on 2026-11-17 and scripts/met.py skips them; what they represent is not established. There are no windows for 2025-10 to 2025-12 in this list. This series was not cross-checked against a second source.",
+    "History starts: usd_no_declaration 2025-04-01 (the API returns nothing earlier), usd_declaration 2025-10-01, usd_declaration_to_2025_09 2016-08-15 to 2025-09-01, jpy_type1 and jpy_type2 2024-07-01. The API's serviceOpenDate for the page set is 2021/07/01, which is the age of the page set, not a launch date. The launch of the current policy forms is not established.",
+    "The 円建 forms are not offered by every distributor (the page says so). The same page set also exists for non-bank channels (ahp770 and ahp771: 金融機関代理店以外 and MetLife consultants) with different plans (for example spiswl21 USD 30-year, 5.30% now); those are not collected.",
+    "has_mva is null: the page links 解約・減額をご検討の場合 and 指標金利について, which suggests a market-value adjustment, but the pages behind those links were not read.",
+    "The brochures and policy conditions were not downloaded. The brochure PDFs listed under documents are per distributor group.",
+    "Distributors are the agency list of ahp750 (retrieved 2026-11-17).",
+    "Plan names shortened 2026-11-17 (full wording in plan_ja): usd_no_declaration is 一時払終身保険（米ドル建 初期死亡保険金抑制型）, no health declaration, reduced death benefit in the early years; usd_declaration and usd_declaration_to_2025_09 are 利率変動型一時払終身保険（米ドル建 16）, the latter on monthly contract windows; jpy_type1 / jpy_type2 are 利率変動型一時払終身保険（Ⅰ型 24 / Ⅱ型 24）. All five are 基準利率 (base_rate).",
+    "Launch date search 2026-11-17: no MetLife release found; the API serviceOpenDate 2021/07/01 is for the page set, not a stated launch. Left null.",
+    "Launch date search 2026-11-17 (second pass): metlife.co.jp press and history pages answered HTTP 403 (not worked around); the PR TIMES mirror of MetLife releases and four web searches. Candidates, none a stated launch: a web-search summary of MetLife's corporate history giving 2020-07 (page not saved); the release of 2021-06-30 (sources/met/pages/release_met-be-with-you-plus-2_20210630_2026-11-17.pdf) launching the 健康告知なし plan from 2021-07-01, to be sold as ビー ウィズ ユー プラスⅡ in future; fund history of the 健康告知あり form from 2016-08. Still null."
+  ],
+  "notes_en": [
+    "Rates are base rates that follow the market and apply to contracts concluded in each half-month window.",
+    "History starts in April 2025 for the no-declaration USD plan, October 2025 for the current USD plan and July 2024 for yen.",
+    "A separate past-rate list for USD contracts up to September 2025 reaches back to August 2016 and has not been cross-checked against a second source.",
+    "Some windows in 2026 appeared in the data but not on the insurer's page, and were removed; what they represent is unknown.",
+    "Launch date not established. Whether a market value adjustment applies is not confirmed, and the brochures and conditions have not been read."
+  ],
+  "metrics": {
+    "base_rate": "基準利率"
+  },
+  "pages": [
+    {
+      "name": "rate_current",
+      "url": "https://www.metlife.co.jp/lf1/ahp750/08.html"
+    },
+    {
+      "name": "rate_list",
+      "url": "https://www.metlife.co.jp/lf1/ahplf1/cr_LIST.html"
+    },
+    {
+      "name": "edition_rate_page",
+      "url": "https://www.metlife.co.jp/lf1/ahp764/08.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "base_rate",
+      "plan": "usd_no_declaration",
+      "plan_ja": "米ドル建 初期死亡保険金抑制型（健康告知なし） 基準利率",
+      "plan_en": "USD, no declaration, reduced early cover",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "met-be-with-you-plus-2__base_rate__usd_no_declaration.csv"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_declaration",
+      "plan_ja": "利率変動型（米ドル建 16）（健康告知あり） 基準利率 2025年10月以降のご契約",
+      "plan_en": "USD, health declared, from Oct 2025",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "met-be-with-you-plus-2__base_rate__usd_declaration.csv"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_declaration_to_2025_09",
+      "plan_ja": "利率変動型（米ドル建 16）（健康告知あり） 基準利率 2025年9月以前のご契約",
+      "plan_en": "USD, health declared, to Sep 2025",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "met-be-with-you-plus-2__base_rate__usd_declaration_to_2025_09.csv"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "jpy_type1",
+      "plan_ja": "利率変動型（Ⅰ型 24）（健康告知あり） 基準利率",
+      "plan_en": "JPY type I, health declared",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "met-be-with-you-plus-2__base_rate__jpy_type1.csv"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "jpy_type2",
+      "plan_ja": "利率変動型（Ⅱ型 24）（健康告知なし） 基準利率",
+      "plan_en": "JPY type II, no declaration",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "met-be-with-you-plus-2__base_rate__jpy_type2.csv"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_common_usd_jpy",
+      "title_ja": "契約締結前交付書面 兼 商品パンフレット 共通（米ドル建／円建）",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p745/p745_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (common, USD and yen)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_common_usd",
+      "title_ja": "同 共通（米ドル建のみ）",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p750/p750_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (common, USD only)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_smtb",
+      "title_ja": "同 三井住友信託銀行",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p752/p752_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Sumitomo Mitsui Trust edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_daiwa",
+      "title_ja": "同 大和証券",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p765/p765_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Daiwa Securities edition)",
+      "edition": "October 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款（ページ）",
+      "url": "https://www.metlife.co.jp/yakkan/bank/spwl16_spwl21/",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "阿波銀行"
+    },
+    {
+      "name_ja": "飯田信用金庫"
+    },
+    {
+      "name_ja": "イオン銀行"
+    },
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "伊予銀行"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "SMBC信託銀行"
+    },
+    {
+      "name_ja": "SBI証券"
+    },
+    {
+      "name_ja": "SBI新生銀行"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "大垣共立銀行"
+    },
+    {
+      "name_ja": "沖縄銀行"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "鹿児島銀行"
+    },
+    {
+      "name_ja": "関西みらい銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "紀陽銀行"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "きらぼし銀行"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券"
+    },
+    {
+      "name_ja": "熊本銀行"
+    },
+    {
+      "name_ja": "高知銀行"
+    },
+    {
+      "name_ja": "埼玉りそな銀行"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "十八親和銀行"
+    },
+    {
+      "name_ja": "荘内銀行"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "仙台銀行"
+    },
+    {
+      "name_ja": "第四北越銀行"
+    },
+    {
+      "name_ja": "大和証券"
+    },
+    {
+      "name_ja": "但馬銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "八十二長野銀行"
+    },
+    {
+      "name_ja": "肥後銀行"
+    },
+    {
+      "name_ja": "百十四銀行"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "福岡銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "北都銀行"
+    },
+    {
+      "name_ja": "三井住友信託銀行"
+    },
+    {
+      "name_ja": "みなと銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "りそな銀行"
+    },
+    {
+      "name_ja": "琉球銀行"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:met-be-with-you-plus-2; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked. The snapshots carry MetLife's API field names, not on-page labels; values match under the collector's reading of those names, which was not re-confirmed offline."
+  }
+}

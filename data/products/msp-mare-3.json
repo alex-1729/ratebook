@@ -1,0 +1,386 @@
+{
+  "id": "msp-mare-3",
+  "insurer_id": "msp",
+  "name_ja": "MAREⅢ",
+  "name_en": "MARE III",
+  "policy_name_ja": "年金開始時年金額確定特約付通貨選択生存保障重視型個人年金保険/通貨選択型定額個人年金保険",
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "EUR",
+    "NZD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "net_yield_from": "crediting_rate",
+  "net_yield_plans": [
+    "tsumitate"
+  ],
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "on_sale_not_later_than": "2025-01-20",
+  "on_sale_not_later_than_source": {
+    "url": "https://web.archive.org/web/20250118001205/https://msp.ms-primary.com/g/RateList.do?product_id=67",
+    "retrieved": "2026-11-16",
+    "snapshot": "sources/msp/pages/wayback_msp-mare-3_20250118001205_2026-11-16.html",
+    "via_wayback": true
+  },
+  "partial_withdrawals": [
+    {
+      "scope": "Product on the current lineup; \"-\" cells (new business stopped): USD 定期支払コース 5 yr and 年金原資充実コース 15 yr; AUD all 15 yr; EUR 5 and 15 yr (積立, 定期支払); NZD 15 yr; JPY 5 yr.",
+      "quote": "※積立利率に「-」で表示されている場合は、現在新規のお取扱いを停止しています。",
+      "source": {
+        "url": "https://msp.ms-primary.com/g/RateList.do?product_id=67",
+        "retrieved": "2026-11-17",
+        "snapshot": "sources/msp/pages/live_ratelist_67_2026-11-17.html"
+      },
+      "last_rate_period": null
+    }
+  ],
+  "site_product_code": "67",
+  "notes": [
+    "The live rate server msp.ms-primary.com (RateList.do?product_id=67 and Rate.do) times out from the usual network (connect timeout, first seen 2026-11-16). Rate data comes from three Wayback captures (2025-01-18, 2025-10-14, 2026-06-12; the Wayback CDX list held no others) plus live copies saved from another network, the first on 2026-11-17.",
+    "積立利率 changes every two weeks: each value applies to contracts dated in a Monday-to-Sunday two-week window (2025-01-20 to 02-02, 2025-10-13 to 10-26, 2026-06-08 to 06-21 in the captures). With three captures only 3 of roughly 50 windows a year are covered; the series has large gaps and rates between captures are not interpolated.",
+    "effective_date is the first day of the contract-date window. The page also applies the rate to renewal (更改日) dates of the 継続プラン.",
+    "'-' on the page is stored as status not_offered. For EUR, NZD and JPY the page shows no 年金原資充実コース row at all, so those points are absent from the CSV rather than marked not_offered (presumably the course is not sold in those currencies; not confirmed).",
+    "FX tables (円入金特約 / 円支払特約) on the rate page are not collected.",
+    "Exact launch date not established: MS Primary's news archives (ms-primary.com/news/ir/ and /news/info/, 2002-2026, scanned by headline) contain no MAREⅢ launch release. The only MARE entry is a 2011-09-02 release on the original MARE (マーレ) sold at Chuo Mitsui Trust Bank. The earliest Wayback capture of the rate page (2025-01-18) already shows MAREⅢ (see the bound note). https://www.ms-primary.com/news/ itself returned HTTP 403 and was not pursued.",
+    "The agency list page shows a single distributor for this product: 三井住友信託銀行 (Sumitomo Mitsui Trust Bank). The product page itself carries a notice link to /pdf/invite.pdf, not collected.",
+    "Brochure (2026年4月版, saved 2026-11-16) read on 2026-11-16 by text extraction with page renders checked for the contract-terms and surrender-charge tables: has_mva, loads, surrender_charge, mva, plan_terms and premium_limits come from it. The policy conditions PDF (MSPL-2604-A-0034-00) has not been read. No target-setting feature: 円建年金への移行 is on request only.",
+    "Rate course names on the page: 積立コース, 定期支払コース, 年金原資充実コース; terms 5, 10, 15 years.",
+    "2026-11-17: a copy of the live rate page, saved from another network where the rate server answers, was ingested with `python3 scripts/msp.py --only msp-mare-3 --file <saved page> --retrieved <date>`. It covers the contract-date window 2026-11-09 to 2026-11-22, which confirms two-week windows starting on a Monday. The rate server remains unreachable from the usual network, so each new window needs another saved copy.",
+    "The 年金原資充実コース is USD and AUD only per the brochure, which is why the rate page shows no row for EUR, NZD or JPY on that course. JPY is offered on the 積立 and 定期支払 courses for 10 and 15 years only.",
+    "Broadway WorldⅢ (三井住友銀行, rate page product_id=51) uses the same two policy forms but is a separately priced product with different terms: no 積立コース, JPY on the 年金原資充実コース, no 15-year term, lower premium limits. Not tracked.",
+    "Net yield (brochure 2026年4月版, read 2026-11-17): for the 積立コース the brochure says the 積立利率 is the same as the 実質的な利回り (annual compound) of the annuity fund at the annuity start date on the single premium (契約概要, PDF p.24), so net_yield_plans lists tsumitate only. For the 定期支払コース it says the 積立利率 differs from the 実質的な利回り of the annuity fund plus periodic payments received (p.24). For the 年金原資充実コース it says the 積立利率 differs from the 実質的な利回り, because a 契約初期費用 is deducted from the premium and a death-benefit cost from the fund while it is below the basic sum insured (p.12). No net yield is published for those two courses.",
+    "On sale not later than 2025-01-20 (bound only): the earliest Wayback capture of the rate page (2025-01-18, a Saturday) already shows MAREⅢ rates for contracts from Monday 2025-01-20. MS Primary posts the next window ahead of time, so the bound is the window start, not the capture date."
+  ],
+  "notes_en": [
+    "The insurer's rate server only answers from some networks, so current rates come from saved copies and need a new copy each window.",
+    "Rates are set for two-week windows starting on a Monday.",
+    "History before November 2026 is three archive captures only (January 2025, October 2025, June 2026).",
+    "The annuity-focused (tontine) course is offered in USD and AUD only.",
+    "Launch date not established; on sale by 20 January 2025 (archived rate page).",
+    "Net yield: for the Accumulation course the brochure says the crediting rate equals the net yield, so that rate stands in for it. The Periodic payout and Annuity-focused courses publish no net yield; the brochure says theirs differs from the crediting rate.",
+    "Exchange rates are not collected. The policy conditions document has not been read.",
+    "Some currency and term cells are closed to new business (shown as a dash on the rate page); the product stays on sale."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率"
+  },
+  "pages": [
+    {
+      "name": "product_mare3",
+      "url": "https://www.ms-primary.com/products/mare3/"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.ms-primary.com/customer/rate/"
+    },
+    {
+      "name": "rate_index",
+      "url": "https://msp.ms-primary.com/g/Rate.do"
+    }
+  ],
+  "agent_page": "https://www.ms-primary.com/products/product_agent/",
+  "rate_source": {
+    "name": "ratelist_67",
+    "live_url": "https://msp.ms-primary.com/g/RateList.do?product_id=67",
+    "cdx_url": "msp.ms-primary.com/g/RateList.do?product_id=67"
+  },
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "nenkin_genshi_jujitsu",
+      "plan_ja": "年金原資充実コース",
+      "course_ja": "年金原資充実コース",
+      "csv": "msp-mare-3__crediting_rate__nenkin_genshi_jujitsu.csv",
+      "product_type": "survival_weighted_annuity",
+      "plan_en": "Annuity-focused (tontine)"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "tsumitate",
+      "plan_ja": "積立コース",
+      "course_ja": "積立コース",
+      "csv": "msp-mare-3__crediting_rate__tsumitate.csv",
+      "plan_en": "Accumulation"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "teiki_shiharai",
+      "plan_ja": "定期支払コース",
+      "course_ja": "定期支払コース",
+      "csv": "msp-mare-3__crediting_rate__teiki_shiharai.csv",
+      "plan_en": "Periodic payout"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面兼商品パンフレット",
+      "variant": "general",
+      "url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "title_en": "Brochure and pre-contract disclosure"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.ms-primary.com/products/mare3/pdf/mare3_MSPL-2604-A-0034-00.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "三井住友信託銀行",
+      "category": "bank"
+    }
+  ],
+  "plan_terms": {
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    },
+    "nenkin_genshi_jujitsu": {
+      "plan_ja": "年金原資充実コース",
+      "policy_name_ja": "年金開始時年金額確定特約付通貨選択生存保障重視型個人年金保険",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "terms_years": [
+        5,
+        10
+      ],
+      "issue_age": {
+        "5": "0-85",
+        "10": "0-80"
+      },
+      "death_benefit": "基本保険金額 (the single premium)",
+      "surrender_value": "Market-adjusted value, capped at 基本保険金額; no surrender charge",
+      "brochure_pages": "p3, p13, p21-32"
+    },
+    "tsumitate": {
+      "plan_ja": "積立コース",
+      "policy_name_ja": "通貨選択型定額個人年金保険",
+      "currencies": [
+        "USD",
+        "AUD",
+        "EUR",
+        "NZD",
+        "JPY"
+      ],
+      "terms_years": {
+        "USD": [
+          5,
+          10,
+          15
+        ],
+        "AUD": [
+          5,
+          10,
+          15
+        ],
+        "EUR": [
+          5,
+          10,
+          15
+        ],
+        "NZD": [
+          5,
+          10,
+          15
+        ],
+        "JPY": [
+          10,
+          15
+        ]
+      },
+      "issue_age": {
+        "5": "0-85",
+        "10": "0-80",
+        "15": "0-75"
+      },
+      "death_benefit": "Greater of 保障基準価格 and surrender value",
+      "yen_annuity_conversion": "円建年金移行特約 (foreign currency only): on the policyholder's request from 1 year after the contract date; surrender charge applies within 10 years; TTM-50銭",
+      "brochure_pages": "p5, p13, p43-58"
+    },
+    "teiki_shiharai": {
+      "plan_ja": "定期支払コース",
+      "policy_name_ja": "通貨選択型定額個人年金保険 + 定期支払特約",
+      "currencies": [
+        "USD",
+        "AUD",
+        "EUR",
+        "NZD",
+        "JPY"
+      ],
+      "terms_years": {
+        "USD": [
+          5,
+          10,
+          15
+        ],
+        "AUD": [
+          5,
+          10,
+          15
+        ],
+        "EUR": [
+          5,
+          10,
+          15
+        ],
+        "NZD": [
+          5,
+          10,
+          15
+        ],
+        "JPY": [
+          10,
+          15
+        ]
+      },
+      "issue_age": {
+        "5": "0-85",
+        "10": "0-80",
+        "15": "0-75"
+      },
+      "periodic_payment": "Paid each policy anniversary: the past year's interest at the crediting rate; reduces 保障基準価格",
+      "death_benefit": "Greater of 保障基準価格 and surrender value",
+      "brochure_pages": "p7, p13, p43-58"
+    }
+  },
+  "premium_limits": {
+    "minimum": {
+      "foreign_currency": "20,000 currency units",
+      "JPY": 2000000,
+      "with_yen_premium_rider_jpy": 2000000
+    },
+    "maximum_jpy_equivalent": 2000000000,
+    "note": "Maximum is an aggregate cap with other MS Primary fixed policies",
+    "brochure_pages": "p13, p25, p50",
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    }
+  },
+  "loads": {
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    },
+    "initial_charge_pct": {
+      "nenkin_genshi_jujitsu": {
+        "5": 3.0,
+        "10": 5.0
+      },
+      "tsumitate": 0,
+      "teiki_shiharai": 0
+    },
+    "annuity_management_fee_pct_max": 1.0,
+    "fx_spread_jpy": {
+      "yen_premium": "TTM+0.50",
+      "yen_payout": "TTM-0.50"
+    },
+    "in_rate_charges": "保険関係費 (acquisition, maintenance, credit cost; plus mortality and periodic-payment charges on the 積立 and 定期支払 courses) is deducted in setting the crediting rate; not quantified",
+    "brochure_pages": "p31-32, p55"
+  },
+  "surrender_charge": {
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    },
+    "applies_to": [
+      "tsumitate",
+      "teiki_shiharai"
+    ],
+    "basis": "Percentage of the single premium, by policy years elapsed; deducted from the market-adjusted value",
+    "foreign_currency_pct": {
+      "10_and_15_year": [
+        6.0,
+        5.4,
+        4.8,
+        4.2,
+        3.6,
+        3.0,
+        2.4,
+        1.8,
+        1.2,
+        0.6
+      ],
+      "5_year": [
+        4.0,
+        3.2,
+        2.4,
+        1.6,
+        0.8
+      ]
+    },
+    "jpy_pct": {
+      "10_and_15_year": [
+        2.0,
+        1.8,
+        1.6,
+        1.4,
+        1.2,
+        1.0,
+        0.8,
+        0.6,
+        0.4,
+        0.2
+      ]
+    },
+    "after_year_10_pct": 0,
+    "nenkin_genshi_jujitsu": "No surrender charge",
+    "brochure_pages": "p56, p58"
+  },
+  "mva": {
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    },
+    "formula": "積立金 (or 保障基準価格) × [1 − ((1+i)/(1+j))^(調整月数/12)]",
+    "i": "Reference rate (指標金利) at issue",
+    "j": "Reference rate for a new identical contract on the surrender date",
+    "months": "Surrender date to annuity start date, rounded up",
+    "published_mva_rate": "None found; the formula uses the reference rate",
+    "brochure_pages": "p26, p32, p51"
+  },
+  "crediting_rate_rule": {
+    "source": {
+      "source_url": "https://www.ms-primary.com/products/mare3/pdf/brochure.pdf",
+      "snapshot": "sources/msp/docs/msp-mare-3/brochure_2026-11-16.pdf",
+      "edition": "2026年4月版",
+      "retrieved_date": "2026-11-16",
+      "read_date": "2026-11-16"
+    },
+    "text": "Fixed at the contract date for the whole accumulation period: the insurer's rate within ±1.0% of the reference rate, less 保険関係費. On the 積立コース the rate equals the yield to the annuity fund; on the 年金原資充実コース it does not, because of the initial charge and death-benefit cost.",
+    "brochure_pages": "p22, p46"
+  },
+  "target_feature": false,
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

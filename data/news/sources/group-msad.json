@@ -1,0 +1,26 @@
+{
+  "id": "group-msad",
+  "name_en": "MS&AD Insurance Group Holdings",
+  "name_ja": "MS&ADインシュアランスグループホールディングス株式会社",
+  "site": "https://www.ms-ad-hd.com/",
+  "insurer_ids": [
+    "msp",
+    "msaioi"
+  ],
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News",
+      "kind": "parent",
+      "url": "https://www.ms-ad-hd.com/ja/news/news_topics.html",
+      "parser": "group_msad:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "parent",
+      "url": "https://www.ms-ad-hd.com/ja/news/news_info.html",
+      "parser": "group_msad:parse"
+    }
+  ]
+}

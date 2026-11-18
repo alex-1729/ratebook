@@ -1,0 +1,4 @@
+product_id,name,title_ja,url,file,bytes,sha256,retrieved_date
+orx-moonshot,pamphlet,パンフレット,https://www.orixlife.co.jp/single-p/moonshot/pdf/moonshot_pamphlet.pdf,sources/orx/docs/orx-moonshot/pamphlet_2026-11-17.pdf,2980472,d93b4d04210232c968ec3ece43ec0c23a3465b78c6c432fc29c8ca51ca078df7,2026-11-17
+orx-moonshot,policy_conditions,ご契約のしおり／約款,https://www.orixlife.co.jp/single-p/moonshot/pdf/webyakkan_moonshot_20241118.pdf,sources/orx/docs/orx-moonshot/policy_conditions_2026-11-17.pdf,3592797,07a0338f1daaaee511fe4b43035c68e9f5a1b2b8ba3ad2449f9f17812a786df6,2026-11-17
+orx-moonshot,teiketsumae,契約締結前交付書面＜契約概要／注意喚起情報＞,https://www.orixlife.co.jp/single-p/moonshot/teiketsumae.pdf,sources/orx/docs/orx-moonshot/teiketsumae_2026-11-17.pdf,5256215,a7d9c2ad0e0738845f73481bc6e634357124a9943af7312fcec238ed6d6e09a2,2026-11-17

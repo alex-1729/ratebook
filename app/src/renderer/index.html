@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data: blob:">
+  <meta name="color-scheme" content="light dark">
+  <title>Ratebook</title>
+  <link rel="stylesheet" href="../../node_modules/uplot/dist/uPlot.min.css">
+  <link rel="stylesheet" href="../../node_modules/pdfjs-dist/web/pdf_viewer.css">
+  <link rel="stylesheet" href="../../node_modules/@xterm/xterm/css/xterm.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="shell">
+  <div id="page">
+  <header id="mast" class="col">
+    <div class="kick"><span>Ratebook · JP savings rates</span><span class="date" id="asof"></span></div>
+    <nav id="nav">
+      <button class="nv" type="button" data-view="explore">Explore</button>
+      <button class="nv" type="button" data-view="products">Products</button>
+      <button class="nv" type="button" data-view="markets">Markets</button>
+      <button class="nv" type="button" data-view="moves">Moves</button>
+      <button class="nv" type="button" data-view="chart">Chart</button>
+      <button class="nv" type="button" data-view="news" id="nav-news">News</button>
+      <span class="sp"></span>
+      <div id="find">
+        <input id="search" type="search" placeholder="Find product" autocomplete="off" aria-label="Find product">
+        <div id="results" hidden></div>
+      </div>
+      <button class="nv" type="button" data-view="candidates" id="nav-cand">Candidates</button>
+      <button class="nv" type="button" data-view="data" id="nav-data">Data</button>
+      <button class="nv" type="button" id="nav-chat" title="Assistant (Cmd/Ctrl+J)">Ask</button>
+    </nav>
+  </header>
+  <main id="main" class="col"></main>
+  </div>
+  <aside id="chat" hidden aria-label="Assistant">
+    <div id="chat-grip" title="Drag to resize"></div>
+    <div class="chat-head">
+      <span class="k">Assistant</span><span class="sp"></span>
+      <button type="button" class="pv-b" id="chat-new">New conversation</button>
+      <button type="button" class="pv-b" id="chat-list">Conversations</button>
+      <button type="button" class="pv-b" id="chat-close" aria-label="Close the assistant">×</button>
+    </div>
+    <div id="chat-sessions" hidden></div>
+    <div id="chat-cards" hidden></div>
+    <div id="chat-msg" hidden></div>
+    <div id="chat-term"></div>
+  </aside>
+  </div>
+  <div id="toast" hidden></div>
+  <script src="../../node_modules/uplot/dist/uPlot.iife.min.js"></script>
+  <script src="../../node_modules/@xterm/xterm/lib/xterm.js"></script>
+  <script src="../../node_modules/@xterm/addon-fit/lib/addon-fit.js"></script>
+  <script src="../csv.js"></script>
+  <script src="model.js"></script>
+  <script src="chart.js"></script>
+  <script src="views.js"></script>
+  <script src="news.js"></script>
+  <script src="pdfview.js"></script>
+  <script src="pdftranslate.js"></script>
+  <script src="product.js"></script>
+  <script src="candidates.js"></script>
+  <script src="app.js"></script>
+  <script src="chattools.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

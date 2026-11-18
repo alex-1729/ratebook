@@ -1,0 +1,798 @@
+{
+  "id": "dfl-premier-present-5",
+  "insurer_id": "dfl",
+  "candidate": true,
+  "name_ja": "プレミアプレゼント５",
+  "name_en": "Premier Present 5",
+  "policy_name_ja": "積立利率変動型終身保険（20）（通貨指定型）",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "site_product_code": "224",
+  "guarantee_terms_years": [
+    10,
+    15,
+    20,
+    30
+  ],
+  "editions": [
+    {
+      "name_ja": "新プレミアギフトＭ５",
+      "name_en": "New Premier Gift M5",
+      "site_product_code": "225",
+      "distributor_group": "みずほ銀行、みずほ信託銀行、みずほ証券",
+      "distributors": [
+        {
+          "name_ja": "みずほ銀行"
+        },
+        {
+          "name_ja": "みずほ信託銀行"
+        },
+        {
+          "name_ja": "みずほ証券"
+        }
+      ]
+    },
+    {
+      "name_ja": "安心ひこうせん５",
+      "name_en": "Anshin Hikousen 5",
+      "site_product_code": "229",
+      "distributor_group": "関西みらい銀行、埼玉りそな銀行、みなと銀行、りそな銀行",
+      "distributors": [
+        {
+          "name_ja": "関西みらい銀行"
+        },
+        {
+          "name_ja": "埼玉りそな銀行"
+        },
+        {
+          "name_ja": "みなと銀行"
+        },
+        {
+          "name_ja": "りそな銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "第一フロンティア終身保険（円建/外貨建）",
+      "name_en": "Dai-ichi Frontier Whole Life (JPY / foreign currency)",
+      "site_product_code": "230",
+      "distributor_group": "野村證券",
+      "distributors": [
+        {
+          "name_ja": "野村證券"
+        }
+      ]
+    },
+    {
+      "name_ja": "絆を紡ぐ終身保険Ⅱ",
+      "name_en": "Kizuna wo Tsumugu Whole Life II",
+      "site_product_code": "228",
+      "distributor_group": "三井住友銀行、SMBC日興証券",
+      "distributors": [
+        {
+          "name_ja": "三井住友銀行"
+        },
+        {
+          "name_ja": "SMBC日興証券"
+        }
+      ]
+    },
+    {
+      "name_ja": "四国の絆５",
+      "name_en": "Shikoku no Kizuna 5",
+      "site_product_code": "226",
+      "distributor_group": "阿波銀行、伊予銀行、四国銀行、百十四銀行",
+      "distributors": [
+        {
+          "name_ja": "阿波銀行"
+        },
+        {
+          "name_ja": "伊予銀行"
+        },
+        {
+          "name_ja": "四国銀行"
+        },
+        {
+          "name_ja": "百十四銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "プライムメモリー",
+      "name_en": "Prime Memory",
+      "site_product_code": "239",
+      "distributor_group": "三井住友信託銀行",
+      "distributors": [
+        {
+          "name_ja": "三井住友信託銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "家族を想う認知症保険３",
+      "name_en": "Kazoku wo Omou Ninchisho Hoken 3 (Family-minded dementia insurance 3)",
+      "site_product_code": "227",
+      "distributor_group": "三井住友銀行",
+      "distributors": [
+        {
+          "name_ja": "三井住友銀行"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The rate page index_hendo_shushin_choice_20_6 publishes three rate tables: 死亡保障プラン (param hendo_shushin_choice_20_6), 認知症・介護プラン(告知あり) (_1) and 認知症・介護プラン(告知なし) (_2), in the page's own order; the mapping of plan to param is confirmed by the title of each saved history page (e.g. history_hendo_shushin_choice_20_6_1 is headed （認知症・介護プラン （告知あり））).",
+    "Guarantee periods (term_years) differ by currency: USD 10, 30; AUD 10, 20; JPY 15, 30 (rate page and history tables of 2026-11-17). There is no 5-year guarantee period; 5年 in the 死亡保障プラン table is the 保障抑制期間. The dementia/care plans offer only AUD 20 for AUD.",
+    "Not collected: the 高額優遇利率 (higher rate for premiums of 50M JPY / 400k USD / 500k AUD or more) linked from the rate page.",
+    "All names listed under editions share this policy form and the same rate page (index_hendo_shushin_choice_20_6) on the insurer's rate hub. 227 (家族を想う認知症保険３) is listed on the hub under the same rate page and is recorded as an edition although it is dementia-oriented.",
+    "Product type whole_life_rate_locked is provisional; the dementia/care plans may be borderline products and were not read in a brochure.",
+    "The distributors list is the 銀行・信用金庫・信用組合・証券 section of the product page (for 224 it covers every plan); the 乗合代理店 (independent agencies) list is not recorded. Edition distributors are given on each edition.",
+    "For the 死亡保障プラン crediting-rate table the history has a third header row, 保障抑制期間 (death-benefit suppression period) of 9 months or 5 years; it is part of the plan key (plans shibo_holdback_9m and shibo_holdback_5y, plan_base shibo; until 2026-11-17 it was stored in age_band as supp9m / supp5y). The MVA table has no such row, so its plan stays shibo. The rate page also splits the plan by issue age (death-protection plan: USD ages 20-80 take 30 years and 81-90 take 10; AUD 20-85 take 20 and 86-90 take 10; JPY 20-80 take 30 and 81-90 take 15; dementia/care plans: USD 40-80 / 81-85, AUD 40-85, JPY 40-80 / 81-85), which the history table encodes through the guarantee term only. The two dementia/care plans have no suppression-period row.",
+    "Launch date not established (left null). The insurer's news releases give 『プレミアプレゼント2』 on sale from 2020-07 (month only, in the text of release id=1014; the 2020 release itself is not in the release index), 『プレミアプレゼント３』 from 2022-08-01 (id=1014, 2022-07-28) and 『プレミアプレゼント４』 from 2024-10-01 (id=1047, 2024-09-27). No release announces 『プレミアプレゼント５』 or gives a day for the first edition of the formal 積立利率変動型終身保険（20）. Release index 2008-2026 read 2026-11-17; snapshots sources/dfl/pages/release_1014_2026-11-17.pdf, release_1047_2026-11-17.pdf.",
+    "Launch date search 2026-11-17 (second pass): DFL release lists 2025-2026 (ids 1052-1084) and the bodies of saved release PDFs; two web searches for プレミアプレゼント５ 取扱開始. No release or bank notice found; current brochures are April 2026 editions and give no launch month. Still null."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 December 2025 and covers three plans: death protection, and dementia and care with or without a health declaration.",
+    "Guarantee periods differ by currency: 10 and 30 years for USD, 10 and 20 for AUD, 15 and 30 for JPY.",
+    "The 9 months or 5 years shown on the death protection plan is a period in which the death benefit is held back, not a guarantee period; it is shown in the plan name.",
+    "Higher rates for very large premiums are not collected.",
+    "The dementia and care plans have not been checked against a brochure, so the product classification is provisional. Launch date not established."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_224",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=224"
+    },
+    {
+      "name": "rate_hendo_shushin_choice_20_6",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_shushin_choice_20_6.html"
+    },
+    {
+      "name": "mva_hendo_shushin_choice_20_6_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_shushin_choice_20_6_b.html?product=&agency="
+    },
+    {
+      "name": "product_225",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=225"
+    },
+    {
+      "name": "product_229",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=229"
+    },
+    {
+      "name": "product_230",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=230"
+    },
+    {
+      "name": "product_228",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=228"
+    },
+    {
+      "name": "product_226",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=226"
+    },
+    {
+      "name": "product_239",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=239"
+    },
+    {
+      "name": "product_227",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=227"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "shibo_holdback_9m",
+      "plan_ja": "死亡保障プラン・保障抑制期間9ヵ月",
+      "param": "hendo_shushin_choice_20_6",
+      "layout": "suppression",
+      "plan_base": "shibo",
+      "plan_en": "Death cover, 9-month benefit holdback",
+      "csv": "dfl-premier-present-5__crediting_rate__shibo_holdback_9m.csv",
+      "points": 144,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shibo_holdback_5y",
+      "plan_ja": "死亡保障プラン・保障抑制期間5年",
+      "param": "hendo_shushin_choice_20_6",
+      "layout": "suppression",
+      "plan_base": "shibo",
+      "plan_en": "Death cover, 5-year benefit holdback",
+      "csv": "dfl-premier-present-5__crediting_rate__shibo_holdback_5y.csv",
+      "points": 144,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ninchi_kokuchi_ari",
+      "plan_ja": "認知症・介護プラン（告知あり）",
+      "param": "hendo_shushin_choice_20_6_1",
+      "plan_en": "Dementia and care, health declared",
+      "csv": "dfl-premier-present-5__crediting_rate__ninchi_kokuchi_ari.csv",
+      "points": 120,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ninchi_kokuchi_nashi",
+      "plan_ja": "認知症・介護プラン（告知なし）",
+      "param": "hendo_shushin_choice_20_6_2",
+      "plan_en": "Dementia and care, no health declaration",
+      "csv": "dfl-premier-present-5__crediting_rate__ninchi_kokuchi_nashi.csv",
+      "points": 120,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shibo",
+      "plan_ja": "死亡保障プラン",
+      "param": "hendo_shushin_choice_20_6_b",
+      "plan_en": "Death cover",
+      "csv": "dfl-premier-present-5__mva_rate__shibo.csv",
+      "points": 144,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "ninchi_kokuchi_ari",
+      "plan_ja": "認知症・介護プラン（告知あり）",
+      "param": "hendo_shushin_choice_20_6_b_1",
+      "plan_en": "Dementia and care, health declared",
+      "csv": "dfl-premier-present-5__mva_rate__ninchi_kokuchi_ari.csv",
+      "points": 120,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "ninchi_kokuchi_nashi",
+      "plan_ja": "認知症・介護プラン（告知なし）",
+      "param": "hendo_shushin_choice_20_6_b_2",
+      "plan_en": "Dementia and care, no health declaration",
+      "csv": "dfl-premier-present-5__mva_rate__ninchi_kokuchi_nashi.csv",
+      "points": 120,
+      "first_effective": "2025-12-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 24
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_ppresent5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/ppresent5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Present 5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppresent5_shihonomi",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "shihonomi",
+      "url": "https://www.d-frontier-life.co.jp/products/ppresent5/shihonomi/shihonomi.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Present 5, death-cover plan only)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppresent5_mufg",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mufg",
+      "url": "https://www.d-frontier-life.co.jp/products/ppresent5/mufg/mufg.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Present 5, MUFG edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppresent5_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "shinkin",
+      "url": "https://www.d-frontier-life.co.jp/products/ppresent5/shinkin/shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Present 5, Shinkin edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppresent5_daiichi",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "daiichi",
+      "url": "https://www.d-frontier-life.co.jp/products/ppresent5/daiichi/daiichi.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Present 5, Dai-ichi Life edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05321",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05321.pdf",
+      "title_en": "Policy guide and conditions (Premier Present 5)"
+    },
+    {
+      "name": "policy_conditions_05621",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05621.pdf",
+      "title_en": "Policy guide and conditions (Premier Present 5, MUFG edition)"
+    },
+    {
+      "name": "brochure_shinpgiftM5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/shinpgiftM5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (New Premier Gift M5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_shinpgiftM5_mizuhotb",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhotb",
+      "url": "https://www.d-frontier-life.co.jp/products/shinpgiftM5/mizuhotb/mizuhotb.pdf",
+      "title_en": "Brochure and pre-contract disclosure (New Premier Gift M5, Mizuho Trust edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_shinpgiftM5_mizuhosc",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhosc",
+      "url": "https://www.d-frontier-life.co.jp/products/shinpgiftM5/mizuhosc/mizuhosc.pdf",
+      "title_en": "Brochure and pre-contract disclosure (New Premier Gift M5, Mizuho Securities edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05261",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05261.pdf",
+      "title_en": "Policy guide and conditions (New Premier Gift M5)"
+    },
+    {
+      "name": "brochure_anshinhikousen5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/anshinhikousen5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Anshin Hikousen 5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05521",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05521.pdf",
+      "title_en": "Policy guide and conditions (Anshin Hikousen 5)"
+    },
+    {
+      "name": "brochure_dflshushin_engai5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/dflshushin_engai5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Dai-ichi Frontier Whole Life)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_dflshushin_engai5_hanyo_keiyaku",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo_keiyaku",
+      "url": "https://www.d-frontier-life.co.jp/products/dflshushin_engai5/hanyo/hanyo_keiyaku.pdf",
+      "title_en": "Pre-contract disclosure (Dai-ichi Frontier Whole Life)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05581",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05581.pdf",
+      "title_en": "Policy guide and conditions (Dai-ichi Frontier Whole Life)"
+    },
+    {
+      "name": "brochure_kizunawotumugu2_smbc",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "smbc",
+      "url": "https://www.d-frontier-life.co.jp/products/kizunawotumugu2/smbc/smbc.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Kizuna wo Tsumugu II, SMBC edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_kizunawotumugu2_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/kizunawotumugu2/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Kizuna wo Tsumugu II)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05441",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05441.pdf",
+      "title_en": "Policy guide and conditions (Kizuna wo Tsumugu II)"
+    },
+    {
+      "name": "brochure_shikokunokizuna5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/shikokunokizuna5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shikoku no Kizuna 5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05381",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05381.pdf",
+      "title_en": "Policy guide and conditions (Shikoku no Kizuna 5)"
+    },
+    {
+      "name": "brochure_primememory_SMTB_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/primememory_SMTB/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Prime Memory, Sumitomo Mitsui Trust)",
+      "edition": "November 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05950",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05950.pdf",
+      "title_en": "Policy guide and conditions (Prime Memory)"
+    },
+    {
+      "name": "brochure_kazokuwoomou3_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/kazokuwoomou3/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Kazoku wo Omou Ninchisho Hoken 3)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05461",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05461.pdf",
+      "title_en": "Policy guide and conditions (Kazoku wo Omou Ninchisho Hoken 3)"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "あおぞら銀行"
+    },
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "秋田銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "尼崎信用金庫"
+    },
+    {
+      "name_ja": "イオン銀行"
+    },
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "ＳＢＩ証券"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "大垣共立銀行"
+    },
+    {
+      "name_ja": "岡崎信用金庫"
+    },
+    {
+      "name_ja": "岡三証券"
+    },
+    {
+      "name_ja": "沖縄銀行"
+    },
+    {
+      "name_ja": "鹿児島銀行"
+    },
+    {
+      "name_ja": "神奈川銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "岐阜信用金庫"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "京都信用金庫"
+    },
+    {
+      "name_ja": "きらぼし銀行"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券"
+    },
+    {
+      "name_ja": "熊本銀行"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "佐賀銀行"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "七十七銀行"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "十八親和銀行"
+    },
+    {
+      "name_ja": "十六銀行"
+    },
+    {
+      "name_ja": "荘内銀行"
+    },
+    {
+      "name_ja": "常陽銀行"
+    },
+    {
+      "name_ja": "スターツ証券"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "瀬戸信用金庫"
+    },
+    {
+      "name_ja": "大熊本証券"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "第四北越銀行"
+    },
+    {
+      "name_ja": "大和証券"
+    },
+    {
+      "name_ja": "但馬銀行"
+    },
+    {
+      "name_ja": "但馬信用金庫"
+    },
+    {
+      "name_ja": "多摩信用金庫"
+    },
+    {
+      "name_ja": "筑邦銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "東海東京証券"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "東洋証券"
+    },
+    {
+      "name_ja": "東和銀行"
+    },
+    {
+      "name_ja": "栃木銀行"
+    },
+    {
+      "name_ja": "鳥取銀行"
+    },
+    {
+      "name_ja": "富山銀行"
+    },
+    {
+      "name_ja": "富山第一銀行"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "西日本シティＴＴ証券"
+    },
+    {
+      "name_ja": "八十二長野銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "兵庫信用金庫"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "広島信用金庫"
+    },
+    {
+      "name_ja": "福井銀行"
+    },
+    {
+      "name_ja": "福岡銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "北都銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "北陸銀行"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "三菱ＵＦＪモルガン・スタンレー証券"
+    },
+    {
+      "name_ja": "三菱ＵＦＪ信託銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "宮崎太陽銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山形銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "山梨中央銀行"
+    },
+    {
+      "name_ja": "琉球銀行"
+    },
+    {
+      "name_ja": "北日本銀行"
+    },
+    {
+      "name_ja": "京都中央信用金庫"
+    },
+    {
+      "name_ja": "紀陽銀行"
+    },
+    {
+      "name_ja": "近畿産業信用組合"
+    },
+    {
+      "name_ja": "京葉銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "城北信用金庫"
+    },
+    {
+      "name_ja": "ちばぎん証券"
+    },
+    {
+      "name_ja": "肥後銀行"
+    },
+    {
+      "name_ja": "横浜銀行"
+    },
+    {
+      "name_ja": "三菱ＵＦＪ銀行"
+    },
+    {
+      "name_ja": "北伊勢上野信用金庫"
+    },
+    {
+      "name_ja": "三条信用金庫"
+    },
+    {
+      "name_ja": "しののめ信用金庫"
+    },
+    {
+      "name_ja": "福井信用金庫"
+    },
+    {
+      "name_ja": "碧海信用金庫"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 93 rows with their saved snapshots and all matched: a seeded random sample of 93 of 912 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "id": "mys-fc-everybody-plus",
+  "insurer_id": "mys",
+  "candidate": true,
+  "name_ja": "外貨建・エブリバディプラス",
+  "name_en": "Foreign-currency Everybody Plus",
+  "name_short_en": "Foreign-currency Everybody Plus",
+  "policy_name_ja": "5年ごと利差配当付利率変動型一時払特別終身保険(指定通貨建)／5年ごと利差配当付利率変動型一時払特別終身保険(指定通貨建)[Ⅱ型]",
+  "policy_names": [
+    {
+      "name_ja": "5年ごと利差配当付利率変動型一時払特別終身保険(指定通貨建)[Ⅱ型]",
+      "plan": "unyou",
+      "type_ja": "運用重視タイプ",
+      "currencies": [
+        "USD",
+        "AUD"
+      ]
+    },
+    {
+      "name_ja": "5年ごと利差配当付利率変動型一時払特別終身保険(指定通貨建)",
+      "plan": "balance",
+      "type_ja": "バランスタイプ",
+      "currencies": [
+        "USD",
+        "AUD"
+      ]
+    }
+  ],
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2017-08",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://www.meijiyasuda.co.jp/profile/news/release/2022/pdf/20230309_01.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/mys/pages/release_mys-fc-everybody-plus_20230309_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/mys/pages/live_window_list_2026-11-17.html"
+  },
+  "guarantee_terms_years": [
+    10
+  ],
+  "editions": [
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ・バランスタイプ)",
+      "name_en": "Everybody Plus (both types)",
+      "distributor_group": "金融機関代理店（地銀等）",
+      "site_code": "fc-everybodyplus2/unyou-balance",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ)",
+      "name_en": "Everybody Plus (Growth-focused type only)",
+      "distributor_group": "金融機関代理店（横浜銀行等）",
+      "site_code": "fc-everybodyplus2/unyou",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(バランスタイプ)",
+      "name_en": "Everybody Plus (Balanced type only)",
+      "distributor_group": "金融機関代理店（地銀・証券等）",
+      "site_code": "fc-everybodyplus",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ・バランスタイプ)【三菱ＵＦＪ銀行用】",
+      "name_en": "Everybody Plus (MUFG Bank)",
+      "distributor_group": "三菱UFJ銀行",
+      "site_code": "fc-everybodyplus/btmu",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/btmu/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ・バランスタイプ)【三菱ＵＦＪ信託銀行用】",
+      "name_en": "Everybody Plus (MUFG Trust)",
+      "distributor_group": "三菱UFJ信託銀行",
+      "site_code": "fc-everybodyplus/mutb",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mutb/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ・バランスタイプ)【みずほ銀行用】",
+      "name_en": "Everybody Plus (Mizuho Bank)",
+      "distributor_group": "みずほ銀行",
+      "site_code": "fc-everybodyplus/mhbk",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhbk/"
+    },
+    {
+      "name_ja": "外貨建・エブリバディプラス(運用重視タイプ・バランスタイプ)【みずほ信託銀行用】",
+      "name_en": "Everybody Plus (Mizuho Trust)",
+      "distributor_group": "みずほ信託銀行",
+      "site_code": "fc-everybodyplus/mhtb",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhtb/"
+    },
+    {
+      "name_ja": "しんきんらいふ終身ＭＹ<外貨建・エブリバディプラス>(バランスタイプ)",
+      "name_en": "Shinkin Life Whole Life MY (Balanced type)",
+      "distributor_group": "信用金庫",
+      "site_code": "fc-everybodyplus/trust",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "しんきんらいふ終身ＭＹ<外貨建・エブリバディプラス>(運用重視タイプ・バランスタイプ)",
+      "name_en": "Shinkin Life Whole Life MY (both types)",
+      "distributor_group": "信用金庫",
+      "site_code": "fc-everybodyplus2/trust",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/trust/"
+    }
+  ],
+  "rate_page": "rate_current",
+  "rate_source": {
+    "name": "rate_current",
+    "live_url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/rate/",
+    "cdx_url": "www.meijiyasuda.co.jp/window/fc-everybodyplus/rate/"
+  },
+  "notes": [
+    "All bank and shinkin editions open the same rate popup (popwin key fc_everybodyplus_rate -> /window/fc-everybodyplus/rate/) from the window list, so one rate series per type covers every edition. Which type a distributor sells differs (see each distributor's types).",
+    "Metric planned_rate is 予定利率. The rate is set twice a month (1st and 16th) and applies to contracts whose 契約日 (the later of the underwriting-disclosure date and the premium receipt date) falls in that half-month window; effective_date is the first day of the window. It applies until the day before the next 予定利率計算基準日, i.e. 10 years from the contract date (適用する期間 10年); this is stored in term_years. The page itself states that 予定利率 is not the effective yield and that premiums are not compounded at it.",
+    "age_band is the contract age (満年齢) of the insured: 18-75 and 76-85 on the current page (20-75 on the 2020 capture). The page notes that markets can make some ages or sexes not offered; no sex dimension is published.",
+    "plan unyou = 運用重視タイプ (policy form [Ⅱ型]); plan balance = バランスタイプ.",
+    "has_mva is true: 解約・減額 applies 市場価格調整 (market-value adjustment) to the surrender value, which can fall below the basic sum insured. Initial cost 3.80% of the basic sum insured for both types (契約初期費用), plus ongoing 保険契約関係費用 not published; FX: 円入金特約 TTM+25銭, 円支払特約 TTM-25銭.",
+    "Rate page shows only the current half-month window and is overwritten; history accumulates by re-running scripts/mys.py. Only two Wayback captures exist (2020-05-27, 2023-11-30). The 2020 capture is the earlier single-type generation (no type headings, 20-75/76-85, USD 1.90%) and is saved in sources/mys/wayback but NOT ingested because it cannot be assigned to unyou or balance without guessing. The 2023-11-30 capture (window 2023-12-01 to 12-15) is ingested.",
+    "Product pages are dated 2026年4月版 (digital book dbook26_apr); older 'ターゲット特則なし' editions exist under /window/fc-everybodyplus2-targetless/ and are not covered.",
+    "The site answers intermittently (some page fetches time out and succeed on retry); no bot protection was bypassed and the built-in browser was not needed.",
+    "Brochures (デジタルブック/PDF) and policy conditions are not downloaded; URLs are listed under documents.",
+    "Launch date: 2017-08 (month only), from Meiji Yasuda's release of 2023-03-09: 「２０１７年８月以来長きにわたってご愛顧いただいております「外貨建・エブリバディプラス」」. The 運用重視タイプ ([Ⅱ型], eco シリーズ) was added from 2023-04-03 (same release); the バランスタイプ has been revised since 2017 under the same marketed name. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Only two rate sets are held: the window from 1 December 2023 and the current one, because the insurer overwrites its page every half-month.",
+    "An older 2020 capture is not used, as it cannot be assigned to the growth-focused or balanced type.",
+    "The rate shown is the planned rate fixed for 10 years from the contract date, not an effective yield.",
+    "All bank editions share one rate page, but which type each distributor sells varies.",
+    "On sale since August 2017 (month only, insurer's release); the growth-focused type was added from 3 April 2023. The brochures have not been read, and exchange rates are not collected."
+  ],
+  "metrics": {
+    "planned_rate": "予定利率"
+  },
+  "pages": [
+    {
+      "name": "window_list",
+      "url": "https://www.meijiyasuda.co.jp/window/list.aspx"
+    },
+    {
+      "name": "rate_current",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/rate/"
+    },
+    {
+      "name": "edition_unyou_balance",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name": "edition_unyou",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou/"
+    },
+    {
+      "name": "edition_balance",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name": "edition_mufg_bank",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/btmu/"
+    },
+    {
+      "name": "edition_mufg_trust",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mutb/"
+    },
+    {
+      "name": "edition_mizuho_bank",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhbk/"
+    },
+    {
+      "name": "edition_mizuho_trust",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhtb/"
+    },
+    {
+      "name": "edition_shinkin_balance",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name": "edition_shinkin_both",
+      "url": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/trust/"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "planned_rate",
+      "plan": "unyou",
+      "plan_ja": "運用重視タイプ([Ⅱ型])",
+      "plan_en": "Growth-focused type",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "mys-fc-everybody-plus__planned_rate__unyou.csv"
+    },
+    {
+      "metric": "planned_rate",
+      "plan": "balance",
+      "plan_ja": "バランスタイプ",
+      "plan_en": "Balanced type",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "mys-fc-everybody-plus__planned_rate__balance.csv"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_unyou_balance",
+      "title_ja": "デジタルブック／PDF（運用重視・バランス）",
+      "variant": "unyou+balance",
+      "url": "https://www.meijiyasuda.co.jp/window/files/pdf/dbook26_apr_fc-everybodyplus_un.pdf",
+      "note": "URL of the 運用重視タイプ edition PDF; other editions use dbook26_apr_fc-everybodyplus_<code>.pdf",
+      "title_en": "Brochure and pre-contract disclosure (growth and balanced types)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_mufg_bank",
+      "title_ja": "デジタルブック／PDF（三菱UFJ銀行用）",
+      "variant": "mufg",
+      "url": "https://www.meijiyasuda.co.jp/window/files/pdf/dbook26_apr_fc-everybodyplus_btmu.pdf",
+      "title_en": "Brochure and pre-contract disclosure (MUFG edition)",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "青森みちのく銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "イオン銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "池田泉州銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "大分銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "大垣共立銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "香川銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "鹿児島銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "京都銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "熊本銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "七十七銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "十八親和銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "荘内銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "千葉興業銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "中国銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "東邦銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "富山銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "福岡銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "福島銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "北都銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "北洋銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "北陸銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "北海道銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "宮崎銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "山形銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "山口銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou-balance/"
+    },
+    {
+      "name_ja": "関西みらい銀行",
+      "types": "unyou",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou/"
+    },
+    {
+      "name_ja": "北日本銀行",
+      "types": "unyou",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou/"
+    },
+    {
+      "name_ja": "横浜銀行",
+      "types": "unyou",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/unyou/"
+    },
+    {
+      "name_ja": "阿波銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "秋田銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "伊予銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "神奈川銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "紀陽銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "京都中央信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "きらぼし銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "滋賀銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "四国銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "十六銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "常陽銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "第四北越銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "大東銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "筑波銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "東和銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "栃木銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "鳥取銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "長崎銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "名古屋銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "南都銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "東日本銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "広島銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "福岡中央銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "豊和銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "南日本銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "むさし証券",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "明和證券",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "横浜銀行",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/"
+    },
+    {
+      "name_ja": "朝日信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "大川信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "しののめ信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "福岡信用金庫",
+      "types": "balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/trust/"
+    },
+    {
+      "name_ja": "但馬信用金庫",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus2/trust/"
+    },
+    {
+      "name_ja": "三菱ＵＦＪ銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/btmu/"
+    },
+    {
+      "name_ja": "三菱ＵＦＪ信託銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mutb/"
+    },
+    {
+      "name_ja": "みずほ銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhbk/"
+    },
+    {
+      "name_ja": "みずほ信託銀行",
+      "types": "unyou+balance",
+      "edition_page": "https://www.meijiyasuda.co.jp/window/fc-everybodyplus/mhtb/"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 16 rows with their saved snapshots and all matched: a seeded random sample of 16 of 16 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

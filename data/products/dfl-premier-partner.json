@@ -1,0 +1,1010 @@
+{
+  "id": "dfl-premier-partner",
+  "insurer_id": "dfl",
+  "candidate": true,
+  "name_ja": "プレミアパートナー",
+  "name_en": "Premier Partner",
+  "policy_name_ja": "通貨指定型個人年金保険（24）",
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-08-01",
+  "off_sale_date": null,
+  "site_product_code": "209",
+  "guarantee_terms_years": [],
+  "editions": [
+    {
+      "name_ja": "プレミアパートナーＭ",
+      "name_en": "Premier Partner M",
+      "site_product_code": "216",
+      "distributor_group": "みずほ銀行、みずほ信託銀行、みずほ証券",
+      "distributors": [
+        {
+          "name_ja": "みずほ銀行"
+        },
+        {
+          "name_ja": "みずほ信託銀行"
+        },
+        {
+          "name_ja": "みずほ証券"
+        }
+      ]
+    },
+    {
+      "name_ja": "安心ゆとり年金",
+      "name_en": "Anshin Yutori Nenkin",
+      "site_product_code": "218",
+      "distributor_group": "関西みらい銀行、埼玉りそな銀行、みなと銀行、りそな銀行",
+      "distributors": [
+        {
+          "name_ja": "関西みらい銀行"
+        },
+        {
+          "name_ja": "埼玉りそな銀行"
+        },
+        {
+          "name_ja": "みなと銀行"
+        },
+        {
+          "name_ja": "りそな銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "第一フロンティア定額年金（円建/外貨建）",
+      "name_en": "Dai-ichi Frontier Fixed Annuity (JPY / foreign currency)",
+      "site_product_code": "223",
+      "distributor_group": "野村證券",
+      "distributors": [
+        {
+          "name_ja": "野村證券"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Four rate tables: 指数なし (param prefix kihon) and 指数あり (prefix shisu), each for 確定年金 (fixed-term) and 年金総額保証付終身年金 (whole-life with total-payout guarantee). Per the brochure (brochure_ppartner_hanyo, 2026年4月版), 指数あり is the 指数連動部分付年金特則: a 定額部分 annuity plus a 上乗せ部分 that grows with the rise of a 参照指数 (連動率 USD/AUD 100%, JPY 30%) and never falls; the 指数あり plans therefore carry product_type indexed_annuity, the 指数なし plans the product's fixed_annuity.",
+    "Grid encoding (changed 2026-11-17; earlier files kept these in age_band as codes): for the 確定年金 plans the plan key carries the annuity payout period and the deferral period as the site bands them, e.g. kihon_kakutei_pay15-20_def5-6 (年金支払期間15・20年, 据置期間5～6年; pay25-40 stands for the site's 25・30・35・40年). For the 終身年金 plans the plan key carries the 年金総額保証割合 (g100, g110, g120) and age_band holds the 契約年齢 band as printed (40-64, 65-79, 80-90). term_years is blank throughout: the deferral is only published as a band (1～4年, 5～6年, 7～10年), never as one number of years, and the 終身年金 table has no deferral column, so these rates are on no tenor board. scripts/dfl.py builds the plan from each series' plan_base plus the column, and reports any column without a series.",
+    "Plain-language: the product is a deferred annuity with a deferral of 1-10 years; the guarantee/crediting period is not a separate rate dimension on this page. Whether the published rate is a crediting rate or a payout-basis rate (予定利率) was not established from the page, only that it is the 積立利率 table.",
+    "Editions share the policy form and rate page on the insurer's rate hub.",
+    "MVA gap: the mva_rate series come from index_immediate_annuity_24_b, which the page itself labels 契約日が2026年3月31日以前 (contracts dated on or before 2026-03-31). The rate page also links a separate MVA page for contracts dated 2026-04-01 onward (index_immediate_annuity_24_b_01.html); it is not collected.",
+    "Launch date: 2024-08-01, the sales start stated in the insurer's news release of 2024-07-30 (id=1044, 『プレミアパートナー』, 通貨指定型個人年金保険（24）). Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 August 2024 and covers USD, AUD and JPY.",
+    "Four rate tables exist: with and without an index, each for a fixed-term annuity and a whole-life annuity with a total-payout guarantee. The with-index plans add a top-up that grows with a reference index, so they are classed as indexed annuities.",
+    "Rates vary by payout period and by a deferral band such as 1 to 4 years, both shown in the plan name. Because the deferral is only given as a band, these rates have no single tenor and appear on no tenor board.",
+    "Surrender-value adjustment rates are collected only for contracts dated on or before 31 March 2026; the later table is not collected.",
+    "Premier Partner M and Anshin Yutori Nenkin share the same rates. Launched 1 August 2024 (insurer news release).",
+    "The with-index and no-index plans are published on separate rate pages that show identical rates in every period held, so their series match."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_209",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=209"
+    },
+    {
+      "name": "rate_immediate_annuity_24",
+      "url": "https://www.d-frontier-life.co.jp/products/index_immediate_annuity_24.html"
+    },
+    {
+      "name": "mva_immediate_annuity_24_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_immediate_annuity_24_b.html?product=&agency="
+    },
+    {
+      "name": "product_216",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=216"
+    },
+    {
+      "name": "product_218",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=218"
+    },
+    {
+      "name": "product_223",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=223"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay10_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間1～4年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay10_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay10_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間5～6年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay10_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay10_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間7～10年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay10_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay15-20_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間1～4年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay15-20_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay15-20_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間5～6年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay15-20_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay15-20_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間7～10年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay15-20_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay25-40_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間1～4年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay25-40_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay25-40_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間5～6年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay25-40_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_kakutei_pay25-40_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間7～10年",
+      "param": "immediate_annuity_24_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_kakutei_pay25-40_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_shushin_g100",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合100%",
+      "param": "immediate_annuity_24_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 100% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_shushin_g100.csv",
+      "points": 504,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_shushin_g110",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合110%",
+      "param": "immediate_annuity_24_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 110% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_shushin_g110.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "kihon_shushin_g120",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合120%",
+      "param": "immediate_annuity_24_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 120% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__kihon_shushin_g120.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay10_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間1～4年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay10_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay10_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間5～6年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay10_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay10_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間7～10年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay10_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay15-20_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間1～4年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay15-20_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay15-20_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間5～6年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay15-20_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay15-20_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間7～10年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay15-20_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay25-40_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間1～4年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay25-40_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay25-40_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間5～6年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay25-40_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_kakutei_pay25-40_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間7～10年",
+      "param": "immediate_annuity_24_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_kakutei_pay25-40_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_shushin_g100",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合100%",
+      "param": "immediate_annuity_24_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 100% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_shushin_g100.csv",
+      "points": 504,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_shushin_g110",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合110%",
+      "param": "immediate_annuity_24_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 110% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_shushin_g110.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shisu_shushin_g120",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合120%",
+      "param": "immediate_annuity_24_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 120% guarantee",
+      "csv": "dfl-premier-partner__crediting_rate__shisu_shushin_g120.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay10_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay10_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay10_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay10_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay10_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間10年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 10y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay10_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay15-20_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay15-20_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay15-20_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay15-20_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay15-20_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間15・20年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 15–20y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay15-20_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay25-40_def1-4",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay25-40_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay25-40_def5-6",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay25-40_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_kakutei_pay25-40_def7-10",
+      "plan_ja": "指数なし・確定年金・年金支払期間25・30・35・40年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_kihon_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "kihon_kakutei",
+      "plan_en": "No index, 25–40y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__kihon_kakutei_pay25-40_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_shushin_g100",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合100%",
+      "param": "immediate_annuity_24_b_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 100% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__kihon_shushin_g100.csv",
+      "points": 504,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_shushin_g110",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合110%",
+      "param": "immediate_annuity_24_b_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 110% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__kihon_shushin_g110.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "kihon_shushin_g120",
+      "plan_ja": "指数なし・年金総額保証付終身年金・年金総額保証割合120%",
+      "param": "immediate_annuity_24_b_kihon_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "kihon_shushin",
+      "plan_en": "No index, life annuity, 120% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__kihon_shushin_g120.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay10_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay10_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay10_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay10_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay10_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間10年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 10y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay10_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay15-20_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay15-20_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay15-20_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay15-20_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay15-20_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間15・20年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 15–20y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay15-20_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay25-40_def1-4",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間1～4年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 1–4y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay25-40_def1-4.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay25-40_def5-6",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間5～6年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 5–6y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay25-40_def5-6.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_kakutei_pay25-40_def7-10",
+      "plan_ja": "指数あり・確定年金・年金支払期間25・30・35・40年・据置期間7～10年",
+      "param": "immediate_annuity_24_b_shisu_kakutei",
+      "layout": "annuity24_kakutei",
+      "plan_base": "shisu_kakutei",
+      "plan_en": "With index, 25–40y payout, 7–10y deferral",
+      "csv": "dfl-premier-partner__mva_rate__shisu_kakutei_pay25-40_def7-10.csv",
+      "points": 168,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_shushin_g100",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合100%",
+      "param": "immediate_annuity_24_b_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 100% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__shisu_shushin_g100.csv",
+      "points": 504,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_shushin_g110",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合110%",
+      "param": "immediate_annuity_24_b_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 110% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__shisu_shushin_g110.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shisu_shushin_g120",
+      "plan_ja": "指数あり・年金総額保証付終身年金・年金総額保証割合120%",
+      "param": "immediate_annuity_24_b_shisu_shushin",
+      "layout": "annuity24_shushin",
+      "plan_base": "shisu_shushin",
+      "plan_en": "With index, life annuity, 120% guarantee",
+      "csv": "dfl-premier-partner__mva_rate__shisu_shushin_g120.csv",
+      "points": 336,
+      "first_effective": "2024-08-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 56,
+      "product_type": "indexed_annuity"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_ppartner_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/ppartner/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Partner)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppartner_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "shinkin",
+      "url": "https://www.d-frontier-life.co.jp/products/ppartner/shinkin/shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Partner, Shinkin edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_04372",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/04372.pdf",
+      "title_en": "Policy guide and conditions (Premier Partner)"
+    },
+    {
+      "name": "brochure_ppartnerM_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/ppartnerM/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Partner M)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppartnerM_mizuhotb",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhotb",
+      "url": "https://www.d-frontier-life.co.jp/products/ppartnerM/mizuhotb/mizuhotb.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Partner M, Mizuho Trust edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_ppartnerM_mizuhosc",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhosc",
+      "url": "https://www.d-frontier-life.co.jp/products/ppartnerM/mizuhosc/mizuhosc.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Partner M, Mizuho Securities edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_04452",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/04452.pdf",
+      "title_en": "Policy guide and conditions (Premier Partner M)"
+    },
+    {
+      "name": "brochure_anshinyutorinenkin_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/anshinyutorinenkin/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Anshin Yutori Nenkin)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_04491",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/04491.pdf",
+      "title_en": "Policy guide and conditions (Anshin Yutori Nenkin)"
+    },
+    {
+      "name": "brochure_dflteigakunenkin_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/dflteigakunenkin/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Dai-ichi Frontier Fixed Annuity)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_dflteigakunenkin_hanyo_keiyaku",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo_keiyaku",
+      "url": "https://www.d-frontier-life.co.jp/products/dflteigakunenkin/hanyo/hanyo_keiyaku.pdf",
+      "title_en": "Pre-contract disclosure (Dai-ichi Frontier Fixed Annuity)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05221",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05221.pdf",
+      "title_en": "Policy guide and conditions (Dai-ichi Frontier Fixed Annuity)"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "尼崎信用金庫"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "ＳＢＩ証券"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "神奈川銀行"
+    },
+    {
+      "name_ja": "岐阜信用金庫"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "スターツ証券"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "大熊本証券"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "東京スター銀行"
+    },
+    {
+      "name_ja": "鳥取銀行"
+    },
+    {
+      "name_ja": "富山銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "百十四銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "北陸銀行"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "横浜銀行"
+    },
+    {
+      "name_ja": "長野信用金庫"
+    },
+    {
+      "name_ja": "広島信用金庫"
+    }
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.d-frontier-life.co.jp/corporate/release/detail.html?id=1044",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/dfl/pages/release_1044_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 1095 rows with their saved snapshots and all matched: a seeded random sample of 1088 of 10752 published rows (10% of each rate CSV, at least 20), every outlier (8: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

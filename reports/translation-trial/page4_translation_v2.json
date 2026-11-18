@@ -1,0 +1,410 @@
+[
+{
+"outline": [
+41.8,
+32.8,
+99.4,
+42.0
+],
+"en": "Death benefit ratio",
+"align": "right",
+"colour": 16777215,
+"size": 9.0
+},
+{
+"ids": [
+1
+],
+"en": "Contract date"
+},
+{
+"ids": [
+3
+],
+"en": "End of accumulation period",
+"align": "right"
+},
+{
+"ids": [
+4
+],
+"en": "Annuity principal"
+},
+{
+"ids": [
+5
+],
+"en": "Account value"
+},
+{
+"ids": [
+6,
+7
+],
+"en": "In chosen currency",
+"align": "center"
+},
+{
+"ids": [
+8,
+9
+],
+"en": "In chosen currency",
+"align": "center"
+},
+{
+"ids": [
+10
+],
+"en": "Initial charge",
+"align": "center"
+},
+{
+"ids": [
+11
+],
+"en": "Single premium (basic sum insured)"
+},
+{
+"ids": [
+12,
+13
+],
+"en": "Account value (in chosen currency)",
+"align": "center"
+},
+{
+"ids": [
+14,
+15
+],
+"en": "Surrender value (in chosen currency)",
+"align": "center"
+},
+{
+"ids": [
+16
+],
+"en": "Up to 100% of premium",
+"align": "center"
+},
+{
+"ids": [
+17,
+18
+],
+"en": "Death benefit (in chosen currency)",
+"align": "center"
+},
+{
+"ids": [
+19
+],
+"en": "100% of premium",
+"align": "center"
+},
+{
+"ids": [
+20,
+21
+],
+"en": "Receive more at maturity",
+"align": "center"
+},
+{
+"ids": [
+22
+],
+"en": "Foreign currency: no guarantee in yen.",
+"align": "center"
+},
+{
+"ids": [
+23,
+24
+],
+"en": "During the accumulation period, death and surrender benefits are limited…",
+"align": "center"
+},
+{
+"ids": [
+25,
+26
+],
+"en": "For your options at the end of the accumulation period, see",
+"align": "left"
+},
+{
+"ids": [
+27
+],
+"en": ""
+},
+{
+"ids": [
+28
+],
+"en": ""
+},
+{
+"ids": [
+30
+],
+"en": "* The diagram above is an illustration and does not guarantee future account value, death benefit, surrender value or other amounts."
+},
+{
+"ids": [
+31
+],
+"en": "Accumulation period (crediting-rate guarantee period)",
+"align": "center"
+},
+{
+"ids": [
+32,
+33
+],
+"en": "* Limits the death benefit and passes that share to surviving policyholders, enlarging the annuity principal. (Tontine annuity)",
+"align": "right",
+"lines": 1
+},
+{
+"ids": [
+34,
+35
+],
+"en": "* A market value adjustment applies.",
+"align": "center"
+},
+{
+"ids": [
+37
+],
+"en": "AUD",
+"align": "center"
+},
+{
+"ids": [
+38
+],
+"en": "USD",
+"align": "center"
+},
+{
+"ids": [
+39
+],
+"en": "JPY",
+"align": "center"
+},
+{
+"ids": [
+40,
+41
+],
+"en": "* Depending on interest rates and other conditions at the time of contract, some currencies, accumulation periods, ages and sexes may not be available."
+},
+{
+"ids": [
+42
+],
+"en": "Available combinations"
+},
+{
+"ids": [
+47
+],
+"en": "Currency",
+"align": "center"
+},
+{
+"ids": [
+48
+],
+"en": "Accum. period",
+"align": "center"
+},
+{
+"ids": [
+49
+],
+"en": "Accumulation period",
+"align": "center"
+},
+{
+"ids": [
+50
+],
+"en": "Entry age",
+"align": "center"
+},
+{
+"ids": [
+51
+],
+"en": "Currency",
+"align": "center"
+},
+{
+"ids": [
+52
+],
+"en": "JPY",
+"align": "center"
+},
+{
+"ids": [
+53
+],
+"en": "Initial charge",
+"align": "center"
+},
+{
+"ids": [
+72
+],
+"en": "USD / AUD",
+"align": "center"
+},
+{
+"ids": [
+75
+],
+"en": "Example choices",
+"align": "center"
+},
+{
+"ids": [
+76,
+77,
+78,
+79
+],
+"en": "I'm self-employed and want to top up my public pension. I'd keep most of my family's cover but receive more at maturity.",
+"align": "center"
+},
+{
+"ids": [
+80,
+81,
+82
+],
+"en": "Money to leave my family is already covered by whole life insurance. I want to prepare for my own long life…",
+"align": "center"
+},
+{
+"ids": [
+83,
+84,
+85,
+86
+],
+"en": "I want a lump sum in a set number of years. Medical costs until then are covered separately.",
+"align": "center"
+},
+{
+"ids": [
+87
+],
+"en": "Step 2",
+"align": "center"
+},
+{
+"ids": [
+90
+],
+"en": "Step 1",
+"align": "center"
+},
+{
+"ids": [
+88,
+89
+],
+"en": "Use the insurance mechanism to receive a larger annuity principal",
+"align": "left"
+},
+{
+"ids": [
+91
+],
+"en": "Choose the currency and period",
+"align": "left",
+"lines": 1
+},
+{
+"ids": [
+92,
+93
+],
+"html": true,
+"en": "<span style=\"color:#00a73b\">●</span> Choose either a foreign currency, where interest rates higher than yen can be expected, or yen, which carries no currency risk."
+},
+{
+"ids": [
+94
+],
+"html": true,
+"en": "<span style=\"color:#00a73b\">●</span> Choose the accumulation period by when you want the money."
+},
+{
+"ids": [
+95,
+96
+],
+"en": "Limiting the death benefit and surrender value during the accumulation period makes the annuity principal larger at maturity."
+},
+{
+"ids": [
+97
+],
+"en": "How it works (illustration)",
+"align": "left"
+},
+{
+"ids": [
+98
+],
+"en": "• The target-value option is not available with this plan."
+},
+{
+"ids": [
+99,
+100
+],
+"en": "• Contracts where the policyholder and the insured are different people are not accepted."
+},
+{
+"ids": [
+107
+],
+"en": "Maturity-focused plan",
+"align": "center",
+"lines": 1,
+"size": 13.0
+},
+{
+"ids": [
+109,
+108
+],
+"html": true,
+"en": "<span style=\"font-size:0.67em\">Death and surrender benefits are limited:</span> for those who want to receive more at maturity",
+"lines": 1,
+"align": "left"
+},
+{
+"ids": [
+110
+],
+"en": "Maturity-focused plan"
+},
+{
+"ids": [
+101,
+102
+],
+"en": "This policy has charges payable by you. You may also suffer losses from changes in exchange rates, market interest rates at surrender and other factors.",
+"lines": 1
+}
+]

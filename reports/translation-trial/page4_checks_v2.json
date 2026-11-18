@@ -1,0 +1,893 @@
+{
+ "units": [
+  {
+   "en": "Death benefit ratio",
+   "orig_size": 9.0,
+   "size": 9.0,
+   "align": "right",
+   "box": [
+    12.0,
+    32.2,
+    99.4,
+    42.9
+   ]
+  },
+  {
+   "en": "Contract date",
+   "orig_size": 5.14,
+   "size": 5.14,
+   "align": "left",
+   "box": [
+    316.1,
+    415.5,
+    351.4,
+    421.8
+   ]
+  },
+  {
+   "en": "End of accumulation period",
+   "orig_size": 5.2,
+   "size": 5.2,
+   "align": "right",
+   "box": [
+    568.0,
+    415.4,
+    636.7,
+    421.8
+   ]
+  },
+  {
+   "en": "Annuity principal",
+   "orig_size": 10.4,
+   "size": 7.4,
+   "align": "center",
+   "box": [
+    616.5,
+    319.4,
+    633.8,
+    379.7
+   ]
+  },
+  {
+   "en": "Account value",
+   "orig_size": 10.4,
+   "size": 7.4,
+   "align": "center",
+   "box": [
+    292.6,
+    323.7,
+    301.4,
+    378.9
+   ]
+  },
+  {
+   "en": "In chosen currency",
+   "orig_size": 7.15,
+   "size": 5.65,
+   "align": "center",
+   "box": [
+    284.5,
+    384.6,
+    309.4,
+    404.3
+   ]
+  },
+  {
+   "en": "In chosen currency",
+   "orig_size": 7.15,
+   "size": 5.65,
+   "align": "center",
+   "box": [
+    613.1,
+    384.6,
+    638.1,
+    404.3
+   ]
+  },
+  {
+   "en": "Initial charge",
+   "orig_size": 8.45,
+   "size": 6.95,
+   "align": "center",
+   "box": [
+    272.7,
+    271.1,
+    320.6,
+    279.4
+   ]
+  },
+  {
+   "en": "Single premium (basic sum insured)",
+   "orig_size": 11.7,
+   "size": 9.7,
+   "align": "center",
+   "box": [
+    251.5,
+    313.0,
+    274.0,
+    407.5
+   ]
+  },
+  {
+   "en": "Account value (in chosen currency)",
+   "orig_size": 8.45,
+   "size": 6.95,
+   "align": "center",
+   "box": [
+    316.8,
+    237.5,
+    378.0,
+    253.7
+   ]
+  },
+  {
+   "en": "Surrender value (in chosen currency)",
+   "orig_size": 8.45,
+   "size": 6.95,
+   "align": "center",
+   "box": [
+    492.3,
+    338.9,
+    581.5,
+    355.2
+   ]
+  },
+  {
+   "en": "Up to 100% of premium",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    496.0,
+    360.7,
+    578.0,
+    367.8
+   ]
+  },
+  {
+   "en": "Death benefit (in chosen currency)",
+   "orig_size": 8.45,
+   "size": 6.95,
+   "align": "center",
+   "box": [
+    404.5,
+    339.1,
+    473.4,
+    355.3
+   ]
+  },
+  {
+   "en": "100% of premium",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    407.1,
+    360.7,
+    470.9,
+    367.8
+   ]
+  },
+  {
+   "en": "Receive more at maturity",
+   "orig_size": 9.1,
+   "size": 9.1,
+   "align": "center",
+   "box": [
+    609.4,
+    195.5,
+    738.7,
+    206.3
+   ]
+  },
+  {
+   "en": "Foreign currency: no guarantee in yen.",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    628.8,
+    219.1,
+    738.4,
+    226.1
+   ]
+  },
+  {
+   "en": "During the accumulation period, death and surrender benefits",
+   "orig_size": 9.1,
+   "size": 9.1,
+   "align": "center",
+   "box": [
+    421.0,
+    201.0,
+    594.2,
+    232.5
+   ]
+  },
+  {
+   "en": "For your options at the end of the accumulation period, see",
+   "orig_size": 7.8,
+   "size": 6.05,
+   "align": "left",
+   "box": [
+    666.8,
+    334.7,
+    739.3,
+    355.7
+   ]
+  },
+  {
+   "en": "* The diagram above is an illustration and does not guarante",
+   "orig_size": 5.2,
+   "size": 5.2,
+   "align": "left",
+   "box": [
+    460.0,
+    439.5,
+    763.0,
+    451.7
+   ]
+  },
+  {
+   "en": "Accumulation period (crediting-rate guarantee period)",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    357.1,
+    425.2,
+    568.4,
+    432.2
+   ]
+  },
+  {
+   "en": "* Limits the death benefit and passes that share to survivin",
+   "orig_size": 5.2,
+   "size": 5.2,
+   "align": "right",
+   "box": [
+    439.2,
+    53.2,
+    742.8,
+    59.5
+   ]
+  },
+  {
+   "en": "* A market value adjustment applies.",
+   "orig_size": 5.2,
+   "size": 5.2,
+   "align": "center",
+   "box": [
+    537.1,
+    377.9,
+    586.7,
+    390.1
+   ]
+  },
+  {
+   "en": "AUD",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    158.0,
+    333.8,
+    192.9,
+    340.8
+   ]
+  },
+  {
+   "en": "USD",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    158.0,
+    306.0,
+    191.6,
+    313.1
+   ]
+  },
+  {
+   "en": "JPY",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    158.0,
+    387.9,
+    192.9,
+    395.0
+   ]
+  },
+  {
+   "en": "* Depending on interest rates and other conditions at the ti",
+   "orig_size": 5.2,
+   "size": 5.2,
+   "align": "left",
+   "box": [
+    154.0,
+    424.0,
+    317.3,
+    442.2
+   ]
+  },
+  {
+   "en": "Available combinations",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "left",
+   "box": [
+    162.7,
+    263.2,
+    238.1,
+    270.3
+   ]
+  },
+  {
+   "en": "Currency",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    158.1,
+    273.8,
+    192.2,
+    280.9
+   ]
+  },
+  {
+   "en": "Accum. period",
+   "orig_size": 5.85,
+   "size": 5.5,
+   "align": "center",
+   "box": [
+    195.2,
+    274.4,
+    235.2,
+    281.0
+   ]
+  },
+  {
+   "en": "Accumulation period",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    25.6,
+    463.8,
+    86.3,
+    470.9
+   ]
+  },
+  {
+   "en": "Entry age",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    25.6,
+    473.2,
+    86.3,
+    480.2
+   ]
+  },
+  {
+   "en": "Currency",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    25.6,
+    455.6,
+    86.3,
+    462.7
+   ]
+  },
+  {
+   "en": "JPY",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    246.2,
+    455.6,
+    282.0,
+    462.7
+   ]
+  },
+  {
+   "en": "Initial charge",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    25.6,
+    484.0,
+    86.0,
+    491.1
+   ]
+  },
+  {
+   "en": "USD / AUD",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    91.2,
+    455.6,
+    174.9,
+    462.7
+   ]
+  },
+  {
+   "en": "Example choices",
+   "orig_size": 7.8,
+   "size": 7.8,
+   "align": "center",
+   "box": [
+    40.9,
+    80.0,
+    122.0,
+    89.3
+   ]
+  },
+  {
+   "en": "I'm self-employed and want to top up my public pension. I'd ",
+   "orig_size": 6.5,
+   "size": 6.5,
+   "align": "center",
+   "box": [
+    29.1,
+    106.8,
+    137.5,
+    136.8
+   ]
+  },
+  {
+   "en": "Money to leave my family is already covered by whole life in",
+   "orig_size": 6.5,
+   "size": 6.5,
+   "align": "center",
+   "box": [
+    26.7,
+    222.3,
+    137.5,
+    252.3
+   ]
+  },
+  {
+   "en": "I want a lump sum in a set number of years. Medical costs un",
+   "orig_size": 6.5,
+   "size": 6.5,
+   "align": "center",
+   "box": [
+    26.6,
+    342.6,
+    137.5,
+    365.2
+   ]
+  },
+  {
+   "en": "Step 2",
+   "orig_size": 7.8,
+   "size": 7.8,
+   "align": "center",
+   "box": [
+    548.1,
+    68.5,
+    638.3,
+    77.8
+   ]
+  },
+  {
+   "en": "Step 1",
+   "orig_size": 7.8,
+   "size": 7.8,
+   "align": "center",
+   "box": [
+    248.7,
+    68.5,
+    338.9,
+    77.8
+   ]
+  },
+  {
+   "en": "Use the insurance mechanism to receive a larger annuity prin",
+   "orig_size": 13.0,
+   "size": 11.5,
+   "align": "left",
+   "box": [
+    458.1,
+    89.0,
+    738.6,
+    115.6
+   ]
+  },
+  {
+   "en": "Choose the currency and period",
+   "orig_size": 13.0,
+   "size": 11.5,
+   "align": "left",
+   "box": [
+    167.9,
+    89.0,
+    352.0,
+    102.5
+   ]
+  },
+  {
+   "en": "<span style=\"color:#00a73b\">●</span> Choose either a foreign",
+   "orig_size": 9.1,
+   "size": 8.6,
+   "align": "left",
+   "box": [
+    168.7,
+    114.2,
+    434.0,
+    134.2
+   ]
+  },
+  {
+   "en": "<span style=\"color:#00a73b\">●</span> Choose the accumulation",
+   "orig_size": 9.1,
+   "size": 8.6,
+   "align": "left",
+   "box": [
+    168.7,
+    146.7,
+    434.0,
+    156.9
+   ]
+  },
+  {
+   "en": "Limiting the death benefit and surrender value during the ac",
+   "orig_size": 9.1,
+   "size": 8.6,
+   "align": "left",
+   "box": [
+    458.9,
+    129.9,
+    738.6,
+    149.9
+   ]
+  },
+  {
+   "en": "How it works (illustration)",
+   "orig_size": 9.1,
+   "size": 6.35,
+   "align": "left",
+   "box": [
+    154.1,
+    178.2,
+    238.1,
+    185.9
+   ]
+  },
+  {
+   "en": "• The target-value option is not available with this plan.",
+   "orig_size": 6.5,
+   "size": 6.5,
+   "align": "left",
+   "box": [
+    166.6,
+    195.2,
+    366.4,
+    203.0
+   ]
+  },
+  {
+   "en": "• Contracts where the policyholder and the insured are diffe",
+   "orig_size": 6.5,
+   "size": 6.5,
+   "align": "left",
+   "box": [
+    166.6,
+    205.0,
+    408.2,
+    220.2
+   ]
+  },
+  {
+   "en": "Maturity-focused plan",
+   "orig_size": 13.0,
+   "size": 13.0,
+   "align": "center",
+   "box": [
+    12.0,
+    11.6,
+    173.5,
+    26.8
+   ]
+  },
+  {
+   "en": "<span style=\"font-size:0.67em\">Death and surrender benefits ",
+   "orig_size": 15.6,
+   "size": 14.85,
+   "align": "left",
+   "box": [
+    194.9,
+    23.5,
+    763.0,
+    40.8
+   ]
+  },
+  {
+   "en": "Maturity-focused plan",
+   "orig_size": 6.97,
+   "size": 6.47,
+   "align": "center",
+   "box": [
+    759.0,
+    171.5,
+    766.7,
+    252.2
+   ]
+  },
+  {
+   "en": "This policy has charges payable by you. You may also suffer ",
+   "orig_size": 7.8,
+   "size": 6.8,
+   "align": "left",
+   "box": [
+    52.2,
+    508.3,
+    551.9,
+    516.5
+   ]
+  },
+  {
+   "en": "5 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    206.7,
+    353.4,
+    224.1,
+    361.3
+   ]
+  },
+  {
+   "en": "10 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    205.4,
+    367.6,
+    225.4,
+    375.5
+   ]
+  },
+  {
+   "en": "15 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    205.4,
+    381.8,
+    225.4,
+    389.7
+   ]
+  },
+  {
+   "en": "20 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    205.1,
+    396.0,
+    224.5,
+    403.9
+   ]
+  },
+  {
+   "en": "10 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    222.2,
+    463.9,
+    262.2,
+    471.0
+   ]
+  },
+  {
+   "en": "0–85",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    222.2,
+    473.1,
+    262.2,
+    480.2
+   ]
+  },
+  {
+   "en": "15 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    265.8,
+    463.9,
+    305.9,
+    471.0
+   ]
+  },
+  {
+   "en": "0–80",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    265.8,
+    473.1,
+    305.9,
+    480.2
+   ]
+  },
+  {
+   "en": "5 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    91.2,
+    463.9,
+    131.2,
+    471.0
+   ]
+  },
+  {
+   "en": "0–90",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    91.2,
+    473.1,
+    131.2,
+    480.2
+   ]
+  },
+  {
+   "en": "10 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    134.8,
+    463.9,
+    174.9,
+    471.0
+   ]
+  },
+  {
+   "en": "0–85",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    134.8,
+    473.1,
+    174.9,
+    480.2
+   ]
+  },
+  {
+   "en": "5 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    178.6,
+    463.9,
+    218.4,
+    471.0
+   ]
+  },
+  {
+   "en": "0–90",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    178.5,
+    473.1,
+    218.6,
+    480.2
+   ]
+  },
+  {
+   "en": "20 yrs",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    310.4,
+    463.9,
+    348.7,
+    471.0
+   ]
+  },
+  {
+   "en": "0–75",
+   "orig_size": 5.85,
+   "size": 5.85,
+   "align": "center",
+   "box": [
+    310.5,
+    473.1,
+    348.6,
+    480.2
+   ]
+  },
+  {
+   "en": "5 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    206.7,
+    303.6,
+    224.1,
+    311.5
+   ]
+  },
+  {
+   "en": "10 yrs",
+   "orig_size": 7.55,
+   "size": 6.55,
+   "align": "center",
+   "box": [
+    205.1,
+    317.8,
+    224.5,
+    325.7
+   ]
+  }
+ ],
+ "too_long": [
+  {
+   "en": "* Limits the death benefit and passes that share to surviving policyholders, enlarging the annuity principal. (Tontine annuity)",
+   "size": 5.2,
+   "box": [
+    448.2,
+    53.2,
+    742.8,
+    61.5
+   ]
+  },
+  {
+   "en": "* A market value adjustment applies.",
+   "size": 5.2,
+   "box": [
+    540.1,
+    377.7,
+    583.7,
+    389.9
+   ]
+  },
+  {
+   "en": "Accum. period",
+   "size": 5.5,
+   "box": [
+    198.2,
+    274.5,
+    232.2,
+    280.5
+   ]
+  }
+ ],
+ "min_size": 5.14,
+ "below_floor": [],
+ "japanese_left": [],
+ "outlined_text_left": [],
+ "text_overlaps": []
+}

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 416" width="760" height="416" role="img" aria-label="JPY: how well yield moves explain rate moves, by lag">
+<style>svg{font:12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif}.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.grid{stroke:#e4e3df;stroke-width:1}.s0{stroke:#2a78d6}.f0{fill:#2a78d6}.s1{stroke:#eb6834}.f1{fill:#eb6834}.s2{stroke:#1baf7a}.f2{fill:#1baf7a}.s3{stroke:#eda100}.f3{fill:#eda100}.s4{stroke:#e87ba4}.f4{fill:#e87ba4}.s5{stroke:#008300}.f5{fill:#008300} @media (prefers-color-scheme: dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#34332f}.s0{stroke:#3987e5}.f0{fill:#3987e5}.s1{stroke:#d95926}.f1{fill:#d95926}.s2{stroke:#199e70}.f2{fill:#199e70}.s3{stroke:#c98500}.f3{fill:#c98500}.s4{stroke:#d55181}.f4{fill:#d55181}.s5{stroke:#008300}.f5{fill:#008300}}</style>
+<rect class="bg" width="100%" height="100%" rx="6"/>
+<text class="t1" x="56" y="20" font-weight="600" font-size="14">JPY: how well yield moves explain rate moves, by lag</text>
+<text class="t2" x="56" y="36">R² of ΔRate on ΔYield(L); the peak is the typical lag</text>
+<line class="grid" x1="56" x2="744" y1="264.0" y2="264.0"/>
+<text class="t2" x="50" y="268.0" text-anchor="end">0</text>
+<line class="grid" x1="56" x2="744" y1="210.0" y2="210.0"/>
+<text class="t2" x="50" y="214.0" text-anchor="end">0.25</text>
+<line class="grid" x1="56" x2="744" y1="156.0" y2="156.0"/>
+<text class="t2" x="50" y="160.0" text-anchor="end">0.5</text>
+<line class="grid" x1="56" x2="744" y1="102.0" y2="102.0"/>
+<text class="t2" x="50" y="106.0" text-anchor="end">0.75</text>
+<line class="grid" x1="56" x2="744" y1="48.0" y2="48.0"/>
+<text class="t2" x="50" y="52.0" text-anchor="end">1</text>
+<text class="t2" x="56.0" y="280" text-anchor="middle">0</text>
+<text class="t2" x="105.1" y="280" text-anchor="middle">3</text>
+<text class="t2" x="170.7" y="280" text-anchor="middle">7</text>
+<text class="t2" x="219.8" y="280" text-anchor="middle">10</text>
+<text class="t2" x="285.3" y="280" text-anchor="middle">14</text>
+<text class="t2" x="400.0" y="280" text-anchor="middle">21</text>
+<text class="t2" x="514.7" y="280" text-anchor="middle">28</text>
+<text class="t2" x="629.3" y="280" text-anchor="middle">35</text>
+<text class="t2" x="744.0" y="280" text-anchor="middle">42</text>
+<text class="t2" x="400" y="296" text-anchor="middle">lag, days before the effective date</text>
+<path class="s0" d="M56.0,216.6 L105.1,156.7 L170.7,87.6 L219.8,139.3 L285.3,176.3 L400.0,256.6 L514.7,263.8 L629.3,264.0 L744.0,250.2" fill="none" stroke-width="2"/>
+<circle class="f0" cx="56.0" cy="216.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="105.1" cy="156.7" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="170.7" cy="87.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="219.8" cy="139.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="285.3" cy="176.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="400.0" cy="256.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="514.7" cy="263.8" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="629.3" cy="264.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f0" cx="744.0" cy="250.2" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<path class="s1" d="M56.0,259.0 L105.1,198.4 L170.7,145.5 L219.8,129.9 L285.3,117.5 L400.0,260.0 L514.7,254.1 L629.3,264.0 L744.0,211.5" fill="none" stroke-width="2"/>
+<circle class="f1" cx="56.0" cy="259.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="105.1" cy="198.4" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="170.7" cy="145.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="219.8" cy="129.9" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="285.3" cy="117.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="400.0" cy="260.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="514.7" cy="254.1" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="629.3" cy="264.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f1" cx="744.0" cy="211.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<path class="s2" d="M56.0,263.9 L105.1,190.6 L170.7,142.5 L219.8,129.3 L285.3,173.0 L400.0,237.3 L514.7,258.9 L629.3,248.5 L744.0,199.2" fill="none" stroke-width="2"/>
+<circle class="f2" cx="56.0" cy="263.9" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="105.1" cy="190.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="170.7" cy="142.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="219.8" cy="129.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="285.3" cy="173.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="400.0" cy="237.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="514.7" cy="258.9" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="629.3" cy="248.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f2" cx="744.0" cy="199.2" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<path class="s3" d="M56.0,223.7 L105.1,201.5 L170.7,159.5 L219.8,167.6 L285.3,215.1 L400.0,261.2 L514.7,261.4 L629.3,257.3 L744.0,263.6" fill="none" stroke-width="2"/>
+<circle class="f3" cx="56.0" cy="223.7" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="105.1" cy="201.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="170.7" cy="159.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="219.8" cy="167.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="285.3" cy="215.1" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="400.0" cy="261.2" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="514.7" cy="261.4" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="629.3" cy="257.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f3" cx="744.0" cy="263.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<path class="s4" d="M56.0,259.8 L105.1,251.3 L170.7,192.5 L219.8,169.0 L285.3,193.4 L400.0,257.2 L514.7,255.6 L629.3,264.0 L744.0,263.9" fill="none" stroke-width="2"/>
+<circle class="f4" cx="56.0" cy="259.8" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="105.1" cy="251.3" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="170.7" cy="192.5" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="219.8" cy="169.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="285.3" cy="193.4" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="400.0" cy="257.2" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="514.7" cy="255.6" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="629.3" cy="264.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f4" cx="744.0" cy="263.9" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<path class="s5" d="M56.0,254.1 L105.1,235.2 L170.7,194.4 L219.8,192.0 L285.3,207.8 L400.0,260.7 L514.7,264.0 L629.3,263.9 L744.0,263.4" fill="none" stroke-width="2"/>
+<circle class="f5" cx="56.0" cy="254.1" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="105.1" cy="235.2" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="170.7" cy="194.4" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="219.8" cy="192.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="285.3" cy="207.8" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="400.0" cy="260.7" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="514.7" cy="264.0" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="629.3" cy="263.9" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<circle class="f5" cx="744.0" cy="263.4" r="4" stroke="#fcfcfb" stroke-width="1.5"/>
+<rect class="f0" x="56.0" y="308" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="314">MetLife Japan Sunny Garden Prime · Payout courses, rate reset · JGB 10Y</text>
+<rect class="f1" x="56.0" y="326" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="332">Dai-ichi Frontier Premier Currency 3 Rakuten Bank Edition · Basic · JGB 10Y</text>
+<rect class="f2" x="56.0" y="344" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="350">Manulife Insurance (Manulife Japan) Mirai ni Tsunageru Whole Life v2 (Future-Connecting Whole Life v2) · No health questions, basic course · age 45-49 · JGB 10Y</text>
+<rect class="f3" x="56.0" y="362" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="368">Dai-ichi Frontier Premier Currency 3 · Basic · JGB 10Y</text>
+<rect class="f4" x="56.0" y="380" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="386">ORIX Insurance Moonshot single-premium whole life · Standard · JGB 10Y</text>
+<rect class="f5" x="56.0" y="398" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="404">Dai-ichi Frontier Premier Receive 2 · Basic · age 76-80 · JGB 10Y</text>
+</svg>

@@ -1,0 +1,791 @@
+{
+  "id": "dfl-premier-story-5",
+  "insurer_id": "dfl",
+  "candidate": true,
+  "name_ja": "プレミアストーリー５",
+  "name_en": "Premier Story 5",
+  "policy_name_ja": "生存給付金付終身保険（通貨指定型）",
+  "category": "whole_life",
+  "product_type": "whole_life_periodic_payout",
+  "subtype": "living_benefit_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "site_product_code": "219",
+  "guarantee_terms_years": [],
+  "editions": [
+    {
+      "name_ja": "プレミアストーリーＭ５",
+      "name_en": "Premier Story M5",
+      "site_product_code": "220",
+      "distributor_group": "みずほ銀行、みずほ信託銀行、みずほ証券",
+      "distributors": [
+        {
+          "name_ja": "みずほ銀行"
+        },
+        {
+          "name_ja": "みずほ信託銀行"
+        },
+        {
+          "name_ja": "みずほ証券"
+        }
+      ]
+    },
+    {
+      "name_ja": "安心ながつづき５",
+      "name_en": "Anshin Nagatsuzuki 5",
+      "site_product_code": "221",
+      "distributor_group": "関西みらい銀行、埼玉りそな銀行、みなと銀行、りそな銀行",
+      "distributors": [
+        {
+          "name_ja": "関西みらい銀行"
+        },
+        {
+          "name_ja": "埼玉りそな銀行"
+        },
+        {
+          "name_ja": "みなと銀行"
+        },
+        {
+          "name_ja": "りそな銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "第一フロンティア生存給付金付終身（円建/外貨建）",
+      "name_en": "Dai-ichi Frontier Living-Benefit Whole Life (JPY / foreign currency)",
+      "site_product_code": "222",
+      "distributor_group": "野村證券",
+      "distributors": [
+        {
+          "name_ja": "野村證券"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The rate page applies to contracts dated 2021/8/16 onward ('sokuji' = immediate payout version); an older page (index_seizon_kyufutsuki_shushin_choice, to 2021/8/15) is not collected.",
+    "The history page has two tables, 【終身保障なし】 (no whole-life cover after the payout period, first table) and 【終身保障あり】 (second table), by 受取回数 (number of survival-benefit payouts): USD and AUD 5, 7, 10, 15, 20, 25, 30; JPY 5-10, 15, 20, 25, 30 (終身保障なし); 3, 5, 7, 10 (終身保障あり).",
+    "The per-currency and per-cover params on the live page (..._usd_ari etc.) belong to the graph pages; the history table is served at the single param seizon_kyufutsuki_sokuji_shushin_choice_01.",
+    "Editions listed share the policy form and rate page on the insurer's rate hub.",
+    "Distributors: 銀行・信用金庫・信用組合・証券 section only; 乗合代理店 (independent agencies) not recorded.",
+    "Mapping (changed 2026-11-17; earlier files had term_years = number of payouts and age_band mult1 / mult3): term_years is the 積立利率保証期間 (rate-guarantee period), the tenor. In the 【終身保障あり】 tables it is printed as 20年 for every column; the columns also split by 終身保障倍率 (whole-life cover multiple 1倍 or 3倍) and 受取回数, both now in the plan key (e.g. shushin_ari_x3_n7 = 3x cover, 7 payouts; plan_base shushin_ari). In the 【終身保障なし】 tables the history page prints only 受取回数; the rate page (rate_seizon_kyufutsuki_sokuji_shushin_choice_01 snapshot of 2026-11-17) prints the 積立利率保証期間 beside it and it is the number of payouts minus one year for every column (5回 4年 ... 30回 29年), so term_years = payouts - 1 and the plan stays shushin_nashi. scripts/dfl.py applies the same rule (it reads the guarantee column wherever the table prints it).",
+    "The MVA (市場価格調整用利率) history page has three tables in this order: ■終身保障部分 【終身保障あり】 (whole-life cover part, table 0), ■生存給付金部分 【終身保障なし】 (table 1) and ■生存給付金部分 【終身保障あり】 (table 2); the series use table indexes 0, 1, 2 accordingly (plans shushin_ari_cover, shushin_nashi, shushin_ari_payout). The crediting-rate page has two tables, なし then あり.",
+    "Launch date not established (left null). The only release naming this line is id=989 (2021-08-06): 『プレミアストーリー４』 on sale from 2021-08-16, replacing 『プレミアストーリー３』 (on sale from 2020-11, month only). No release announces 『プレミアストーリー５』; the first edition of the formal 生存給付金付終身保険（通貨指定型）is not in the release index (2008-2026). Snapshot sources/dfl/pages/release_989_2026-11-17.pdf.",
+    "Launch date search 2026-11-17 (second pass): DFL release lists 2025-2026 and the bodies of saved release PDFs; two web searches for プレミアストーリー５ 取扱開始. No release or bank notice found. Still null."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 October 2025 and covers USD, AUD and JPY.",
+    "The rates apply to contracts dated 16 August 2021 or later; the older rate table is not collected.",
+    "Two courses exist, with and without whole-life cover. The tenor is the rate-guarantee period: 20 years with cover, and the number of payouts less one year without; the cover multiple and number of payouts are part of the plan name.",
+    "Premier Story M5 and Anshin Nagatsuzuki 5 share the same rates. Launch date not established."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_219",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=219"
+    },
+    {
+      "name": "rate_seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "url": "https://www.d-frontier-life.co.jp/products/index_seizon_kyufutsuki_sokuji_shushin_choice_01.html"
+    },
+    {
+      "name": "mva_seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_seizon_kyufutsuki_sokuji_shushin_choice_01_b.html?product=&agency="
+    },
+    {
+      "name": "product_220",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=220"
+    },
+    {
+      "name": "product_221",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=221"
+    },
+    {
+      "name": "product_222",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=222"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_nashi",
+      "plan_ja": "終身保障なし",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_nashi",
+      "plan_en": "No lifetime cover",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_nashi.csv",
+      "points": 672,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x1_n3",
+      "plan_ja": "終身保障あり・終身保障倍率1倍・受取回数3回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "1x lifetime cover, 3 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x1_n3.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x1_n5",
+      "plan_ja": "終身保障あり・終身保障倍率1倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "1x lifetime cover, 5 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x1_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x1_n7",
+      "plan_ja": "終身保障あり・終身保障倍率1倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "1x lifetime cover, 7 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x1_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x1_n10",
+      "plan_ja": "終身保障あり・終身保障倍率1倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "1x lifetime cover, 10 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x1_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x3_n5",
+      "plan_ja": "終身保障あり・終身保障倍率3倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "3x lifetime cover, 5 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x3_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x3_n7",
+      "plan_ja": "終身保障あり・終身保障倍率3倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "3x lifetime cover, 7 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x3_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "shushin_ari_x3_n10",
+      "plan_ja": "終身保障あり・終身保障倍率3倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_ari",
+      "plan_en": "3x lifetime cover, 10 payouts",
+      "csv": "dfl-premier-story-5__crediting_rate__shushin_ari_x3_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_nashi",
+      "plan_ja": "終身保障なし（生存給付金部分）",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 1,
+      "plan_base": "shushin_nashi",
+      "plan_en": "No lifetime cover",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_nashi.csv",
+      "points": 672,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x1_n3",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率1倍・受取回数3回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 1x cover, 3 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x1_n3.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x1_n5",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率1倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 1x cover, 5 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x1_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x1_n7",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率1倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 1x cover, 7 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x1_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x1_n10",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率1倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 1x cover, 10 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x1_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x3_n5",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率3倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 3x cover, 5 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x3_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x3_n7",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率3倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 3x cover, 7 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x3_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_payout_x3_n10",
+      "plan_ja": "終身保障あり（生存給付金部分）・終身保障倍率3倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 2,
+      "plan_base": "shushin_ari_payout",
+      "plan_en": "Benefit part, 3x cover, 10 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_payout_x3_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x1_n3",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率1倍・受取回数3回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 1x cover, 3 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x1_n3.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x1_n5",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率1倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 1x cover, 5 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x1_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x1_n7",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率1倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 1x cover, 7 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x1_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x1_n10",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率1倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 1x cover, 10 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x1_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x3_n5",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率3倍・受取回数5回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 3x cover, 5 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x3_n5.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x3_n7",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率3倍・受取回数7回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 3x cover, 7 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x3_n7.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "shushin_ari_cover_x3_n10",
+      "plan_ja": "終身保障あり（終身保障部分）・終身保障倍率3倍・受取回数10回",
+      "param": "seizon_kyufutsuki_sokuji_shushin_choice_01_b",
+      "layout": "payouts",
+      "table": 0,
+      "plan_base": "shushin_ari_cover",
+      "plan_en": "Cover part, 3x cover, 10 payouts",
+      "csv": "dfl-premier-story-5__mva_rate__shushin_ari_cover_x3_n10.csv",
+      "points": 84,
+      "first_effective": "2025-10-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 28
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_PremierStory5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierStory5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Story 5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_PremierStory5_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "shinkin",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierStory5/shinkin/shinkin.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Story 5, Shinkin edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05141",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05141.pdf",
+      "title_en": "Policy guide and conditions (Premier Story 5)"
+    },
+    {
+      "name": "brochure_PremierStoryM5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierStoryM5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Story M5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_PremierStoryM5_mizuhotb",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhotb",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierStoryM5/mizuhotb/mizuhotb.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Story M5, Mizuho Trust edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_PremierStoryM5_mizuhosc",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "mizuhosc",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierStoryM5/mizuhosc/mizuhosc.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Story M5, Mizuho Securities edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05161",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05161.pdf",
+      "title_en": "Policy guide and conditions (Premier Story M5)"
+    },
+    {
+      "name": "brochure_AnshinNagatsuduki5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/AnshinNagatsuduki5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Anshin Nagatsuzuki 5)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05181",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05181.pdf",
+      "title_en": "Policy guide and conditions (Anshin Nagatsuzuki 5)"
+    },
+    {
+      "name": "brochure_dflseizonkyuufukin_shushin5_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/dflseizonkyuufukin_shushin5/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Dai-ichi Frontier Living-Benefit Whole Life)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_dflseizonkyuufukin_shushin5_hanyo_keiyaku",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo_keiyaku",
+      "url": "https://www.d-frontier-life.co.jp/products/dflseizonkyuufukin_shushin5/hanyo/hanyo_keiyaku.pdf",
+      "title_en": "Pre-contract disclosure (Dai-ichi Frontier Living-Benefit Whole Life)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_05201",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/05201.pdf",
+      "title_en": "Policy guide and conditions (Dai-ichi Frontier Living-Benefit Whole Life)"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "あおぞら銀行"
+    },
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "秋田銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "尼崎信用金庫"
+    },
+    {
+      "name_ja": "阿波銀行"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "ＳＢＩ証券"
+    },
+    {
+      "name_ja": "SBI新生銀行"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "沖縄銀行"
+    },
+    {
+      "name_ja": "鹿児島銀行"
+    },
+    {
+      "name_ja": "神奈川銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "京都信用金庫"
+    },
+    {
+      "name_ja": "京都中央信用金庫"
+    },
+    {
+      "name_ja": "近畿産業信用組合"
+    },
+    {
+      "name_ja": "熊本銀行"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "京葉銀行"
+    },
+    {
+      "name_ja": "高知銀行"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "七十七銀行"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "十八親和銀行"
+    },
+    {
+      "name_ja": "城北信用金庫"
+    },
+    {
+      "name_ja": "常陽銀行"
+    },
+    {
+      "name_ja": "スターツ証券"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "瀬戸信用金庫"
+    },
+    {
+      "name_ja": "大熊本証券"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "但馬銀行"
+    },
+    {
+      "name_ja": "但馬信用金庫"
+    },
+    {
+      "name_ja": "多摩信用金庫"
+    },
+    {
+      "name_ja": "筑邦銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "ちばぎん証券"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "東洋証券"
+    },
+    {
+      "name_ja": "東和銀行"
+    },
+    {
+      "name_ja": "富山銀行"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "西日本シティＴＴ証券"
+    },
+    {
+      "name_ja": "東日本銀行"
+    },
+    {
+      "name_ja": "肥後銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "福岡銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "横浜銀行"
+    },
+    {
+      "name_ja": "琉球銀行"
+    },
+    {
+      "name_ja": "京都北都信用金庫"
+    },
+    {
+      "name_ja": "三条信用金庫"
+    },
+    {
+      "name_ja": "しののめ信用金庫"
+    },
+    {
+      "name_ja": "長野信用金庫"
+    },
+    {
+      "name_ja": "碧海信用金庫"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 325 rows with their saved snapshots and all matched: a seeded random sample of 325 of 3108 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

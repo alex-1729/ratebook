@@ -1,0 +1,356 @@
+{
+  "id": "sml-tanoshimi-global-3-teiritsu",
+  "insurer_id": "sml",
+  "name_ja": "たのしみグローバルⅢ（定率増加プラン）",
+  "name_en": "Tanoshimi Global III (fixed-rate increase plan)",
+  "name_short_en": "Tanoshimi Global III fixed",
+  "policy_name_ja": "5年ごと利差配当付選択通貨建個人年金保険（一時払い）（23）",
+  "policy_names_ja": [
+    "5年ごと利差配当付選択通貨建個人年金保険（一時払い）（23）",
+    "5年ごと利差配当付指定通貨建個人年金保険（一時払い）（20）"
+  ],
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "net_yield_from": "crediting_rate",
+  "status": "on_sale",
+  "on_sale_date": "2023-06-16",
+  "off_sale_date": null,
+  "notes": [
+    "Policy names: (23) 選択通貨建 covers USD, AUD and JPY; (20) 指定通貨建 covers USD and AUD only. The 5-year / 10-year 据置期間 and the 目標額設定なし / あり choice are plan options of the one product.",
+    "Rate history on the site starts with the 責任開始日 period 2023-06-16 to 06-30 (contract date 2023-07-16) (the on-sale date is recorded in on_sale_date).",
+    "effective_date in the rate CSVs is the first day of the 責任開始日 period (the half-month in which the policy is taken up), the same period the current-rate page quotes. The site's tables also show one 契約日 per period, about a month later; it is not stored.",
+    "積立利率 and 実質的な利回り are the same number (the rate page says 実質的な利回りは積立利率と同じになります), so no separate net_yield series is collected. For USD and AUD contracts the yield is in that currency, not in yen.",
+    "Rates are set on the 1st and 16th. 円建 is not offered with 目標額設定あり; those cells are stored as not_offered. A dash on the site means the currency was suspended for that period.",
+    "目標額設定なし 円建 5年: the rate page says new contracts under JPY 3 million are not accepted when 積立利率 is below 0.45%.",
+    "MVA rate (市場価格調整用利率) history is collected from the MVA tab's back numbers, keyed by the same periods (the table header reads 責任開始日・解約返戻金計算基準日). Without a 目標額 the MVA rate is driven by USD assets whatever the contract currency (site note).",
+    "Channel comparison (checked 2026-11-16): chid=cmon (ntg edition) and chid=smtb show the same current 積立利率 as chid=cgin for 目標額設定なし (USD 4.40/4.80, AUD 3.70/4.40, JPY 2.30/2.40) and offer no 目標額設定あり column. chid=mzho returns only a redirect page to the insurer's general page; no Mizuho page exists for this plan (tanoshimiglobal3_teiritsu_mizuho.html is a 404). Channel history is not collected.",
+    "Not collected: the sibling たのしみグローバルⅢ（指数連動プラン）; the FX tables on the rate page (TTM+/-0.50 yen, snapshotted only); rates for contracts before the 2023-06 launch period.",
+    "Distributor list is as of 2026-10-01 from the finance page; the page also has an index-linked plan list, which is excluded. The しんきんらいふ年金S edition links its own 取扱い金融機関一覧, which is not collected, so shinkin banks beyond those listed are missing.",
+    "The ittaigata brochure URL comes from the product brief; its relation to this plan page has not been checked.",
+    "Launch date: 2023-06-16, the sales start stated in the insurer's news release of 2023-06-09 (一時払個人年金保険「たのしみグローバルⅢ（指数連動プラン）」「たのしみグローバルⅢ（定率増加プラン）」, sold at SMBC and SMBC Nikko Securities as 「たのしみステップⅢ」 for the 指数連動プラン). It follows 「たのしみグローバルⅡ」 (on sale from 2020-10), to which the Ⅲ edition added a yen option. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "This is the fixed-rate increase plan; the index-linked plan is tracked separately as a candidate product.",
+    "Net yield equals the crediting rate, so no separate net yield series is kept.",
+    "Dates are the start of the period in which cover begins, not the policy date a month later.",
+    "Regional-bank and Sumitomo Mitsui Trust rate pages showed the same current rates as the general page.",
+    "Launched 16 June 2023 (insurer news release); rate history starts the same day.",
+    "With a target set, the yen option is not offered."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "rate_site": {
+    "base": "https://neth.sumitomolife.co.jp",
+    "entry_path": "/neth/A871/A8JA71P101.xhtml",
+    "chid": "cgin",
+    "type": "fix",
+    "entry_url": "https://neth.sumitomolife.co.jp/neth/A871/A8JA71P101.xhtml?chid=cgin&type=fix",
+    "history": {
+      "crediting_rate": {
+        "entry_path": "/neth/A871/A8BE71P010.xhtml?chid=cgin&type=fix&buttonId=P60095",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A871/A8BE71P010.xhtml?chid=cgin&type=fix&buttonId=P60095",
+        "year_field": "S62008y",
+        "plan_field": "S62009",
+        "submit": [
+          "P60100",
+          "表示"
+        ],
+        "snapshot_prefix": "history"
+      },
+      "mva_rate": {
+        "tab_button": "P60091",
+        "tab_label": "市場価格調整用利率",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A871/A8JA71P101.xhtml?chid=cgin&type=fix",
+        "year_field": "S63007y",
+        "plan_field": "S63008",
+        "submit": [
+          "P60101",
+          "表示"
+        ],
+        "snapshot_prefix": "mva_history"
+      }
+    }
+  },
+  "channels": [
+    {
+      "chid": "cgin",
+      "name": "general (plan page)"
+    },
+    {
+      "chid": "cmon",
+      "name": "ntg edition"
+    },
+    {
+      "chid": "smtb",
+      "name": "smtb edition"
+    },
+    {
+      "chid": "mzho",
+      "name": "mizuho (redirect only)"
+    }
+  ],
+  "pages": [
+    {
+      "name": "plan_teiritsu",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_teiritsu.html"
+    },
+    {
+      "name": "plan_teiritsu_ntg",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_teiritsu_ntg.html"
+    },
+    {
+      "name": "plan_teiritsu_shinkin",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_teiritsu_shinkin.html"
+    },
+    {
+      "name": "plan_teiritsu_smtb",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_teiritsu_smtb.html"
+    },
+    {
+      "name": "distributors",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_finance.html"
+    },
+    {
+      "name": "index_fi",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "no_target",
+      "plan_ja": "目標額設定なし",
+      "plan_value": "1",
+      "csv": "sml-tanoshimi-global-3-teiritsu__crediting_rate__no_target.csv",
+      "plan_en": "No target"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "target",
+      "plan_ja": "目標額設定あり",
+      "plan_value": "2",
+      "csv": "sml-tanoshimi-global-3-teiritsu__crediting_rate__target.csv",
+      "plan_en": "With target"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "no_target",
+      "plan_ja": "目標額設定なし",
+      "plan_value": "1",
+      "csv": "sml-tanoshimi-global-3-teiritsu__mva_rate__no_target.csv",
+      "plan_en": "No target"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "target",
+      "plan_ja": "目標額設定あり",
+      "plan_value": "2",
+      "csv": "sml-tanoshimi-global-3-teiritsu__mva_rate__target.csv",
+      "plan_en": "With target"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_general",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu/tglobal3t.pdf",
+      "title_en": "Brochure and pre-contract disclosure (general edition)"
+    },
+    {
+      "name": "brochure_ittaigata",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（一体型）",
+      "variant": "ittaigata",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-ittaigata/tanoshimiglobal3-ittaigata.pdf",
+      "title_en": "Brochure and pre-contract disclosure (combined edition)"
+    },
+    {
+      "name": "brochure_ntg",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（ntg）",
+      "variant": "ntg",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu-ntg/tglobal3t-ntg.pdf",
+      "title_en": "Brochure and pre-contract disclosure (regional bank edition)"
+    },
+    {
+      "name": "brochure_jpy",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（円建）",
+      "variant": "jpy",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu_jpy/tglobal3t.pdf",
+      "title_en": "Brochure and pre-contract disclosure (yen edition)"
+    },
+    {
+      "name": "brochure_shinkin",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（しんきんらいふ年金S）",
+      "variant": "shinkin",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu_shinkin/tglobal3t.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shinkin edition)"
+    },
+    {
+      "name": "brochure_shinkin_jpy",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（しんきんらいふ年金S・円建）",
+      "variant": "shinkin_jpy",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu_shinkin_jpy/tglobal3t.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Shinkin edition, yen)"
+    },
+    {
+      "name": "brochure_smtb",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（smtb）",
+      "variant": "smtb",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-teiritsu_smtb/tglobal3t_smtb.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Sumitomo Mitsui Trust edition)"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款（2025年2月版）",
+      "variant": "general",
+      "url": "https://inscloud.jp/ak/01/pdf/3teirituzouka_23_h202502.pdf",
+      "title_en": "Policy guide and conditions",
+      "edition": "February 2025 edition"
+    },
+    {
+      "name": "policy_conditions_2023",
+      "title_ja": "ご契約のしおり・約款（2023年6月版）",
+      "variant": "general-2023",
+      "url": "https://inscloud.jp/ak/01/pdf/3teirituteiki_h202306.pdf",
+      "title_en": "Policy guide and conditions (2023 edition)",
+      "edition": "June 2023 edition"
+    },
+    {
+      "name": "insert_202511",
+      "title_ja": "差込版（2025年11月）",
+      "variant": "general",
+      "url": "https://inscloud.jp/ak/01/pdf/s750-10_ds202511.pdf",
+      "title_en": "Brochure insert",
+      "edition": "November 2025 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "スターツ証券",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "東洋証券",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "あいち銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "沖縄銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "沖縄海邦銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "香川銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "西京銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "静岡中央銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "島根銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "福井銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "豊和銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "北海道銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "山口銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "琉球銀行",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "湖東信用金庫",
+      "section": "定率増加プラン"
+    },
+    {
+      "name_ja": "足利小山信用金庫",
+      "section": "定率増加プラン〈円建〉"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-16",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  },
+  "on_sale_date_source": {
+    "url": "https://www.sumitomolife.co.jp/news/news_file/file/230609.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/sml/pages/release_230609_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/sml/pages/live_index_fi_2026-11-17.html"
+  }
+}

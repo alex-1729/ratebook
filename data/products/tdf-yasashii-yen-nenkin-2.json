@@ -1,0 +1,276 @@
+{
+  "id": "tdf-yasashii-yen-nenkin-2",
+  "insurer_id": "tdf",
+  "candidate": true,
+  "name_ja": "やさしい円ねんきん2",
+  "name_en": "Yasashii Yen Nenkin 2 (Easy Yen Annuity 2)",
+  "name_short_en": "Yasashii Yen Nenkin 2",
+  "policy_name_ja": "無配当生存保障重視型個人年金保険（Ⅰ型）／無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型）",
+  "policy_names": [
+    {
+      "name_ja": "無配当生存保障重視型個人年金保険（Ⅰ型）",
+      "plan": "jpy_nenkin",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース"
+    },
+    {
+      "name_ja": "無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型）",
+      "plan": "jpy_kaigo",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース"
+    }
+  ],
+  "category": "fixed_annuity",
+  "product_type": "survival_weighted_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-10-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://www.tdf-life.co.jp/newsrelease/pdf/202409302.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/tdf/pages/release_202409302_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/tdf/pages/live_kentou_stock_2026-11-17.html"
+  },
+  "rate_page": "yyn2_rate_current",
+  "notes": [
+    "Yen-only single-premium annuity with two courses (年金重視 = 無配当生存保障重視型個人年金保険（Ⅰ型）; 介護認知症保障 = 無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型）) and deferral periods of 5 and 10 years; the rate page's two courses and two terms are the full grid. Same page layout as ファイブテン・ワールド4's yen plans, so the existing parser is reused.",
+    "has_mva is true: the product page links the 市場価格調整 explainer video and the surrender value reflects index-rate changes and a 解約控除率 (5y deferral 0.75% falling by 0.15 pt a year; 10y deferral 1.50% falling by 0.15 pt a year to 0.15% in year 10). The MVA formula is not collected.",
+    "Index rates: 日本国債利回り（5年） for the 5-year deferral, （10年） for the 10-year deferral (rate page 対象となる指標金利).",
+    "The rate page shows only the current half-month 積立利率設定期間 and is overwritten on the 1st and 16th; history accumulates by re-running scripts/tdf.py plus the Wayback captures (six distinct captures, 2024-12-08 to 2026-08-07, only those the parser reads reliably are ingested).",
+    "effective_date is the first day of the 積立利率設定期間. 積立利率 and 実質的な利回り share the same value in this product (yen, no FX). Net yield tables are headed 男性・女性 (one figure), so sex is blank. The 契約年齢 column (40-90 for 5y, 40-85 for 10y) is the eligible age range, not a rate dimension.",
+    "Distributor list is the 金融機関等代理店 list on the 募集代理店 page; bank-specific product names were not collected.",
+    "Brochure and policy-conditions PDFs were not downloaded (URLs listed under documents).",
+    "A sister product みんなにやさしい年金保険2 is listed separately by T&D and is not covered here.",
+    "Launch date: 2024-10-01, from T&D's release of 2024-09-30: 『ファイブテン・ワールド4』 on sale from 2024-10-01 at 25 institutions, and footnote *1 says 「販売名称は「やさしい円ねんきん２」となります」 for 14 of them (池田泉州, 岩手, 香川, 京都, 佐賀, 滋賀, スルガ, 千葉, 徳島大正, 長崎, 名古屋, 広島, 北洋, 三菱UFJ信託). The 2024-11-29 release (きのくに信用金庫 from 2024-12-02) is a later distributor start. Retrieved 2026-11-17.",
+    "Distributors: the 金融機関等代理店 list (16 entries; banks, shinkin banks and agencies as listed, including insurance-shop and agency companies) on https://www.tdf-life.co.jp/yasashii_yen_nenkin2/toriatukaiten.html, saved as sources/tdf/pages/yyn2_distributors_2026-11-17.html on 2026-11-17. The page uses one name for all; bank-specific product names are not given."
+  ],
+  "notes_en": [
+    "Yen-only annuity with an annuity-focused course and a care and dementia course, each with 5 and 10-year deferral periods.",
+    "The insurer overwrites its rate page each half-month, so history is archive captures from December 2024 plus later saved copies.",
+    "Crediting rate and net yield are the same, as there is no currency conversion.",
+    "Launched 1 October 2024 under this name at 14 banks (insurer's release, same form as Five-Ten World 4).",
+    "The market value adjustment formula and the brochure are not collected."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "net_yield": "実質的な利回り（年複利）"
+  },
+  "pages": [
+    {
+      "name": "yyn2_product",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/"
+    },
+    {
+      "name": "yyn2_rate_current",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/tumitate_riritu.html"
+    },
+    {
+      "name": "yyn2_distributors",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/toriatukaiten.html"
+    },
+    {
+      "name": "yyn2_clause_flipbook",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/clause/index.html"
+    },
+    {
+      "name": "yyn2_rate_notice",
+      "url": "https://www.tdf-life.co.jp/info/riritu.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_nenkin",
+      "plan_ja": "円貨プラン 年金重視コース（無配当生存保障重視型個人年金保険（Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース",
+      "csv": "tdf-yasashii-yen-nenkin-2__crediting_rate__jpy_nenkin.csv",
+      "plan_en": "JPY annuity-focused"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_kaigo",
+      "plan_ja": "円貨プラン 介護認知症保障コース（無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース",
+      "csv": "tdf-yasashii-yen-nenkin-2__crediting_rate__jpy_kaigo.csv",
+      "plan_en": "JPY care cover"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "jpy_nenkin",
+      "plan_ja": "円貨プラン 年金重視コース（無配当生存保障重視型個人年金保険（Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "年金重視コース",
+      "csv": "tdf-yasashii-yen-nenkin-2__net_yield__jpy_nenkin.csv",
+      "plan_en": "JPY annuity-focused"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "jpy_kaigo",
+      "plan_ja": "円貨プラン 介護認知症保障コース（無配当介護認知症保障型個人年金保険（通貨選択・Ⅰ型））",
+      "currencies": [
+        "JPY"
+      ],
+      "course_ja": "介護認知症保障コース",
+      "csv": "tdf-yasashii-yen-nenkin-2__net_yield__jpy_kaigo.csv",
+      "plan_en": "JPY care cover"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/pamphlet/yasashii_yen_nenkin2.pdf",
+      "title_en": "Brochure and pre-contract disclosure",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "gaiyo",
+      "title_ja": "商品概要書",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/yasashii_yen_nenkin2/pamphlet/yasashii_yen_nenkin2_gaiyo.pdf",
+      "title_en": "Product summary",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/weby/pdf/260201.pdf",
+      "title_en": "Policy guide and conditions",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "yyn2_distributors": [
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "きのくに信用金庫"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫"
+    },
+    {
+      "name_ja": "佐賀銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "徳島大正銀行"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "三菱UFJ信託銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    }
+  ],
+  "subtype": "survival_weighted_annuity",
+  "guarantee_terms_years": [
+    5,
+    10
+  ],
+  "editions": [],
+  "wayback_prefix": "yasashii_yen_nenkin2",
+  "distributors": [
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "きのくに信用金庫"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫"
+    },
+    {
+      "name_ja": "佐賀銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "徳島大正銀行"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "三菱UFJ信託銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 20 rows with their saved snapshots and all matched: a seeded random sample of 20 of 56 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

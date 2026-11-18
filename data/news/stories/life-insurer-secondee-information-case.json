@@ -1,0 +1,90 @@
+{
+  "id": "life-insurer-secondee-information-case",
+  "title_en": "Information taken by seconded staff at bank and agency hosts (life insurers)",
+  "title_ja": "出向者による代理店・銀行の情報持ち出し（生保）",
+  "status": "ongoing",
+  "insurer_ids": [
+    "nli",
+    "nwl",
+    "daiichi",
+    "dfl",
+    "daiichineo",
+    "sml",
+    "mys",
+    "met",
+    "msp",
+    "daido",
+    "tdf"
+  ],
+  "started": "2025-07-16",
+  "updated": "2026-11-17",
+  "summary_en": "From July 2025, life insurers disclosed that staff seconded to banks and other agencies had taken the hosts' internal information (sales results, evaluation schemes, rival products, sometimes customer data) without permission and shared it with their employers. Reported counts: Nippon Life group 1,543, Dai-ichi group 1,155, Sumitomo Life 780, Meiji Yasuda 39, MetLife 2,476, Mitsui Sumitomo Primary 92, T&D group 141. The FSA ordered reports under Insurance Business Act Art. 128(1) from Nippon Life (18 Jul 2025) and MetLife (26 Dec 2025). Insurers are ending sales secondments. Press commentary raises Antimonopoly Act questions; no regulator finding on that was seen.",
+  "open_questions": [
+    "Will the FSA take formal action (business improvement orders) against any life insurer in this case?",
+    "Did the FSA issue report orders to insurers other than Nippon Life and MetLife? None seen in the sources read.",
+    "Do the Antimonopoly Act commentary points lead to any JFTC step?",
+    "Final counts and discipline at insurers not yet reported"
+  ],
+  "key_dates": [
+    {
+      "date": "2025-07-16",
+      "text_en": "Nippon Life discloses that a secondee took a bank's internal material",
+      "url": "https://www.nissay.co.jp/kaisha/news/20250716.html"
+    },
+    {
+      "date": "2025-07-18",
+      "text_en": "FSA report order to Nippon Life (Insurance Business Act Art. 128(1))",
+      "url": "https://www.nissay.co.jp/kaisha/news/20250718.html"
+    },
+    {
+      "date": "2025-09-12",
+      "text_en": "Nippon Life reports 604 items at seven agencies to the FSA (revised to 600 on 18 Nov)",
+      "url": "https://www.nissay.co.jp/kaisha/news/20250912.html"
+    },
+    {
+      "date": "2025-11-25",
+      "text_en": "Nippon Life discloses executive pay cuts and voluntary pay returns",
+      "url": "https://www.nissay.co.jp/kaisha/news/20251125.html"
+    },
+    {
+      "date": "2025-12-26",
+      "text_en": "FSA report order to MetLife Life (date per MetLife's 1 May 2026 release)",
+      "url": "https://www.metlife.co.jp/content/dam/metlifecom/jp/corp/pdf/about/press/2026/260501_1.pdf"
+    },
+    {
+      "date": "2026-01-26",
+      "text_en": "Meiji Yasuda reports 39 items at four agencies",
+      "url": "https://www.meijiyasuda.co.jp/profile/news/release/2025/pdf/20260126_01.pdf"
+    },
+    {
+      "date": "2026-02-09",
+      "text_en": "Sumitomo Life reports 780 items at eight agencies",
+      "url": "https://www.sumitomolife.co.jp/news/news_file/file/260209.pdf"
+    },
+    {
+      "date": "2026-02-12",
+      "text_en": "Dai-ichi group reports 1,155 items (64 secondees, 28 agencies)",
+      "url": "https://www.daiichilife-group.com/news/assets/pdf/2025_index_059.pdf"
+    },
+    {
+      "date": "2026-02-26",
+      "text_en": "Mitsui Sumitomo Primary Life reports 92 items at nine bank agencies",
+      "url": "https://www.ms-primary.com/news/ir/assets/shukkosha.pdf"
+    },
+    {
+      "date": "2026-04-10",
+      "text_en": "T&D group reports 141 items at nine agencies (Daido 72, T&D Financial 69, Taiyo none)",
+      "url": "https://www.tdf-life.co.jp/newsrelease/pdf/20260410.pdf"
+    },
+    {
+      "date": "2026-05-01",
+      "text_en": "MetLife Life reports 2,476 items at 36 agencies",
+      "url": "https://www.metlife.co.jp/content/dam/metlifecom/jp/corp/pdf/about/press/2026/260501_1.pdf"
+    }
+  ],
+  "verified": {
+    "by": "opus",
+    "date": "2026-11-17",
+    "note": "Overview, key dates and open questions re-checked against the sources and corrected."
+  }
+}

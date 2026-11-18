@@ -1,0 +1,855 @@
+{
+  "id": "nwl-yuyu-jikan-advance-2",
+  "insurer_id": "nwl",
+  "name_ja": "悠々時間アドバンス2",
+  "name_en": "Yuyu Jikan Advance 2",
+  "policy_name_ja": "積立利率金利連動型年金（AⅡ型）／積立利率金利連動型年金（米ドル建）年金額確定特約付／積立利率金利連動型年金（豪ドル建）／生存保障重視特則付指定通貨建個人年金保険",
+  "policy_names": [
+    {
+      "name_ja": "積立利率金利連動型年金（AⅡ型）",
+      "plan": "a2_jpy_h*",
+      "currencies": [
+        "JPY"
+      ],
+      "section_id": "a2"
+    },
+    {
+      "name_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付",
+      "plan": "usd_kakutei_p* / usd_shushin / usd_atsu",
+      "currencies": [
+        "USD"
+      ],
+      "section_id": "dd"
+    },
+    {
+      "name_ja": "積立利率金利連動型年金（豪ドル建）",
+      "plan": "aud_kakutei_h* / aud_shushin / aud_atsu",
+      "currencies": [
+        "AUD"
+      ],
+      "section_id": "tg"
+    },
+    {
+      "name_ja": "生存保障重視特則付指定通貨建個人年金保険",
+      "plan": "tontine",
+      "currencies": [
+        "JPY",
+        "USD",
+        "AUD"
+      ],
+      "section_id": "sh",
+      "course_ja": "年金重視（生存保障重視）"
+    }
+  ],
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2019-04-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://www.nw-life.co.jp/news/release/pdf/n190401.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/nwl/pages/release_n190401_2026-11-17.pdf"
+  },
+  "partial_withdrawals": [
+    {
+      "scope": "生存保障重視特則付 (tontine) deferral terms no longer shown: 4, 6, 7, 8, 9 yr for AUD and USD and 15, 20 yr for JPY. Inferred from \"-\" on the 2024-04-04 capture and today's table listing only 3/5/10 yr; corroborated by the 基準金利 link now split by contract date (2024-10-01 onward) and the post-2024-10 base-rate series covering 3/5/10 yr only, which points to a revision for contracts from 2024-10-01. No notice states a withdrawal.",
+      "quote": "生存保障重視特則付指定通貨建個人年金保険",
+      "source": {
+        "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+        "retrieved": "2026-11-17",
+        "snapshot": "sources/nwl/pages/live_gu_int_rate_2026-11-17.html"
+      },
+      "last_rate_period": "2023-12-01"
+    }
+  ],
+  "status_source": "Live product page saved 2026-11-17 (sources/nwl/pages/product_2026-11-17.html) is still published with rate links and 18 distributors.",
+  "rate_page": "gu_int_rate",
+  "notes": [
+    "All rate data comes from the Wayback Machine (via_wayback=true) except the 2026-11-16 period, which comes from the live pages (via_wayback=false, sources/nwl/rates/): saved by hand from a browser on 2026-11-17, and read directly by `scripts/nwl.py --live` since 2026-11-17 (commit 54b0b5b; the pages that run saved carry the Japan date 2026-11-18, file names *_2026-11-18.*). nw-life.co.jp only answers from some networks (HTTP 403 elsewhere); a connection in Japan, a VPN included, reaches it.",
+    "Raw Wayback captures are the id_ form (original HTML as served, no Wayback rewriting) saved under sources/nwl/wayback/ and listed in captures.csv with sha256; the normal rewritten form was never needed.",
+    "Each capture of the shared 積立利率 page shows only the then-current half-month 適用期間 (rates set on the 1st and 16th). effective_date is the first day of that period. There are 17 crediting-rate dates, 2020-07-01 to 2026-11-16 with large gaps: no data before 2020-07-01 and none for periods between captures. Nothing is interpolated.",
+    "Captures skipped: 20190721002454 (bot-block stub, no data) and 20240523151615 (archived HTTP 403 page). Distinct captures that repeat an already-recorded 適用期間 add 0 points.",
+    "Plan key encoding: term_years is always 据置期間 (blank where the table has none). age_band is the 契約時の被保険者年齢 band as printed (0-69, 70-79, 0-84, 85-92 ...); blank for the 2020-2022 USD 確定年金 layout, which had no age bands.",
+    "判定年数 (AⅡ型 and 豪ドル建 確定年金) is encoded in the plan key as _h<band>: a2_jpy_h5-6, h7-9, h10-12, h13-17, h18-life; aud_kakutei_hle5 (5年以下), h6-7, h8-9, h10, hge11 (11年以上). 判定年数 = 据置期間 + 年金受取期間/2 (floor).",
+    "USD 年金額確定特約付 確定年金 (期間指定型): plan usd_kakutei_p<N> where N = 年金受取期間 in years (5/10/20), term_years = 据置期間. Life-annuity payout types: usd_shushin / aud_shushin = 年金総額保証付終身年金・純粋終身年金; usd_atsu / aud_atsu = 年金総額保証付後厚終身年金.",
+    "豪ドル建 終身 tables publish one row for several 据置期間 (0・1年; 3・5・10・15・20年); the collector writes one point per 据置期間 with the same published value.",
+    "Tontine (年金重視/生存保障重視, 生存保障重視特則付指定通貨建個人年金保険): plan tontine, currency JPY/USD/AUD in one CSV, term_years = 据置期間, age bands 0-84 and 85-92 (older captures show other bands). Rates are those of contracts dated 2024-10-01 or later.",
+    "基準金利 (base_rate): AⅡ型 page gu_int_rate12_base covers contracts dated 2024-10-01 or later only (older contracts must phone the call centre); 米ドル建 gu_int_rate13_base; 豪ドル建 gu_int_rate_base; tontine gu_int_rate15_base = contracts from 2024-10-01 (plan tontine) and gu_int_rate5_base = contracts up to 2024-09-30 (plan tontine_pre2410, which lists longer 据置期間 up to 20 years). The base-rate pages were captured far less often than the rate page (AⅡ and tontine from 2025-06; USD from 2026-06; AUD from 2019-12). Only the current period appears on each capture.",
+    "Status '-' cells (not offered, e.g. AⅡ型 short 判定年数 in 2022, 豪ドル建 70-89 at ≤5 years) are recorded as status not_offered with a blank value.",
+    "The 積立利率 page is shared by all products; the sections used are a2, dd, tg and sh (matched by heading text). The 指定通貨建個人年金保険 section (sk, sold with a 3,000万円 premium split) is a different product and is not collected, nor are 年金増額特約 variants.",
+    "The 2024-10-01 contract-date cohort split on the AⅡ型 page affects only the 基準金利/市場価格調整率 lookup, not the published 積立利率 table.",
+    "Distributors: the 18 institutions listed on the live product page (2026-11-17); the 2026-05-24 Wayback capture listed 13. Plans offered may vary by distributor; bank-specific product names are not collected.",
+    "Documents: the live brochures (yuyu_advance2.pdf and yuyu_advance2-02.pdf, saved 2026-11-17) are the current versions. The Wayback copies are older and may be out of date; the Wayback brochure (2025-02-18) and the attention PDFs and brochure_02 (2021-04-12) are truncated at exactly 1 MiB (no %%EOF) and flagged INCOMPLETE in the manifest. The しおり・約款 PDFs are the latest archived (2023-04 editions, tontine 2023-05-08), most likely superseded; the 年金増額特約 しおり (shiori n0e, n0o) were not downloaded.",
+    "Not collected: MVA formulas, loads, 為替レート pages, 予定利率 table, net yield, a Wayback capture of 基準金利 20260218201551 was initially refused by rate limiting and was retrieved on a re-run.",
+    "The 年金受取期間 and 契約時の被保険者年齢 eligibility limits per 据置期間 in the life-annuity tables (e.g. 16歳～69歳) are kept as printed in age_band.",
+    "Plans ending _shushin and _atsu are annuity payout types (年金総額保証付終身年金・純粋終身年金, 年金総額保証付後厚終身年金) inside the deferred annuity, not whole-life insurance.",
+    "For Wayback rows of this product, retrieved_date is the capture date; for other insurers' Wayback rows it is the date the capture was downloaded.",
+    "Launch: on sale from 2019-04-01 at Oita Bank, Shizuoka Bank and Musashino Bank, from the insurer's news release 『悠々時間アドバンス２』を販売開始 (snapshot sources/nwl/pages/release_n190401_2026-11-17.pdf, retrieved 2026-11-17). It supersedes the earlier trade-press date of 2019-06-03, which was the start at Hokuyo Bank (shinnihon-ins.co.jp industry news 2019-06-04), a later distributor. The release adds the survival-weighted plan to 悠々時間アドバンス (a switch from the earlier edition). Status on_sale rests on the live product page saved 2026-11-17 and a 2026-05-24 Wayback capture."
+  ],
+  "notes_en": [
+    "The insurer's site only answers from some networks, such as a connection in Japan; from there the collector reads it directly.",
+    "History is archive captures on scattered dates from 2020; gaps are not filled.",
+    "Which Yuyu Jikan variant the owner's sheet refers to is an assumption; the survival-weighted rates are the same across variants.",
+    "In the USD life annuity the youngest entry age rises as the deferral shortens (6 to 69 with 10 years' deferral, 16 to 69 with none), so age bands such as 6-69 and 11-69 are as printed; AUD rates near 1% in 2019 and 2020 are also as printed in archived copies of the time.",
+    "Launch date (1 April 2019) is from the insurer's news release; an earlier note gave 3 June 2019 from trade press, which was a later distributor start.",
+    "Four archived documents are incomplete copies and are marked as such; the two current brochures are complete.",
+    "Base rates before October 2024 policies are not published for most forms.",
+    "The survival-weighted (tontine) plan now shows only 3, 5 and 10-year deferrals; the other deferrals appear to have been withdrawn for contracts from October 2024."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "base_rate": "基準金利（積立利率の設定および市場価格調整率の計算に用いる）"
+  },
+  "pages": [
+    {
+      "name": "product",
+      "kind": "page",
+      "url": "https://www.nw-life.co.jp/product/individual/annuities/yuyu_advance2/",
+      "live_file": "yuyu_advance2_product"
+    },
+    {
+      "name": "first",
+      "kind": "page",
+      "url": "https://www.nw-life.co.jp/product/individual/annuities/yuyu_advance2/first.html",
+      "live_file": "yuyu_advance2_first"
+    },
+    {
+      "name": "gu_int_rate",
+      "kind": "rate",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "live_file": "gu_int_rate"
+    },
+    {
+      "name": "gu_int_rate12_base",
+      "kind": "base",
+      "form": "a2",
+      "plan_suffix": "",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate12_base.html",
+      "live_file": "gu_int_rate12_base",
+      "applies_to": "AⅡ型, ご契約日が2024年10月1日以降"
+    },
+    {
+      "name": "gu_int_rate13_base",
+      "kind": "base",
+      "form": "dd",
+      "plan_suffix": "",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate13_base.html",
+      "live_file": "gu_int_rate13_base",
+      "applies_to": "米ドル建 年金額確定特約付"
+    },
+    {
+      "name": "gu_int_rate_base",
+      "kind": "base",
+      "form": "tg",
+      "plan_suffix": "",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate_base.html",
+      "live_file": "gu_int_rate_base",
+      "applies_to": "豪ドル建"
+    },
+    {
+      "name": "gu_int_rate15_base",
+      "kind": "base",
+      "form": "sh",
+      "plan_suffix": "",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate15_base.html",
+      "live_file": "gu_int_rate15_base",
+      "applies_to": "生存保障重視特則付, ご契約日が2024年10月1日以降"
+    },
+    {
+      "name": "gu_int_rate5_base",
+      "kind": "base",
+      "form": "sh",
+      "plan_suffix": "_pre2410",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate5_base.html",
+      "live_file": "gu_int_rate5_base",
+      "applies_to": "生存保障重視特則付, ご契約日が2024年9月30日以前"
+    },
+    {
+      "name": "shiori_index",
+      "kind": "page",
+      "url": "https://www.nw-life.co.jp/shiori/"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "base_rate",
+      "plan": "a2_jpy_h10-12",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 10–12 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__a2_jpy_h10-12.csv",
+      "points": 16,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4
+    },
+    {
+      "metric": "base_rate",
+      "plan": "a2_jpy_h13-17",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 13–17 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__a2_jpy_h13-17.csv",
+      "points": 16,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4
+    },
+    {
+      "metric": "base_rate",
+      "plan": "a2_jpy_h18-life",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 18 years to lifetime",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__a2_jpy_h18-life.csv",
+      "points": 16,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4
+    },
+    {
+      "metric": "base_rate",
+      "plan": "a2_jpy_h5-6",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 5–6 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__a2_jpy_h5-6.csv",
+      "points": 16,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4
+    },
+    {
+      "metric": "base_rate",
+      "plan": "a2_jpy_h7-9",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 7–9 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__a2_jpy_h7-9.csv",
+      "points": 16,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_atsu",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／年金総額保証付後厚終身年金",
+      "plan_en": "AUD back-loaded life annuity",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_atsu.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_kakutei_h10",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 10 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_kakutei_h10.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_kakutei_h6-7",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 6–7 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_kakutei_h6-7.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_kakutei_h8-9",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 8–9 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_kakutei_h8-9.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_kakutei_hge11",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 11 years or more",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_kakutei_hge11.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_kakutei_hle5",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, up to 5 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_kakutei_hle5.csv",
+      "points": 14,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "aud_shushin",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／年金総額保証付終身年金・純粋終身年金",
+      "plan_en": "AUD life annuity",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__aud_shushin.csv",
+      "points": 98,
+      "first_effective": "2019-12-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 7
+    },
+    {
+      "metric": "base_rate",
+      "plan": "tontine",
+      "plan_ja": "生存保障重視特則付指定通貨建個人年金保険（年金重視・生存保障重視型）",
+      "plan_en": "Survival-weighted (tontine)",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__tontine.csv",
+      "points": 72,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4,
+      "product_type": "survival_weighted_annuity"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "tontine_pre2410",
+      "plan_ja": "生存保障重視特則付指定通貨建個人年金保険／ご契約日が2024年9月30日以前のお客さま向け基準金利（base_rate のみ）",
+      "plan_en": "Survival-weighted, pre-Oct 2024 policies",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__tontine_pre2410.csv",
+      "points": 168,
+      "first_effective": "2025-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 4,
+      "product_type": "survival_weighted_annuity"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_atsu",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／年金総額保証付後厚終身年金",
+      "plan_en": "USD back-loaded life annuity",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__usd_atsu.csv",
+      "points": 6,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_kakutei_p10",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 10-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__usd_kakutei_p10.csv",
+      "points": 18,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_kakutei_p20",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 20-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__usd_kakutei_p20.csv",
+      "points": 18,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_kakutei_p5",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 5-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__usd_kakutei_p5.csv",
+      "points": 12,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "base_rate",
+      "plan": "usd_shushin",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／年金総額保証付終身年金・純粋終身年金",
+      "plan_en": "USD life annuity",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__base_rate__usd_shushin.csv",
+      "points": 38,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "a2_jpy_h10-12",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 10–12 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__a2_jpy_h10-12.csv",
+      "points": 68,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "a2_jpy_h13-17",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 13–17 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__a2_jpy_h13-17.csv",
+      "points": 68,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "a2_jpy_h18-life",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 18 years to lifetime",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__a2_jpy_h18-life.csv",
+      "points": 68,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "a2_jpy_h5-6",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 5–6 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__a2_jpy_h5-6.csv",
+      "points": 68,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "a2_jpy_h7-9",
+      "plan_ja": "積立利率金利連動型年金（AⅡ型）／円建／確定年金 判定年数別",
+      "plan_en": "JPY, 7–9 year judgement period",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__a2_jpy_h7-9.csv",
+      "points": 68,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_atsu",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／年金総額保証付後厚終身年金",
+      "plan_en": "AUD back-loaded life annuity",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_atsu.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_kakutei_h10",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 10 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_kakutei_h10.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_kakutei_h6-7",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 6–7 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_kakutei_h6-7.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_kakutei_h8-9",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 8–9 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_kakutei_h8-9.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_kakutei_hge11",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, 11 years or more",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_kakutei_hge11.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_kakutei_hle5",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／確定年金 判定年数別",
+      "plan_en": "AUD fixed-term, up to 5 years",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_kakutei_hle5.csv",
+      "points": 34,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "aud_shushin",
+      "plan_ja": "積立利率金利連動型年金（豪ドル建）／年金総額保証付終身年金・純粋終身年金",
+      "plan_en": "AUD life annuity",
+      "currencies": [
+        "AUD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__aud_shushin.csv",
+      "points": 238,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "tontine",
+      "plan_ja": "生存保障重視特則付指定通貨建個人年金保険（年金重視・生存保障重視型）",
+      "plan_en": "Survival-weighted (tontine)",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__tontine.csv",
+      "points": 464,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17,
+      "product_type": "survival_weighted_annuity"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "usd_atsu",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／年金総額保証付後厚終身年金",
+      "plan_en": "USD back-loaded life annuity",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__usd_atsu.csv",
+      "points": 51,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "usd_kakutei_p10",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 10-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__usd_kakutei_p10.csv",
+      "points": 111,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "usd_kakutei_p20",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 20-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__usd_kakutei_p20.csv",
+      "points": 111,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "usd_kakutei_p5",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／確定年金（期間指定型）／年金受取期間別",
+      "plan_en": "USD, 5-year payout",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__usd_kakutei_p5.csv",
+      "points": 74,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "usd_shushin",
+      "plan_ja": "積立利率金利連動型年金（米ドル建）年金額確定特約付／年金総額保証付終身年金・純粋終身年金",
+      "plan_en": "USD life annuity",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "nwl-yuyu-jikan-advance-2__crediting_rate__usd_shushin.csv",
+      "points": 323,
+      "first_effective": "2020-07-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 17
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_main",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/yuyu_advance2.pdf",
+      "live_file": "yuyu_advance2",
+      "title_en": "Brochure and pre-contract disclosure (first edition)"
+    },
+    {
+      "name": "brochure_02",
+      "title_ja": "商品パンフレット（第2版）",
+      "variant": "02",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/yuyu_advance2-02.pdf",
+      "live_file": "yuyu_advance2-02",
+      "title_en": "Brochure and pre-contract disclosure (second edition)",
+      "edition": "2nd edition"
+    },
+    {
+      "name": "attention_main",
+      "title_ja": "注意喚起情報",
+      "variant": "general",
+      "url": "https://www.nw-life.co.jp/product/individual/annuities/attention/pdf/yuyu_advance2.pdf",
+      "title_en": "Important notice (first edition)"
+    },
+    {
+      "name": "attention_02",
+      "title_ja": "注意喚起情報（第2版）",
+      "variant": "02",
+      "url": "https://www.nw-life.co.jp/product/individual/annuities/attention/pdf/yuyu_advance2-02.pdf",
+      "title_en": "Important notice (second edition)",
+      "edition": "2nd edition"
+    },
+    {
+      "name": "policy_conditions_a2_jpy",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型年金（AⅡ型））2023年4月版",
+      "variant": "jpy",
+      "url": "https://www.nw-life.co.jp/shiori/g01/spfa_yen_2304.pdf",
+      "title_en": "Policy guide and conditions (A-II yen form)",
+      "edition": "April 2023 edition"
+    },
+    {
+      "name": "policy_conditions_usd",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型年金（米ドル建）年金額確定特約付）2023年4月版",
+      "variant": "usd",
+      "url": "https://www.nw-life.co.jp/shiori/g04/spfa_usd_2304.pdf",
+      "title_en": "Policy guide and conditions (USD form)",
+      "edition": "April 2023 edition"
+    },
+    {
+      "name": "policy_conditions_aud",
+      "title_ja": "ご契約のしおり・約款（積立利率金利連動型年金（豪ドル建））2023年4月版",
+      "variant": "aud",
+      "url": "https://www.nw-life.co.jp/shiori/g17/spfa_aud_2304.pdf",
+      "title_en": "Policy guide and conditions (AUD form)",
+      "edition": "April 2023 edition"
+    },
+    {
+      "name": "policy_conditions_tontine",
+      "title_ja": "ご契約のしおり・約款（生存保障重視特則付指定通貨建個人年金保険）2023年4月版",
+      "variant": "tontine",
+      "url": "https://www.nw-life.co.jp/shiori/g29/spfa_reset_2304.pdf",
+      "title_en": "Policy guide and conditions (survival-weighted form)",
+      "edition": "April 2023 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行",
+      "url": "https://www.aichibank.co.jp/"
+    },
+    {
+      "name_ja": "朝日信用金庫",
+      "url": "https://www.asahi-shinkin.co.jp/"
+    },
+    {
+      "name_ja": "大分銀行",
+      "url": "https://www.oitabank.co.jp/"
+    },
+    {
+      "name_ja": "おかやま信用金庫",
+      "url": "https://www.shinkin.co.jp/okayama/"
+    },
+    {
+      "name_ja": "香川銀行",
+      "url": "https://www.kagawabank.co.jp/"
+    },
+    {
+      "name_ja": "三条信用金庫",
+      "url": "https://www.shinkin.co.jp/sanshin/"
+    },
+    {
+      "name_ja": "静岡銀行",
+      "url": "https://www.shizuokabank.co.jp/"
+    },
+    {
+      "name_ja": "清水銀行",
+      "url": "https://www.shimizubank.co.jp/"
+    },
+    {
+      "name_ja": "スルガ銀行",
+      "url": "https://www.surugabank.co.jp/"
+    },
+    {
+      "name_ja": "静清信用金庫",
+      "url": "https://www.seishin-shinkin.co.jp"
+    },
+    {
+      "name_ja": "高崎信用金庫",
+      "url": "https://www.shinkin.co.jp/takasaki/"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "url": "https://www.tomatobank.co.jp/"
+    },
+    {
+      "name_ja": "富山銀行",
+      "url": "https://www.toyamabank.co.jp/"
+    },
+    {
+      "name_ja": "肥後銀行",
+      "url": "https://www.higobank.co.jp/"
+    },
+    {
+      "name_ja": "福島銀行",
+      "url": "https://www.fukushimabank.co.jp/"
+    },
+    {
+      "name_ja": "福島信用金庫",
+      "url": "https://www.shinkin.co.jp/fshinkin/"
+    },
+    {
+      "name_ja": "宮崎銀行",
+      "url": "http://www.miyagin.co.jp/"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "url": "http://www.musashinobank.co.jp/"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "Every rate row was compared with its saved snapshot by an independent parser.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

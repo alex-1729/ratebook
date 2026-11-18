@@ -1,0 +1,35 @@
+{
+  "id": "nwl",
+  "name_ja": "ニッセイ・ウェルス生命保険株式会社",
+  "name_en": "Nippon Wealth Life",
+  "name_short_en": "Nippon Wealth",
+  "site": "https://www.nw-life.co.jp/",
+  "rate_hub_url": "https://www.nw-life.co.jp/product/annuities/rate/index.html",
+  "rate_update": "Semi-monthly, effective the 1st and 16th (current period only on the 積立利率 page)",
+  "collector": "scripts/nwl.py",
+  "access_note": "nw-life.co.jp returns HTTP 403 to automated requests; the collector reads only the Wayback Machine and hand-saved live copies.",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates are set on the 1st and 16th of each month."
+  },
+  "news_tier": "full",
+  "group": "nippon",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.nw-life.co.jp/news/release/",
+      "access": "restricted",
+      "access_note": "nw-life.co.jp answers every automated request with HTTP 403 from this network (tested 2026-11-17 on the home page and /news/release/). URL taken from links in saved copies of the site; list layout and archives not verified."
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.nw-life.co.jp/news/info/",
+      "access": "restricted",
+      "access_note": "nw-life.co.jp answers every automated request with HTTP 403 from this network (tested 2026-11-17 on the home page and /news/release/). URL taken from links in saved copies of the site; list layout and archives not verified."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "id": "msp-broadway-world-3",
+  "insurer_id": "msp",
+  "candidate": true,
+  "name_ja": "Broadway WorldⅢ",
+  "name_en": "Broadway World III",
+  "policy_name_ja": "年金開始時年金額確定特約付通貨選択生存保障重視型個人年金保険/通貨選択型定額個人年金保険",
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "subtype": "survival_weighted_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "EUR",
+    "NZD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "on_sale_not_later_than": "2026-03-07",
+  "on_sale_not_later_than_source": {
+    "url": "https://web.archive.org/web/20260307082606/https://msp.ms-primary.com/g/RateList.do?product_id=51",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/msp/pages/wayback_msp-broadway-world-3_20260307082606_2026-11-17.html",
+    "via_wayback": true
+  },
+  "partial_withdrawals": [
+    {
+      "scope": "Product on the current lineup; ターゲットコース closed to new business (all currencies), though the page still prints its rates (USD 5/10, AUD 3/5/10, NZD 5/10 yr), presumably for renewals of continuing plans. \"-\" cells on 定期支払コース (EUR all terms; AUD/NZD 3 yr; USD 3 and 5 yr) and 年金原資充実コース 3 yr. The EUR 定期支払コース row is still printed (all \"-\"); only the EUR ターゲットコース row of the 2026-03 capture is gone.",
+      "quote": "ターゲットコースについては、現在新規のお取扱いを停止しています。",
+      "source": {
+        "url": "https://msp.ms-primary.com/g/RateList.do?product_id=51",
+        "retrieved": "2026-11-17",
+        "snapshot": "sources/msp/pages/live_ratelist_51_2026-11-17.html"
+      },
+      "last_rate_period": null
+    }
+  ],
+  "guarantee_terms_years": [
+    3,
+    5,
+    10
+  ],
+  "site_product_code": "51",
+  "notes": [
+    "The live rate server msp.ms-primary.com (RateList.do?product_id=51) times out from the usual network (connect timeout, as for MAREⅢ). Not worked around. Rate history comes from Wayback captures (the CDX list for this URL held only the two captures of 2026-03-07 and 2026-08-08); each new two-week window needs a live run from a network that reaches the server or `python3 scripts/msp.py --only msp-broadway-world-3 --file <saved page> --retrieved <date>`.",
+    "積立利率 changes every two weeks: each value applies to contracts dated in a Monday-to-Sunday two-week window (e.g. 2026-08-03 to 2026-08-16 in the capture). effective_date is the first day of the window; the page also applies the rate to renewal (更改日) dates of the 継続プラン. Rates between captures are not interpolated.",
+    "Rate page courses: ターゲットコース (stopped for new business per the page note; still shows values for USD, AUD and NZD in both captures; its EUR row appears only in the 2026-03-07 capture and is all '-'), 定期支払コース, 年金原資充実コース; terms (据置期間) 3, 5 and 10 years. This differs from the brief (two courses, 5/10 years): the rate page publishes a 3-year column and the ターゲットコース, so the full published grid is collected. The current product page names only 年金原資充実コース and 定期支払コース.",
+    "'-' on the page is stored as status not_offered, including every 3-year cell of the 定期支払 and 年金原資充実 courses and the whole EUR block of the 2026-08-08 capture (a EUR 定期支払コース row of '-' only). The page's note says '-' means new business is currently stopped. For USD the 定期支払コース shows 10 years only, matching the brief; the EUR 定期支払コース row is all '-' in both captures, so no EUR rate is published. The 年金原資充実コース on the page covers USD, AUD and JPY (no EUR or NZD row); JPY carries 5 and 10 years.",
+    "FX tables (円入金特約 / 円支払特約) on the rate page are not collected.",
+    "Exact launch date not established (see the bound note). Page footer shows the form code MSPL-2610-B-0163-00. The only distributor listed on the agency page is 三井住友銀行.",
+    "Same two policy forms as MAREⅢ (年金原資充実コース = 通貨選択生存保障重視型, 定期支払コース = 通貨選択型定額個人年金保険 + 定期支払特約), separately priced. Page text: 年金原資充実コース has an initial charge of 3.0% (5-year) or 5.0% (10-year) for foreign currency and 0.5% / 1.0% for JPY and no surrender charge; 定期支払コース has no initial charge and a surrender charge of 6.0% to 0.6% (applied to the market-adjusted value); annuity management fee up to 1.0% of the annuity; 円入金 TTM+50銭, 円支払 TTM-50銭. These come from the product page, not the brochure; the brochure and policy conditions were not downloaded.",
+    "Product page snapshots saved with scripts/msp.py (www.ms-primary.com answers urllib).",
+    "On sale not later than 2026-03-07 (bound only, weak): the Wayback capture of 2026-03-07 shows the Broadway WorldⅢ rate page for the 2026-03-02 to 03-15 window; the rate rows on file already start 2026-03-02. The ターゲットコース stop note suggests the product is older. No MS Primary release names Broadway World (news/ir 2018-2026)."
+  ],
+  "notes_en": [
+    "Rate history is two archived captures only, from March and August 2026, so most two-week windows are missing.",
+    "The insurer's rate server only answers from some networks, so each new window needs a saved copy of the page.",
+    "The target course is shown as closed to new business but still lists rates; the euro rows are all unavailable.",
+    "It uses the same policy forms as Mare III but is priced separately.",
+    "The latest rate held is for the window starting 3 August 2026, from the last archived copy, so the product is left off current-rate boards until a newer copy of the insurer's rate page is saved.",
+    "Launch date not established; on sale by March 2026 (archived rate page). Exchange rates are not collected, and the brochure and conditions have not been read.",
+    "The Target course is closed to new business, and some payout-course cells show a dash; the product stays on sale."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率"
+  },
+  "pages": [
+    {
+      "name": "product_broadway_world3",
+      "url": "https://www.ms-primary.com/products/broadway_world3/"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.ms-primary.com/customer/rate/"
+    },
+    {
+      "name": "rate_index",
+      "url": "https://msp.ms-primary.com/g/Rate.do"
+    }
+  ],
+  "agent_page": "https://www.ms-primary.com/products/product_agent/",
+  "rate_source": {
+    "name": "ratelist_51",
+    "live_url": "https://msp.ms-primary.com/g/RateList.do?product_id=51",
+    "cdx_url": "msp.ms-primary.com/g/RateList.do?product_id=51"
+  },
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "target",
+      "plan_ja": "ターゲットコース",
+      "course_ja": "ターゲットコース",
+      "csv": "msp-broadway-world-3__crediting_rate__target.csv",
+      "plan_en": "Target (new business stopped)"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "teiki_shiharai",
+      "plan_ja": "定期支払コース",
+      "course_ja": "定期支払コース",
+      "csv": "msp-broadway-world-3__crediting_rate__teiki_shiharai.csv",
+      "plan_en": "Periodic payout"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "nenkin_genshi_jujitsu",
+      "plan_ja": "年金原資充実コース",
+      "course_ja": "年金原資充実コース",
+      "csv": "msp-broadway-world-3__crediting_rate__nenkin_genshi_jujitsu.csv",
+      "product_type": "survival_weighted_annuity",
+      "plan_en": "Annuity-focused (tontine)"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼商品パンフレット",
+      "variant": "general",
+      "url": "https://www.ms-primary.com/products/broadway_world3/pdf/brochure.pdf",
+      "title_en": "Brochure and pre-contract disclosure",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.ms-primary.com/products/broadway_world3/pdf/broadway_world3_MSPL-2604-A-0035-00.pdf",
+      "title_en": "Policy guide and conditions",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "三井住友銀行",
+      "category": "bank"
+    }
+  ],
+  "target_feature": null,
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 59 rows with their saved snapshots and all matched: a seeded random sample of 20 of 54 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (39). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

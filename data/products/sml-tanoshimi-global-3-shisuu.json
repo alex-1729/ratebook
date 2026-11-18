@@ -1,0 +1,426 @@
+{
+  "id": "sml-tanoshimi-global-3-shisuu",
+  "insurer_id": "sml",
+  "candidate": true,
+  "name_ja": "たのしみグローバルⅢ（指数連動プラン）",
+  "name_en": "Tanoshimi Global III (index-linked plan)",
+  "name_short_en": "Tanoshimi Global III index",
+  "policy_name_ja": "5年ごと利差配当付選択通貨建個人年金保険（一時払い）（23）",
+  "policy_names_ja": [
+    "5年ごと利差配当付選択通貨建個人年金保険（一時払い）（23）",
+    "5年ごと利差配当付指定通貨建個人年金保険（一時払い）（20）"
+  ],
+  "category": "fixed_indexed_annuity",
+  "product_type": "indexed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2023-06-16",
+  "off_sale_date": null,
+  "related_product_id": "sml-tanoshimi-global-3-teiritsu",
+  "guarantee_terms_years": [
+    5,
+    10
+  ],
+  "notes": [
+    "Index-linked sibling of the fixed-rate plan sml-tanoshimi-global-3-teiritsu; same policy forms (23)/(20), same 5-year and 10-year 据置期間 and 目標額設定なし / あり choice, same rate site (A871) with type=idx instead of type=fix.",
+    "Metrics: 連動率 (participation rate, participation_rate) is applied to the yearly rise of the linked index to give the 積立金 growth rate; it can exceed 100% and the published figure is not a crediting rate. 積立利率 (crediting_rate) applies after a transfer to 定率積立 and in similar cases (rate page note). 市場価格調整用利率 (mva_rate) is also collected. No cap or floor figure is published on the rate site.",
+    "The index itself (指数推移表, 指数グラフ, 指数の騰落率・積立金の増加率) is on the rate site but is an index level history, not a product rate; it is not collected. Which index is linked has not been read from the brochure (brochures are not downloaded).",
+    "Rate history on the site starts with the 責任開始日 period 2023-06-16 to 06-30, the same as the fixed-rate plan.",
+    "effective_date is the first day of the 責任開始日 period (half-month, rates set on the 1st and 16th); the site's 契約日 about a month later is not stored. Same convention for 連動率, 積立利率 and the MVA rate.",
+    "円建 is not offered with 目標額設定あり (stored as not_offered). 円建 5年 under JPY 3 million is not accepted when 積立利率 is below 0.45%. A dash on the site means the currency was suspended in that period.",
+    "Channels: chid=cgin is the general rate page. The closed Mizuho Bank edition (product page tanoshimiglobal3_shisuu_mizuho.html) links chid=mzho, but that chid returns only a redirect page to the insurer's general page (checked 2026-11-17), so no separate Mizuho rates exist; chid=cgin is the only rate page. Channel history not collected.",
+    "Distributors: the general list is as of 2026-10-01 from the finance page (sources/sml/pages/distributors_2026-11-16.html, section たのしみグローバルⅢ（指数連動プラン）), 41 institutions. The Mizuho Bank edition is closed to new business (its page says 新規のご契約のお取扱いはしておりません and the lineup page lists it under 現在お取り扱いしていない商品), so みずほ銀行 is recorded as an off-sale edition, not a current distributor; its off-sale date is not established. Corrected by the independent checker on 2026-11-17.",
+    "Launch date: 2023-06-16, the sales start stated in the insurer's news release of 2023-06-09 (一時払個人年金保険「たのしみグローバルⅢ（指数連動プラン）」「たのしみグローバルⅢ（定率増加プラン）」, sold at SMBC and SMBC Nikko Securities as 「たのしみステップⅢ」 for the 指数連動プラン). It follows 「たのしみグローバルⅡ」 (on sale from 2020-10), to which the Ⅲ edition added a yen option. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 16 June 2023; dates are the start of the period in which cover begins.",
+    "The published figure is a participation rate applied to the yearly rise in the linked index; it can exceed 100%, and no cap or floor is published.",
+    "Which index is linked has not been read, and index data is not collected.",
+    "The Mizuho Bank edition is closed to new business; the other distributors share the same rates, and the yen option is not offered with a target.",
+    "With a target set, the crediting rate the insurer publishes for this plan is the same as the fixed-rate plan's in every period held (checked against both saved rate pages); without a target the two differ in some periods.",
+    "Launched 16 June 2023 (insurer news release)."
+  ],
+  "metrics": {
+    "participation_rate": "連動率",
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "rate_site": {
+    "kind": "index_linked",
+    "snapshot_prefix": "idx",
+    "base": "https://neth.sumitomolife.co.jp",
+    "entry_path": "/neth/A871/A8JA71P101.xhtml",
+    "chid": "cgin",
+    "type": "idx",
+    "entry_url": "https://neth.sumitomolife.co.jp/neth/A871/A8JA71P101.xhtml?chid=cgin&type=idx",
+    "history": {
+      "indexed_rates": {
+        "entry_path": "/neth/A871/A8BE71P010.xhtml?chid=cgin&type=idx&buttonId=P60095",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A871/A8BE71P010.xhtml?chid=cgin&type=idx&buttonId=P60095",
+        "year_field": "S62008y",
+        "plan_field": "S62009",
+        "submit": [
+          "P60100",
+          "表示"
+        ]
+      },
+      "mva_rate": {
+        "tab_button": "P60091",
+        "tab_label": "市場価格調整用利率",
+        "source_url": "https://neth.sumitomolife.co.jp/neth/A871/A8JA71P101.xhtml?chid=cgin&type=idx",
+        "year_field": "S63007y",
+        "plan_field": "S63008",
+        "submit": [
+          "P60101",
+          "表示"
+        ]
+      }
+    }
+  },
+  "channels": [
+    {
+      "chid": "cgin",
+      "name": "general (plan page)"
+    },
+    {
+      "chid": "mzho",
+      "name": "mizuho edition"
+    }
+  ],
+  "pages": [
+    {
+      "name": "distributors",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_finance.html"
+    },
+    {
+      "name": "plan_shisuu_mizuho",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_shisuu_mizuho.html"
+    },
+    {
+      "name": "plan_shisuu",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_shisuu.html"
+    },
+    {
+      "name": "index_fi",
+      "url": "https://www.sumitomolife.co.jp/lineup/other/fi/"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "participation_rate",
+      "plan": "no_target",
+      "plan_ja": "目標額設定なし",
+      "plan_value": "1",
+      "csv": "sml-tanoshimi-global-3-shisuu__participation_rate__no_target.csv",
+      "plan_en": "No target"
+    },
+    {
+      "metric": "participation_rate",
+      "plan": "target",
+      "plan_ja": "目標額設定あり",
+      "plan_value": "2",
+      "csv": "sml-tanoshimi-global-3-shisuu__participation_rate__target.csv",
+      "plan_en": "With target"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "no_target",
+      "plan_ja": "目標額設定なし",
+      "plan_value": "1",
+      "csv": "sml-tanoshimi-global-3-shisuu__crediting_rate__no_target.csv",
+      "plan_en": "No target"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "target",
+      "plan_ja": "目標額設定あり",
+      "plan_value": "2",
+      "csv": "sml-tanoshimi-global-3-shisuu__crediting_rate__target.csv",
+      "plan_en": "With target"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "no_target",
+      "plan_ja": "目標額設定なし",
+      "plan_value": "1",
+      "csv": "sml-tanoshimi-global-3-shisuu__mva_rate__no_target.csv",
+      "plan_en": "No target"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "target",
+      "plan_ja": "目標額設定あり",
+      "plan_value": "2",
+      "csv": "sml-tanoshimi-global-3-shisuu__mva_rate__target.csv",
+      "plan_en": "With target"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_general",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-shisuu/tglobal3s.pdf",
+      "title_en": "Brochure and pre-contract disclosure (general edition)",
+      "edition": "June 2023 edition"
+    },
+    {
+      "name": "brochure_mizuho",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（みずほ銀行）",
+      "variant": "mizuho",
+      "url": "https://www.sumitomolife.co.jp/lineup/pdf/other/fi/tanoshimiglobal3-shisuu_mizuho/tglobal3s.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Mizuho Bank edition)",
+      "edition": "April 2025 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "岩井コスモ証券",
+      "section": "都市・信託銀行他",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "ＳＢＩ新生銀行",
+      "section": "都市・信託銀行他",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "スターツ証券",
+      "section": "都市・信託銀行他",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "大熊本証券",
+      "section": "都市・信託銀行他",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "東洋証券",
+      "section": "都市・信託銀行他",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "あいち銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "沖縄銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "沖縄海邦銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "香川銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "関西みらい銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "北日本銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "紀陽銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "佐賀共栄銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "静岡中央銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "島根銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "但馬銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "筑邦銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "東邦銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "栃木銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "福井銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "福島銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "北陸銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "北海道銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "みなと銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "山口銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "山梨中央銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "琉球銀行",
+      "section": "地方銀行",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "岐阜信用金庫",
+      "section": "信用金庫等",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    },
+    {
+      "name_ja": "湖東信用金庫",
+      "section": "信用金庫等",
+      "edition": "たのしみグローバルⅢ（指数連動プラン）"
+    }
+  ],
+  "editions": [
+    {
+      "name_ja": "たのしみグローバルⅢ（指数連動プラン）（みずほ銀行）",
+      "name_en": "Tanoshimi Global III (index-linked plan), Mizuho Bank",
+      "distributor_group": "みずほ銀行",
+      "status": "off_sale",
+      "site_codes": [
+        "mzho"
+      ],
+      "page_urls": [
+        "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_shisuu_mizuho.html"
+      ],
+      "note": "Page states 新規のご契約のお取扱いはしておりません; listed under 現在お取り扱いしていない商品 on the lineup page (index_fi_2026-11-16). Policy form (23) only; 円建 not offered. Off-sale date not established."
+    }
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.sumitomolife.co.jp/news/news_file/file/230609.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/sml/pages/release_230609_2026-11-17.pdf"
+  },
+  "partial_withdrawals": [
+    {
+      "scope": "Mizuho Bank edition closed to new contracts; the general (nationwide) edition stays on sale. Yen with 目標額設定 (5 and 10 yr) shows \"-\" and was never published in the dataset (not counted as a withdrawal).",
+      "quote": "新規のご契約のお取扱いはしておりません。",
+      "source": {
+        "url": "https://www.sumitomolife.co.jp/lineup/other/fi/tanoshimiglobal3_shisuu_mizuho.html",
+        "retrieved": "2026-11-17",
+        "snapshot": "sources/sml/pages/live_plan_shisuu_mizuho_2026-11-17.html"
+      },
+      "last_rate_period": null
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 796 rows with their saved snapshots and all matched: a seeded random sample of 252 of 2490 published rows (10% of each rate CSV, at least 20), every outlier (52: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (498). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

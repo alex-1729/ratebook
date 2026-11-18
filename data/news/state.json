@@ -1,0 +1,414 @@
+{
+ "sources": {
+  "asahi/release": {
+   "items_on_page": 25,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-05",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.asahi-life.co.jp/company/newsrelease/index.html"
+  },
+  "cal/notice": {
+   "items_on_page": 634,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-27",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ca-life.jp/news/topics.html"
+  },
+  "cal/release": {
+   "items_on_page": 174,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-30",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ca-life.jp/news/"
+  },
+  "dfl/notice": {
+   "items_on_page": 58,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-16",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.d-frontier-life.co.jp/corporate/news/index.html"
+  },
+  "dfl/release": {
+   "items_on_page": 28,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.d-frontier-life.co.jp/corporate/release/index.html"
+  },
+  "fsa/press": {
+   "items_on_page": 205,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.fsa.go.jp/news/r{reiwa}_news_menu.html?fy={fy}"
+  },
+  "fukoku/notice": {
+   "items_on_page": 422,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-16",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.fukoku-life.co.jp/about/information/"
+  },
+  "fukoku/release": {
+   "items_on_page": 832,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-16",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.fukoku-life.co.jp/about/news/"
+  },
+  "fukokushinrai/notice": {
+   "items_on_page": 191,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-30",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.fukokushinrai.co.jp/company/topics/"
+  },
+  "fukokushinrai/release": {
+   "items_on_page": 384,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-09-28",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.fukokushinrai.co.jp/company/news/"
+  },
+  "gibraltar/important": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.gib-life.co.jp/st/important_notices/: the site answered with a bot challenge instead of the page",
+   "state": "blocked",
+   "url": "https://www.gib-life.co.jp/st/important_notices/"
+  },
+  "gibraltar/notice": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.gib-life.co.jp/st/about/notice/: the site answered with a bot challenge instead of the page; https://www.gib-life.co.jp/st/about/notice/2026/: the site answered with a bot challenge instead of the page",
+   "state": "blocked",
+   "url": "https://www.gib-life.co.jp/st/about/notice/"
+  },
+  "gibraltar/release": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.gib-life.co.jp/st/about/news/: the site answered with a bot challenge instead of the page; https://www.gib-life.co.jp/st/about/news/2026/: the site answered with a bot challenge instead of the page",
+   "state": "blocked",
+   "url": "https://www.gib-life.co.jp/st/about/news/"
+  },
+  "group-daiichi/release": {
+   "items_on_page": 668,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-26",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.daiichilife-group.com/news/json/news.json"
+  },
+  "group-msad/notice": {
+   "items_on_page": 13,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-05-29",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ms-ad-hd.com/ja/news/news_info.html"
+  },
+  "group-msad/release": {
+   "items_on_page": 1078,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-26",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ms-ad-hd.com/ja/news/news_topics.html"
+  },
+  "group-prudential/press": {
+   "items_on_page": 284,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-04",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.pru-holding.co.jp/phj/release/press/index.html"
+  },
+  "group-td/release": {
+   "items_on_page": 2497,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-29",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://ssl4.eir-parts.net/V4Public/eir/TJ8795/ja/ir_material/ir_material_1.js"
+  },
+  "japanpost/notice": {
+   "items_on_page": 54,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-16",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.jp-life.japanpost.jp/information/news/index.html"
+  },
+  "japanpost/release": {
+   "items_on_page": 69,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.jp-life.japanpost.jp/information/press/index.html"
+  },
+  "liaj/release": {
+   "items_on_page": 55,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-26",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.seiho.or.jp/info/news/"
+  },
+  "met/notice": {
+   "items_on_page": 105,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-14",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.metlife.co.jp/about/info/"
+  },
+  "met/release": {
+   "items_on_page": 417,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-28",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.metlife.co.jp/about/press/"
+  },
+  "mnl/notice": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.manulife.co.jp/ja/individual/about/newsrelease/news.html: HTTP 403",
+   "state": "blocked",
+   "url": "https://www.manulife.co.jp/ja/individual/about/newsrelease/news.html"
+  },
+  "mnl/release": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.manulife.co.jp/ja/individual/about/newsrelease/press.html: HTTP 403",
+   "state": "blocked",
+   "url": "https://www.manulife.co.jp/ja/individual/about/newsrelease/press.html"
+  },
+  "msp/notice": {
+   "items_on_page": 10,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-12",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ms-primary.com/news/info/"
+  },
+  "msp/release": {
+   "items_on_page": 6,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-26",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.ms-primary.com/news/ir/"
+  },
+  "mys/notice": {
+   "items_on_page": 92,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-15",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.meijiyasuda.co.jp/profile/news/topics/"
+  },
+  "mys/release": {
+   "items_on_page": 120,
+   "last_checked": "2026-11-17",
+   "last_new": "2024-03-29",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.meijiyasuda.co.jp/profile/news/release/"
+  },
+  "nli/notice": {
+   "items_on_page": 156,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-12",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.nissay.co.jp/kaisha/topics/json/index.json"
+  },
+  "nli/release": {
+   "items_on_page": 914,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-12-26",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.nissay.co.jp/kaisha/news/json/index.json"
+  },
+  "nwl/notice": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.nw-life.co.jp/news/info/: HTTP 403",
+   "state": "blocked",
+   "url": "https://www.nw-life.co.jp/news/info/"
+  },
+  "nwl/release": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "https://www.nw-life.co.jp/news/release/: HTTP 403",
+   "state": "blocked",
+   "url": "https://www.nw-life.co.jp/news/release/"
+  },
+  "orx/notice": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "the list page was read but no dated items were found on it",
+   "state": "failed",
+   "url": "https://www.orixlife.co.jp/about/notice/"
+  },
+  "orx/release": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "the list page was read but no dated items were found on it",
+   "state": "failed",
+   "url": "https://www.orixlife.co.jp/about/news/"
+  },
+  "pgf/notice": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "the list page was read but no dated items were found on it",
+   "state": "failed",
+   "url": "https://www.pgf-life.co.jp/company/notice/"
+  },
+  "pgf/release": {
+   "items_on_page": 0,
+   "last_checked": "2026-11-17",
+   "message": "the list page was read but no dated items were found on it",
+   "state": "failed",
+   "url": "https://www.pgf-life.co.jp/company/news/"
+  },
+  "prudential/news": {
+   "items_on_page": 54,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-23",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.prudential.co.jp/news/"
+  },
+  "prudential/press": {
+   "items_on_page": 56,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-04",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.prudential.co.jp/press/"
+  },
+  "prudential/trust": {
+   "items_on_page": 11,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-10-19",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.prudential.co.jp/info_26/"
+  },
+  "sml/notice": {
+   "items_on_page": 29,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-01",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.sumitomolife.co.jp/news/notice/"
+  },
+  "sml/release": {
+   "items_on_page": 92,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-11",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.sumitomolife.co.jp/news/newsrelease/"
+  },
+  "sony/notice": {
+   "items_on_page": 60,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.sonylife.co.jp/info/"
+  },
+  "sony/release": {
+   "items_on_page": 43,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-17",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.sonylife.co.jp/company/news/2026/"
+  },
+  "taiju/release": {
+   "items_on_page": 44,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-06",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.taiju-life.co.jp/corporate/news/"
+  },
+  "taiyo/release": {
+   "items_on_page": 328,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.taiyo-seimei.co.jp/wr2/json/release.json"
+  },
+  "tdf/notice": {
+   "items_on_page": 62,
+   "last_checked": "2026-11-17",
+   "last_new": "2023-11-30",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.tdf-life.co.jp/info/"
+  },
+  "tdf/release": {
+   "items_on_page": 20,
+   "last_checked": "2026-11-17",
+   "last_new": "2026-11-13",
+   "last_ok": "2026-11-17",
+   "message": "",
+   "state": "ok",
+   "url": "https://www.tdf-life.co.jp/newsrelease/"
+  }
+ }
+}

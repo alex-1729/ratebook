@@ -1,0 +1,6 @@
+[
+ {
+  "name": "update-run",
+  "js": "IRV.app.go('data'); new Promise(r=>setTimeout(()=>{ const n=document.querySelectorAll('#main tbody tr').length; for (let i=0;i<n;i++) { const tr=document.querySelectorAll('#main tbody tr')[i]; const c=tr.querySelector('input'); const want=tr.textContent.includes('T&D'); if (c.checked!==want) c.click(); } setTimeout(()=>{ [...document.querySelectorAll('#main .btn')].find(b=>b.textContent==='Run').click(); const t0=Date.now(); const iv=setInterval(()=>{ const busy=document.getElementById('nav-data').classList.contains('busy'); if((Date.now()-t0>3000 && !busy)||Date.now()-t0>90000){clearInterval(iv); setTimeout(()=>r({secs:(Date.now()-t0)/1000, text:document.getElementById('main').innerText.replace(/\\s+/g,' ').slice(150,900)}),1500)} },500) },300) },2500))"
+ }
+]

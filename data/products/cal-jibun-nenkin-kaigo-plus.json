@@ -1,0 +1,613 @@
+{
+  "id": "cal-jibun-nenkin-kaigo-plus",
+  "insurer_id": "cal",
+  "candidate": true,
+  "name_ja": "じぶん年金 介護プラス",
+  "name_en": "Jibun Nenkin Kaigo Plus",
+  "policy_name_ja": "介護加算付生存保障重視型年金保険（通貨指定型）",
+  "site_code": "jibunnenkinkaigoplus",
+  "category": "fixed_annuity",
+  "product_type": "survival_weighted_annuity",
+  "subtype": "living_benefit_annuity_with_care_addition",
+  "premium_type": "single",
+  "currencies": [
+    "USD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2023-06-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://www.ca-life.jp/news/documents/jibunnenkinkaigoplus_01_PressRelease.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/cal/pages/release_cal-jibun-nenkin-kaigo-plus_01_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/cal/pages/live_products_index_2026-11-17.html"
+  },
+  "guarantee_terms_years": [
+    22,
+    32
+  ],
+  "rate_page": "rate",
+  "editions": [
+    {
+      "name_ja": "年金力 介護プラス（米ドル建）",
+      "name_en": "Nenkinryoku Kaigo Plus (USD)",
+      "distributor_group": "りそな銀行、埼玉りそな銀行、山形銀行",
+      "distributors": [
+        {
+          "name_ja": "りそな銀行"
+        },
+        {
+          "name_ja": "埼玉りそな銀行"
+        },
+        {
+          "name_ja": "山形銀行"
+        }
+      ],
+      "site_code": "nenkinryokukaigoplus",
+      "rate_page": "edition_rate"
+    }
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "base_index_rate": "基準指標金利",
+    "mva_reference_rate": "調整用基準指標金利（市場価格調整）"
+  },
+  "pages": [
+    {
+      "name": "products_index",
+      "url": "https://www.ca-life.jp/product/"
+    },
+    {
+      "name": "product",
+      "url": "https://www.ca-life.jp/product/jibunnenkinkaigoplus/"
+    },
+    {
+      "name": "rate",
+      "url": "https://www.ca-life.jp/product/jibunnenkinkaigoplus/rate.php"
+    },
+    {
+      "name": "edition_product",
+      "url": "https://www.ca-life.jp/product/nenkinryokukaigoplus/"
+    },
+    {
+      "name": "edition_rate",
+      "url": "https://www.ca-life.jp/product/nenkinryokukaigoplus/rate.php"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "payout_20y",
+      "plan_ja": "据置期間2年・年金支払期間20年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "2-year deferral, 20-year payout",
+      "csv": "cal-jibun-nenkin-kaigo-plus__crediting_rate__payout_20y.csv",
+      "points": 42,
+      "first_effective": "2023-06-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 42
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "payout_30y",
+      "plan_ja": "据置期間2年・年金支払期間30年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "2-year deferral, 30-year payout",
+      "csv": "cal-jibun-nenkin-kaigo-plus__crediting_rate__payout_30y.csv",
+      "points": 42,
+      "first_effective": "2023-06-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 42
+    },
+    {
+      "metric": "base_index_rate",
+      "plan": "payout_20y",
+      "plan_ja": "据置期間2年・年金支払期間20年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "2-year deferral, 20-year payout",
+      "csv": "cal-jibun-nenkin-kaigo-plus__base_index_rate__payout_20y.csv",
+      "points": 42,
+      "first_effective": "2023-06-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 42
+    },
+    {
+      "metric": "base_index_rate",
+      "plan": "payout_30y",
+      "plan_ja": "据置期間2年・年金支払期間30年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "2-year deferral, 30-year payout",
+      "csv": "cal-jibun-nenkin-kaigo-plus__base_index_rate__payout_30y.csv",
+      "points": 42,
+      "first_effective": "2023-06-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 42
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_12y",
+      "plan_ja": "年金支払期間20年・残存年数12年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 12 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_12y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_11y",
+      "plan_ja": "年金支払期間20年・残存年数11年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 11 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_11y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_10y",
+      "plan_ja": "年金支払期間20年・残存年数10年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 10 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_10y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_9y",
+      "plan_ja": "年金支払期間20年・残存年数9年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 9 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_9y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_8y",
+      "plan_ja": "年金支払期間20年・残存年数8年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 8 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_8y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_7y",
+      "plan_ja": "年金支払期間20年・残存年数7年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 7 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_7y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_6y",
+      "plan_ja": "年金支払期間20年・残存年数6年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 6 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_6y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_5y",
+      "plan_ja": "年金支払期間20年・残存年数5年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 5 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_5y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_4y",
+      "plan_ja": "年金支払期間20年・残存年数4年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 4 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_4y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_3y",
+      "plan_ja": "年金支払期間20年・残存年数3年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 3 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_3y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_2y",
+      "plan_ja": "年金支払期間20年・残存年数2年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 2 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_2y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_20y_remaining_1y",
+      "plan_ja": "年金支払期間20年・残存年数1年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "20-year payout, 1 year remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_20y_remaining_1y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_17y",
+      "plan_ja": "年金支払期間30年・残存年数17年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 17 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_17y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_16y",
+      "plan_ja": "年金支払期間30年・残存年数16年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 16 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_16y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_15y",
+      "plan_ja": "年金支払期間30年・残存年数15年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 15 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_15y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_14y",
+      "plan_ja": "年金支払期間30年・残存年数14年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 14 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_14y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_13y",
+      "plan_ja": "年金支払期間30年・残存年数13年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 13 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_13y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_12y",
+      "plan_ja": "年金支払期間30年・残存年数12年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 12 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_12y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_11y",
+      "plan_ja": "年金支払期間30年・残存年数11年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 11 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_11y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_10y",
+      "plan_ja": "年金支払期間30年・残存年数10年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 10 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_10y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_9y",
+      "plan_ja": "年金支払期間30年・残存年数9年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 9 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_9y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_8y",
+      "plan_ja": "年金支払期間30年・残存年数8年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 8 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_8y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_7y",
+      "plan_ja": "年金支払期間30年・残存年数7年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 7 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_7y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_6y",
+      "plan_ja": "年金支払期間30年・残存年数6年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 6 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_6y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_5y",
+      "plan_ja": "年金支払期間30年・残存年数5年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 5 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_5y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_4y",
+      "plan_ja": "年金支払期間30年・残存年数4年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 4 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_4y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_3y",
+      "plan_ja": "年金支払期間30年・残存年数3年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 3 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_3y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_2y",
+      "plan_ja": "年金支払期間30年・残存年数2年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 2 years remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_2y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    },
+    {
+      "metric": "mva_reference_rate",
+      "plan": "payout_30y_remaining_1y",
+      "plan_ja": "年金支払期間30年・残存年数1年",
+      "currencies": [
+        "USD"
+      ],
+      "plan_en": "30-year payout, 1 year remaining",
+      "csv": "cal-jibun-nenkin-kaigo-plus__mva_reference_rate__payout_30y_remaining_1y.csv",
+      "points": 19,
+      "first_effective": "2023-09-01",
+      "last_effective": "2026-11-01",
+      "effective_dates": 19
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "general",
+      "url": "https://www.ca-life.jp/documents/jibunnenkinkaigoplus_pamph_1.pdf",
+      "title_en": "Brochure and pre-contract disclosure",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款（リンク先、商品ページ掲載）",
+      "variant": "general",
+      "url": "https://www.ca-life.jp/documents/MKA58CA01_1.pdf",
+      "title_en": "Policy guide and conditions",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "edition_brochure",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（年金力 介護プラス（米ドル建））",
+      "variant": "edition",
+      "url": "https://www.ca-life.jp/documents/nenkinryokukaigoplus_pamph_1.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Nenkinryoku Kaigo Plus edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "information_material",
+      "title_ja": "情報提供資料「人生100年時代！ これからのゆとりと安心のために」",
+      "variant": "general",
+      "url": "https://www.ca-life.jp/product/nenkinryokukaigoplus/documents/LTCN_JN_pamph_1.pdf",
+      "title_en": "Information material",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "山梨中央銀行"
+    }
+  ],
+  "notes": [
+    "Single premium, USD only. 据置期間 is fixed at 2 years; 年金支払期間 is 20 or 30 years. The 積立利率 set for the contract month applies through deferral and payout, so guarantee_terms_years is 22 and 32 (2+20, 2+30).",
+    "Mapping (changed 2026-11-17; earlier files used other keys): crediting_rate and base_index_rate rows have a blank term_years and the 年金支払期間 (payout period, 20 or 30 years) is the plan (payout_20y, payout_30y). The product has one fixed 2-year 据置期間, but the rate page says the 積立利率 set at contract applies through 据置期間 and 年金支払期間 (22 or 32 years in all); a 2-year tenor would rank a 20/30-year locked annuity rate against 2-year products, and no other product has a 22- or 32-year tenor, so the rates are kept off tenor boards and shown on the product page only. Changed 2026-11-17: the 168 rows (4 CSVs x 42 months) previously had term_years 2; values, dates and sources are unchanged. mva_reference_rate (調整用基準指標金利) has no tenor, so term_years is blank; its plan carries the payout period and the page's 残存年数 (remaining-years) column, e.g. payout_20y_remaining_12y. The page publishes one rate per remaining-year column, and the same remaining term appears under several elapsed-year bands with the same rate (checked equal). effective_date is the first day of the contract month (rates) or the surrender / lump-sum request month (mva_reference_rate). scripts/cal.py emits exactly these keys; scripts/check_offline_parse.py re-parses every saved snapshot and reproduces all rows.",
+    "has_mva is true: 解約払戻金 and 基本年金の一括支払額 apply 市場価格調整率 using 調整用基準指標金利, then a deduction while the request date is within 10 years of the contract date. Per the product page: 解約控除率 and 基本年金一括支払控除率 are 8.0% (under 1 year), 7.2%, 6.4%, 5.6%, 4.8% (4 to 5 years); from year 5 only 基本年金一括支払控除率 is listed: 4.0%, 3.2%, 2.4%, 1.6%, 0.8% (9 to 10 years). The deduction applies to the smaller of 積立金額 (or the lump-sum base amount) and 基本保険金額. Rates are as of 2026年1月末 and not stored in the CSVs. 年金管理費用 1% of annuity paid; no 契約初期費用.",
+    "The edition 年金力 介護プラス（米ドル建） (りそな銀行, 埼玉りそな銀行, 山形銀行) has its own rate page and its own Wayback captures, but every data point compared (live and all captures) is identical to this product, so it is recorded as an edition not a separate product. 調整用基準指標金利 for months visible only in an edition capture (2024-02, 2024-09, 2024-12, 2025-06) is added from that capture (source_url shows the edition page; via_wayback true) because every overlapping point was identical. scripts/cal.py re-checks this on each run and reports a conflict if the pages ever diverge. Edition snapshots are under sources/cal/rates/ and sources/cal/wayback/ (edition_ and nenkinryokukaigoplus_ prefixes).",
+    "The rate page lists the current contract month plus the previous 6 months (3 months in captures up to late 2023). With about 14 distinct Wayback captures per page (2023-09 to 2026-04) the 積立利率 and 基準指標金利 history is contiguous monthly from 2023-06 to 2026-11. 調整用基準指標金利 is published only for the current month, so it exists only for the live month and capture months (gaps in between are not interpolated).",
+    "Launch date: 2023-06-01, from Crédit Agricole Life's release of 2023-05-31 (release text: 「じぶん年金 介護プラス」を販売開始いたします; 販売開始日 6月1日 at 静岡銀行 and 山梨中央銀行, year from the release date; 名古屋銀行 started later per a second release of 2023-07-31). Retrieved 2026-11-17.",
+    "Distributor lists are those printed on the product index page (取扱金融機関). Bank-specific names beyond the edition not collected. Currency-conversion (円入金/円支払特約) rates on ex_rate.php are daily FX rates, not collected.",
+    "Related discontinued Credit Agricole fixed-annuity products listed on /product/stop/ (達成感FX, ヴァンダンジュ, 豪ドル記念日, 豪ドルこまち) are not part of this product.",
+    "Spelling: the insurer's headings write the edition name with half-width parentheses (年金力 介護プラス(米ドル建)) and its body text with full-width ones (年金力 介護プラス（米ドル建）); the full-width form is used here."
+  ],
+  "notes_en": [
+    "Monthly rate history is complete from June 2023 to November 2026; the insurer's page only shows the latest seven months.",
+    "Rates are USD only. The crediting rate set at contract applies through the fixed 2-year deferral and the 20- or 30-year payout that follows, so it has no tenor comparable with other products and appears on this page but on no tenor board.",
+    "The Nenkinryoku Kaigo Plus edition sold through three banks has identical rates, so it is treated as an edition, not a separate product.",
+    "The market value adjustment reference rate is published only for the current month, so its history has gaps.",
+    "Launched 1 June 2023 at the first two banks (insurer's news release). Exchange rates are not collected."
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 80 rows with their saved snapshots and all matched: a seeded random sample of 78 of 719 published rows (10% of each rate CSV, at least 20), every outlier (2: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

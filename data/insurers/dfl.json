@@ -1,0 +1,32 @@
+{
+  "id": "dfl",
+  "name_ja": "第一フロンティア生命保険株式会社",
+  "name_en": "Dai-ichi Frontier Life",
+  "name_short_en": "Dai-ichi Frontier",
+  "site": "https://www.d-frontier-life.co.jp/",
+  "rate_hub_url": "https://www.d-frontier-life.co.jp/customer/rate/index.html",
+  "rate_update": "Semi-monthly, effective the 1st and 16th",
+  "collector": "scripts/dfl.py",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates apply to contracts in the 1st-15th or the 16th-end of the month."
+  },
+  "news_tier": "full",
+  "group": "dai-ichi",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.d-frontier-life.co.jp/corporate/release/index.html",
+      "archive_url": "https://www.d-frontier-life.co.jp/corporate/release/index.html?release_year={year}&category=0"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.d-frontier-life.co.jp/corporate/news/index.html",
+      "archive_url": "https://www.d-frontier-life.co.jp/corporate/news/index.html?release_year={year}"
+    }
+  ]
+}

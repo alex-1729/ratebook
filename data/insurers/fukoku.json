@@ -1,0 +1,24 @@
+{
+  "id": "fukoku",
+  "name_ja": "富国生命保険相互会社",
+  "name_en": "Fukoku Life",
+  "site": "https://www.fukoku-life.co.jp/",
+  "news_tier": "watch",
+  "group": "fukoku",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.fukoku-life.co.jp/about/news/",
+      "parser": "fukoku:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.fukoku-life.co.jp/about/information/",
+      "parser": "fukoku:parse"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "id": "pgf-hosho-sentaku-neo-usd",
+  "insurer_id": "pgf",
+  "candidate": true,
+  "name_ja": "保障選択型終身保険Ｎｅｏ＜米ドル建＞",
+  "name_en": "Hosho Sentaku-gata Shushin Hoken Neo (USD)",
+  "name_short_en": "Hosho Sentaku Neo USD",
+  "policy_name_ja": "米国ドル建積立利率更改型一時払終身保険（保障選択型）（無配当）",
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD"
+  ],
+  "has_mva": null,
+  "status": "on_sale",
+  "on_sale_date": "2021-12-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://kyodonewsprwire.jp/release/202112014207",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/pgf/pages/release_pgf-hosho-sentaku-neo-usd_2026-11-17.html"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/pgf/pages/live_product_jswl_2026-11-17.html"
+  },
+  "guarantee_terms_years": [
+    20,
+    15
+  ],
+  "rate_page": "rate_current",
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "net_yield": "実質的な利回り（年複利）"
+  },
+  "editions": [
+    {
+      "name_ja": "保障選択型終身保険Ｎｅｏ＜米ドル建＞",
+      "name_en": "Hosho Sentaku-gata Shushin Hoken Neo (USD)",
+      "distributor_group": "PGF Life (own name; sold from 2022-08-01 under this name, earlier 米国ドル建保障選択型終身保険Neo)",
+      "site_code": "jswl/mu"
+    },
+    {
+      "name_ja": "きずなの終身＜米ドル建＞",
+      "name_en": "Kizuna no Shushin (USD)",
+      "distributor_group": "Mizuho",
+      "site_code": "jswl/mizuho"
+    },
+    {
+      "name_ja": "基本・連生選択型終身＜米ドル建＞",
+      "name_en": "Kihon / Rensei Sentaku-gata Shushin (USD)",
+      "distributor_group": "Sumitomo Mitsui Banking Corporation (SMBC)",
+      "site_code": "jswl/smbc"
+    },
+    {
+      "name_ja": "まごころつながる終身保険２＜米ドル建＞",
+      "name_en": "Magokoro Tsunagaru Shushin Hoken 2 (USD)",
+      "distributor_group": "general agencies",
+      "site_code": "jswl/general2"
+    },
+    {
+      "name_ja": "まごころつながる終身保険２＜米ドル建＞（シンプルプラン）",
+      "name_en": "Magokoro Tsunagaru Shushin Hoken 2 (USD), Simple Plan",
+      "distributor_group": "general agencies",
+      "site_code": "jswl/general4"
+    },
+    {
+      "name_ja": "まごころつながる終身保険ＵＳ２",
+      "name_en": "Magokoro Tsunagaru Shushin Hoken US2",
+      "distributor_group": "general agencies",
+      "site_code": "jswl/general3"
+    },
+    {
+      "name_ja": "ＰＧＦ終身保険＜米ドル建・一時払＞",
+      "name_en": "PGF Shushin Hoken (USD, single premium)",
+      "distributor_group": "Nomura Securities",
+      "site_code": "jswl/nomura"
+    },
+    {
+      "name_ja": "まごころつながる終身保険２＜米ドル建＞（その他代理店）",
+      "name_en": "Magokoro Tsunagaru Shushin Hoken 2 (USD), other agencies",
+      "distributor_group": "other agencies",
+      "site_code": "jswl/agent"
+    }
+  ],
+  "notes": [
+    "Policy form is 米国ドル建積立利率更改型一時払終身保険（保障選択型）. 積立利率 is fixed until the next 積立利率計算基準日 (20 years for contract age 15-79, 15 years for 80-90), then reset; age at the reset date 91+ gets a company-set rate (not published). The 20/15 split is by age at contract date, so term_years and age_band are tied: 15-79 with 20, 80-90 with 15.",
+    "One rate page serves every edition (all editions listed on the rate page share it). The page is 基本型 (シンプルプラン) and 連生保障型 (リレープラン); both showed identical figures in every table read (textContent compared), so one series per metric and plan is stored, not one per type. 「まごころつながる終身保険2（シンプルプラン）」 and 「PGF終身保険」 are 基本型 only; 「基本・連生選択型終身」 has no withdrawal rider.",
+    "plan base = 積立金の引出機能に関する特則を付加しない場合 (no withdrawal rider); there 実質的な利回り equals 積立利率. plan withdrawal = 特則付加 (offered since 2023-02-01); 実質的な利回り assumes the 引出 option is chosen and is lower than 積立利率. 積立利率 is the same in both plans and is stored under both.",
+    "Rates are set twice a month (contract dates 1st-15th and 16th-end); effective_date is the first day of the period. The rate page shows the current period and the 過去の積立利率 page the 48 periods from 2024-12-01; nothing earlier is published on the site. Rates before 2024-12 may exist on the old 諸利率 PDF (https://www.pgf-life.co.jp/st/products/pdf/jswl.pdf; Wayback has one capture, 2024-02-22) but the Wayback Machine answered 429/timeouts on 2026-11-17 so it was not read. It is open for a later run.",
+    "has_mva is null: not established (米ドル建 surrender value rules not read; brochure PDFs are behind a pop-up and were not downloaded).",
+    "The page notes the renaming dates: 米国ドル建保障選択型終身保険Neo until 2022-07-31, 保障選択型終身保険Neo＜米ドル建＞ from 2022-08-01; まごころつながる終身保険2 from 2023-02-01 (before that まごころつながる終身保険＜米ドル建＞); PGF終身保険＜米ドル建・一時払＞ from 2023-04-03 (before that PGFリレー終身保険＜米ドル建＞). The past-rates page also lists the predecessor 米国ドル建積立利率更改型一時払終身保険PGF (jswl_old/gib), basic type only, no withdrawal rider.",
+    "Cost shown on the page: 保険関係費用 1.30% deducted when setting 積立利率 (contract age under 91); 積立利率 floor 0.01%; cap = US Treasury yield average + 2.0% less costs. Rate setting: reference index yield average +/- up to 1.5%.",
+    "Rate fragments (/hpcms/Fxrate1100.do etc.) refuse scripts (bot protection), so the tables were read in the built-in browser pane on 2026-11-17 and saved under sources/pgf/pages/ (jswl_fxrate100, jswl_tumitate_past). The saved files are the rendered tables, not the raw server HTML. scripts/pgf.py parses them and does not attempt to bypass the protection.",
+    "Product-page documents (契約概要/注意喚起情報, Web約款) sit behind a PDF pop-up and were not downloaded or listed with URLs.",
+    "Checked 2026-11-17 by an independent agent: all 384 rate points match the snapshots, and the 過去の積立利率 tables (基本型 and 連生保障型, both plans) were re-read live in the browser pane and are identical to the snapshot. Japanese names are spelled as on the rate page (full-width Ｎｅｏ, ２, ＵＳ２, ＰＧＦ). The edition list, renaming dates and cost notes are saved as page text in sources/pgf/pages/pagetext_jswl_fxrate100_2026-11-17.txt.",
+    "Plan names shortened 2026-11-17: both plans cover the 基本型 and 連生保障型, whose rates are identical.",
+    "Launch date: 2021-12-01, from PGF's release on Kyodo PRWire calling 「米国ドル建保障選択型終身保険Ｎｅｏ」 a 新商品 on sale 「12月1日（水）より、株式会社三菱ＵＦＪ銀行」 (year from the release date; other distributors may have started later). Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 December 2024 and covers 48 half-month periods; the insurer publishes nothing earlier.",
+    "Rates are USD only, fixed for 20 years (contract ages 15 to 79) or 15 years (ages 80 to 90) and then reset.",
+    "Basic and joint-life types, and several editions sold under other names, share the same rates.",
+    "The with-withdrawal-rider plan has a lower yield than the crediting rate, which is the same in both plans.",
+    "Launched 1 December 2021 at MUFG Bank (insurer's release); an earlier rate table exists but could not be read. Whether a market value adjustment applies is unconfirmed."
+  ],
+  "pages": [
+    {
+      "name": "rate_current",
+      "url": "https://www.pgf-life.co.jp/st/products/jswl/fxrate100.html"
+    },
+    {
+      "name": "rate_past",
+      "url": "https://www.pgf-life.co.jp/st/products/jswl/tumitate_past.html"
+    },
+    {
+      "name": "base_rate",
+      "url": "https://www.pgf-life.co.jp/st/products/jswl/fxrate100_base.html"
+    },
+    {
+      "name": "product",
+      "url": "https://www.pgf-life.co.jp/st/products/jswl/mu/"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.pgf-life.co.jp/st/products/shoriritsu.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "base",
+      "plan_ja": "積立金の引出機能に関する特則なし（基本型・連生保障型共通）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-hosho-sentaku-neo-usd__crediting_rate__base.csv",
+      "plan_en": "No withdrawal rider"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "withdrawal",
+      "plan_ja": "積立金の引出機能に関する特則付加（基本型・連生保障型共通）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-hosho-sentaku-neo-usd__crediting_rate__withdrawal.csv",
+      "plan_en": "With withdrawal rider"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "base",
+      "plan_ja": "積立金の引出機能に関する特則なし（基本型・連生保障型共通）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-hosho-sentaku-neo-usd__net_yield__base.csv",
+      "plan_en": "No withdrawal rider"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "withdrawal",
+      "plan_ja": "積立金の引出機能に関する特則付加（基本型・連生保障型共通）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-hosho-sentaku-neo-usd__net_yield__withdrawal.csv",
+      "plan_en": "With withdrawal rider"
+    }
+  ],
+  "documents": [
+    {
+      "name": "rate_pdf_old",
+      "title_ja": "諸利率（旧PDF・Wayback 2024-02-22の1件のみ）",
+      "url": "https://www.pgf-life.co.jp/st/products/pdf/jswl.pdf",
+      "title_en": "Earlier rate table"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "みずほ（銀行・証券、記載は「みずほ」向け商品名のみ確認）",
+      "product_name_ja": "きずなの終身＜米ドル建＞"
+    },
+    {
+      "name_ja": "三井住友銀行",
+      "product_name_ja": "基本・連生選択型終身＜米ドル建＞"
+    },
+    {
+      "name_ja": "野村證券",
+      "product_name_ja": "ＰＧＦ終身保険＜米ドル建・一時払＞"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:pgf-hosho-sentaku-neo-usd; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

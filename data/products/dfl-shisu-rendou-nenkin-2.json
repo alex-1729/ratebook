@@ -1,0 +1,127 @@
+{
+  "id": "dfl-shisu-rendou-nenkin-2",
+  "insurer_id": "dfl",
+  "candidate": true,
+  "name_ja": "指数連動年金２",
+  "name_en": "Index-Linked Annuity 2",
+  "policy_name_ja": "積立利率変動型個人年金保険（21）（通貨指定型）",
+  "category": "fixed_indexed_annuity",
+  "product_type": "indexed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2022-02-01",
+  "off_sale_date": null,
+  "site_product_code": "200",
+  "guarantee_terms_years": [
+    5,
+    10
+  ],
+  "editions": [],
+  "notes": [
+    "Own rate page (index_hendo_choice_21_01), history from 2022-10-01, and the only product of the (21) form with AUD; no other name shares it. A predecessor 指数連動年金 (code 190) is listed on the hub as discontinued and not collected.",
+    "Product type indexed_annuity (changed from fixed_annuity on 2026-11-17). The saved brochure (brochure_shisurendou2_hanyo, sources/dfl/docs/) shows the (21) form is index-linked: at the end of the 積立利率保証期間 the 年金原資額 is the 基本移行原資額 (fixed by the contract-date 積立利率, never below 100% of the premium) plus an 指数連動移行原資額 = premium x rise of the 参照指数 since the 基準日 x 連動率 (zero if the index has not risen). The rate page publishes only the 積立利率 by currency and 5/10-year guarantee period, which is what the CSVs hold; the 連動率 and index values are not collected.",
+    "The distributors list is the 銀行・信用金庫・信用組合・証券 section of the product page.",
+    "Launch date: 2022-02-01, the first sale of 『指数連動年金』 (SMBC, SMBC Nikko Securities, SMBC Trust Bank) per the insurer's news release of 2022-01-27 (id=1001); this product is its successor edition 『指数連動年金２』, on sale from 2022-10-03 per the release of 2022-09-30 (id=1017, snapshot sources/dfl/pages/release_1017_2026-11-17.pdf). Formal name 積立利率変動型個人年金保険（21）（通貨指定型）. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 October 2022 and covers USD, AUD and JPY with 5 and 10-year guarantee periods.",
+    "It is the only product on this form with AUD, and no other name shares its rates.",
+    "Classed as an indexed annuity: per the brochure, at the end of the guarantee period a fixed amount of at least the premium is topped up by the rise in a reference index. The published rate is the fixed crediting rate; the index participation is not collected.",
+    "A predecessor product is discontinued and not collected. Launch date is that of the first edition (1 February 2022); this edition followed on 3 October 2022."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_200",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=200"
+    },
+    {
+      "name": "rate_hendo_choice_21_01",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_21_01.html"
+    },
+    {
+      "name": "mva_hendo_choice_21_01_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_21_01_b.html?product=&agency="
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "hendo_choice_21_01",
+      "csv": "dfl-shisu-rendou-nenkin-2__crediting_rate__standard.csv",
+      "plan_en": "Standard"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "hendo_choice_21_01_b",
+      "csv": "dfl-shisu-rendou-nenkin-2__mva_rate__standard.csv",
+      "plan_en": "Standard"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_shisurendou2_smbc",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "smbc",
+      "url": "https://www.d-frontier-life.co.jp/products/shisurendou2/smbc/smbc.pdf",
+      "title_en": "Brochure and pre-contract disclosure (SMBC edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_shisurendou2_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/shisurendou2/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (general edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_04023",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/04023.pdf",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "三井住友銀行"
+    },
+    {
+      "name_ja": "SMBC日興証券・SMBC信託銀行"
+    },
+    {
+      "name_ja": "SMBC信託銀行"
+    },
+    {
+      "name_ja": "SMBC日興証券"
+    }
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.d-frontier-life.co.jp/corporate/release/detail.html?id=1001",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/dfl/pages/release_1001_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 121 rows with their saved snapshots and all matched: a seeded random sample of 120 of 1200 published rows (10% of each rate CSV, at least 20), every outlier (1: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

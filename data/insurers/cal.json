@@ -1,0 +1,33 @@
+{
+  "id": "cal",
+  "name_ja": "クレディ・アグリコル生命保険株式会社",
+  "name_en": "Credit Agricole Life Japan",
+  "name_short_en": "Credit Agricole",
+  "news_tier": "full",
+  "group": "credit-agricole",
+  "site": "https://www.ca-life.jp/",
+  "rate_hub_url": "https://www.ca-life.jp/product/",
+  "rate_update": "Monthly, effective the 1st (contract-month window; the rate page also lists the previous six months)",
+  "collector": "scripts/cal.py",
+  "notes": [
+    "The news tracker's record gave name_en as \"Crédit Agricole Life Japan\"."
+  ],
+  "rate_period": {
+    "type": "monthly",
+    "note": "Rates are set for a calendar month, effective the 1st."
+  },
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.ca-life.jp/news/"
+    },
+    {
+      "key": "notice",
+      "label": "Notices and topics",
+      "kind": "official",
+      "url": "https://www.ca-life.jp/news/topics.html"
+    }
+  ]
+}

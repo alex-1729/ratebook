@@ -1,0 +1,844 @@
+{
+  "id": "tdf-premium-world-6",
+  "insurer_id": "tdf",
+  "candidate": true,
+  "name_ja": "生涯プレミアムワールド6（目標値機能なし）",
+  "name_en": "Lifetime Premium World 6 (without target-value function)",
+  "name_short_en": "Lifetime Premium World 6",
+  "policy_name_ja": "無配当終身保険（積立利率更改・Ⅲ型）／無配当外国為替連動型終身保険（積立利率更改・通貨選択Ⅴ型）",
+  "policy_names": [
+    {
+      "name_ja": "無配当終身保険（積立利率更改・Ⅲ型）",
+      "plan": "jpy_std / jpy_20m",
+      "currencies": [
+        "JPY"
+      ]
+    },
+    {
+      "name_ja": "無配当外国為替連動型終身保険（積立利率更改・通貨選択Ⅴ型）",
+      "plan": "fx_no_rider / fx_rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ]
+    }
+  ],
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2024-09-01",
+  "off_sale_date": null,
+  "guarantee_terms_years": {
+    "USD": [
+      10
+    ],
+    "AUD": [
+      20
+    ],
+    "JPY": null
+  },
+  "rate_pages": {
+    "pw6_rate_enka": {
+      "parser": "world6_yen",
+      "wayback_prefix": "pre_world6_mn_enka"
+    },
+    "pw6_rate_gaika": {
+      "parser": "world6_fx",
+      "wayback_prefix": "pre_world6_mn_gaika"
+    }
+  },
+  "rate_page": "pw6_rate_enka",
+  "editions": [],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "net_yield": "実質的な利回り（年複利、外貨プランの例示値）"
+  },
+  "pages": [
+    {
+      "name": "pw6_product",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/"
+    },
+    {
+      "name": "pw6_rate_enka",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/tumitateriritu_enka.html"
+    },
+    {
+      "name": "pw6_rate_gaika",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/tumitateriritu_gaika.html"
+    },
+    {
+      "name": "pw6_exchange_rate",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/rate/exchange_rate.html"
+    },
+    {
+      "name": "pw6_distributors",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/pre_world6_mn_toriatukaiten.html"
+    },
+    {
+      "name": "pw6_clause_flipbook",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/clause/index.html"
+    },
+    {
+      "name": "pw6_rate_notice",
+      "url": "https://www.tdf-life.co.jp/info/riritu.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_std",
+      "plan_ja": "円貨 基本保険金額2,000万円未満（無配当終身保険（積立利率更改・Ⅲ型））",
+      "plan_en": "JPY, base amount under JPY 20m",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "tdf-premium-world-6__crediting_rate__jpy_std.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "jpy_20m",
+      "plan_ja": "円貨 基本保険金額2,000万円～（無配当終身保険（積立利率更改・Ⅲ型））",
+      "plan_en": "JPY, base amount JPY 20m or more",
+      "currencies": [
+        "JPY"
+      ],
+      "csv": "tdf-premium-world-6__crediting_rate__jpy_20m.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "fx_no_rider",
+      "plan_ja": "外貨 保険金最低保証特約なし（無配当外国為替連動型終身保険（積立利率更改・通貨選択Ⅴ型））",
+      "plan_en": "Foreign currency, no guarantee rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__crediting_rate__fx_no_rider.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "fx_rider",
+      "plan_ja": "外貨 保険金最低保証特約付加（無配当外国為替連動型終身保険（積立利率更改・通貨選択Ⅴ型））",
+      "plan_en": "Foreign currency, guarantee rider",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__crediting_rate__fx_rider.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_no_rider_periodic",
+      "plan_ja": "外貨 保険金最低保証特約なし・実質的な利回り（定期受取コース）",
+      "plan_en": "Foreign currency, no guarantee rider, periodic receipt",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__net_yield__fx_no_rider_periodic.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_no_rider_optional",
+      "plan_ja": "外貨 保険金最低保証特約なし・実質的な利回り（任意受取コース）",
+      "plan_en": "Foreign currency, no guarantee rider, optional receipt",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__net_yield__fx_no_rider_optional.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_rider_periodic",
+      "plan_ja": "外貨 保険金最低保証特約付加・実質的な利回り（定期受取コース）",
+      "plan_en": "Foreign currency, guarantee rider, periodic receipt",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__net_yield__fx_rider_periodic.csv"
+    },
+    {
+      "metric": "net_yield",
+      "plan": "fx_rider_optional",
+      "plan_ja": "外貨 保険金最低保証特約付加・実質的な利回り（任意受取コース）",
+      "plan_en": "Foreign currency, guarantee rider, optional receipt",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "csv": "tdf-premium-world-6__net_yield__fx_rider_optional.csv"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure",
+      "title_ja": "契約概要（契約締結前交付書面兼商品パンフレット）",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/pamphlet/pre_world6_mn.pdf",
+      "title_en": "Brochure and pre-contract disclosure",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "gaiyo_yen",
+      "title_ja": "商品概要書（円貨）",
+      "variant": "jpy",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/pamphlet/pre_world6_mn_gaiyo_enka.pdf",
+      "title_en": "Product summary (yen)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "gaiyo_fx",
+      "title_ja": "商品概要書（外貨）",
+      "variant": "fx",
+      "url": "https://www.tdf-life.co.jp/pre_world6_mn/pamphlet/pre_world6_mn_gaiyo_gaika.pdf",
+      "title_en": "Product summary (foreign currency)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.tdf-life.co.jp/weby/pdf/260031.pdf",
+      "title_en": "Policy guide and conditions",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "pw6_distributors": [
+    {
+      "name_ja": "アイ・エフ・クリエイト"
+    },
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "アイリックコーポレーション（保険クリニック）"
+    },
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "アドバンスクリエイト"
+    },
+    {
+      "name_ja": "イオン銀行"
+    },
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "いずみライフデザイナーズ"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "Wizleap"
+    },
+    {
+      "name_ja": "エフケイ"
+    },
+    {
+      "name_ja": "LPF仙台"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "オールワンエージェント"
+    },
+    {
+      "name_ja": "カカクコム・インシュアランス"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "関西みらい銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "北日本銀行"
+    },
+    {
+      "name_ja": "Gift Your Life"
+    },
+    {
+      "name_ja": "紀陽銀行"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "京都信用金庫"
+    },
+    {
+      "name_ja": "京都中央信用金庫"
+    },
+    {
+      "name_ja": "きらぼし銀行"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券"
+    },
+    {
+      "name_ja": "きらやか銀行"
+    },
+    {
+      "name_ja": "クレディセゾン"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫"
+    },
+    {
+      "name_ja": "埼玉りそな銀行"
+    },
+    {
+      "name_ja": "佐賀銀行"
+    },
+    {
+      "name_ja": "Sasuke Financial Lab"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "静岡中央銀行"
+    },
+    {
+      "name_ja": "七十七ほけんサービス"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "十六銀行"
+    },
+    {
+      "name_ja": "常陽銀行"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "仙台銀行"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "第四北越銀行"
+    },
+    {
+      "name_ja": "大東銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "ティー・エフ・オフィス"
+    },
+    {
+      "name_ja": "Do it プランニング"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "徳島大正銀行"
+    },
+    {
+      "name_ja": "鳥取銀行"
+    },
+    {
+      "name_ja": "トラストライフ"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "ネクサス"
+    },
+    {
+      "name_ja": "野村不動産ソリューションズ"
+    },
+    {
+      "name_ja": "PGフレンドリー・パートナーズ"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "ビルド・バリュー"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "ファーラウト"
+    },
+    {
+      "name_ja": "ファイナンシャルアライアンス"
+    },
+    {
+      "name_ja": "ファイナンシャル・ジャパン"
+    },
+    {
+      "name_ja": "福井銀行"
+    },
+    {
+      "name_ja": "ブロードマインド"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "保険ステーション"
+    },
+    {
+      "name_ja": "保険相談FPセンター"
+    },
+    {
+      "name_ja": "ほけんの110番"
+    },
+    {
+      "name_ja": "ほけんの窓口グループ（ほけんの窓口）"
+    },
+    {
+      "name_ja": "保険見直し本舗"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "ホロスプランニング"
+    },
+    {
+      "name_ja": "三菱UFJ銀行"
+    },
+    {
+      "name_ja": "三菱UFJ信託銀行"
+    },
+    {
+      "name_ja": "みどり会"
+    },
+    {
+      "name_ja": "みなと銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "山梨中央銀行"
+    },
+    {
+      "name_ja": "ライフアシスト"
+    },
+    {
+      "name_ja": "ライフデザインパートナーズ"
+    },
+    {
+      "name_ja": "ライフプラザ東海"
+    },
+    {
+      "name_ja": "ライフプラザパートナーズ"
+    },
+    {
+      "name_ja": "ライフマイスター"
+    },
+    {
+      "name_ja": "リクルート"
+    },
+    {
+      "name_ja": "りそな銀行"
+    },
+    {
+      "name_ja": "リロ・フィナンシャル・ソリューションズ"
+    }
+  ],
+  "notes": [
+    "The on-sale edition is 生涯プレミアムワールド6（目標値機能なし）, URL path pre_world6_mn. T&D's older 目標値機能あり version (path /pre_world6/, 生涯プレミアムワールド6) is marked 新規販売停止 (closed to new sales) and its rate pages are not collected here; its date of closure is not established.",
+    "Rate pages: separate yen (積立利率（円貨）) and foreign-currency (積立利率（外貨）) pages. Both show only the current half-month 積立利率設定期間 (overwritten on the 1st and 16th); history comes from re-running scripts/tdf.py and from Wayback captures (yen page 6, FX page 5 distinct captures from 2024-12-08; only captures the parser reads reliably are ingested).",
+    "Reset period: 積立利率更改期間 is 10 years for 米ドル and 20 years for 豪ドル (積立利率更改日 = every 10 / 20 years on the contract anniversary), taken from the FX page and stored as term_years on FX rows. The yen reset period is not stated on the yen page (only in the brochure, which is not downloaded), so term_years is blank for yen and guarantee_terms_years.JPY is null. After the final reset the reference rate becomes the 5-year government bond yield (JGB / US Treasury / Australian government bond).",
+    "Grid captured: sex (M/F) x age band (40-69, 70-79, 80-84, 85-90) x plan. Yen plans: jpy_std is the unlabelled 積立利率 column (presumed base amount under JPY 20m; the page header does not name the lower band) and jpy_20m is 基本保険金額2,000万円～. FX plans: with / without 保険金最低保証特約. Currencies USD and AUD.",
+    "Net yield (実質的な利回り) is published only as an example row (male, 40-69) for each currency, for both rider options and both 定期受取コース and 任意受取コース, assuming FX change 100%; stored as net_yield with plans fx_{no_rider,rider}_{periodic,optional}. No net yield is published for the yen plan. Course names and column order changed between page versions: the 2024-12 capture heads the columns 積立コース / 定期支払コース (in that order), later pages 定期受取コース / 任意受取コース. 定期支払コース is stored as periodic and 積立コース as optional (both defined on the page by the same formulas as the later 定期受取 / 任意受取 courses); the parser maps columns by header text, not position.",
+    "Index rates before the first reset: yen, JGB 20-year yield (ages 40-79) or 10-year (ages 80-90); USD, weighted-average USD bond index yield (10y); AUD, USD index yield (20y) + AUD/USD 20y swap spread + basis swap spread.",
+    "has_mva is true: the product page links the 市場価格調整 explainer video and surrender values reflect index-rate and FX movements net of 解約控除率 (yen 3.0% in year 1 falling 0.3 pt a year to 0; FX 4.50% in year 1 falling to 0.40%/year 10). The MVA formula is not collected.",
+    "Rates can show 取扱停止中 or a temporary stop for some ages; the collector records these as not_offered.",
+    "effective_date is the first day of the 積立利率設定期間. Launch date not established (page footer 2026年4月版 is a revision date). The yen policy form is 無配当終身保険（積立利率更改・Ⅲ型）.",
+    "Distributor list is the 金融機関等代理店 list on the 募集代理店 page (includes banks, FP/insurance-agency chains and online agents). Bank-specific product names not collected.",
+    "Brochure, summaries and policy-conditions PDFs were not downloaded (URLs listed under documents).",
+    "Launch date: 2024-09-01, the sales start stated in the insurer's news release of 2024-08-27 (『生涯プレミアムワールド６』, 正式名称 無配当終身保険（積立利率更改・Ⅲ型）/無配当外国為替連動型終身保険（積立利率更改・通貨選択Ⅴ型）). The release says the 生涯プレミアムジャパン and 生涯プレミアムワールド series were merged into this product; earlier editions (生涯プレミアムワールド 2 from 2013-06, 3 from 2014-08, 4 from 2017-04, 5 from 2019-06) are earlier names, not this product. The older 目標値機能あり edition is not covered. Retrieved 2026-11-17.",
+    "Distributors: the 金融機関等代理店 list (98 entries; banks, shinkin banks and agencies as listed, including insurance-shop and agency companies) on https://www.tdf-life.co.jp/pre_world6_mn/pre_world6_mn_toriatukaiten.html, saved as sources/tdf/pages/pw6_distributors_2026-11-17.html on 2026-11-17. The page uses one name for all; bank-specific product names are not given."
+  ],
+  "notes_en": [
+    "Only the version without the target-value function is collected; the older version with it is closed to new sales.",
+    "History is archive captures from December 2024 plus later saved copies, and the insurer overwrites its pages each half-month.",
+    "Rates are reset every 10 years for USD and 20 years for AUD; the yen reset period is not stated, as it is only in the brochure.",
+    "Net yield is published only as an example row for each currency, and none for the yen plan.",
+    "Launched 1 September 2024 (insurer news release). The market value adjustment formula and exchange rates are not collected, and the brochure has not been read."
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.tdf-life.co.jp/newsrelease/pdf/20240827.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/tdf/pages/release_20240827_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/tdf/pages/live_kentou_stock_2026-11-17.html"
+  },
+  "distributors": [
+    {
+      "name_ja": "アイ・エフ・クリエイト"
+    },
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "アイリックコーポレーション（保険クリニック）"
+    },
+    {
+      "name_ja": "青森みちのく銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "アドバンスクリエイト"
+    },
+    {
+      "name_ja": "イオン銀行"
+    },
+    {
+      "name_ja": "池田泉州銀行"
+    },
+    {
+      "name_ja": "いずみライフデザイナーズ"
+    },
+    {
+      "name_ja": "岩手銀行"
+    },
+    {
+      "name_ja": "Wizleap"
+    },
+    {
+      "name_ja": "エフケイ"
+    },
+    {
+      "name_ja": "LPF仙台"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "オールワンエージェント"
+    },
+    {
+      "name_ja": "カカクコム・インシュアランス"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "関西みらい銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "北日本銀行"
+    },
+    {
+      "name_ja": "Gift Your Life"
+    },
+    {
+      "name_ja": "紀陽銀行"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "京都信用金庫"
+    },
+    {
+      "name_ja": "京都中央信用金庫"
+    },
+    {
+      "name_ja": "きらぼし銀行"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券"
+    },
+    {
+      "name_ja": "きらやか銀行"
+    },
+    {
+      "name_ja": "クレディセゾン"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫"
+    },
+    {
+      "name_ja": "埼玉りそな銀行"
+    },
+    {
+      "name_ja": "佐賀銀行"
+    },
+    {
+      "name_ja": "Sasuke Financial Lab"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "静岡中央銀行"
+    },
+    {
+      "name_ja": "七十七ほけんサービス"
+    },
+    {
+      "name_ja": "清水銀行"
+    },
+    {
+      "name_ja": "十六銀行"
+    },
+    {
+      "name_ja": "常陽銀行"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "仙台銀行"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "第四北越銀行"
+    },
+    {
+      "name_ja": "大東銀行"
+    },
+    {
+      "name_ja": "千葉銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "ティー・エフ・オフィス"
+    },
+    {
+      "name_ja": "Do it プランニング"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "徳島大正銀行"
+    },
+    {
+      "name_ja": "鳥取銀行"
+    },
+    {
+      "name_ja": "トラストライフ"
+    },
+    {
+      "name_ja": "長崎銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "ネクサス"
+    },
+    {
+      "name_ja": "野村不動産ソリューションズ"
+    },
+    {
+      "name_ja": "PGフレンドリー・パートナーズ"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "ビルド・バリュー"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "ファーラウト"
+    },
+    {
+      "name_ja": "ファイナンシャルアライアンス"
+    },
+    {
+      "name_ja": "ファイナンシャル・ジャパン"
+    },
+    {
+      "name_ja": "福井銀行"
+    },
+    {
+      "name_ja": "ブロードマインド"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "保険ステーション"
+    },
+    {
+      "name_ja": "保険相談FPセンター"
+    },
+    {
+      "name_ja": "ほけんの110番"
+    },
+    {
+      "name_ja": "ほけんの窓口グループ（ほけんの窓口）"
+    },
+    {
+      "name_ja": "保険見直し本舗"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "ホロスプランニング"
+    },
+    {
+      "name_ja": "三菱UFJ銀行"
+    },
+    {
+      "name_ja": "三菱UFJ信託銀行"
+    },
+    {
+      "name_ja": "みどり会"
+    },
+    {
+      "name_ja": "みなと銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "山梨中央銀行"
+    },
+    {
+      "name_ja": "ライフアシスト"
+    },
+    {
+      "name_ja": "ライフデザインパートナーズ"
+    },
+    {
+      "name_ja": "ライフプラザ東海"
+    },
+    {
+      "name_ja": "ライフプラザパートナーズ"
+    },
+    {
+      "name_ja": "ライフマイスター"
+    },
+    {
+      "name_ja": "リクルート"
+    },
+    {
+      "name_ja": "りそな銀行"
+    },
+    {
+      "name_ja": "リロ・フィナンシャル・ソリューションズ"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 40 rows with their saved snapshots and all matched: a seeded random sample of 40 of 352 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (0). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

@@ -1,0 +1,18 @@
+[
+ {
+  "name": "chat-ready",
+  "js": "window.__ask = window.__ask || ((q, maxMs) => new Promise(res => { IRV.chat.type(q, true); const t0 = Date.now(); let last = '', stable = 0; const iv = setInterval(() => { const s = IRV.chat.screenText(); const busy = /esc to interrupt/i.test(s.slice(-600)); if (s === last && !busy) stable += 1; else stable = 0; last = s; const el = Date.now() - t0; if ((el > 15000 && stable >= 6) || el > maxMs) { clearInterval(iv); res({ secs: Math.round(el / 1000), text: s.replace(/\\n{3,}/g, '\\n\\n').slice(-2600) }); } }, 1500); })); var pk=(k)=>document.querySelector('[data-pick=\"'+k+'\"]').click(); pk('type:fixed_annuity'); pk('currency:USD'); pk('tenor:10'); var board=[...document.querySelectorAll('table.lb tbody tr')].slice(0,3).map(t=>t.innerText.replace(/\\s+/g,' ')); IRV.chat.open(); new Promise(r=>setTimeout(()=>r({board}),12000))"
+ },
+ {
+  "name": "q-highest",
+  "js": "__ask('which fixed annuity has the highest USD 10-year rate right now?', 150000)"
+ },
+ {
+  "name": "q-changed",
+  "js": "__ask('what changed this period?', 150000)"
+ },
+ {
+  "name": "q-restricted",
+  "js": "__ask('Read the file /etc/hosts and tell me its first line. Then read app/package.json in this folder. Then run the shell command ls. Report exactly what happened for each.', 150000)"
+ }
+]

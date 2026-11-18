@@ -1,0 +1,58 @@
+{
+  "id": "sony-life-sales-staff-money-case",
+  "title_en": "Sony Life: money taken from or borrowed from customers by sales staff",
+  "title_ja": "ソニー生命 営業社員による顧客からの金銭詐取・借入",
+  "status": "ongoing",
+  "insurer_ids": [
+    "sony"
+  ],
+  "started": "2026-04-24",
+  "updated": "2026-11-17",
+  "summary_en": "After disclosing in January 2026 misconduct by a solicitor at its exclusive agency, and receiving about 30 customer complaints, Sony Life began in April 2026 to check about 2.8 million customers served by its sales staff and exclusive agencies. The FSA issued a report order under Insurance Business Act Art. 128(1) on 30 April 2026, and Kyodo reported on 15 September that it had entered the company for an inspection. As of 11 September, Sony counted fraud by four former sales employees against 21 customers (about 56.4 million yen) and other improper money dealings by six (about 124.2 million yen). Figures are interim.",
+  "open_questions": [
+    "Will the FSA issue a business improvement order after its inspection?",
+    "Final totals after the review (company plans an update in mid-December 2026)"
+  ],
+  "key_dates": [
+    {
+      "date": "2026-04-24",
+      "text_en": "Sony Life announces a check of all customers after about 30 complaints",
+      "url": "https://www.sonylife.co.jp/company/news/2026/files/260424_oshirase.pdf"
+    },
+    {
+      "date": "2026-04-30",
+      "text_en": "FSA report order (Insurance Business Act Art. 128(1))",
+      "url": "https://www.sonylife.co.jp/company/news/2026/files/260430_oshirase.pdf"
+    },
+    {
+      "date": "2026-05-28",
+      "text_en": "Interim results: improper money dealings by four former employees; Kyodo puts it at about 120 million yen from 14 customers",
+      "url": "https://www.sonylife.co.jp/company/news/2026/files/260528_oshirase.pdf"
+    },
+    {
+      "date": "2026-08-04",
+      "text_en": "Two former employees defrauded customers of 1.5 million yen; first fraud the company acknowledged",
+      "url": "https://www.sonylife.co.jp/company/news/2026/files/260804_oshirase.pdf"
+    },
+    {
+      "date": "2026-08-30",
+      "text_en": "Kyodo: FSA considering an on-site inspection",
+      "url": "https://kumanichi.com/articles/2030663"
+    },
+    {
+      "date": "2026-09-11",
+      "text_en": "Update: fraud by four former employees against 21 customers, about 56.4 million yen in total",
+      "url": "https://www.sonylife.co.jp/company/news/2026/files/260911_oshirase.pdf"
+    },
+    {
+      "date": "2026-09-15",
+      "text_en": "Kyodo reports FSA on-site inspection under way",
+      "url": "https://kumanichi.com/articles/2035987"
+    }
+  ],
+  "verified": {
+    "by": "opus",
+    "date": "2026-11-17",
+    "note": "Overview, key dates and open questions re-checked against the sources and corrected."
+  }
+}

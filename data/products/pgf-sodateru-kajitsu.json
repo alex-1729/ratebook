@@ -1,0 +1,151 @@
+{
+  "id": "pgf-sodateru-kajitsu",
+  "insurer_id": "pgf",
+  "candidate": true,
+  "name_ja": "そだてる果実＜一時払＞",
+  "name_en": "Sodateru Kajitsu (single premium)",
+  "name_short_en": "Sodateru Kajitsu",
+  "policy_name_ja": "米国ドル建個人年金保険（指数連動・上限率設定型）保険料一時払の契約に関する特則付（無配当）",
+  "category": "fixed_indexed_annuity",
+  "product_type": "indexed_annuity",
+  "subtype": "capped_index_linked_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD"
+  ],
+  "has_mva": null,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/pgf/pages/live_product_sdia_2026-11-17.html"
+  },
+  "guarantee_terms_years": null,
+  "rate_page": "cap_current",
+  "metrics": {
+    "cap_rate": "上限率",
+    "reference_yield": "参照運用利回り"
+  },
+  "editions": [
+    {
+      "name_ja": "そだてる果実＜一時払＞",
+      "name_en": "Sodateru Kajitsu (single premium)",
+      "distributor_group": "general agencies (product page sdia/general2)",
+      "site_code": "sdia/general2"
+    },
+    {
+      "name_ja": "そだてる年金ＵＳ＜一時払＞",
+      "name_en": "Sodateru Nenkin US (single premium)",
+      "distributor_group": "general agencies (product page sdia/general)",
+      "site_code": "sdia/general"
+    },
+    {
+      "name_ja": "そだてる年金ＵＳ＜一時払＞（その他代理店）",
+      "name_en": "Sodateru Nenkin US (single premium), other agencies",
+      "distributor_group": "other agencies",
+      "site_code": "sdia/agent"
+    }
+  ],
+  "notes": [
+    "Index-linked USD annuity, reference index S&P 500. 上限率 (cap) and 参照運用利回り (reference yield) are set per 運用対象期間 of 1 year; the first period's values are fixed on the contract date (1st of the month after the company's responsibility starts), later ones on each annual anniversary. effective_date is the 契約応当日 shown on the page; term_years is blank (annual period). The page says 上限率 is set from the 参照運用利回り after deducting 0.5% (contract maintenance, deferral and payout) and 0.1% (surrender value, deferral).",
+    "The page's 参照指数が運用対象期間で上昇・下落した率 (index return) and 積立金上昇率 columns are populated only after the period ends (one year after the anniversary); every row visible on 2026-11-17 was blank, so no participation or fund-growth figures are stored. No participation rate is published; the product is cap-only. They would appear in later snapshots, and the 上限率・積立金上昇率（ご契約者さま） page (01-2.html) is a year/month search form that was not submitted.",
+    "The page shows only 2026 anniversaries (2026-01-01 to 2026-11-01, 11 rows) under 直近のご契約に適用された上限率; its year selector offers only 2026. No history before 2026-01 is on the site. Monthly series, so a later run on a saved snapshot adds the 2026-12-01 value, etc.",
+    "The rate fragment (/hpcms/Fxrate2000.do) refuses scripts (bot protection); the table was read in the built-in browser pane on 2026-11-17 and saved to sources/pgf/pages/sdia_limit_rate_2026-11-17.html (the rendered table). scripts/pgf.py parses it and does not bypass the protection.",
+    "Reference index page (sdia/02.html) shows S&P 500 on 2026-11-16 at 7,416.59 and a historical-index search; index levels are not collected (licensed data, redistribution restricted by the page).",
+    "Capture dates: current page footer PGF-J-2025-424 (2025.12.1); product page footer PGF-J-2025-417 (2025.12.1).",
+    "guarantee_terms_years is null: the deferral period (据置期間) and any guarantee term were not established. The 1-year figure the collector first recorded here is the 運用対象期間 over which each cap applies, not a guarantee term. Checked 2026-11-17 by an independent agent: all 22 points match the snapshot and the live page; edition names (full-width ＵＳ as on the page), policy name and cost deductions are saved as page text in sources/pgf/pages/pagetext_sdia_01-1_2026-11-17.txt, which also records the S&P 500® reference index from sdia/02.html.",
+    "Documents (2026-11-17): the product page's 契約概要／注意喚起情報 tab and Web約款 link are filled from the insurer's public JSON (/assets/json/product/onsale/detail-list.json, entry id 45, and /assets/json/weby/detail-list.json, web_id 2811), saved under sources/pgf/pages/. They give the 契約概要／注意喚起情報 PDF /st/products/sdia/general2/pdf/01.pdf (agencies 静岡銀行・名古屋銀行・山梨中央銀行; product number PGF-J-2026-152（2026.4.1）) and the Web約款 page /weby/2811.html (contracts from 2026/04/01, PGF-J-2026-118（2026.4.1）; the April 2026 edition is taken from that list, the document itself was not seen). Both answered a single plain request with the site's bot-protection page ('Pardon Our Interruption'), not the document; not worked around. The Wayback Machine has no capture of either URL (CDX checked 2026-11-17). No brochure PDF is listed: the JSON gives only a thumbnail image (pamphlet1_url). The sibling edition そだてる年金ＵＳ＜一時払＞ has its own 契約概要 PDF (/st/products/sdia/general/pdf/01.pdf, not fetched) and shares Web約款 2811.",
+    "has_mva is null: not established (the 契約概要／注意喚起情報 PDF was downloaded 2026-11-17 but not read for surrender rules). on_sale_date is null: no insurer release or page gives a launch date.",
+    "Distributors: 静岡銀行, 名古屋銀行, 山梨中央銀行, from the agency list of entry id 45 (そだてる果実＜一時払＞) in the insurer's published product JSON (sources/pgf/pages/onsale_detail-list_2026-11-17.json, retrieved 2026-11-17), which matches the 販売代理店 section of the product page. Documents: the 契約概要／注意喚起情報 PDF was downloaded 2026-11-17 (the earlier refusal no longer occurs); the Web約款 link is an HTML page, not a PDF.",
+    "Launch date check 2026-11-17: 山梨中央銀行's notice of 2026-01-30 gives 「１．取扱開始日 2月2日（月）」 (2026-02-02, snapshot sources/pgf/pages/release_pgf-sodateru-kajitsu_20260130_yamanashibank_2026-11-17.pdf). That is one bank's start, not the product's: the cap and reference-yield series on file already have a 2026-01-01 row, 静岡銀行 and 名古屋銀行 also sell it, and the same form is sold as そだてる年金ＵＳ＜一時払＞. Not adopted as on_sale_date."
+  ],
+  "notes_en": [
+    "Index-linked USD annuity tracking the S&P 500, with an annual cap rate; no participation rate is published.",
+    "Only 2026 history is available, with eleven monthly values from January to November 2026.",
+    "Index returns and fund growth figures are blank until a year after each anniversary, so none are held; index levels are not collected.",
+    "The contract summary and web policy conditions are listed with their links but were not downloaded, because the insurer's site blocked the request and no archived copy exists; no brochure PDF is published online.",
+    "Launch date and guarantee period are not established, and the market value adjustment terms have not been read."
+  ],
+  "pages": [
+    {
+      "name": "cap_current",
+      "url": "https://www.pgf-life.co.jp/st/products/sdia/01-1.html"
+    },
+    {
+      "name": "cap_contractor",
+      "url": "https://www.pgf-life.co.jp/st/products/sdia/01-2.html"
+    },
+    {
+      "name": "index",
+      "url": "https://www.pgf-life.co.jp/st/products/sdia/02.html"
+    },
+    {
+      "name": "product",
+      "url": "https://www.pgf-life.co.jp/st/products/sdia/general2/"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.pgf-life.co.jp/st/products/shoriritsu.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "cap_rate",
+      "plan": "single",
+      "plan_ja": "一時払（特則付）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-sodateru-kajitsu__cap_rate__single.csv",
+      "plan_en": "Single premium"
+    },
+    {
+      "metric": "reference_yield",
+      "plan": "single",
+      "plan_ja": "一時払（特則付）",
+      "currencies": [
+        "USD"
+      ],
+      "csv": "pgf-sodateru-kajitsu__reference_yield__single.csv",
+      "plan_en": "Single premium"
+    }
+  ],
+  "documents": [
+    {
+      "name": "attention_contract_summary",
+      "title_ja": "契約概要／注意喚起情報",
+      "variant": "general",
+      "url": "https://www.pgf-life.co.jp/st/products/sdia/general2/pdf/01.pdf",
+      "title_en": "Contract summary and important information"
+    },
+    {
+      "name": "policy_conditions_web",
+      "title_ja": "Web約款（そだてる果実＜一時払＞ 2026年4月1日以降のご契約）",
+      "variant": "general",
+      "url": "https://www.pgf-life.co.jp/weby/2811.html",
+      "title_en": "Policy conditions, web edition (HTML page, not a PDF)",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "山梨中央銀行"
+    }
+  ],
+  "rate_period": {
+    "type": "monthly",
+    "note": "Index caps are set monthly."
+  },
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:pgf-sodateru-kajitsu; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

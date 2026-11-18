@@ -1,0 +1,232 @@
+{
+  "id": "dfl-premier-journey",
+  "insurer_id": "dfl",
+  "candidate": true,
+  "name_ja": "プレミアジャーニー",
+  "name_en": "Premier Journey",
+  "policy_name_ja": "積立利率変動型個人年金保険（21）（通貨指定型）",
+  "category": "fixed_indexed_annuity",
+  "product_type": "indexed_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": null,
+  "off_sale_date": null,
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/dfl/pages/live_products_index_2026-11-17.html"
+  },
+  "site_product_code": "191",
+  "guarantee_terms_years": [
+    5,
+    10
+  ],
+  "editions": [
+    {
+      "name_ja": "プレミアハーベスト",
+      "name_en": "Premier Harvest",
+      "site_product_code": "189",
+      "distributor_group": "静岡銀行、山梨中央銀行",
+      "distributors": [
+        {
+          "name_ja": "静岡銀行"
+        },
+        {
+          "name_ja": "山梨中央銀行"
+        }
+      ]
+    },
+    {
+      "name_ja": "安心道しるべ",
+      "name_en": "Anshin Michishirube",
+      "site_product_code": "188",
+      "distributor_group": "関西みらい銀行、埼玉りそな銀行、みなと銀行、りそな銀行",
+      "distributors": [
+        {
+          "name_ja": "関西みらい銀行"
+        },
+        {
+          "name_ja": "埼玉りそな銀行"
+        },
+        {
+          "name_ja": "みなと銀行"
+        },
+        {
+          "name_ja": "りそな銀行"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Shares rate page index_hendo_choice_21 (param hendo_choice_21_02) with プレミアハーベスト (189); the hub labels the page 'プレミアジャーニー・プレミアハーベスト'. 安心道しるべ (188) links to the same page with ?product=188; the history table fetched with product=188 is byte-identical to the one without, so it is recorded as an edition. History from 2021-09-01. USD and JPY only.",
+    "Product type indexed_annuity (changed from fixed_annuity on 2026-11-17). The saved brochure (brochure_PremierJourney_hanyo, sources/dfl/docs/) shows the (21) form is index-linked: at the end of the 積立利率保証期間 the 年金原資額 is the 基本移行原資額 (fixed by the contract-date 積立利率, never below 100% of the premium) plus an 指数連動移行原資額 = premium x rise of the 参照指数 since the 基準日 x 連動率 (zero if the index has not risen). The rate page publishes only the 積立利率 by currency and 5/10-year guarantee period, which is what the CSVs hold; the 連動率 and index values are not collected.",
+    "The distributors list is the 銀行・信用金庫・信用組合・証券 section of the product page.",
+    "Launch date not established (left null): the insurer's release index 2008-2026 (read 2026-11-17) contains no release for 『プレミアジャーニー』. Its formal name 積立利率変動型個人年金保険（21）（通貨指定型）is shared with 『安心道しるべ』 (Resona, from 2021-09-01, release id=991, snapshot sources/dfl/pages/release_991_2026-11-17.pdf), but that is a different marketed name and is not taken as this product's date.",
+    "Launch date search 2026-11-17 (second pass): DFL release lists 2019-2026 (titles) and the bodies of saved release PDFs ids 989-1083; two web searches for プレミアジャーニー 発売 / 取扱開始, including bank and shinkin notices. Nothing names プレミアジャーニー; still null."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 September 2021 and covers USD and JPY with 5 and 10-year guarantee periods.",
+    "Premier Harvest and Anshin Michishirube share the same rates and are treated as editions.",
+    "Classed as an indexed annuity: per the brochure, at the end of the guarantee period a fixed amount of at least the premium is topped up by the rise in a reference index. The published rate is the fixed crediting rate; the index participation is not collected.",
+    "Launch date not established; the history start may be later than the launch."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "mva_rate": "市場価格調整用利率"
+  },
+  "pages": [
+    {
+      "name": "product_191",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=191"
+    },
+    {
+      "name": "rate_hendo_choice_21_02",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_21.html"
+    },
+    {
+      "name": "mva_hendo_choice_21_b",
+      "url": "https://www.d-frontier-life.co.jp/products/index_hendo_choice_21_b.html?product=&agency="
+    },
+    {
+      "name": "product_189",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=189"
+    },
+    {
+      "name": "product_188",
+      "url": "https://www.d-frontier-life.co.jp/products/product.html?product=188"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "hendo_choice_21_02",
+      "csv": "dfl-premier-journey__crediting_rate__standard.csv",
+      "plan_en": "Standard"
+    },
+    {
+      "metric": "mva_rate",
+      "plan": "standard",
+      "plan_ja": "（プラン区分なし）",
+      "param": "hendo_choice_21_b",
+      "csv": "dfl-premier-journey__mva_rate__standard.csv",
+      "plan_en": "Standard"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_PremierJourney_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierJourney/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Journey)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_03584",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/03584.pdf",
+      "title_en": "Policy guide and conditions (Premier Journey)"
+    },
+    {
+      "name": "brochure_PremierHarvest_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/PremierHarvest/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Premier Harvest)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_03564",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/03564.pdf",
+      "title_en": "Policy guide and conditions (Premier Harvest)"
+    },
+    {
+      "name": "brochure_Anshinmichisirube_hanyo",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット",
+      "variant": "hanyo",
+      "url": "https://www.d-frontier-life.co.jp/products/Anshinmichisirube/hanyo/hanyo.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Anshin Michishirube)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_03464",
+      "title_ja": "ご契約のしおり・約款",
+      "variant": "general",
+      "url": "https://www.d-frontier-life.co.jp/customer/webyakkan/03464.pdf",
+      "title_en": "Policy guide and conditions (Anshin Michishirube)"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "尼崎信用金庫"
+    },
+    {
+      "name_ja": "おかやま信用金庫"
+    },
+    {
+      "name_ja": "鹿児島銀行"
+    },
+    {
+      "name_ja": "神奈川銀行"
+    },
+    {
+      "name_ja": "岐阜信用金庫"
+    },
+    {
+      "name_ja": "群馬銀行"
+    },
+    {
+      "name_ja": "荘内銀行"
+    },
+    {
+      "name_ja": "静清信用金庫"
+    },
+    {
+      "name_ja": "大光銀行"
+    },
+    {
+      "name_ja": "大東銀行"
+    },
+    {
+      "name_ja": "多摩信用金庫"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "東和銀行"
+    },
+    {
+      "name_ja": "肥後銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "百十四銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "北都銀行"
+    },
+    {
+      "name_ja": "宮崎太陽銀行"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 124 rows with their saved snapshots and all matched: a seeded random sample of 100 of 988 published rows (10% of each rate CSV, at least 20), every outlier (4: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (20). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

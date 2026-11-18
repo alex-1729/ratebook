@@ -1,0 +1,22 @@
+{
+  "id": "fukokushinrai",
+  "name_ja": "フコクしんらい生命保険株式会社",
+  "name_en": "Fukoku Shinrai Life",
+  "news_tier": "full",
+  "group": "fukoku",
+  "site": "https://www.fukokushinrai.co.jp/",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.fukokushinrai.co.jp/company/news/"
+    },
+    {
+      "key": "notice",
+      "label": "Notices and topics",
+      "kind": "official",
+      "url": "https://www.fukokushinrai.co.jp/company/topics/"
+    }
+  ]
+}

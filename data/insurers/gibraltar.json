@@ -1,0 +1,34 @@
+{
+  "id": "gibraltar",
+  "name_ja": "ジブラルタ生命保険株式会社",
+  "name_en": "Gibraltar Life",
+  "news_tier": "full",
+  "group": "prudential",
+  "site": "https://www.gib-life.co.jp/",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.gib-life.co.jp/st/about/news/",
+      "archive_url": "https://www.gib-life.co.jp/st/about/news/{year}/"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.gib-life.co.jp/st/about/notice/",
+      "archive_url": "https://www.gib-life.co.jp/st/about/notice/{year}/",
+      "parser": "gibraltar:parse"
+    },
+    {
+      "key": "important",
+      "label": "Important notices",
+      "kind": "official",
+      "url": "https://www.gib-life.co.jp/st/important_notices/",
+      "parser": "gibraltar:parse"
+    }
+  ],
+  "access": "restricted",
+  "access_note": "Lists read normally at first, then an Imperva bot challenge (HTTP 200 with a 'Pardon Our Interruption' page) took over after about 15 requests and was still in place 10 minutes later; no workaround attempted. Retry later at a slow pace. The generic reader works for /st/about/news/ and its /{year}/ archives; scripts/news_sites/gibraltar.py reads the undated notice lists."
+}

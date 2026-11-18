@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 476" width="760" height="476" role="img" aria-label="USD crediting rate spread over UST 10Y">
+<style>svg{font:12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif}.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.grid{stroke:#e4e3df;stroke-width:1}.zero{stroke:#8a8983;stroke-width:1}.s0{stroke:#2a78d6}.f0{fill:#2a78d6}.s1{stroke:#eb6834}.f1{fill:#eb6834}.s2{stroke:#1baf7a}.f2{fill:#1baf7a}.s3{stroke:#eda100}.f3{fill:#eda100}.s4{stroke:#e87ba4}.f4{fill:#e87ba4}.s5{stroke:#008300}.f5{fill:#008300} @media (prefers-color-scheme: dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#34332f}.zero{stroke:#8f8e86}.s0{stroke:#3987e5}.f0{fill:#3987e5}.s1{stroke:#d95926}.f1{fill:#d95926}.s2{stroke:#199e70}.f2{fill:#199e70}.s3{stroke:#c98500}.f3{fill:#c98500}.s4{stroke:#d55181}.f4{fill:#d55181}.s5{stroke:#008300}.f5{fill:#008300}}</style>
+<rect class="bg" width="100%" height="100%" rx="6"/>
+<text class="t1" x="56" y="20" font-weight="600" font-size="14">USD crediting rate spread over UST 10Y</text>
+<text class="t2" x="56" y="36">bp, crediting rate − par yield on the effective date</text>
+<line class="grid" x1="56" x2="744" y1="320.0" y2="320.0"/>
+<text class="t2" x="50" y="324.0" text-anchor="end">-150</text>
+<line class="grid" x1="56" x2="744" y1="265.6" y2="265.6"/>
+<text class="t2" x="50" y="269.6" text-anchor="end">-100</text>
+<line class="grid" x1="56" x2="744" y1="211.2" y2="211.2"/>
+<text class="t2" x="50" y="215.2" text-anchor="end">-50</text>
+<line class="zero" x1="56" x2="744" y1="156.8" y2="156.8"/>
+<text class="t2" x="50" y="160.8" text-anchor="end">0</text>
+<line class="grid" x1="56" x2="744" y1="102.4" y2="102.4"/>
+<text class="t2" x="50" y="106.4" text-anchor="end">50</text>
+<line class="grid" x1="56" x2="744" y1="48.0" y2="48.0"/>
+<text class="t2" x="50" y="52.0" text-anchor="end">100</text>
+<text class="t2" x="12" y="184" transform="rotate(-90 12 184)" text-anchor="middle">bp</text>
+<text class="t2" x="56.0" y="338" text-anchor="middle">Jan 2019</text>
+<line class="grid" x1="56.0" x2="56.0" y1="320" y2="325"/>
+<text class="t2" x="99.1" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="99.1" x2="99.1" y1="320" y2="325"/>
+<text class="t2" x="142.9" y="338" text-anchor="middle">Jan 2020</text>
+<line class="grid" x1="142.9" x2="142.9" y1="320" y2="325"/>
+<text class="t2" x="186.2" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="186.2" x2="186.2" y1="320" y2="325"/>
+<text class="t2" x="230.0" y="338" text-anchor="middle">Jan 2021</text>
+<line class="grid" x1="230.0" x2="230.0" y1="320" y2="325"/>
+<text class="t2" x="273.0" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="273.0" x2="273.0" y1="320" y2="325"/>
+<text class="t2" x="316.8" y="338" text-anchor="middle">Jan 2022</text>
+<line class="grid" x1="316.8" x2="316.8" y1="320" y2="325"/>
+<text class="t2" x="359.9" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="359.9" x2="359.9" y1="320" y2="325"/>
+<text class="t2" x="403.7" y="338" text-anchor="middle">Jan 2023</text>
+<line class="grid" x1="403.7" x2="403.7" y1="320" y2="325"/>
+<text class="t2" x="446.8" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="446.8" x2="446.8" y1="320" y2="325"/>
+<text class="t2" x="490.6" y="338" text-anchor="middle">Jan 2024</text>
+<line class="grid" x1="490.6" x2="490.6" y1="320" y2="325"/>
+<text class="t2" x="533.9" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="533.9" x2="533.9" y1="320" y2="325"/>
+<text class="t2" x="577.7" y="338" text-anchor="middle">Jan 2025</text>
+<line class="grid" x1="577.7" x2="577.7" y1="320" y2="325"/>
+<text class="t2" x="620.7" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="620.7" x2="620.7" y1="320" y2="325"/>
+<text class="t2" x="664.5" y="338" text-anchor="middle">Jan 2026</text>
+<line class="grid" x1="664.5" x2="664.5" y1="320" y2="325"/>
+<text class="t2" x="707.6" y="338" text-anchor="middle">Jul</text>
+<line class="grid" x1="707.6" x2="707.6" y1="320" y2="325"/>
+<path class="s0" d="M287.8,185.5 H291.4 V188.8 H294.9 V204.1 H298.5 V207.5 H302.3 V198.8 H305.9 V204.3 H309.4 V182.4 H313.0 V183.5 H316.8 V192.3 H320.4 V220.8 H324.2 V182.7 H327.8 V190.5 H330.9 V151.0 H334.4 V202.7 H338.2 V195.3 H341.8 V227.5 H345.4 V189.5 H349.0 V171.1 H352.8 V177.7 H356.3 V212.0 H359.9 V149.3 H363.5 V154.7 H367.3 V131.4 H370.8 V155.7 H374.7 V204.3 H378.2 V209.0 H381.8 V209.8 H385.4 V199.2 H389.2 V160.2 H392.7 V110.5 H396.3 V130.8 H399.9 V144.8 H403.7 V189.2 H407.3 V118.7 H411.1 V129.5 H414.6 V178.2 H417.7 V162.2 H421.3 V101.5 H425.1 V114.4 H428.7 V133.0 H432.2 V124.4 H435.8 V128.6 H439.6 V118.0 H443.2 V127.0 H446.8 V131.3 H450.3 V133.6 H454.1 V166.7 H457.7 V183.6 H461.5 V162.7 H465.1 V179.3 H468.7 V201.7 H472.2 V193.2 H476.0 V170.6 H479.6 V159.0 H483.2 V155.2 H486.7 V147.9 H490.6 V187.0 H494.1 V208.0 H497.9 V185.8 H501.5 V240.1 H504.8 V217.1 H508.4 V230.3 H512.2 V216.3 H515.8 V260.7 H519.3 V245.4 H522.9 V233.8 H526.7 V248.3 H530.3 V213.8 H533.9 V236.2 H537.4 V171.3 H541.2 V157.9 H544.8 V177.3 H548.6 V186.0 H552.2 V155.0 H555.8 V184.5 H559.3 V215.6 H563.1 V232.7 H566.7 V217.6 H570.3 V179.0 H573.8 V218.6 H577.7 V228.8 H581.2 V220.2 H585.0 V216.9 H588.6 V204.7 H591.7 V178.0 H595.3 V207.5 H599.1 V158.2 H602.6 V171.6 H606.2 V150.8 H609.8 V176.3 H613.6 V165.4 H617.2 V163.3 H620.7 V146.5 H624.3 V179.6 H628.1 V137.8 H631.7 V146.7 H635.5 V135.6 H639.1 V114.5 H642.6 V150.5 H646.2 V130.7 H650.0 V154.8 H653.6 V158.2 H657.1 V147.2 H660.7 V159.3 H664.5 V162.7 H668.1 V174.8 H671.9 V176.9 H675.5 V152.6 H678.6 V161.0 H682.1 V193.2 H685.9 V171.7 H689.5 V165.2 H693.1 V189.2 H696.6 V195.2 H700.4 V178.6 H704.0 V190.4 H707.6 V185.1 H711.2 V195.1 H715.0 V209.7 H718.5 V183.5 H722.3 V195.6 H725.9 V203.9 H729.5 V207.8 H733.1 V163.9 H736.9 V166.7 H740.4 V203.1 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<path class="s1" d="M381.8,185.8 H385.4 V156.8 H389.2 V122.1 H392.7 V77.8 H396.3 V84.0 H399.9 V104.6 H403.7 V149.0 H407.3 V95.9 H411.1 V84.9 H414.6 V136.9 H417.7 V142.7 H421.3 V92.8 H425.1 V114.4 H428.7 V133.0 H432.2 V121.1 H435.8 V123.2 H439.6 V112.5 H443.2 V116.1 H446.8 V120.5 H450.3 V120.6 H454.1 V166.7 H457.7 V183.6 H461.5 V162.7 H465.1 V167.4 H468.7 V187.6 H472.2 V178.0 H476.0 V168.4 H479.6 V159.0 H483.2 V144.3 H486.7 V137.0 H490.6 V176.2 H494.1 V197.2 H497.9 V175.0 H501.5 V222.7 H504.8 V199.7 H508.4 V212.9 H512.2 V198.9 H515.8 V236.8 H519.3 V221.4 H522.9 V220.8 H526.7 V225.5 H530.3 V191.0 H533.9 V210.1 H537.4 V163.7 H541.2 V143.7 H544.8 V157.7 H548.6 V165.3 H552.2 V139.7 H555.8 V163.9 H559.3 V189.4 H563.1 V204.5 H566.7 V204.6 H570.3 V165.9 H573.8 V211.0 H577.7 V221.2 H581.2 V213.7 H585.0 V204.9 H588.6 V192.7 H591.7 V155.2 H595.3 V184.7 H599.1 V147.3 H602.6 V160.7 H606.2 V144.3 H609.8 V170.8 H613.6 V160.0 H617.2 V163.3 H620.7 V146.5 H624.3 V176.4 H628.1 V153.0 H631.7 V161.9 H635.5 V144.3 H639.1 V139.5 H642.6 V154.8 H646.2 V138.3 H650.0 V161.4 H653.6 V150.6 H657.1 V138.5 H660.7 V151.7 H664.5 V158.3 H668.1 V165.0 H671.9 V165.0 H675.5 V140.6 H678.6 V145.8 H682.1 V174.8 H685.9 V147.8 H689.5 V153.2 H693.1 V169.6 H696.6 V183.2 H700.4 V156.8 H704.0 V152.3 H707.6 V159.0 H711.2 V165.7 H715.0 V164.0 H718.5 V169.3 H722.3 V168.4 H725.9 V185.4 H729.5 V190.4 H733.1 V141.0 H736.9 V141.7 H740.4 V171.6 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<path class="s2" d="M411.1,129.5 H414.6 V178.2 H417.7 V162.2 H421.3 V101.5 H425.1 V114.4 H428.7 V133.0 H432.2 V124.4 H435.8 V128.6 H439.6 V118.0 H443.2 V127.0 H446.8 V131.3 H450.3 V133.6 H454.1 V166.7 H457.7 V183.6 H461.5 V162.7 H465.1 V179.3 H468.7 V201.7 H472.2 V193.2 H476.0 V170.6 H479.6 V159.0 H483.2 V155.2 H486.7 V147.9 H490.6 V187.0 H494.1 V208.0 H497.9 V185.8 H501.5 V240.1 H504.8 V217.1 H508.4 V230.3 H512.2 V216.3 H515.8 V260.7 H519.3 V245.4 H522.9 V233.8 H526.7 V248.3 H530.3 V213.8 H533.9 V236.2 H537.4 V171.3 H541.2 V157.9 H544.8 V177.3 H548.6 V186.0 H552.2 V155.0 H555.8 V184.5 H559.3 V215.6 H563.1 V232.7 H566.7 V217.6 H570.3 V179.0 H573.8 V218.6 H577.7 V228.8 H581.2 V220.2 H585.0 V216.9 H588.6 V204.7 H591.7 V178.0 H595.3 V207.5 H599.1 V158.2 H602.6 V171.6 H606.2 V150.8 H609.8 V176.3 H613.6 V165.4 H617.2 V163.3 H620.7 V146.5 H624.3 V179.6 H628.1 V137.8 H631.7 V146.7 H635.5 V135.6 H639.1 V114.5 H642.6 V150.5 H646.2 V130.7 H650.0 V154.8 H653.6 V158.2 H657.1 V147.2 H660.7 V159.3 H664.5 V162.7 H668.1 V174.8 H671.9 V176.9 H675.5 V152.6 H678.6 V161.0 H682.1 V193.2 H685.9 V171.7 H689.5 V165.2 H693.1 V189.2 H696.6 V195.2 H700.4 V178.6 H704.0 V190.4 H707.6 V185.1 H711.2 V195.1 H715.0 V209.7 H718.5 V183.5 H722.3 V195.6 H725.9 V203.9 H729.5 V207.8 H733.1 V163.9 H736.9 V166.7 H740.4 V203.1 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<path class="s3" d="M425.1,82.8 H428.7 V103.6 H432.2 V100.4 H435.8 V89.5 H439.6 V74.4 H443.2 V86.7 H446.8 V103.1 H450.3 V89.0 H454.1 V135.1 H457.7 V142.2 H461.5 V113.7 H465.1 V98.8 H468.7 V126.7 H472.2 V113.8 H476.0 V97.7 H479.6 V79.6 H483.2 V62.7 H486.7 V63.0 H490.6 V109.8 H494.1 V134.1 H497.9 V104.2 H501.5 V150.9 H504.8 V134.4 H508.4 V164.0 H512.2 V132.5 H515.8 V150.8 H519.3 V126.8 H522.9 V105.4 H526.7 V143.9 H530.3 V114.8 H533.9 V130.7 H537.4 V101.6 H541.2 V94.8 H544.8 V107.6 H548.6 V135.9 H552.2 V94.0 H555.8 V100.8 H559.3 V120.9 H563.1 V154.4 H566.7 V148.0 H570.3 V113.7 H573.8 V154.4 H577.7 V175.5 H581.2 V124.5 H585.0 V132.0 H588.6 V131.8 H591.7 V100.8 H595.3 V130.3 H599.1 V103.8 H602.6 V102.0 H606.2 V91.0 H609.8 V117.5 H613.6 V109.9 H617.2 V137.2 H620.7 V120.4 H624.3 V140.5 H628.1 V112.7 H631.7 V138.0 H635.5 V99.7 H639.1 V98.2 H642.6 V125.5 H646.2 V111.1 H650.0 V145.0 H653.6 V127.8 H657.1 V125.5 H660.7 V128.8 H664.5 V132.2 H668.1 V138.8 H671.9 V147.6 H675.5 V127.5 H678.6 V134.9 H682.1 V163.9 H685.9 V153.2 H689.5 V167.4 H693.1 V171.8 H696.6 V182.2 H700.4 V160.1 H704.0 V153.4 H707.6 V157.9 H711.2 V163.5 H715.0 V179.2 H718.5 V171.5 H722.3 V168.4 H725.9 V180.0 H729.5 V178.5 H733.1 V139.9 H736.9 V151.5 H740.4 V182.5 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<path class="s4" d="M443.2,130.3 H446.8 V134.6 H450.3 V136.9 H454.1 V161.3 H457.7 V186.8 H461.5 V164.9 H465.1 V170.6 H468.7 V194.1 H472.2 V191.1 H476.0 V170.6 H479.6 V113.3 H483.2 V109.5 H486.7 V75.0 H490.6 V142.4 H494.1 V196.1 H497.9 V173.9 H501.5 V205.3 H504.8 V187.7 H508.4 V206.4 H512.2 V219.6 H515.8 V252.0 H519.3 V231.2 H522.9 V187.0 H526.7 V212.4 H530.3 V177.9 H533.9 V225.3 H537.4 V201.7 H541.2 V187.3 H544.8 V176.2 H548.6 V200.1 H552.2 V185.4 H555.8 V208.5 H559.3 V244.9 H563.1 V273.0 H566.7 V279.6 H570.3 V251.9 H573.8 V275.2 H577.7 V296.3 H581.2 V277.9 H585.0 V263.6 H588.6 V267.8 H591.7 V242.2 H595.3 V266.3 H599.1 V250.7 H602.6 V264.1 H606.2 V227.0 H609.8 V247.0 H613.6 V233.9 H617.2 V239.5 H620.7 V217.2 H624.3 V244.9 H628.1 V213.9 H631.7 V225.0 H635.5 V213.9 H639.1 V192.8 H642.6 V217.9 H646.2 V203.6 H650.0 V216.9 H653.6 V231.1 H657.1 V225.6 H660.7 V232.2 H664.5 V230.1 H668.1 V236.8 H671.9 V238.9 H675.5 V214.6 H678.6 V206.7 H682.1 V235.7 H685.9 V208.7 H689.5 V223.9 H693.1 V215.3 H696.6 V237.6 H700.4 V218.8 H704.0 V214.4 H707.6 V219.9 H711.2 V246.2 H715.0 V228.2 H718.5 V209.6 H722.3 V232.6 H725.9 V246.3 H729.5 V277.5 H733.1 V190.0 H736.9 V167.8 H740.4 V198.8 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<path class="s5" d="M443.2,130.3 H446.8 V134.6 H450.3 V136.9 H454.1 V161.3 H457.7 V186.8 H461.5 V164.9 H465.1 V170.6 H468.7 V194.1 H472.2 V191.1 H476.0 V170.6 H479.6 V113.3 H483.2 V104.0 H486.7 V75.0 H490.6 V142.4 H494.1 V196.1 H497.9 V173.9 H501.5 V205.3 H504.8 V187.7 H508.4 V206.4 H512.2 V214.1 H515.8 V246.6 H519.3 V231.2 H522.9 V187.0 H526.7 V212.4 H530.3 V177.9 H533.9 V225.3 H537.4 V196.3 H541.2 V187.3 H544.8 V176.2 H548.6 V200.1 H552.2 V185.4 H555.8 V208.5 H559.3 V244.9 H563.1 V273.0 H566.7 V279.6 H570.3 V251.9 H573.8 V275.2 H577.7 V296.3 H581.2 V277.9 H585.0 V263.6 H588.6 V267.8 H591.7 V242.2 H595.3 V266.3 H599.1 V250.7 H602.6 V264.1 H606.2 V227.0 H609.8 V247.0 H613.6 V228.5 H617.2 V234.0 H620.7 V211.7 H624.3 V244.9 H628.1 V208.5 H631.7 V219.6 H635.5 V208.5 H639.1 V187.4 H642.6 V217.9 H646.2 V203.6 H650.0 V216.9 H653.6 V231.1 H657.1 V225.6 H660.7 V232.2 H664.5 V230.1 H668.1 V236.8 H671.9 V238.9 H675.5 V214.6 H678.6 V206.7 H682.1 V235.7 H685.9 V208.7 H689.5 V223.9 H693.1 V215.3 H696.6 V237.6 H700.4 V218.8 H704.0 V208.9 H707.6 V214.5 H711.2 V240.8 H715.0 V228.2 H718.5 V209.6 H722.3 V232.6 H725.9 V246.3 H729.5 V277.5 H733.1 V190.0 H736.9 V162.3 H740.4 V198.8 H744.0" fill="none" stroke-width="2" stroke-linejoin="round"/>
+<rect class="f0" x="56.0" y="368" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="374">Dai-ichi Frontier Premier Journey · Standard</text>
+<rect class="f1" x="56.0" y="386" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="392">Dai-ichi Frontier Index-Linked Annuity 2 · Standard</text>
+<rect class="f2" x="56.0" y="404" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="410">Dai-ichi Frontier Premier Road M · Standard</text>
+<rect class="f3" x="56.0" y="422" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="428">Dai-ichi Frontier Premier Currency 3 · Basic</text>
+<rect class="f4" x="56.0" y="440" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="446">Sumitomo Tanoshimi Global III (index-linked plan) · No target</text>
+<rect class="f5" x="56.0" y="458" width="14" height="4" rx="2"/>
+<text class="t1" x="76.0" y="464">Sumitomo Tanoshimi Global III (fixed-rate increase plan) · No target</text>
+</svg>

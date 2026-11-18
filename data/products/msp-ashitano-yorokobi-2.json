@@ -1,0 +1,721 @@
+{
+  "id": "msp-ashitano-yorokobi-2",
+  "insurer_id": "msp",
+  "candidate": true,
+  "name_ja": "あしたの、よろこび2",
+  "name_en": "Ashita no Yorokobi 2 (Tomorrow's Joy 2)",
+  "name_short_en": "Ashita no Yorokobi 2",
+  "policy_name_ja": "通貨選択生存保障重視型個人年金保険",
+  "category": "fixed_annuity",
+  "product_type": "fixed_annuity",
+  "subtype": "survival_weighted_annuity",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "net_yield_from": "crediting_rate",
+  "net_yield_plans": [
+    "tsumitate"
+  ],
+  "status": "on_sale",
+  "on_sale_date": "2019-09-02",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://www.ms-primary.com/news/ir/assets/pdf/20_2019_0011.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/msp/pages/release_msp-ashitano-yorokobi-2_20190830_2026-11-17.pdf"
+  },
+  "partial_withdrawals": [
+    {
+      "scope": "Product on the current lineup; cells shown as \"-\" (new business stopped): 先取・安心コース AUD and JPY ages 80-90; 満期充実コース AUD 3 yr (all 保障型) and JPY 5, 6 and 7 yr on the 70% and 50% 保障型 only (100% is published); 受取確定年金 deferral 5-9 yr with 35-yr payout and deferral 10 yr with 30- and 35-yr payout, in all three currencies.",
+      "quote": "※積立利率に「-」で表示されている場合は、現在新規のお取扱いを停止しています。",
+      "source": {
+        "url": "https://msp.ms-primary.com/g/RateList.do?product_id=61",
+        "retrieved": "2026-11-17",
+        "snapshot": "sources/msp/pages/live_ratelist_61_2026-11-17.html"
+      },
+      "last_rate_period": null
+    }
+  ],
+  "guarantee_terms_years": [
+    3,
+    5,
+    6,
+    7,
+    10,
+    15,
+    20
+  ],
+  "site_product_code": "61",
+  "notes": [
+    "The live rate server msp.ms-primary.com (RateList.do?product_id=61) times out from the usual network (connect timeout, as for MAREⅢ). Rate history comes from Wayback captures (the CDX list for this URL held only the two captures of 2026-03-07 and 2026-08-08, via_wayback=true) plus a copy of the live page saved on 2026-11-17 from a network that reaches the server (sources/msp/rates/ratelist_61_2026-11-17.html, via_wayback=false), which covers the window 2026-11-09 to 2026-11-22; each new two-week window needs a live run from a network that reaches the server or `python3 scripts/msp.py --only msp-ashitano-yorokobi-2 --file <saved page> --retrieved <date>`.",
+    "積立利率 changes every two weeks: each value applies to contracts dated in a Monday-to-Sunday two-week window (e.g. 2026-08-03 to 2026-08-16 in the capture). effective_date is the first day of the window; the page also applies the rate to renewal (更改日) dates of the 継続プラン. Rates between captures are not interpolated.",
+    "The rate page has five tables over four courses. Mapping (changed 2026-11-17; earlier files kept the extra dimensions in age_band as key=value text, and 確定年金 had the payout period in term_years): term_years is only the 据置期間 (deferral, the tenor) where the page gives one number of years, and blank where it gives a band (0～4年, 1～4年, 5～9年); age_band is only the 契約年齢 band. Plans: ukedori_shushin_def0-4 / def5-9 / def10 (受取重視コース, 死亡時保証100％型/80％型/なし型終身年金, one rate set for all three; age_band 50-69 etc.); ukedori_kakutei_def<band>_pay<15-35> (受取重視コース 確定年金, by deferral band and 年金支払期間); sakidori_anshin (先取・安心コース, age_band 50-69 etc., term_years blank); mankiki_jujitsu_g100 / g70 / g50 (満期充実コース by 保障率, term_years = 据置期間 3-20); tsumitate (積立コース, term_years = 据置期間). plan_base names the course table each plan comes from. Currencies USD, AUD, JPY only (no EUR or NZD).",
+    "'-' on the page is stored as status not_offered (the page note says new business is currently stopped for those cells, e.g. AUD and JPY at age 80-90 on 先取・安心コース, AUD 3 years on 満期充実コース, and 確定年金 combinations beyond age limits). Rows the page does not show at all (e.g. JPY on 積立コース, AUD 15 years) are absent from the CSV.",
+    "The page's tables are malformed HTML (row start tags missing), so the collector reads each table's cells as an ordered stream and rejects any layout it does not recognise. The Wayback capture of 2026-03-07 returned a Wayback block page ('suspected abusive bot traffic') on one early attempt; the collector now waits and retries on that page and never saves it, and the capture was read on a later run.",
+    "FX tables (円入金特約 / 円支払特約) on the rate page are not collected.",
+    "Page footer shows the form code MSPL-2610-B-0163-00. The agency page lists 64 distributors (banks, shinkin banks, securities firms and agencies; refreshed with --agents); no distributor-specific editions are named.",
+    "The product page offers two brochure editions: a 4-course edition (受取重視, 先取・安心, 満期充実, 積立; with and without 目標設定) and a 2-course edition (brochure_02.pdf, policy conditions MSPL-2604-A-0018-00). The brochures were downloaded on 2026-11-17 (sources/msp/docs/msp-ashitano-yorokobi-2/). The 2-course edition carries the 受取重視 and 満期充実 courses (its 契約概要 pages are tabbed 受取重視コース and 満期充実コース); whether it shares this rate page was not established. The page says some distributors differ from the brochure; ask the distributor. Policy-conditions files are listed in the page order (4-course with target 0020, without target 0019, 2-course 0018); the pairing with the brochures is inferred from that order.",
+    "Initial charges per the product page (percent of the single premium; foreign currency / JPY): 受取重視 and 先取・安心 5% / 3% for any deferral; 満期充実 by deferral 3y 2% / -, 5y 3% / 0.5%, 6y 3.5% / 0.6%, 7y 4% / 0.7%, 10y and 15y 5% / 1%, 20y - / 1%; 積立 none. 積立コース only: surrender charge 6.0% to 0.6% applied to the market-adjusted value; 満期充実コース 70％ and 50％ guarantee types have no market adjustment. Annuity management fee up to 1% of the annuity. Currency conversion TTM+50銭 (円入金), TTM-50銭 (円支払).",
+    "Product page snapshots saved with scripts/msp.py (www.ms-primary.com answers urllib).",
+    "Net yield (brochures saved 2026-11-17, read for this point only on 2026-11-17): in both 4-course editions the 積立コース 契約概要 (PDF p.28, section starting p.27) says the 積立利率 is the same as the 実質的な利回り (annual compound) of the annuity fund at the annuity start date on the single premium, so net_yield_plans lists tsumitate only. The 受取重視コース (p.19: differs from the yield of the surrender value at the end of deferral), 先取・安心コース (p.22) and 満期充実コース (p.25) each say the 積立利率 differs from the 実質的な利回り, because initial and death-benefit costs are deducted. The 2-course edition (pp.23 and 26, 受取重視 and 満期充実) says the same 'differs'.",
+    "Launch date: 2019-09-02, from MS Primary's release of 2019-08-30: 『あしたの、よろこび２』 (通貨選択生存保障重視型個人年金保険) 「２０１９年９月２日から、以下の５８金融機関において」. In 2019 it had four courses (受取重視/先取・安心/満期充実/ターゲット); today's page shows 積立コース instead of ターゲット, a revision of the same product. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history is two archived captures (March and August 2026) and one live copy (the window from 9 November 2026), so most two-week windows are missing.",
+    "The insurer's rate server only answers from some networks, so each new window needs a saved copy of the page.",
+    "Rates are set for two-week windows starting on a Monday, across four courses in USD, AUD and JPY.",
+    "Plans are split by deferral, payout period and death-cover level where the page does; deferrals given only as a band (for example 1 to 4 years) have no single tenor and appear on no tenor board.",
+    "The shorter two-course edition carries the Income (受取重視) and Maturity-focused (満期充実) courses; whether it shares these rates is not established.",
+    "The latest rate held is for the window 9 to 22 November 2026, from a live copy saved on 17 November; after that window the product drops off current-rate boards until a newer copy is saved.",
+    "Net yield: for the Accumulation course the brochure says the crediting rate equals the net yield, so that rate stands in for it. The other three courses publish no net yield; the brochure says theirs differs from the crediting rate.",
+    "Launched 2 September 2019 (insurer's release); the course line-up has been revised since. Exchange rates are not collected, and the brochures have been read only for the net-yield point.",
+    "Some course, currency and term cells are closed to new business (shown as a dash on the rate page); the product stays on sale."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率"
+  },
+  "pages": [
+    {
+      "name": "product_ashitano_yorokobi2",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/"
+    },
+    {
+      "name": "rate_hub",
+      "url": "https://www.ms-primary.com/customer/rate/"
+    },
+    {
+      "name": "rate_index",
+      "url": "https://msp.ms-primary.com/g/Rate.do"
+    }
+  ],
+  "agent_page": "https://www.ms-primary.com/products/product_agent/",
+  "rate_source": {
+    "name": "ratelist_61",
+    "live_url": "https://msp.ms-primary.com/g/RateList.do?product_id=61",
+    "cdx_url": "msp.ms-primary.com/g/RateList.do?product_id=61"
+  },
+  "rate_parser": "ashitano_yorokobi2",
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_shushin_def0-4",
+      "plan_ja": "受取重視コース（終身年金）据置期間0～4年",
+      "course_ja": "受取重視コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "ukedori_shushin",
+      "plan_en": "Income, life annuity, 0–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_shushin_def0-4.csv",
+      "points": 18,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_shushin_def5-9",
+      "plan_ja": "受取重視コース（終身年金）据置期間5～9年",
+      "course_ja": "受取重視コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "ukedori_shushin",
+      "plan_en": "Income, life annuity, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_shushin_def5-9.csv",
+      "points": 18,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_shushin_def10",
+      "plan_ja": "受取重視コース（終身年金）据置期間10年",
+      "course_ja": "受取重視コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "ukedori_shushin",
+      "plan_en": "Income, life annuity, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_shushin_def10.csv",
+      "points": 18,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def1-4_pay15",
+      "plan_ja": "受取重視コース（確定年金）据置期間1～4年・年金支払期間15年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 15y payout, 1–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def1-4_pay15.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def1-4_pay20",
+      "plan_ja": "受取重視コース（確定年金）据置期間1～4年・年金支払期間20年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 20y payout, 1–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def1-4_pay20.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def1-4_pay25",
+      "plan_ja": "受取重視コース（確定年金）据置期間1～4年・年金支払期間25年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 25y payout, 1–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def1-4_pay25.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def1-4_pay30",
+      "plan_ja": "受取重視コース（確定年金）据置期間1～4年・年金支払期間30年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 30y payout, 1–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def1-4_pay30.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def1-4_pay35",
+      "plan_ja": "受取重視コース（確定年金）据置期間1～4年・年金支払期間35年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 35y payout, 1–4y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def1-4_pay35.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def5-9_pay15",
+      "plan_ja": "受取重視コース（確定年金）据置期間5～9年・年金支払期間15年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 15y payout, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def5-9_pay15.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def5-9_pay20",
+      "plan_ja": "受取重視コース（確定年金）据置期間5～9年・年金支払期間20年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 20y payout, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def5-9_pay20.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def5-9_pay25",
+      "plan_ja": "受取重視コース（確定年金）据置期間5～9年・年金支払期間25年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 25y payout, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def5-9_pay25.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def5-9_pay30",
+      "plan_ja": "受取重視コース（確定年金）据置期間5～9年・年金支払期間30年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 30y payout, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def5-9_pay30.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def5-9_pay35",
+      "plan_ja": "受取重視コース（確定年金）据置期間5～9年・年金支払期間35年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 35y payout, 5–9y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def5-9_pay35.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def10_pay15",
+      "plan_ja": "受取重視コース（確定年金）据置期間10年・年金支払期間15年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 15y payout, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def10_pay15.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def10_pay20",
+      "plan_ja": "受取重視コース（確定年金）据置期間10年・年金支払期間20年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 20y payout, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def10_pay20.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def10_pay25",
+      "plan_ja": "受取重視コース（確定年金）据置期間10年・年金支払期間25年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 25y payout, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def10_pay25.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def10_pay30",
+      "plan_ja": "受取重視コース（確定年金）据置期間10年・年金支払期間30年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 30y payout, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def10_pay30.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "ukedori_kakutei_def10_pay35",
+      "plan_ja": "受取重視コース（確定年金）据置期間10年・年金支払期間35年",
+      "course_ja": "受取重視コース",
+      "plan_base": "ukedori_kakutei",
+      "plan_en": "Income, 35y payout, 10y deferral",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__ukedori_kakutei_def10_pay35.csv",
+      "points": 6,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "sakidori_anshin",
+      "plan_ja": "先取・安心コース",
+      "course_ja": "先取・安心コース",
+      "plan_en": "Early payout, reassurance course",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__sakidori_anshin.csv",
+      "points": 18,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "mankiki_jujitsu_g100",
+      "plan_ja": "満期充実コース・100％保障型",
+      "course_ja": "満期充実コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "mankiki_jujitsu",
+      "plan_en": "Maturity-focused, 100% death cover",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__mankiki_jujitsu_g100.csv",
+      "points": 34,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "mankiki_jujitsu_g70",
+      "plan_ja": "満期充実コース・70％保障型",
+      "course_ja": "満期充実コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "mankiki_jujitsu",
+      "plan_en": "Maturity-focused, 70% death cover",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__mankiki_jujitsu_g70.csv",
+      "points": 34,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "mankiki_jujitsu_g50",
+      "plan_ja": "満期充実コース・50％保障型",
+      "course_ja": "満期充実コース",
+      "product_type": "survival_weighted_annuity",
+      "plan_base": "mankiki_jujitsu",
+      "plan_en": "Maturity-focused, 50% death cover",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__mankiki_jujitsu_g50.csv",
+      "points": 34,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "tsumitate",
+      "plan_ja": "積立コース",
+      "course_ja": "積立コース",
+      "plan_en": "Accumulation",
+      "csv": "msp-ashitano-yorokobi-2__crediting_rate__tsumitate.csv",
+      "points": 22,
+      "first_effective": "2026-03-02",
+      "last_effective": "2026-08-03",
+      "effective_dates": 2
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_4course_target",
+      "title_ja": "4コース版 〈目標設定あり〉契約締結前交付書面兼商品パンフレット",
+      "variant": "4-course, with target",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/brochure.pdf",
+      "title_en": "Brochure and pre-contract disclosure (4 courses, with target)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_4course_notarget",
+      "title_ja": "4コース版 〈目標設定なし〉契約締結前交付書面兼商品パンフレット",
+      "variant": "4-course, no target",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/brochure_notarget.pdf",
+      "title_en": "Brochure and pre-contract disclosure (4 courses, no target)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_2course",
+      "title_ja": "2コース版 契約締結前交付書面兼商品パンフレット",
+      "variant": "2-course",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/brochure_02.pdf",
+      "title_en": "Brochure and pre-contract disclosure (2 courses)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_4course_target",
+      "title_ja": "4コース版 〈目標設定あり〉ご契約のしおり・約款",
+      "variant": "4-course, with target",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/ashitano_yorokobi2_MSPL-2604-A-0020-00.pdf",
+      "title_en": "Policy guide and conditions (4 courses, with target)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_4course_notarget",
+      "title_ja": "4コース版 〈目標設定なし〉ご契約のしおり・約款",
+      "variant": "4-course, no target",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/ashitano_yorokobi2_MSPL-2604-A-0019-00.pdf",
+      "title_en": "Policy guide and conditions (4 courses, no target)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions_2course",
+      "title_ja": "2コース版 ご契約のしおり・約款",
+      "variant": "2-course",
+      "url": "https://www.ms-primary.com/products/ashitano_yorokobi2/pdf/ashitano_yorokobi2_MSPL-2604-A-0018-00.pdf",
+      "title_en": "Policy guide and conditions (2 courses)",
+      "edition": "April 2026 edition"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "池田泉州銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "伊予銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "岡三証券",
+      "category": "securities"
+    },
+    {
+      "name_ja": "沖縄海邦銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "沖縄銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "北日本銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "京都銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "紀陽銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "きらぼし銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券",
+      "category": "securities"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "岐阜信用金庫",
+      "category": "shinkin_bank"
+    },
+    {
+      "name_ja": "呉信用金庫",
+      "category": "shinkin_bank"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "高知銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "西京銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫",
+      "category": "shinkin_bank"
+    },
+    {
+      "name_ja": "佐賀銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "山陰合同銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "三縁証券ウェルスマネジメント",
+      "category": "securities"
+    },
+    {
+      "name_ja": "三十三銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "四国銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "七十七銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "七十七ほけんサービス",
+      "category": "other"
+    },
+    {
+      "name_ja": "島根銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "十六銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "常陽銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "静清信用金庫",
+      "category": "shinkin_bank"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "大光銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "但馬銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "第四北越銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "大東銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "筑波銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "東海東京証券",
+      "category": "securities"
+    },
+    {
+      "name_ja": "東京スター銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "東邦銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "東和銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "栃木銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "鳥取銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "富山銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "富山第一銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "南都銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "八十二長野銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "百五銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "百十四銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "ひろぎん証券",
+      "category": "securities"
+    },
+    {
+      "name_ja": "広島信用金庫",
+      "category": "shinkin_bank"
+    },
+    {
+      "name_ja": "福岡中央銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "三井住友カード",
+      "category": "other"
+    },
+    {
+      "name_ja": "宮崎太陽銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "山形銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "山口銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "山口保険サービス",
+      "category": "other"
+    },
+    {
+      "name_ja": "山梨中央銀行",
+      "category": "bank"
+    },
+    {
+      "name_ja": "楽天インシュアランスプランニング",
+      "category": "other"
+    },
+    {
+      "name_ja": "琉球銀行",
+      "category": "bank"
+    }
+  ],
+  "target_feature": null,
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "An independent parser (scripts/recheck_candidates_a.py, not the collector's) compared 101 rows with their saved snapshots and all matched: a seeded random sample of 41 of 369 published rows (10% of each rate CSV, at least 20), every outlier (0: a value more than 3 standard deviations from its series mean, a move of more than 1pp between consecutive periods, or a value outside 0-15%; 10pp and 0-300% for participation rates) and every not_offered row (60). A follow-up pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

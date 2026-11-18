@@ -1,0 +1,96 @@
+{
+  "id": "prudential-japan-conduct",
+  "title_en": "Prudential group Japan misconduct case and FSA orders",
+  "title_ja": "プルデンシャル生命・ジブラルタ生命の金銭不祥事と金融庁の行政処分",
+  "status": "ongoing",
+  "insurer_ids": [
+    "prudential",
+    "gibraltar",
+    "pgf"
+  ],
+  "started": "2026-01-16",
+  "updated": "2026-11-17",
+  "summary_en": "On 16 Jan 2026 Prudential Life disclosed money taken by sales staff (3.1bn yen, about 500 customers); its outside committee later counted about 6.2bn yen declared by 794 customers, 1992-2025. It halted new sales voluntarily from 9 Feb. On 9 Oct the FSA ordered Prudential Life and Gibraltar Life (whose sales staff also took customer money) to stop solicitation and contract conclusion from 13 Oct 2026 to 31 Jan 2027 (bar FSA-approved business), plus improvement orders for both and the holding company (plans due 30 Nov). PGF Life was not ordered. Gibraltar says its agency channel is outside it.",
+  "open_questions": [
+    "Scope of Gibraltar's suspension: the FSA order stops solicitation and contract conclusion with no channel carved out, although the FSA notes that Gibraltar also sells through general agencies. Gibraltar, the holding company and Prudential Financial say only the employed sales force (Life Consultants) is stopped and agencies continue. Whether an individual FSA approval lies behind that reading is unknown, and it is not confirmed that agencies are taking applications.",
+    "PGF Life: the orders name only Prudential Life, Gibraltar Life and the holding company, and Prudential Financial says the suspension does not apply to PGF Life. The FSA does cite PGF's secondee information case among the grounds for the holding company's order. PGF posted its own notice on 9 Oct 2026 (not read); its current sales status through banks and agencies is not confirmed.",
+    "Improvement plans are due 30 Nov 2026; their content is not yet public. The first quarterly progress report, as of end-Feb 2027, is due by 15 Mar 2027.",
+    "Restart: trade press reports that Prudential Financial expects Prudential Life to restart in phases from 1 Feb 2027 and Gibraltar on the same date. The companies' own releases say a restart will be judged after their checks.",
+    "The loss figures measure different things: 3.08bn yen from 498 customers (company-confirmed in January 2026); about 6.17bn yen declared by 794 customers against 159 staff and former staff, 1992-2025, before repayments (outside committee); about 5.2bn yen for the 27 people the committee examined case by case. Compensation approved on new claims was 2.57bn yen by mid-September (2.16bn Prudential Life, 0.41bn Gibraltar Life).",
+    "Financial effect: the only Gibraltar figure read is about 275m dollars, from trade press. The parent's 10-Q was not read.",
+    "Inspections: the FSA release cites its on-site inspections of Prudential Life and the holding company and reports it required from all three; for Gibraltar it cites reports only. When the inspections started is known from press reports only.",
+    "Four company notices could not be re-read in the independent check because the sites refuse automated requests (Gibraltar 16 Jan and 12 Oct 2026, PGF 20 Jan and 6 Mar 2026). Their titles and dates were confirmed on the companies' own lists, and the joint release of 9 Oct supports the main points of Gibraltar's 12 Oct notice."
+  ],
+  "key_dates": [
+    {
+      "date": "2024-08-05",
+      "text_en": "Prudential Life starts contacting customers about suspicious money handling by staff and ex-staff; these checks produce the January 2026 findings.",
+      "url": "https://www.prudential.co.jp/news/pdf/866/20240805_01.pdf"
+    },
+    {
+      "date": "2026-01-16",
+      "text_en": "Prudential Life and Gibraltar Life disclose money misconduct by staff; Prudential Life president to step down.",
+      "url": "https://www.prudential.co.jp/news/pdf/980/20260116_2.pdf"
+    },
+    {
+      "date": "2026-01-23",
+      "text_en": "An independent customer compensation committee is set up; Prudential Life will fully compensate committee-approved losses from in-service misconduct.",
+      "url": "https://www.prudential.co.jp/news/pdf/984/20260123.pdf"
+    },
+    {
+      "date": "2026-02-04",
+      "text_en": "Prudential Life announces a voluntary 90-day sales halt from 9 February.",
+      "url": "https://www.prudential.co.jp/news/pdf/989/20260204.pdf"
+    },
+    {
+      "date": "2026-03-06",
+      "text_en": "PGF Life reports that staff seconded to partner agencies took agency information; a separate matter that the FSA later cited in its order to the holding company.",
+      "url": "https://www.pgf-life.co.jp/hpcms/news/NB300.do?NID=2042"
+    },
+    {
+      "date": "2026-04-22",
+      "text_en": "Prudential Life extends the voluntary halt by 180 days.",
+      "url": "https://www.prudential.co.jp/news/pdf/1000/20260422_1.pdf"
+    },
+    {
+      "date": "2026-08-24",
+      "text_en": "Prudential Life discloses a suspected case at a branch that continued during the voluntary sales halt; by 8 Oct it put that case at 34 customers and about 347m yen.",
+      "url": "https://www.prudential.co.jp/news/pdf/1039/20261008_2.pdf"
+    },
+    {
+      "date": "2026-10-08",
+      "text_en": "External committee report published; Prudential Life apologises and discloses discipline of 146 staff.",
+      "url": "https://www.prudential.co.jp/assets_item/25/20261008_3.pdf"
+    },
+    {
+      "date": "2026-10-09",
+      "text_en": "FSA issues suspension and improvement orders to Prudential Life and Gibraltar Life and an improvement order to the holding company.",
+      "url": "https://www.fsa.go.jp/news/r8/hoken/20261009/20261009.html"
+    },
+    {
+      "date": "2026-10-09",
+      "text_en": "PGF Life posts its own notice on the FSA action against its group companies (title only read).",
+      "url": "https://www.pgf-life.co.jp/hpcms/news/NB300.do?NID=2065"
+    },
+    {
+      "date": "2026-10-12",
+      "text_en": "Gibraltar tells customers its sales employees stop selling 13 Oct to 31 Jan; agency business continues.",
+      "url": "https://www.gib-life.co.jp/st/about/is_pdf/20261012.pdf"
+    },
+    {
+      "date": "2026-11-30",
+      "text_en": "Business improvement plans due to the FSA (scheduled).",
+      "url": "https://www.fsa.go.jp/news/r8/hoken/20261009/20261009.html"
+    },
+    {
+      "date": "2027-01-31",
+      "text_en": "Suspension ends (scheduled). The first quarterly progress report, as of end-Feb 2027, is due by 15 Mar 2027.",
+      "url": "https://www.fsa.go.jp/news/r8/hoken/20261009/20261009.html"
+    }
+  ],
+  "verified": {
+    "by": "opus",
+    "date": "2026-11-17",
+    "note": "Overview, key dates and open questions re-checked against the sources and corrected; the FSA orders were read from the FSA page."
+  }
+}

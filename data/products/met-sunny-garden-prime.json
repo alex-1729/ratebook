@@ -1,0 +1,429 @@
+{
+  "id": "met-sunny-garden-prime",
+  "insurer_id": "met",
+  "candidate": true,
+  "name_ja": "サニーガーデン プライム",
+  "name_en": "Sunny Garden Prime",
+  "policy_name_ja": "一時払終身保険（指定通貨建 利率更改あり型）/一時払終身保険（指定通貨建 利率更改なし型）",
+  "policy_names": [
+    {
+      "name_ja": "一時払終身保険（指定通貨建 利率更改あり型）",
+      "plan": "teiki_reset / teiki_reset_boost / zoukai_reset / zoukai_reset_boost",
+      "currencies": [
+        "USD",
+        "AUD",
+        "JPY"
+      ]
+    },
+    {
+      "name_ja": "一時払終身保険（指定通貨建 利率更改なし型）",
+      "plan": "teiki_noreset",
+      "currencies": [
+        "USD",
+        "JPY"
+      ]
+    }
+  ],
+  "category": "whole_life",
+  "product_type": "whole_life_rate_locked",
+  "subtype": "rate_reset_whole_life",
+  "premium_type": "single",
+  "currencies": [
+    "USD",
+    "AUD",
+    "JPY"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2026-04-01",
+  "off_sale_date": null,
+  "on_sale_date_source": {
+    "url": "https://prtimes.jp/main/html/rd/p/000000623.000005541.html",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/met/pages/release_met-sunny-garden-prime_20260330_2026-11-17.html"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/met/pages/cr_LIST_2026-11-17.html"
+  },
+  "guarantee_terms_years": {
+    "USD": [
+      5,
+      10,
+      20
+    ],
+    "AUD": [
+      10
+    ],
+    "JPY": [
+      5,
+      10
+    ]
+  },
+  "editions": [
+    {
+      "name_ja": "ガーデン ザ ギフトⅡ",
+      "name_en": "Garden The Gift II",
+      "distributor_group": "三井住友銀行",
+      "site_code": "ahp805",
+      "shares_rate_page": true,
+      "basis": "Named on the insurer's rate list under the same entry as サニーガーデン プライム (cr_LIST). The distributor is taken from the task brief; 三井住友銀行 is not on the agency list of ahp805."
+    },
+    {
+      "name_ja": "メットライフ定期受取型終身保険〈円建・外貨建〉",
+      "name_en": "MetLife periodic-payout whole life (JPY and foreign currency)",
+      "distributor_group": "野村證券 (agency list of ahp814)",
+      "site_code": "ahp814",
+      "shares_rate_page": false,
+      "basis": "Own rate page (ahp814) and agency list. It shows the same 定期支払コース/任意受取コース numbers as ahp805 wherever both publish one, but only that course (no 積立金増加コース), and it left the 10-year columns blank until 2026-10-01 where ahp805 published them. scripts/met.py checks the current numbers on every run; no separate series is stored."
+    }
+  ],
+  "rate_page": "rate_current",
+  "notes": [
+    "The rate pages are a React app: the HTML holds no numbers. The numbers come from POST https://www.metlife.co.jp/annuityproduct/v1/applications/newpolicyinfo (public, no login); the request shape was read from the site's own JavaScript bundle and the bank-window page opened in the built-in browser to confirm it renders the same figures. scripts/met.py sends the same requests with urllib.",
+    "Plans: teiki_* = 定期支払コース/任意受取コース, zoukai_* = 積立金増加コース (rate-reset type only), *_boost = the 上乗せ 積立利率 for large premiums (USD 400,000 / AUD 500,000 / JPY 50,000,000 or more, also reached by premium paid in yen or foreign currency of that size via the rider), teiki_noreset = 利率更改なし型 基準利率 (lifetime guarantee, no term).",
+    "crediting_rate = 積立利率 of the 利率更改あり型, term_years is the 利率保証期間. After the guarantee period the rate is reset; the boost does not carry over to the reset rate. base_rate = 基準利率 of the 利率更改なし型. The actual 積増率 of the no-reset type depends on currency, contract age, sex, amount and 基準利率 and is only in the quotation, so it is not collected.",
+    "A blank value in the API (or '-' on the page) is stored as status not_offered. For USD 5 years that is every window before 2026-10-01. AUD is offered for 10 years only, so AUD 5 and 20 years are absent from the CSVs, and JPY 20 years likewise. Some distributors do not offer every currency or term.",
+    "effective_date is the first day of the half-month contract window the rate applies to (1st-15th, 16th-end). The API returns history from 2026-04-01, the launch date; no earlier window exists. The API also gives serviceOpenDate 2026/10/01 for ahp805, probably a page-set date (5-year terms start then), not the launch.",
+    "The popup history requests are keyed by start year and return overlapping windows; the collector requests every year and requires the overlaps to agree.",
+    "has_mva is true: the page publishes 基準指標金利 'for the market value adjustment rate on cancellation or reduction' (解約時・減額時の市場価格調整率). The formula and the 基準指標金利 series are not collected.",
+    "The brochure and policy conditions were not downloaded. The brochure PDFs listed under documents are per distributor group (p806 common for USD/AUD/JPY, p805 USD/JPY, みずほ銀行, みずほ信託銀行, みずほ証券, 三菱UFJ銀行).",
+    "Distributors are the agency list of ahp805 (retrieved 2026-11-17). Distributor-specific product names are only partly known from the insurer list (ガーデン ザ ギフトⅡ).",
+    "The same rate list also has アクティブデザイン, ウェルスデザインⅡ and USドル建IS終身保険 (ドルスマート); not tracked here.",
+    "Plan names shortened 2026-11-17: 'Payout courses' = 定期支払コース and 任意受取コース (one rate table); 'large-premium boost' = 積立利率（上乗せ）, the higher rate for large premiums; 'no reset (rate for life)' = 利率更改なし型 基準利率.",
+    "Launch date: 2026-04-01, from MetLife's release of 2026-03-30 (PR TIMES mirror; metlife.co.jp answers 403 to scripts): 「4月1日より、一時払終身保険「サニーガーデン プライム」を発売します」, sold at 金融機関代理店 from that day. 2026-07-01 is only the start of the direct-sales and agency channels, and 2026-10-01 (the API serviceOpenDate) is when USD 5-year terms appear; neither is the launch. Retrieved 2026-11-17."
+  ],
+  "notes_en": [
+    "Rate history starts on 1 April 2026; the insurer publishes nothing earlier, and 5-year USD terms only appear from October 2026.",
+    "Rates are set for half-month contract windows and cover USD (5, 10 and 20 years), AUD (10 years) and JPY (5 and 10 years).",
+    "Higher boosted rates for large premiums are collected; the boost does not carry over to the rate after the guarantee period resets.",
+    "The market value adjustment formula and reference rates are not collected, and the brochures and conditions have not been read.",
+    "Launched 1 April 2026 at banks (insurer's release); direct and agency sales began in July 2026. Several distributor-specific names sit on the same rates and are not tracked separately."
+  ],
+  "metrics": {
+    "crediting_rate": "積立利率（利率更改あり型）",
+    "base_rate": "基準利率（利率更改なし型）"
+  },
+  "pages": [
+    {
+      "name": "product",
+      "url": "https://www.metlife.co.jp/products/fx/spwl26/"
+    },
+    {
+      "name": "rate_current",
+      "url": "https://www.metlife.co.jp/lf1/ahp805/08.html"
+    },
+    {
+      "name": "rate_list",
+      "url": "https://www.metlife.co.jp/lf1/ahplf1/cr_LIST.html"
+    },
+    {
+      "name": "edition_rate_page",
+      "url": "https://www.metlife.co.jp/lf1/ahp814/08.html"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "crediting_rate",
+      "plan": "teiki_reset",
+      "plan_ja": "定期支払コース/任意受取コース 利率更改あり型 積立利率",
+      "plan_en": "Payout courses, rate reset",
+      "currencies": [
+        "USD",
+        "AUD",
+        "JPY"
+      ],
+      "csv": "met-sunny-garden-prime__crediting_rate__teiki_reset.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "teiki_reset_boost",
+      "plan_ja": "定期支払コース/任意受取コース 利率更改あり型 積立利率（上乗せ）",
+      "plan_en": "Payout, rate reset, large-premium boost",
+      "currencies": [
+        "USD",
+        "AUD",
+        "JPY"
+      ],
+      "csv": "met-sunny-garden-prime__crediting_rate__teiki_reset_boost.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "zoukai_reset",
+      "plan_ja": "積立金増加コース 利率更改あり型 積立利率",
+      "plan_en": "Accumulation, rate reset",
+      "currencies": [
+        "USD",
+        "AUD",
+        "JPY"
+      ],
+      "csv": "met-sunny-garden-prime__crediting_rate__zoukai_reset.csv"
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "zoukai_reset_boost",
+      "plan_ja": "積立金増加コース 利率更改あり型 積立利率（上乗せ）",
+      "plan_en": "Accumulation, reset, large-premium boost",
+      "currencies": [
+        "USD",
+        "AUD",
+        "JPY"
+      ],
+      "csv": "met-sunny-garden-prime__crediting_rate__zoukai_reset_boost.csv"
+    },
+    {
+      "metric": "base_rate",
+      "plan": "teiki_noreset",
+      "plan_ja": "定期支払コース/任意受取コース 利率更改なし型 基準利率",
+      "plan_en": "Payout courses, no reset (rate for life)",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "csv": "met-sunny-garden-prime__base_rate__teiki_noreset.csv"
+    }
+  ],
+  "documents": [
+    {
+      "name": "brochure_common_usd_aud_jpy",
+      "title_ja": "契約締結前交付書面 兼 商品パンフレット 共通（米ドル建／豪ドル建／円建）",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p806/p806_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (common, USD, AUD and yen)",
+      "edition": "October 2026 edition"
+    },
+    {
+      "name": "brochure_common_usd_jpy",
+      "title_ja": "契約締結前交付書面 兼 商品パンフレット 共通（米ドル建／円建）",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p805/p805_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (common, USD and yen)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "brochure_mizuho_bank",
+      "title_ja": "同 みずほ銀行",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p808/p808_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Mizuho Bank edition)",
+      "edition": "October 2026 edition"
+    },
+    {
+      "name": "brochure_mizuho_trust",
+      "title_ja": "同 みずほ信託銀行",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p809/p809_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Mizuho Trust edition)",
+      "edition": "October 2026 edition"
+    },
+    {
+      "name": "brochure_mizuho_securities",
+      "title_ja": "同 みずほ証券",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p810/p810_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (Mizuho Securities edition)",
+      "edition": "October 2026 edition"
+    },
+    {
+      "name": "brochure_mufg",
+      "title_ja": "同 三菱UFJ銀行",
+      "url": "https://www.metlife.co.jp/lf1/common/pdf/p811/p811_imp.pdf",
+      "title_en": "Brochure and pre-contract disclosure (MUFG edition)",
+      "edition": "April 2026 edition"
+    },
+    {
+      "name": "policy_conditions",
+      "title_ja": "ご契約のしおり・約款（ページ）",
+      "url": "https://www.metlife.co.jp/yakkan/bank/spwl26/",
+      "title_en": "Policy guide and conditions"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "あいち銀行"
+    },
+    {
+      "name_ja": "足利銀行"
+    },
+    {
+      "name_ja": "阿波銀行"
+    },
+    {
+      "name_ja": "飯田信用金庫"
+    },
+    {
+      "name_ja": "イオン銀行"
+    },
+    {
+      "name_ja": "伊予銀行"
+    },
+    {
+      "name_ja": "SBI証券"
+    },
+    {
+      "name_ja": "SBI新生銀行"
+    },
+    {
+      "name_ja": "大分銀行"
+    },
+    {
+      "name_ja": "沖縄銀行"
+    },
+    {
+      "name_ja": "香川銀行"
+    },
+    {
+      "name_ja": "鹿児島銀行"
+    },
+    {
+      "name_ja": "亀有信用金庫"
+    },
+    {
+      "name_ja": "関西みらい銀行"
+    },
+    {
+      "name_ja": "北九州銀行"
+    },
+    {
+      "name_ja": "紀陽銀行"
+    },
+    {
+      "name_ja": "京都銀行"
+    },
+    {
+      "name_ja": "きらぼし銀行"
+    },
+    {
+      "name_ja": "きらぼしライフデザイン証券"
+    },
+    {
+      "name_ja": "高知銀行"
+    },
+    {
+      "name_ja": "山陰合同銀行"
+    },
+    {
+      "name_ja": "三十三銀行"
+    },
+    {
+      "name_ja": "滋賀銀行"
+    },
+    {
+      "name_ja": "静岡銀行"
+    },
+    {
+      "name_ja": "荘内銀行"
+    },
+    {
+      "name_ja": "スルガ銀行"
+    },
+    {
+      "name_ja": "仙台銀行"
+    },
+    {
+      "name_ja": "第四北越銀行"
+    },
+    {
+      "name_ja": "但馬銀行"
+    },
+    {
+      "name_ja": "千葉興業銀行"
+    },
+    {
+      "name_ja": "中国銀行"
+    },
+    {
+      "name_ja": "筑波銀行"
+    },
+    {
+      "name_ja": "東京スター銀行"
+    },
+    {
+      "name_ja": "東邦銀行"
+    },
+    {
+      "name_ja": "徳島大正銀行"
+    },
+    {
+      "name_ja": "富山第一銀行"
+    },
+    {
+      "name_ja": "名古屋銀行"
+    },
+    {
+      "name_ja": "南都銀行"
+    },
+    {
+      "name_ja": "西日本シティ銀行"
+    },
+    {
+      "name_ja": "八十二長野銀行"
+    },
+    {
+      "name_ja": "肥後銀行"
+    },
+    {
+      "name_ja": "百五銀行"
+    },
+    {
+      "name_ja": "百十四銀行"
+    },
+    {
+      "name_ja": "広島銀行"
+    },
+    {
+      "name_ja": "福島銀行"
+    },
+    {
+      "name_ja": "豊和銀行"
+    },
+    {
+      "name_ja": "北都銀行"
+    },
+    {
+      "name_ja": "北洋銀行"
+    },
+    {
+      "name_ja": "北陸銀行"
+    },
+    {
+      "name_ja": "北海道銀行"
+    },
+    {
+      "name_ja": "みずほ銀行"
+    },
+    {
+      "name_ja": "みずほ証券"
+    },
+    {
+      "name_ja": "みずほ信託銀行"
+    },
+    {
+      "name_ja": "三菱UFJ銀行"
+    },
+    {
+      "name_ja": "みなと銀行"
+    },
+    {
+      "name_ja": "宮崎銀行"
+    },
+    {
+      "name_ja": "宮崎太陽銀行"
+    },
+    {
+      "name_ja": "武蔵野銀行"
+    },
+    {
+      "name_ja": "もみじ銀行"
+    },
+    {
+      "name_ja": "山口銀行"
+    },
+    {
+      "name_ja": "横浜銀行"
+    },
+    {
+      "name_ja": "琉球銀行"
+    }
+  ],
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:met-sunny-garden-prime; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked. The snapshots carry MetLife's API field names, not on-page labels; values match under the collector's reading of those names, which was not re-confirmed offline."
+  }
+}

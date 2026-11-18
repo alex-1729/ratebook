@@ -1,0 +1,34 @@
+{
+  "id": "sml",
+  "name_ja": "住友生命保険相互会社",
+  "name_en": "Sumitomo Life",
+  "name_short_en": "Sumitomo Life",
+  "site": "https://www.sumitomolife.co.jp/",
+  "rate_hub_url": "https://www.sumitomolife.co.jp/lineup/other/fi/",
+  "rate_update": "Semi-monthly, effective the 1st and 16th (責任開始日 periods)",
+  "collector": "scripts/sml.py",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rates apply by responsibility start date, 1st-15th or 16th-end of the month."
+  },
+  "news_tier": "full",
+  "group": "sumitomo",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.sumitomolife.co.jp/news/newsrelease/",
+      "archive_url": "https://www.sumitomolife.co.jp/news/newsrelease/{fy}/",
+      "parser": "sml:parse"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.sumitomolife.co.jp/news/notice/",
+      "archive_url": "https://www.sumitomolife.co.jp/news/notice/{fy}/",
+      "parser": "sml:parse"
+    }
+  ]
+}

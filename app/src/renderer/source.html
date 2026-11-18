@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; frame-src file:; img-src 'self'">
+  <meta name="color-scheme" content="light dark">
+  <title>Source</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="srcwin">
+  <header class="srchead">
+    <div class="kick"><span>Source</span><span class="date" id="src-date"></span></div>
+    <div class="srcrow"><span id="src-label"></span><span class="sp"></span><button type="button" class="lnk" id="src-url">Original URL</button></div>
+    <div class="sub" id="src-path"></div>
+  </header>
+  <iframe id="src-frame" sandbox="" title="Saved page"></iframe>
+  <pre id="src-text" hidden></pre>
+  <script src="source.js"></script>
+</body>
+</html>

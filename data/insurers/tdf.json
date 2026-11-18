@@ -1,0 +1,31 @@
+{
+  "id": "tdf",
+  "name_ja": "T&Dフィナンシャル生命保険株式会社",
+  "name_en": "T&D Financial Life",
+  "name_short_en": "T&D Financial",
+  "site": "https://www.tdf-life.co.jp/",
+  "rate_hub_url": "https://www.tdf-life.co.jp/info/riritu.html",
+  "rate_update": "Semi-monthly, effective the 1st and 16th (current period only on the product rate page)",
+  "collector": "scripts/tdf.py",
+  "rate_period": {
+    "type": "semi_monthly",
+    "note": "Rate-setting periods run 1st-15th and 16th-end of the month."
+  },
+  "news_tier": "full",
+  "group": "t-and-d",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.tdf-life.co.jp/newsrelease/",
+      "archive_url": "https://www.tdf-life.co.jp/newsrelease/index.php?nendo={fy}"
+    },
+    {
+      "key": "notice",
+      "label": "Notices",
+      "kind": "official",
+      "url": "https://www.tdf-life.co.jp/info/"
+    }
+  ]
+}

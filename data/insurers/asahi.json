@@ -1,0 +1,17 @@
+{
+  "id": "asahi",
+  "name_ja": "朝日生命保険相互会社",
+  "name_en": "Asahi Life",
+  "site": "https://www.asahi-life.co.jp/",
+  "news_tier": "watch",
+  "news_sources": [
+    {
+      "key": "release",
+      "label": "News releases",
+      "kind": "official",
+      "url": "https://www.asahi-life.co.jp/company/newsrelease/index.html",
+      "archive_url": "https://www.asahi-life.co.jp/company/newsrelease/{fy}.html",
+      "parser": "asahi:parse"
+    }
+  ]
+}

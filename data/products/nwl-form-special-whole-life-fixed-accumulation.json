@@ -1,0 +1,440 @@
+{
+  "id": "nwl-form-special-whole-life-fixed-accumulation",
+  "insurer_id": "nwl",
+  "candidate": true,
+  "name_ja": "積立金区分型終身保険特約（確定積増型）付指定通貨建特別終身保険",
+  "name_en": "Designated-currency special whole life with fixed-accumulation reserve-segment rider",
+  "name_short_en": "Special whole life, fixed accumulation",
+  "policy_name_ja": "積立金区分型終身保険特約（確定積増型）付指定通貨建特別終身保険",
+  "category": "whole_life",
+  "product_type": "whole_life_unclassified",
+  "subtype": null,
+  "premium_type": "single",
+  "currencies": [
+    "JPY",
+    "USD",
+    "AUD"
+  ],
+  "has_mva": true,
+  "status": "on_sale",
+  "on_sale_date": "2025-10-01",
+  "off_sale_date": null,
+  "guarantee_terms_years": null,
+  "metrics": {
+    "crediting_rate": "積立利率",
+    "base_rate": "基準金利（積立利率の設定および市場価格調整率の計算に用いる）"
+  },
+  "rate_page": "gu_int_rate",
+  "pages": [
+    {
+      "name": "gu_int_rate",
+      "kind": "rate",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate.html",
+      "live_file": "gu_int_rate"
+    },
+    {
+      "name": "gu_int_rate17_base",
+      "kind": "base",
+      "url": "https://www.nw-life.co.jp/product/annuities/rate/gu_int_rate17_base.html",
+      "live_file": "gu_int_rate17_base"
+    }
+  ],
+  "rate_series": [
+    {
+      "metric": "base_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-form-special-whole-life-fixed-accumulation__base_rate__all.csv",
+      "points": 6,
+      "first_effective": "2026-06-01",
+      "last_effective": "2026-11-16",
+      "effective_dates": 2
+    },
+    {
+      "metric": "crediting_rate",
+      "plan": "all",
+      "plan_ja": "全区分",
+      "plan_en": "All contracts",
+      "currencies": [
+        "AUD",
+        "JPY",
+        "USD"
+      ],
+      "csv": "nwl-form-special-whole-life-fixed-accumulation__crediting_rate__all.csv",
+      "points": 48,
+      "first_effective": "2025-11-16",
+      "last_effective": "2026-11-16",
+      "effective_dates": 8
+    }
+  ],
+  "documents": [
+    {
+      "name": "shiori_web",
+      "title_ja": "WEB版ご契約のしおり・約款（積立金区分型終身保険特約（確定積増型）付指定通貨建特別終身保険）",
+      "url": "https://www.nw-life.co.jp/shiori/g46/",
+      "title_en": "Policy guide and conditions, web edition (opens only from a connection in Japan)"
+    },
+    {
+      "name": "policy_conditions_2510",
+      "title_ja": "ご契約のしおり・約款（積立金区分型終身保険特約（確定積増型）付指定通貨建特別終身保険）2025年10月版",
+      "url": "https://www.nw-life.co.jp/shiori/g46/spwl-rp_2510.pdf",
+      "title_en": "Policy guide and conditions, PDF (Oct 2025 edition)",
+      "edition": "Oct 2025 edition"
+    },
+    {
+      "name": "brochure_miraino_fuseki",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（未来の布石）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/miraino_fuseki.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as 未来の布石)",
+      "variant": "未来の布石"
+    },
+    {
+      "name": "brochure_miraino_megumi",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（みらいの恵み）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/miraino_megumi.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as みらいの恵み)",
+      "variant": "みらいの恵み"
+    },
+    {
+      "name": "brochure_longdreamnext",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（ロングドリームNEXT）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/longdreamnext.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as ロングドリームNEXT)",
+      "variant": "ロングドリームNEXT"
+    },
+    {
+      "name": "brochure_longdreamplatinum",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（ロングドリームプラチナ）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/longdreamplatinum.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as ロングドリームプラチナ)",
+      "variant": "ロングドリームプラチナ"
+    },
+    {
+      "name": "brochure_teikiuketorigata",
+      "title_ja": "契約締結前交付書面（契約概要／注意喚起情報）兼 商品パンフレット（ニッセイ・ウェルス定期受取型終身）",
+      "url": "https://www.nw-life.co.jp/product/pamphlet/teikiuketorigata.pdf",
+      "title_en": "Brochure and pre-contract disclosure (marketed as ニッセイ・ウェルス定期受取型終身)",
+      "variant": "ニッセイ・ウェルス定期受取型終身"
+    }
+  ],
+  "distributors": [
+    {
+      "name_ja": "みずほ銀行",
+      "product_name_ja": "みらいの恵み"
+    },
+    {
+      "name_ja": "野村證券",
+      "product_name_ja": "ニッセイ・ウェルス定期受取型終身＜円建／外貨建＞"
+    },
+    {
+      "name_ja": "SBI証券",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "あいち銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "きらぼし銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "きらやか銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "みずほ証券",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "もみじ銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "スルガ銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "トマト銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "七十七銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "三十三銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "三菱UFJ信託銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "京葉銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "京都中央信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "京都銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "仙台銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "北九州銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "北洋銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "北都銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "十八親和銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "十六銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "名古屋銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "埼玉縣信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "大分銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "大和証券",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "宮崎銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "富山第一銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "富山銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "山口銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "山形銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "岩手銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "広島信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "広島銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "徳島大正銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "愛媛銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "朝日信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "東和銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "武蔵野銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "池田泉州銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "沖縄銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "清水銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "湖東信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "滋賀銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "熊本銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "百五銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "百十四銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "碧海信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "福岡中央銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "福岡銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "福島信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "福島銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "秋田銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "第四北越銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "筑邦銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "紀陽銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "群馬銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "荘内銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "長野信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "阿波銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "青森みちのく銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "静岡銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "静清信用金庫",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "香川銀行",
+      "product_name_ja": "ロングドリームNEXT"
+    },
+    {
+      "name_ja": "三菱UFJ銀行",
+      "product_name_ja": "ロングドリームプラチナ"
+    },
+    {
+      "name_ja": "みなと銀行",
+      "product_name_ja": "未来の布石"
+    },
+    {
+      "name_ja": "りそな銀行",
+      "product_name_ja": "未来の布石"
+    },
+    {
+      "name_ja": "埼玉りそな銀行",
+      "product_name_ja": "未来の布石"
+    },
+    {
+      "name_ja": "関西みらい銀行",
+      "product_name_ja": "未来の布石"
+    }
+  ],
+  "editions": [],
+  "notes": [
+    "Keyed by POLICY FORM, not marketed name: the 積立利率 hub (gu_int_rate.html) publishes one rate section per policy form. Marketed names are mapped to forms from the insurer's own product pages (see the distributors note).",
+    "Rates come from the shared hub page and the form's 基準金利 page. Collected by scripts/nwl.py (Wayback captures via_wayback=true, hand-saved live copy of 2026-11-17 via_wayback=false). nw-life.co.jp returns HTTP 403 to automated requests, so the collector never contacts it. Each capture shows only the then-current half-month 適用期間; effective_date is its first day. Gaps between captures are not interpolated.",
+    "Appears on the hub from 2025-11 (first Wayback capture with the section: 2025-11-25).",
+    "Plan key encoding: term_years is 据置期間 where the table has one; age_band is 契約時の被保険者年齢 as printed (the live table, whatever its bands at the time); plan holds the other table dimensions (see plan_ja). Cells printed '-' are status not_offered.",
+    "has_mva is true because the form's 基準金利 page states that the 基準金利 is used for the 積立利率 and for the 市場価格調整率 on surrender; the MVA formula and loads are not collected.",
+    "Premium type: single premium is assumed from the task scope and from the しおり index, which groups only the 予定利率金利連動型外貨建個人年金保険 and 利率固定 外貨建個人年金保険 under 平準払; the product pages were not read to confirm the premium type of this form.",
+    "Documents (2026-11-17): www.nw-life.co.jp answered HTTP 403 to one plain request (/shiori/g41/); not worked around. The Wayback Machine holds a capture of the しおり index page /shiori/g46/ (latest 2025-11-18, CDX 2026-11-17), but the archive answered HTTP 429 to every replay request from this network on 2026-11-17, so the PDF links it lists were not read; not worked around. The owner can save the PDFs from https://www.nw-life.co.jp/shiori/g46/ on a connection in Japan.",
+    "Launch date: 2025-10-01, from the insurer's news release announcing sales of the form itself. The hub first shows the section in the Wayback capture of 2025-11-25. Retrieved 2026-11-17.",
+    "Distributors and marketed names: mapped from nw-life.co.jp/product/individual/ product pages saved 2026-11-17 (sources/nwl/pages/product_*_2026-11-17.html), each of which states the 正式名称 of the policy forms it is sold under and lists its 募集代理店. A marketed product is attached to this form when its page names the form; one entry per bank and marketed name (product_name_ja). Pages naming several forms do not say which form a given contract uses (that follows the plan chosen, e.g. 告知/無告知コース, 介護保障), so an entry shows where the marketed name is sold, not that every plan there is this form. Marketed names mapped: ロングドリームNEXT、ロングドリームプラチナ、未来の布石、みらいの恵み、ニッセイ・ウェルス定期受取型終身＜円建／外貨建＞.",
+    "Documents: PDFs downloaded 2026-11-17 from nw-life.co.jp (reachable from a Japan connection): all policy-conditions editions listed on the form's しおり page, and the brochures (契約締結前交付書面兼パンフレット) of the marketed products that the insurer's product pages tie to this form (not every marketed name for forms sold under many names). The shiori_web entry is the HTML index page, not a PDF."
+  ],
+  "notes_en": [
+    "The insurer publishes rates by policy form rather than by marketed name, and the names sold to customers are not yet matched to forms.",
+    "The insurer's site blocks automated access, so rates come from archived copies and one saved copy of the current page; gaps between copies are not filled.",
+    "The form first appeared on the insurer's page in November 2025, and only one rate date (1 June 2026) is held.",
+    "The premium type is assumed to be single premium; the product page was not read.",
+    "Product type is left unclassified: how the fixed-accumulation rider credits interest has not been read from a brochure.",
+    "No document could be downloaded: the insurer's site refuses connections from outside Japan and no archived copy of the policy conditions could be retrieved, so the policy-guide link opens only from a connection in Japan; the brochure and contract summary are not linked from the pages on file.",
+    "Launch date not established; the earliest archived copy is the earliest rate on file."
+  ],
+  "on_sale_date_source": {
+    "url": "https://www.nw-life.co.jp/news/release/pdf/n251001.pdf",
+    "retrieved": "2026-11-17",
+    "snapshot": "sources/nwl/pages/release_n251001_2026-11-17.pdf"
+  },
+  "sale_status_checked": {
+    "date": "2026-11-17",
+    "snapshot": "sources/nwl/pages/live_gu_int_rate_2026-11-17.html"
+  },
+  "verification": {
+    "verified_through": "2026-11-17",
+    "method": "A reproducible random sample (scripts/recheck_candidates_b.py, seed recheck-sample:nwl-form-special-whole-life-fixed-accumulation; every metric/plan/currency group, at least 10% per metric/plan, at least 20 rows) plus every outlier (a value outside 0-15%, more than 3 standard deviations from its series mean, or more than 1pp from the previous point) was compared with its saved snapshot by an independent parser; all checked rows matched. A pass over every row also matched.",
+    "note": "Rows with a retrieved_date after verified_through have not been re-checked."
+  }
+}

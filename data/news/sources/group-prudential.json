@@ -1,0 +1,20 @@
+{
+  "id": "group-prudential",
+  "name_en": "Prudential Holdings of Japan",
+  "name_ja": "プルデンシャル・ホールディング・オブ・ジャパン",
+  "site": "https://www.pru-holding.co.jp/phj/",
+  "insurer_ids": [
+    "prudential",
+    "gibraltar",
+    "pgf"
+  ],
+  "news_sources": [
+    {
+      "key": "press",
+      "label": "News and press releases",
+      "kind": "parent",
+      "url": "https://www.pru-holding.co.jp/phj/release/press/index.html",
+      "parser": "group_prudential:parse"
+    }
+  ]
+}
